@@ -1,0 +1,6 @@
+{
+  "appId": "com.kiyeon.thaifast",
+  "appName": "태국어 빠른 암기",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}

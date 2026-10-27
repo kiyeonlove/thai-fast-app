@@ -1,0 +1,45 @@
+name: 안드로이드 앱 만들기
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: 패키지 설치
+        run: npm ci
+
+      - name: 웹 화면을 앱에 넣기
+        run: npx cap sync android
+
+      - name: APK 만들기
+        run: |
+          chmod +x android/gradlew
+          cd android && ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: 이름 정리
+        run: cp android/app/build/outputs/apk/release/app-release.apk thai-fast-v${{ github.run_number }}.apk
+
+      - name: 릴리스로 올리기
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_number }}
+          name: 태국어 빠른 암기 v${{ github.run_number }}
+          files: thai-fast-v${{ github.run_number }}.apk

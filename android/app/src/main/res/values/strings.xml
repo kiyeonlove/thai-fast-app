@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">태국어 빠른 암기</string>
+    <string name="title_activity_main">태국어 빠른 암기</string>
+    <string name="package_name">com.kiyeon.thaifast</string>
+    <string name="custom_url_scheme">com.kiyeon.thaifast</string>
+</resources>
