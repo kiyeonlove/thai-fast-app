@@ -6,7 +6,7 @@ th2i = {th: i for i, th in idx.items()}
 os.makedirs(f'{OUT}/audio', exist_ok=True)
 A = {}
 for w in W:
-    i = th2i[w['th']]; A[w['th']] = int(i)
+    i = th2i[w['th']]; A[w['th']] = str(i)
     dst = f'{OUT}/audio/{i}.ogg'
     if not os.path.exists(dst): shutil.copyfile(f'{OGG}/{i}.ogg', dst)
 t = open(f'{SRC}/fast.tpl.html').read()
@@ -18,5 +18,9 @@ R('const AUDIO_PARTS = __AUDIO_PARTS__;', 'const AUDIO_PARTS = 0;')
 R('let AUDIO = null, audioState = "loading";', 'let AUDIO = ' + json.dumps(A, ensure_ascii=False, separators=(',', ':')) + ', audioState = "ok";')
 R('if (!left) { audioState = "none"; return; }', 'if (!left) { return; }')
 R('player.src = "data:audio/mpeg;base64," + AUDIO[th];', 'player.src = "audio/" + AUDIO[th] + ".ogg";')
+# 네이티브 다리(registerPlugin)를 쓰려면 @capacitor/core 스크립트가 먼저 있어야 해요
+shutil.copyfile('/home/claude/thai-fast-app/node_modules/@capacitor/core/dist/capacitor.js', f'{OUT}/capacitor.js')
+assert t.count('<script>') >= 1
+t = t.replace('<script>', '<script src="capacitor.js"></script>\n<script>', 1)
 open(f'{OUT}/index.html', 'w').write(t)
 print('words', len(W), 'audio files', len(os.listdir(f'{OUT}/audio')), 'index', os.path.getsize(f'{OUT}/index.html') // 1024, 'KB')
