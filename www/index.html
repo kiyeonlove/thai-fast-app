@@ -172,6 +172,9 @@ h1{font-size:1.6rem;margin:0}
 .fsy .sy i,.fsy .sy em{font-style:normal;font-family:var(--f-ui);font-size:.74rem;white-space:nowrap}
 .fsy .sy i{color:var(--muted)}
 .fsy .sy em{font-weight:700;color:var(--tone)}
+.flash.hp .fkr,.flash.hp .fsy i,.flash.hp .fsy em,.flash.hp .fsy .tn,.flash.hp .part .pk{visibility:hidden}
+.hph{display:none;font-size:.78rem;color:var(--muted);margin-top:2px}
+.flash.hp .hph{display:block}
 .rlegend{color:var(--muted);font-size:.78rem;margin-top:4px;text-align:center;line-height:1.5}
 .fkr{font-size:1.35rem;font-weight:700}
 .fko{font-size:1.3rem;font-weight:700;color:var(--accent);transition:opacity .2s}
@@ -228,7 +231,7 @@ const dayWords = d => LIST.slice((d - 1) * PER_DAY, d * PER_DAY);
 
 /* ---------- 저장 ---------- */
 const LS = "thai-fast-v1";
-const blank = () => ({updatedAt:0, seen:{}, stars:{}, views:{}, rounds:{}, speed:1, reps:1, recall:false, readKo:false, known:{}, checked:{}, pos:{}});
+const blank = () => ({updatedAt:0, seen:{}, stars:{}, views:{}, rounds:{}, speed:1, reps:1, recall:false, hidePr:false, readKo:false, known:{}, checked:{}, pos:{}});
 function migrate(){ for (const o of [S.seen, S.stars]) for (const k of Object.keys(o)) if (/^(home|p\d):\d+$/.test(k)) {
   const [c, n] = k.split(":"); const w = WORDS.find(x => x.c === c && x.n === +n); if (w) o[w.th] ||= o[k]; delete o[k]; }
   S.views ||= {}; S.rounds ||= {}; S.known ||= {}; S.checked ||= {}; S.pos ||= {};
@@ -495,7 +498,7 @@ function parts(w){
   return `<div class="parts ${S.recall ? "hide" : ""}" id="parts">${w.p.map(box).join('<div class="plus">+</div>')}</div>`;
 }
 function card(w){
-  return `<div class="flash" aria-live="polite">
+  return `<div class="flash ${S.hidePr ? "hp" : ""}" id="flash" aria-live="polite">
     <span class="cat">${(POS.get(w.th) || w.g + 1)}번 · ${CATS.find(c => c.id === w.c).name}</span>
     <button class="star" id="star" aria-pressed="${!!S.stars[wid(w)]}" aria-label="헷갈린 단어 표시">★</button>
     <div class="th fth">${esc(w.th)}</div>
@@ -503,9 +506,11 @@ function card(w){
     <div class="fkr">${w.kr.map((k,i) => k + mark(w.t[i])).join(" ")}</div>
     <div class="fko ${S.recall ? "hide" : ""}" id="ko">${esc(w.ko)}</div>
     ${parts(w)}
+    <div class="hph">👆 카드를 누르면 발음·성조가 보여요</div>
   </div>`;
 }
 function renderPlay(){
+  if (S.hidePr === undefined) S.hidePr = false;
   const w = PL.list[PL.i];
   const chip = (k, v, label) => `<button class="chip" data-k="${k}" data-v="${v}" aria-pressed="${S[k] === v}">${label}</button>`;
   app.innerHTML = `
@@ -516,6 +521,7 @@ function renderPlay(){
     ${S.known[wid(w)] ? `<button class="know undo" id="know">↩ 다시 외울 단어로 되돌리기</button>` : `<button class="know" id="know">✅ 알아요 — 다시 안 보기</button>`}
     <div class="opts">
       <div class="optrow"><span class="lb">속도</span>${[1,1.25,1.5,2].map(v => chip("speed", v, v + "배")).join("")}</div>
+      <div class="optrow"><span class="lb">발음·성조</span>${chip("hidePr",false,"보이기")}${chip("hidePr",true,"가리기")}</div>
       <div class="optrow"><span class="lb">뜻 가리기</span>${chip("recall",false,"끄기")}${chip("recall",true,"켜기 (1초 뒤 공개)")}</div>
       <div class="optrow"><span class="lb">뜻 읽어주기</span>${chip("readKo",false,"끄기")}${chip("readKo",true,"한국어도 읽기")}</div>
     </div>
@@ -523,6 +529,7 @@ function renderPlay(){
     <p class="legend">성조 ${["0","1","2","3","4"].map(t => mark(t) + TN[t]).join(" &nbsp;")}</p>
     <p class="rlegend">중·고·저 = 자음 종류 · 생 = 끄는 소리 · 사 = 끊는 소리 (짧/길 = 모음 길이)<br>엑·토·뜨리·짯 = 성조 기호 · 고(ห)·중(อ) = 앞의 ห·อ가 자음 종류를 바꿈</p>`;
   fitTh();
+  app.querySelector("#flash").onclick = e => { if (!e.target.closest("#star")) e.currentTarget.classList.remove("hp"); };
   app.querySelector("#home").onclick = leave;
   app.querySelector("#pp").onclick = () => { PL.playing = !PL.playing; if (PL.playing) loop(); else stop(true); renderPlay(); };
   app.querySelector("#next").onclick = () => jump(1);
@@ -541,6 +548,7 @@ function renderPlay(){
     const k = b.dataset.k, raw = b.dataset.v; S[k] = raw === "true" ? true : raw === "false" ? false : Number(raw); save();
     if (NATIVE && PL && PL.playing) { stop(true); loop(); }
     app.querySelectorAll(`[data-k="${k}"]`).forEach(x => x.setAttribute("aria-pressed", x === b));
+    if (k === "hidePr") app.querySelector("#flash")?.classList.toggle("hp", S.hidePr);
   });
 }
 function fitTh(){ const e = app.querySelector(".fth"); if (!e) return; e.style.fontSize = "";
