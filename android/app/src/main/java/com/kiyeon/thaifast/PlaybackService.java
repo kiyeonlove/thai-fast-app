@@ -45,8 +45,8 @@ public class PlaybackService extends Service {
     static volatile PlaybackService current;
 
     static class Item {
-        final String f, ko, th;
-        Item(String f, String ko, String th) { this.f = f; this.ko = ko; this.th = th; }
+        final String f, ko, th, ex, exk;
+        Item(String f, String ko, String th, String ex, String exk) { this.f = f; this.ko = ko; this.th = th; this.ex = ex; this.exk = exk; }
     }
 
     static class Config {
@@ -56,6 +56,7 @@ public class PlaybackService extends Service {
         int reps = 1;
         boolean pair;
         int recallMs;
+        int exPlay; // 0 끄기, 1 예문 태국어, 2 예문 태국어+한국어
         String title = "";
     }
 
@@ -181,7 +182,14 @@ public class PlaybackService extends Service {
     void playTh(final int g) {
         if (g != gen) return;
         Item it = cfg.items.get(idx);
+        playFile(g, "public/audio/" + it.f + ".ogg", cfg.speed, 250, () -> afterTh(g));
+    }
+
+    /** 파일 하나 재생하고 끝나면 쉬었다가 next 실행 */
+    void playFile(final int g, String asset, float speed, long pauseMs, final Runnable next) {
+        if (g != gen) return;
         releaseMp();
+        final Runnable go = () -> { if (g == gen) next.run(); };
         try {
             MediaPlayer m = new MediaPlayer();
             mp = m;
@@ -189,16 +197,16 @@ public class PlaybackService extends Service {
                 .setUsage(AudioAttributes.USAGE_MEDIA)
                 .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
                 .build());
-            setSource(m, "public/audio/" + it.f + ".ogg");
-            m.setOnCompletionListener(x -> h.postDelayed(() -> afterTh(g), (long) (250 / cfg.speed)));
-            m.setOnErrorListener((x, what, extra) -> { h.post(() -> afterTh(g)); return true; });
+            setSource(m, asset);
+            m.setOnCompletionListener(x -> h.postDelayed(go, (long) (pauseMs / speed)));
+            m.setOnErrorListener((x, what, extra) -> { h.post(go); return true; });
             m.prepare();
-            if (Build.VERSION.SDK_INT >= 23 && cfg.speed != 1f) {
-                try { m.setPlaybackParams(m.getPlaybackParams().setSpeed(cfg.speed)); } catch (Exception ignored) { }
+            if (Build.VERSION.SDK_INT >= 23 && speed != 1f) {
+                try { m.setPlaybackParams(m.getPlaybackParams().setSpeed(speed)); } catch (Exception ignored) { }
             }
             if (!m.isPlaying()) m.start();
         } catch (Exception e) {
-            h.postDelayed(() -> afterTh(g), 800);
+            h.postDelayed(go, 800);
         }
     }
 
@@ -248,11 +256,33 @@ public class PlaybackService extends Service {
             h.postDelayed(() -> playTh(g), gap);
             return;
         }
+        h.postDelayed(() -> playEx(g), gap + (long) (300 / cfg.speed));
+    }
+
+    /** 예문: 태국어 → (한국어) → 다음 단어 */
+    void playEx(final int g) {
+        if (g != gen || cfg == null) return;
+        Item it = cfg.items.get(idx);
+        if (cfg.exPlay > 0 && it.ex != null && !it.ex.isEmpty()) {
+            JSObject d = new JSObject(); d.put("i", idx); d.put("part", "th");
+            PlayerPlugin.emit("ex", d);
+            playFile(g, "public/" + it.ex, cfg.speed, 250, () -> {
+                if (cfg.exPlay == 2 && it.exk != null && !it.exk.isEmpty()) {
+                    JSObject d2 = new JSObject(); d2.put("i", idx); d2.put("part", "ko");
+                    PlayerPlugin.emit("ex", d2);
+                    float ks = Math.min(cfg.speed, 1.5f);
+                    playFile(g, "public/" + it.exk, ks, 0, () -> nextItem(g));
+                } else nextItem(g);
+            });
+        } else nextItem(g);
+    }
+
+    void nextItem(final int g) {
         h.postDelayed(() -> {
             if (g != gen) return;
             idx++;
             startItem(g);
-        }, gap + (long) (700 / cfg.speed));
+        }, (long) (700 / cfg.speed));
     }
 
     /** 멈춤. tell=true면 화면(JS)에 멈췄다고 알려요 */

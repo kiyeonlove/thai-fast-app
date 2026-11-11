@@ -35,7 +35,7 @@ public class PlayerPlugin extends Plugin {
             if (arr != null) {
                 for (int i = 0; i < arr.length(); i++) {
                     JSONObject o = arr.getJSONObject(i);
-                    items.add(new PlaybackService.Item(o.optString("f"), o.optString("ko"), o.optString("th")));
+                    items.add(new PlaybackService.Item(o.optString("f"), o.optString("ko"), o.optString("th"), o.optString("ex"), o.optString("exk")));
                 }
             }
             PlaybackService.Config cfg = new PlaybackService.Config();
@@ -48,6 +48,8 @@ public class PlayerPlugin extends Plugin {
             cfg.pair = Boolean.TRUE.equals(call.getBoolean("pair", false));
             Integer rec = call.getInt("recallMs", 0);
             cfg.recallMs = rec == null ? 0 : rec;
+            Integer exp = call.getInt("exPlay", 0);
+            cfg.exPlay = exp == null ? 0 : exp;
             cfg.title = call.getString("title", "태국어 빠른 암기");
             PlaybackService.pending = cfg;
             Intent it = new Intent(getContext(), PlaybackService.class);
