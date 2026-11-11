@@ -50,6 +50,8 @@ public class PlayerPlugin extends Plugin {
             cfg.recallMs = rec == null ? 0 : rec;
             Integer exp = call.getInt("exPlay", 0);
             cfg.exPlay = exp == null ? 0 : exp;
+            Integer exr = call.getInt("exRep", 1);
+            cfg.exRep = exr == null ? 1 : exr;
             cfg.title = call.getString("title", "태국어 빠른 암기");
             PlaybackService.pending = cfg;
             Intent it = new Intent(getContext(), PlaybackService.class);

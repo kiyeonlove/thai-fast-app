@@ -57,6 +57,7 @@ public class PlaybackService extends Service {
         boolean pair;
         int recallMs;
         int exPlay; // 0 끄기, 1 예문 태국어, 2 예문 태국어+한국어
+        int exRep = 1; // 예문 반복 횟수
         String title = "";
     }
 
@@ -260,9 +261,12 @@ public class PlaybackService extends Service {
     }
 
     /** 예문: 태국어 → (한국어) → 다음 단어 */
-    void playEx(final int g) {
+    void playEx(final int g) { playEx(g, 0); }
+
+    void playEx(final int g, final int rep) {
         if (g != gen || cfg == null) return;
         Item it = cfg.items.get(idx);
+        if (rep >= Math.max(1, cfg.exRep)) { nextItem(g); return; }
         if (cfg.exPlay > 0 && it.ex != null && !it.ex.isEmpty()) {
             JSObject d = new JSObject(); d.put("i", idx); d.put("part", "th");
             PlayerPlugin.emit("ex", d);
@@ -271,8 +275,8 @@ public class PlaybackService extends Service {
                     JSObject d2 = new JSObject(); d2.put("i", idx); d2.put("part", "ko");
                     PlayerPlugin.emit("ex", d2);
                     float ks = Math.min(cfg.speed, 1.5f);
-                    playFile(g, "public/" + it.exk, ks, 0, () -> nextItem(g));
-                } else nextItem(g);
+                    playFile(g, "public/" + it.exk, ks, 300, () -> playEx(g, rep + 1));
+                } else h.postDelayed(() -> playEx(g, rep + 1), (long) (100 / cfg.speed));
             });
         } else nextItem(g);
     }

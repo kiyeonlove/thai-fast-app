@@ -225,7 +225,7 @@ const CATS = [
  {id:"home", name:"집안 물건", total:712}, {id:"p1", name:"초1", total:600}, {id:"p2", name:"초2", total:780},
  {id:"p3", name:"초3", total:1200}, {id:"p4", name:"초4", total:1400}, {id:"p5", name:"초5", total:1600}, {id:"p6", name:"초6", total:1800}, {id:"m1", name:"중1", total:1800}, {id:"m2", name:"중2", total:1800}, {id:"m3", name:"중3", total:1800},
 ];
-const SET = 100, SETS = 5, PER_DAY = SET * SETS, START = "2026-10-23";
+const SET = 100, SETS = 5, PER_DAY = SET * SETS, START = "2026-11-12";
 let DAYS = 16, LIST = WORDS;   // LIST = 아는 단어를 뺀 외울 단어
 const GRAND = CATS.reduce((a,c)=>a+c.total,0);
 const P = {"0":"M1 5 H9","1":"M1 2 L9 8","2":"M1 8 L5 2 L9 8","3":"M1 8 L9 2","4":"M1 2 L5 8 L9 2"};
@@ -247,16 +247,17 @@ const dayWords = d => LIST.slice((d - 1) * PER_DAY, d * PER_DAY);
 
 /* ---------- 저장 ---------- */
 const LS = "thai-fast-v1";
-const blank = () => ({updatedAt:0, seen:{}, stars:{}, views:{}, rounds:{}, speed:1, reps:1, recall:false, hidePr:false, readKo:false, exPlay:2, known:{}, checked:{}, pos:{}});
+const blank = () => ({updatedAt:0, seen:{}, stars:{}, views:{}, rounds:{}, speed:2, reps:1, recall:false, hidePr:false, readKo:true, exPlay:2, exRep:3, known:{}, checked:{}, pos:{}});
 function migrate(){ for (const o of [S.seen, S.stars]) for (const k of Object.keys(o)) if (/^(home|p\d):\d+$/.test(k)) {
   const [c, n] = k.split(":"); const w = WORDS.find(x => x.c === c && x.n === +n); if (w) o[w.th] ||= o[k]; delete o[k]; }
   S.views ||= {}; S.rounds ||= {}; S.known ||= {}; S.checked ||= {}; S.pos ||= {};
-  if (S.resetV !== 2) { S.seen = {}; S.views = {}; S.rounds = {}; S.pos = {}; S.resetV = 2; S.updatedAt = Date.now(); try { localStorage.setItem(LS, JSON.stringify(S)); } catch(e) {} window.__resetPending = true; }
+  if (S.resetV !== 3) { S.seen = {}; S.views = {}; S.rounds = {}; S.pos = {}; S.resetV = 3; S.updatedAt = Date.now(); try { localStorage.setItem(LS, JSON.stringify(S)); } catch(e) {} window.__resetPending = true; }
+  if (S.defV !== 3) { Object.assign(S, {speed:2, hidePr:false, recall:false, readKo:true, exPlay:2, exRep:3, defV:3}); }
   refreshList(); }
 /* 한 세트를 3번 도는 순서: ① 2배속 → ② 1배속 → ③ 뜻 읽어주며 */
-const PASSES = [{n:"① 2배속 듣기", s:"①2배속", speed:2, readKo:false}, {n:"② 1배속 듣기", s:"②1배속", speed:1, readKo:false}, {n:"③ 뜻 들으며 듣기", s:"③뜻듣기", speed:1, readKo:true}];
+const PASSES = [{n:"① 1회차", s:"①1회차"}, {n:"② 2회차", s:"②2회차"}, {n:"③ 3회차", s:"③3회차"}];
 const passOf = key => PASSES[Math.min(S.rounds[key] || 0, PASSES.length - 1)];
-function applyPass(key){ const p = passOf(key); S.speed = p.speed; S.readKo = p.readKo; S.recall = false; save(); return p; }
+function applyPass(key){ return passOf(key); }
 let POS = new Map();
 function refreshList(){
   // 이미 본 단어를 앞쪽 날짜에 고정 → 단어를 빼거나 순서가 바뀌어도 본 단어가 뒤 세트에 다시 나오지 않음
@@ -345,12 +346,26 @@ function say(text, lang, rate){
 }
 const wait = ms => new Promise(r => setTimeout(r, ms));
 /* 예문 */
-const EX_PARTS = 2;
+/* 예문 v2 */
+const EX_CHUNKS = 10;   // 예문이 있는 덩어리 수 (100개씩)
 let EX = {};
-for (let i = 1; i <= EX_PARTS; i++) fetch(`ex_${i}.json`).then(r => r.ok ? r.json() : null).then(j => {
-  if (!j) return; Object.assign(EX, j);
-  const b = typeof app !== "undefined" && app.querySelector("#exs"); if (b && !b.innerHTML && EX[b.dataset.th]) b.outerHTML = exBlock(b.dataset.th);
-}).catch(() => {});
+const EXL = {};         // 덩어리 번호 → 불러오는 중인 Promise
+let WIDX = null;
+const exChunk = th => { WIDX ||= new Map(WORDS.map((w, i) => [w.th, i])); const i = WIDX.get(th); return i == null ? -1 : Math.floor(i / 100); };
+function loadExChunk(c){
+  if (c < 0 || c >= EX_CHUNKS) return Promise.resolve();
+  return EXL[c] ||= (async () => {
+    for (let t = 0; t < 4; t++) {
+      try { const r = await fetch(`exc${c}.json`); if (r.ok) { Object.assign(EX, await r.json()); exRefresh(); return; } } catch(e) {}
+      await wait(1500 * (t + 1));
+    }
+    delete EXL[c];
+  })();
+}
+function exRefresh(){ const b = typeof app !== "undefined" && app.querySelector("#exs"); if (b && !b.innerHTML && EX[b.dataset.th]) { b.outerHTML = exBlock(b.dataset.th); } }
+function needEx(th, ms){ if (EX[th]) return Promise.resolve(); const pr = loadExChunk(exChunk(th)); return ms ? Promise.race([pr, wait(ms)]) : pr; }
+if (window.Capacitor?.isNativePlatform?.()) setTimeout(() => { for (let c = 0; c < EX_CHUNKS; c++) loadExChunk(c); }, 0);
+function preloadEx(list){ const cs = [...new Set(list.map(w => exChunk(w.th)))].filter(c => c >= 0 && c < EX_CHUNKS); (async () => { for (const c of cs) await loadExChunk(c); })(); }
 function playB64(b64, mime, speed){
   return new Promise(res => {
     let done = false; const fin = () => { if (!done) { done = true; res(); } };
@@ -483,6 +498,7 @@ function renderHome(){
 let NEXT_PAIR = 0;
 function startPlay(list, label, key, knownMode){
   if (!list.length) return;
+  preloadEx(list);
   const at = key && S.pos[key] ? Math.min(S.pos[key], list.length - 1) : 0;
   if (key && !at) label += " · " + applyPass(key).n; else if (key) label += " · " + passOf(key).n;
   PL = {list, label, key, i: at, playing: !knownMode && !at, token: 0, knownMode: !!knownMode, pair: NEXT_PAIR}; NEXT_PAIR = 0;
@@ -567,13 +583,14 @@ function renderPlay(){
       <div class="optrow"><span class="lb">뜻 가리기</span>${chip("recall",false,"끄기")}${chip("recall",true,"켜기 (1초 뒤 공개)")}</div>
       <div class="optrow"><span class="lb">뜻 읽어주기</span>${chip("readKo",false,"끄기")}${chip("readKo",true,"한국어도 읽기")}</div>
       <div class="optrow"><span class="lb">예문 읽기</span>${chip("exPlay",0,"끄기")}${chip("exPlay",1,"태국어")}${chip("exPlay",2,"둘 다")}</div>
+      <div class="optrow"><span class="lb">예문 반복</span>${chip("exRep",1,"1번")}${chip("exRep",2,"2번")}${chip("exRep",3,"3번")}</div>
     </div>
     ${thVoice || (AUDIO && AUDIO[w.th]) ? "" : `<div class="vbox bad" style="margin-top:12px">🔇 이 단어는 녹음된 발음을 아직 받는 중이라 소리 없이 넘어가요.</div>`}
     <p class="legend">성조 ${["0","1","2","3","4"].map(t => mark(t) + TN[t]).join(" &nbsp;")}</p>
     <p class="rlegend">중·고·저 = 자음 종류 · 생 = 끄는 소리 · 사 = 끊는 소리 (짧/길 = 모음 길이)<br>엑·토·뜨리·짯 = 성조 기호 · 고(ห)·중(อ) = 앞의 ห·อ가 자음 종류를 바꿈</p>`;
   fitTh();
   app.querySelector("#flash").onclick = e => { if (!e.target.closest("#star")) e.currentTarget.classList.remove("hp"); };
-  exWire(w);
+  exWire(w); needEx(w.th);
   app.querySelector("#home").onclick = leave;
   app.querySelector("#pp").onclick = () => { PL.playing = !PL.playing; if (PL.playing) loop(); else stop(true); renderPlay(); };
   app.querySelector("#next").onclick = () => jump(1);
@@ -621,7 +638,7 @@ setInterval(() => { const on = view === "play" && PL && PL.playing; if (on !== !
 function nativeLoop(){
   ++PL.token; renderPlay(); PL.base = PL.i;
   const items = PL.list.slice(PL.i).map(w => ({f: String(AUDIO[w.th]), ko: w.ko, th: w.th, ex: (EX[w.th] && EX[w.th].a) || "", exk: (EX[w.th] && EX[w.th].ka) || ""}));
-  Player.start({items, speed: S.speed, readKo: !!S.readKo, exPlay: S.exPlay || 0, reps: PL.pair || 1, pair: !!PL.pair, recallMs: S.recall ? 1000 : 0, title: PL.label}).catch(() => {});
+  Player.start({items, speed: S.speed, readKo: !!S.readKo, exPlay: S.exPlay || 0, exRep: S.exRep || 1, reps: PL.pair || 1, pair: !!PL.pair, recallMs: S.recall ? 1000 : 0, title: PL.label}).catch(() => {});
 }
 if (NATIVE) {
   Player.addListener("item", d => {
@@ -655,7 +672,9 @@ async function loop(){
       await wait(250 / sp);
       if (PL.pair || S.readKo) { await say(w.ko, "ko-KR", 1.0 * sp); if (my !== PL.token) return; if (PL.pair) await wait(350 / sp); }
     }
-    if (S.exPlay && EX[w.th]) {
+    if (S.exPlay) await needEx(w.th, 6000);
+    if (my !== PL.token) return;
+    if (S.exPlay && EX[w.th]) for (let r = 0; r < (S.exRep || 1); r++) {
       await wait(300 / sp); if (my !== PL.token) return;
       app.querySelector("#exa")?.classList.add("on");
       await playExTh(w.th, sp); if (my !== PL.token) return;
@@ -724,7 +743,7 @@ function renderSort(){
     <p class="hint">${A ? (A.ok ? "✅ 맞았어요! 아는 단어로 뺐어요" : "외울 단어로 남겨 둘게요") : `뜻을 고르면 맞힌 단어는 빠지고, 틀리거나 "몰라요"면 외울 목록에 남아요.`}<br>지금까지 뺀 단어 ${knownN.toLocaleString()}개 · 키보드: 1~4 고르기, 0 몰라요, ↑ 되돌리기</p>`;
   app.querySelector("#home").onclick = leave;
   app.querySelectorAll("[data-q]").forEach(b => b.onclick = () => answer(+b.dataset.q));
-  exWire(w);
+  exWire(w); needEx(w.th);
   app.querySelector("#no").onclick = () => answer(-1);
   app.querySelector("#undo").onclick = sortUndo;
   app.querySelector("#again").onclick = () => playTh(w.th, 1);
