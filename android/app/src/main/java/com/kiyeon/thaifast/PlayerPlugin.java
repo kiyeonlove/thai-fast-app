@@ -35,7 +35,7 @@ public class PlayerPlugin extends Plugin {
             if (arr != null) {
                 for (int i = 0; i < arr.length(); i++) {
                     JSONObject o = arr.getJSONObject(i);
-                    items.add(new PlaybackService.Item(o.optString("f"), o.optString("ko"), o.optString("th"), o.optString("ex"), o.optString("exk")));
+                    items.add(new PlaybackService.Item(o.optString("f"), o.optString("ko"), o.optString("th"), o.optString("ex"), o.optString("exk"), o.optString("exkt")));
                 }
             }
             PlaybackService.Config cfg = new PlaybackService.Config();

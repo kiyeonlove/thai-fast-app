@@ -347,7 +347,7 @@ function say(text, lang, rate){
 const wait = ms => new Promise(r => setTimeout(r, ms));
 /* 예문 */
 /* 예문 v2 */
-const EX_CHUNKS = 10;   // 예문이 있는 덩어리 수 (100개씩)
+const EX_CHUNKS = 80;   // 예문이 있는 덩어리 수 (100개씩)
 let EX = {};
 const EXL = {};         // 덩어리 번호 → 불러오는 중인 Promise
 let WIDX = null;
@@ -639,7 +639,7 @@ async function keepAwake(on){
 setInterval(() => { const on = view === "play" && PL && PL.playing; if (on !== !!WL && !document.hidden) keepAwake(on); }, 2000);
 function nativeLoop(){
   ++PL.token; renderPlay(); PL.base = PL.i;
-  const items = PL.list.slice(PL.i).map(w => ({f: String(AUDIO[w.th]), ko: w.ko, th: w.th, ex: (EX[w.th] && EX[w.th].a) || "", exk: (EX[w.th] && EX[w.th].ka) || ""}));
+  const items = PL.list.slice(PL.i).map(w => ({f: String(AUDIO[w.th]), ko: w.ko, th: w.th, ex: (EX[w.th] && EX[w.th].a) || "", exk: (EX[w.th] && EX[w.th].ka) || "", exkt: (EX[w.th] && EX[w.th].k) || ""}));
   Player.start({items, speed: S.speed, readKo: !!S.readKo, exPlay: S.exPlay || 0, exRep: S.exRep || 1, reps: PL.pair || 1, pair: !!PL.pair, recallMs: S.recall ? 1000 : 0, title: PL.label}).catch(() => {});
 }
 if (NATIVE) {

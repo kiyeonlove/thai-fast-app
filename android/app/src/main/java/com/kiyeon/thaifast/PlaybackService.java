@@ -45,8 +45,8 @@ public class PlaybackService extends Service {
     static volatile PlaybackService current;
 
     static class Item {
-        final String f, ko, th, ex, exk;
-        Item(String f, String ko, String th, String ex, String exk) { this.f = f; this.ko = ko; this.th = th; this.ex = ex; this.exk = exk; }
+        final String f, ko, th, ex, exk, exkt;
+        Item(String f, String ko, String th, String ex, String exk, String exkt) { this.f = f; this.ko = ko; this.th = th; this.ex = ex; this.exk = exk; this.exkt = exkt; }
     }
 
     static class Config {
@@ -94,8 +94,8 @@ public class PlaybackService extends Service {
                 tts.setLanguage(Locale.KOREAN);
                 tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
                     @Override public void onStart(String id) { }
-                    @Override public void onDone(String id) { h.post(() -> afterKo(id)); }
-                    @Override public void onError(String id) { h.post(() -> afterKo(id)); }
+                    @Override public void onDone(String id) { h.post(() -> ttsDone(id)); }
+                    @Override public void onError(String id) { h.post(() -> ttsDone(id)); }
                 });
                 ttsReady = true;
             }
@@ -247,6 +247,20 @@ public class PlaybackService extends Service {
         }
     }
 
+    /** 기기 음성 끝: g숫자 = 단어 뜻, x숫자_반복 = 예문 한국어 */
+    void ttsDone(String id) {
+        if (id != null && id.startsWith("x")) {
+            try {
+                String[] p = id.substring(1).split("_");
+                final int g = Integer.parseInt(p[0]), r = Integer.parseInt(p[1]);
+                if (g != gen || cfg == null) return;
+                h.postDelayed(() -> playEx(g, r + 1), (long) (300 / cfg.speed));
+            } catch (Exception e) { }
+            return;
+        }
+        afterKo(id);
+    }
+
     void afterKo(String id) {
         final int g;
         try { g = Integer.parseInt(id.substring(1)); } catch (Exception e) { return; }
@@ -276,6 +290,15 @@ public class PlaybackService extends Service {
                     PlayerPlugin.emit("ex", d2);
                     float ks = Math.min(cfg.speed, 1.5f);
                     playFile(g, "public/" + it.exk, ks, 300, () -> playEx(g, rep + 1));
+                } else if (cfg.exPlay == 2 && ttsReady && it.exkt != null && !it.exkt.isEmpty()) {
+                    // 한국어 예문 녹음이 없으면 기기 음성으로 읽어요
+                    JSObject d2 = new JSObject(); d2.put("i", idx); d2.put("part", "ko");
+                    PlayerPlugin.emit("ex", d2);
+                    h.postDelayed(() -> {
+                        if (g != gen || cfg == null) return;
+                        tts.setSpeechRate(Math.min(cfg.speed, 1.5f));
+                        tts.speak(it.exkt, TextToSpeech.QUEUE_FLUSH, new Bundle(), "x" + g + "_" + rep);
+                    }, (long) (250 / cfg.speed));
                 } else h.postDelayed(() -> playEx(g, rep + 1), (long) (100 / cfg.speed));
             });
         } else nextItem(g);
