@@ -53,6 +53,9 @@ public class PlayerPlugin extends Plugin {
             Integer exr = call.getInt("exRep", 1);
             cfg.exRep = exr == null ? 1 : exr;
             cfg.title = call.getString("title", "태국어 빠른 암기");
+            Integer sg = call.getInt("speakGap", 0);
+            cfg.speakGap = sg == null ? 0 : sg;
+            cfg.shadow = Boolean.TRUE.equals(call.getBoolean("shadow", false));
             PlaybackService.pending = cfg;
             Intent it = new Intent(getContext(), PlaybackService.class);
             it.setAction(PlaybackService.ACTION_START);

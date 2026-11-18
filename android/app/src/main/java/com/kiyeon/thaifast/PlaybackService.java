@@ -58,6 +58,8 @@ public class PlaybackService extends Service {
         int recallMs;
         int exPlay; // 0 끄기, 1 예문 태국어, 2 예문 태국어+한국어
         int exRep = 1; // 예문 반복 횟수
+        int speakGap; // 말하기 모드: 한국어 뜻 → 이만큼 쉬며 태국어로 말해 보기 → 정답 (0이면 끔)
+        boolean shadow; // 태국어 소리 뒤에 그 길이만큼 쉬어서 따라 말할 틈 주기
         String title = "";
     }
 
@@ -176,14 +178,37 @@ public class PlaybackService extends Service {
         try {
             ((NotificationManager) getSystemService(NOTIFICATION_SERVICE)).notify(NOTE_ID, buildNote(cfg.title, it));
         } catch (Exception ignored) { }
-        if (cfg.recallMs > 0) h.postDelayed(() -> playTh(g), (long) (cfg.recallMs / cfg.speed));
+        if (cfg.speakGap > 0) speakKo(g, 0);
+        else if (cfg.recallMs > 0) h.postDelayed(() -> playTh(g), (long) (cfg.recallMs / cfg.speed));
         else playTh(g);
+    }
+
+    /** 말하기 모드: 한국어 뜻을 먼저 읽어요 (기기 음성이 준비될 때까지 잠깐 기다림) */
+    void speakKo(final int g, final int tries) {
+        if (g != gen || cfg == null) return;
+        Item it = cfg.items.get(idx);
+        if (!ttsReady && tries < 10) { h.postDelayed(() -> speakKo(g, tries + 1), 300); return; }
+        if (ttsReady && it.ko != null && !it.ko.isEmpty()) {
+            tts.setSpeechRate(Math.min(cfg.speed, 1.5f));
+            tts.speak(it.ko, TextToSpeech.QUEUE_FLUSH, new Bundle(), "k" + g);
+        } else afterAsk(g);
+    }
+
+    /** 뜻을 들은 뒤 태국어로 말해 볼 시간을 주고 정답을 들려줘요 */
+    void afterAsk(final int g) {
+        if (g != gen || cfg == null) return;
+        h.postDelayed(() -> {
+            if (g != gen || cfg == null) return;
+            JSObject d = new JSObject(); d.put("i", idx);
+            PlayerPlugin.emit("reveal", d);
+            playTh(g);
+        }, cfg.speakGap);
     }
 
     void playTh(final int g) {
         if (g != gen) return;
         Item it = cfg.items.get(idx);
-        playFile(g, "public/audio/" + it.f + ".ogg", cfg.speed, 250, () -> afterTh(g));
+        playFile(g, "public/audio/" + it.f + ".ogg", cfg.speed, cfg.shadow ? -1 : 250, () -> afterTh(g));
     }
 
     /** 파일 하나 재생하고 끝나면 쉬었다가 next 실행 */
@@ -199,7 +224,15 @@ public class PlaybackService extends Service {
                 .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
                 .build());
             setSource(m, asset);
-            m.setOnCompletionListener(x -> h.postDelayed(go, (long) (pauseMs / speed)));
+            m.setOnCompletionListener(x -> {
+                long p = pauseMs;
+                if (p < 0) { // 따라 말할 틈: 소리 길이 + 0.6초
+                    int dur = 1000;
+                    try { dur = x.getDuration(); } catch (Exception ignored) { }
+                    p = (long) (Math.max(600, dur) * 1.1f + 600);
+                    h.postDelayed(go, (long) (p / speed));
+                } else h.postDelayed(go, (long) (p / speed));
+            });
             m.setOnErrorListener((x, what, extra) -> { h.post(go); return true; });
             m.prepare();
             if (Build.VERSION.SDK_INT >= 23 && speed != 1f) {
@@ -233,7 +266,7 @@ public class PlaybackService extends Service {
     void afterTh(final int g) {
         if (g != gen) return;
         Item it = cfg.items.get(idx);
-        boolean wantKo = (cfg.pair || cfg.readKo) && it.ko != null && !it.ko.isEmpty();
+        boolean wantKo = cfg.speakGap <= 0 && (cfg.pair || cfg.readKo) && it.ko != null && !it.ko.isEmpty();
         if (wantKo && !ttsReady && ttsWait < 10) {
             ttsWait++;
             h.postDelayed(() -> afterTh(g), 300);
@@ -249,6 +282,10 @@ public class PlaybackService extends Service {
 
     /** 기기 음성 끝: g숫자 = 단어 뜻, x숫자_반복 = 예문 한국어 */
     void ttsDone(String id) {
+        if (id != null && id.startsWith("k")) {
+            try { afterAsk(Integer.parseInt(id.substring(1))); } catch (Exception e) { }
+            return;
+        }
         if (id != null && id.startsWith("x")) {
             try {
                 String[] p = id.substring(1).split("_");
@@ -284,7 +321,7 @@ public class PlaybackService extends Service {
         if (cfg.exPlay > 0 && it.ex != null && !it.ex.isEmpty()) {
             JSObject d = new JSObject(); d.put("i", idx); d.put("part", "th");
             PlayerPlugin.emit("ex", d);
-            playFile(g, "public/" + it.ex, cfg.speed, 250, () -> {
+            playFile(g, "public/" + it.ex, cfg.speed, cfg.shadow ? -1 : 250, () -> {
                 if (cfg.exPlay == 2 && it.exk != null && !it.exk.isEmpty()) {
                     JSObject d2 = new JSObject(); d2.put("i", idx); d2.put("part", "ko");
                     PlayerPlugin.emit("ex", d2);

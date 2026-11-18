@@ -215,7 +215,51 @@ h1{font-size:1.6rem;margin:0}
 .exs .eb button{border:1.5px solid var(--line);background:var(--bg);border-radius:999px;padding:2px 12px;font-weight:700;font-size:.82rem}
 .exs .eb button.on{border-color:var(--accent);color:var(--accent)}
 .flash.hp .exs .ep{visibility:hidden}
-@media (prefers-reduced-motion: reduce){.fko,.exs .ek{transition:none}}
+/* 학습 v2 */
+.learn{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:10px 12px;margin-bottom:10px}
+.learn .lt{font-weight:800;font-size:1.02rem;margin-bottom:7px}.learn .lt small{font-weight:500;color:var(--muted);font-size:.8rem;margin-left:4px}
+.lbtns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.lbtns button{border:1.5px solid var(--line);background:var(--bg);border-radius:12px;padding:11px 4px;font-weight:800;font-size:1rem;line-height:1.25;color:var(--fg)}
+.lbtns button small{display:block;font-weight:600;font-size:.76rem;color:var(--muted);margin-top:3px}
+.lbtns button.due{border-color:var(--accent);background:var(--accent-soft)}
+.learn .lm{font-size:.82rem;color:var(--muted);margin-top:7px}
+.qcard{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:16px 10px;text-align:center;min-height:170px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px}
+.qcard.isok{border-color:var(--good)}.qcard.isng{border-color:var(--bad)}
+.qk{font-size:.85rem;color:var(--muted);font-weight:700}
+.qko{font-size:1.8rem;font-weight:800;line-height:1.3}
+.qth{font-family:var(--f-th);font-weight:800;font-size:2.4rem;line-height:1.35}
+.qv{font-weight:800;font-size:1.15rem}.qv.ok{color:var(--good)}.qv.ng{color:var(--bad)}
+.qnx{font-size:.8rem;color:var(--muted)}
+.bigplay{border:0;background:var(--accent);color:var(--accent-fg);border-radius:999px;width:92px;height:92px;font-size:2.5rem;line-height:1}
+.quiz.thq button{font-family:var(--f-th);font-size:1.5rem;line-height:1.3}
+.quiz button .qr{display:block;font-family:var(--f-ui);font-size:.8rem;font-weight:600;opacity:.75}
+.spk{text-align:center;margin-top:12px}
+.bigmic{border:0;border-radius:999px;background:var(--good);color:#fff;font-size:1.3rem;font-weight:800;padding:16px 28px}
+.bigmic.on{animation:tfpulse 1s infinite}
+@keyframes tfpulse{50%{opacity:.55}}
+.mres{margin-top:8px;text-align:center;font-size:.98rem}
+.mres:empty{display:none}
+.mr{border-radius:12px;padding:8px 10px;border:2px solid var(--line);background:var(--card)}
+.mr.ok{border-color:var(--good);background:var(--good-soft)}.mr.mid{border-color:var(--star)}.mr.bad{border-color:var(--bad);background:var(--bad-soft)}
+.mr.live{border-color:var(--accent);animation:tfpulse 1.2s infinite}
+.mr .th{font-size:1.2rem}
+.qcard .mr{margin-top:6px;width:100%}
+.tones{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-top:12px}
+.tones button{border:3px solid var(--line);background:var(--card);border-radius:14px;padding:9px 2px;display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--fg);min-width:0}
+.tones button b{font-size:1rem}.tones button small{font-size:.7rem;color:var(--muted);line-height:1.2}
+.tones .bm{width:2.3em;height:2.3em}.tones .bm path{stroke:var(--tone)}
+.tones button.right{border-color:var(--good);background:var(--good-soft)}.tones button.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.pairs{margin-top:6px;display:flex;flex-direction:column;gap:6px;align-items:center}
+.pairs .chip{font-size:1rem}
+.mic2{display:flex;gap:10px;margin-top:10px}
+.mic2 button{flex:1;border:2px solid var(--good);background:var(--good-soft);color:var(--fg);border-radius:12px;padding:11px;font-size:1.02rem;font-weight:700}
+.mic2 button.on{border-color:var(--bad);background:var(--bad-soft)}
+.flash.sp .fth,.flash.sp .fsy,.flash.sp .fkr,.flash.sp .xnote,.flash.sp .parts,.flash.sp .exs,.flash.sp .hph{display:none}
+.flash.sp{min-height:230px}
+.flash.sp .fko{order:-1;font-size:1.9rem;opacity:1}
+.flash.sp::before{content:"🗣 태국어로 말해 보세요";order:-2;font-size:.95rem;font-weight:700;color:var(--good)}
+.optrow .lb small{display:block;font-weight:500;font-size:.72rem}
+@media (prefers-reduced-motion: reduce){.fko,.exs .ek{transition:none}.bigmic.on,.mr.live{animation:none}}
 </style>
 <div class="wrap" id="app"></div>
 <script src="capacitor.js"></script>
@@ -247,10 +291,10 @@ const dayWords = d => LIST.slice((d - 1) * PER_DAY, d * PER_DAY);
 
 /* ---------- 저장 ---------- */
 const LS = "thai-fast-v1";
-const blank = () => ({updatedAt:0, seen:{}, stars:{}, views:{}, rounds:{}, speed:2, reps:1, recall:false, hidePr:false, readKo:true, exPlay:2, exRep:3, known:{}, checked:{}, pos:{}});
+const blank = () => ({updatedAt:0, seen:{}, stars:{}, views:{}, rounds:{}, speed:2, reps:1, recall:false, hidePr:false, readKo:true, exPlay:2, exRep:3, known:{}, checked:{}, pos:{}, srs:{}, act:{}, tone:{}, newPerDay:50, qKind:"mix", mode:"listen", spGap:3, shadow:false});
 function migrate(){ for (const o of [S.seen, S.stars]) for (const k of Object.keys(o)) if (/^(home|p\d):\d+$/.test(k)) {
   const [c, n] = k.split(":"); const w = WORDS.find(x => x.c === c && x.n === +n); if (w) o[w.th] ||= o[k]; delete o[k]; }
-  S.views ||= {}; S.rounds ||= {}; S.known ||= {}; S.checked ||= {}; S.pos ||= {};
+  S.views ||= {}; S.rounds ||= {}; S.srs ||= {}; S.act ||= {}; S.tone ||= {}; S.newPerDay ||= 50; S.spGap ||= 3; S.mode ||= "listen"; S.qKind ||= "mix"; S.known ||= {}; S.checked ||= {}; S.pos ||= {};
   if (S.resetV !== 3) { S.seen = {}; S.views = {}; S.rounds = {}; S.pos = {}; S.resetV = 3; S.updatedAt = Date.now(); try { localStorage.setItem(LS, JSON.stringify(S)); } catch(e) {} window.__resetPending = true; }
   if (S.defV !== 3) { Object.assign(S, {speed:2, hidePr:false, recall:false, readKo:true, exPlay:2, exRep:3, defV:3}); }
   refreshList(); }
@@ -388,7 +432,7 @@ function exBlock(th){
 /* ---------- 화면 ---------- */
 const app = document.getElementById("app");
 let view = "home", PL = null;
-function render(){ if (view === "home") renderHome(); else if (view === "play") renderPlay(); else if (view === "sort") renderSort(); }
+function render(){ if (view === "home") renderHome(); else if (view === "play") renderPlay(); else if (view === "sort") renderSort(); else if (view === "quiz") renderQuiz(); else if (view === "tone") renderTone(); }
 
 function setStat(d, k){
   const ws = setWords(d, k), key = skey(d, k);
@@ -460,6 +504,7 @@ function renderHome(){
       <span class="chp">외울 단어 <b>${LIST.length.toLocaleString()}</b></span><span class="chp">본 단어 <b>${totalUniq.toLocaleString()}</b></span><span class="chp">누적 <b>${totalViews.toLocaleString()}</b></span><span class="chp">⭐ <b>${stars.length}</b></span>
       ${aOk ? `<button class="chp ok" id="vtest">🔊 발음 ${aN.toLocaleString()} · 시험</button>` : ""}
     </div>
+    ${learnBox()}
     ${aOk ? "" : voiceBox()}
     <div class="kb"><div class="kt">✅ 뺀 단어 <b>${knownN.toLocaleString()}</b><br><small>남은 고르기 ${unchecked.toLocaleString()}</small></div>
       <button class="hb" id="sort" ${unchecked ? "" : "disabled"}>${Object.keys(S.checked).length || knownN ? "이어서 고르기" : "고르기 시작"}</button>
@@ -476,16 +521,18 @@ function renderHome(){
     ${calendar(ti)}
     <h2 class="h2">💡 더 빨리 외우는 요령</h2>
     <div class="ideas"><ol>
-      <li>한 세트(100개)를 <b>① 2배속 → ② 1배속 → ③ 뜻 들으며</b> 세 번 돌아요. 세트를 누르면 순서에 맞는 속도로 자동으로 바뀌고, 세트 칸에 다음 차례가 보여요.</li>
-      <li><b>뜻 가리기</b>를 켜고 뜻이 나오기 전 1초 동안 먼저 떠올려 보세요.</li>
-      <li>태국어 소리를 <b>따라 말하면</b> 눈·귀·입을 같이 써서 훨씬 빨리 외워져요.</li>
-      <li>모르는 단어는 <b>⭐</b>를 눌러 두고 자기 전에 ⭐만 한 번 더 보세요.</li>
-      <li>다음 날 아침에 <b>어제 세트를 2배속으로 훑으면</b> 잠자는 동안 정리된 기억이 굳어요.</li>
+      <li><b>보기 → 꺼내기 → 말하기</b> 순서가 제일 빨라요. 새 세트를 본 뒤 <b>🧠 복습 퀴즈</b>로 떠올려 보고, <b>🗣 말하기</b>로 입으로 내보세요.</li>
+      <li>🧠 퀴즈는 <b>잊을 즈음에</b> 다시 물어봐요(간격 반복). 매일 아침 "복습"을 0으로 만드는 게 핵심이에요.</li>
+      <li>🗣 말하기: 한국어 뜻 → 2~3초 안에 태국어로 말하기 → 정답 듣기. 같은 단어가 3개·10개 뒤에 다시 나와요. 이어폰 끼고 걸으면서 해도 돼요.</li>
+      <li>🔁 <b>따라 말할 틈</b>을 켜면 태국어 소리 뒤에 같은 길이만큼 쉬어 줘요. 들리는 대로 바로 따라 하세요(섀도잉).</li>
+      <li>🎤 <b>말해보기</b>로 내 발음이 태국어로 알아들리는지 확인하고, ⏺ <b>녹음 비교</b>로 높낮이를 원어민과 맞춰 보세요.</li>
+      <li>🎵 성조는 귀로 먼저 구별돼야 입으로도 나와요. 하루 20문제(5분)면 충분해요.</li>
+      <li>세트 듣기는 <b>① 2배속 → ② 1배속 → ③ 뜻 들으며</b> 세 번. 모르는 단어는 ⭐ — 퀴즈에서 틀린 단어도 ⭐에 자동으로 들어가요.</li>
     </ol></div>
     <p class="note">기록 저장: ${storeLabel}</p></div>`;
   app.querySelector("#vtest")?.addEventListener("click", () => playTh(AUDIO ? "สวัสดี" in AUDIO ? "สวัสดี" : WORDS[0].th : "สวัสดีครับ", 1));
   app.querySelector("#sort").onclick = startSort;
-  bindRange();
+  bindRange(); bindLearn();
   app.querySelectorAll("[data-day]").forEach(b => b.onclick = () => { const d = +b.dataset.day; selDay = selDay === d ? null : d; const y = window.scrollY; renderHome(); window.scrollTo(0, y); });
   app.querySelector("#knownlist").onclick = () => startPlay(WORDS.filter(w => S.known[wid(w)]), "✅ 뺀 단어", null, true);
   app.querySelector("#stars").onclick = () => startPlay(stars, "⭐ 헷갈린 단어", null);
@@ -501,7 +548,7 @@ function startPlay(list, label, key, knownMode){
   preloadEx(list);
   const at = key && S.pos[key] ? Math.min(S.pos[key], list.length - 1) : 0;
   if (key && !at) label += " · " + applyPass(key).n; else if (key) label += " · " + passOf(key).n;
-  PL = {list, label, key, i: at, playing: !knownMode && !at, token: 0, knownMode: !!knownMode, pair: NEXT_PAIR}; NEXT_PAIR = 0;
+  PL = {list, label, key, i: at, playing: !knownMode && !at, token: 0, knownMode: !!knownMode, pair: NEXT_PAIR, speak: NEXT_SPEAK, rv: -1}; NEXT_PAIR = 0; NEXT_SPEAK = undefined;
   view = "play"; pushView(); render(); loop();
 }
 const BYTH = new Map(WORDS.map(w => [w.th, w]));
@@ -557,7 +604,7 @@ function parts(w){
   return `<div class="parts ${S.recall ? "hide" : ""}" id="parts">${w.p.map(box).join('<div class="plus">+</div>')}</div>`;
 }
 function card(w){
-  return `<div class="flash ${S.hidePr ? "hp" : ""}" id="flash" aria-live="polite">
+  return `<div class="flash ${S.hidePr ? "hp" : ""} ${view === "play" && spOn() && PL.rv !== PL.i ? "sp" : ""}" id="flash" aria-live="polite">
     <span class="cat">${(POS.get(w.th) || w.g + 1)}번 · ${CATS.find(c => c.id === w.c).name}</span>
     <button class="star" id="star" aria-pressed="${!!S.stars[wid(w)]}" aria-label="헷갈린 단어 표시">★</button>
     <div class="th fth">${esc(w.th)}</div>
@@ -579,7 +626,11 @@ function renderPlay(){
     ${card(w)}
     <div class="ctrl"><button id="prev">◀ 이전</button><button class="play" id="pp">${PL.playing ? "⏸ 멈춤" : "▶ 재생"}</button><button id="next">다음 ▶</button></div>
     ${S.known[wid(w)] ? `<button class="know undo" id="know">↩ 다시 외울 단어로 되돌리기</button>` : `<button class="know" id="know">✅ 알아요 — 다시 안 보기</button>`}
+    <div class="mic2"><button id="mic">🎤 말해보기</button><button id="rec">⏺ 녹음 비교</button></div><div class="mres" id="mres"></div>
     <div class="opts">
+      <div class="optrow"><span class="lb">학습 방식</span><button class="chip" data-mode="listen" aria-pressed="${!spOn()}">👂 듣기</button><button class="chip" data-mode="speak" aria-pressed="${spOn()}">🗣 말하기<small> 뜻→태국어</small></button></div>
+      ${spOn() ? `<div class="optrow"><span class="lb">말할 시간</span>${[2, 3, 5].map(v => chip("spGap", v, v + "초")).join("")}</div>` : ""}
+      <div class="optrow"><span class="lb">따라 말할 틈</span>${chip("shadow", false, "끄기")}${chip("shadow", true, "켜기 (소리 길이만큼 쉬기)")}</div>
       <div class="optrow"><span class="lb">속도</span>${[1,1.25,1.5,2].map(v => chip("speed", v, v + "배")).join("")}</div>
       <div class="optrow"><span class="lb">발음·성조</span>${chip("hidePr",false,"보이기")}${chip("hidePr",true,"가리기")}</div>
       <div class="optrow"><span class="lb">뜻 가리기</span>${chip("recall",false,"끄기")}${chip("recall",true,"켜기 (1초 뒤 공개)")}</div>
@@ -591,7 +642,12 @@ function renderPlay(){
     <p class="legend">성조 ${["0","1","2","3","4"].map(t => mark(t) + TN[t]).join(" &nbsp;")}</p>
     <p class="rlegend">중·고·저 = 자음 종류 · 생 = 끄는 소리 · 사 = 끊는 소리 (짧/길 = 모음 길이)<br>엑·토·뜨리·짯 = 성조 기호 · 고(ห)·중(อ) = 앞의 ห·อ가 자음 종류를 바꿈</p>`;
   fitTh();
-  app.querySelector("#flash").onclick = e => { if (!e.target.closest("#star")) e.currentTarget.classList.remove("hp"); };
+  app.querySelector("#flash").onclick = e => { if (!e.target.closest("#star")) { e.currentTarget.classList.remove("hp"); if (e.currentTarget.classList.contains("sp")) { PL.rv = PL.i; e.currentTarget.classList.remove("sp"); } } };
+  app.querySelector("#mic").onclick = () => { if (PL.playing) { PL.playing = false; stop(true); renderPlay(); } const b = app.querySelector("#mic"); b.classList.add("on"); PL.rv = PL.i; app.querySelector("#flash")?.classList.remove("sp");
+    micTry(w, app.querySelector("#mres"), j => { app.querySelector("#mic")?.classList.remove("on"); if (j >= 0) logAct(); if (j === 0) playTh(w.th, 1); }); };
+  app.querySelector("#rec").onclick = e => { if (PL.playing) { PL.playing = false; stop(true); renderPlay(); } recToggle(app.querySelector("#rec"), w, app.querySelector("#mres")); };
+  app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { const on = b.dataset.mode === "speak"; S.mode = on ? "speak" : "listen"; PL.speak = on; save();
+    const was = PL.playing; stop(true); PL.playing = was; renderPlay(); if (was) loop(); });
   exWire(w); needEx(w.th);
   app.querySelector("#home").onclick = leave;
   app.querySelector("#pp").onclick = () => { PL.playing = !PL.playing; if (PL.playing) loop(); else stop(true); renderPlay(); };
@@ -610,6 +666,7 @@ function renderPlay(){
   app.querySelectorAll("[data-k]").forEach(b => b.onclick = () => {
     const k = b.dataset.k, raw = b.dataset.v; S[k] = raw === "true" ? true : raw === "false" ? false : Number(raw); save();
     if (NATIVE && PL && PL.playing) { stop(true); loop(); }
+    if (k === "shadow" || k === "spGap") { renderPlay(); return; }
     app.querySelectorAll(`[data-k="${k}"]`).forEach(x => x.setAttribute("aria-pressed", x === b));
     if (k === "hidePr") app.querySelector("#flash")?.classList.toggle("hp", S.hidePr);
   });
@@ -640,16 +697,17 @@ setInterval(() => { const on = view === "play" && PL && PL.playing; if (on !== !
 function nativeLoop(){
   ++PL.token; renderPlay(); PL.base = PL.i;
   const items = PL.list.slice(PL.i).map(w => ({f: String(AUDIO[w.th]), ko: w.ko, th: w.th, ex: (EX[w.th] && EX[w.th].a) || "", exk: (EX[w.th] && EX[w.th].ka) || "", exkt: (EX[w.th] && EX[w.th].k) || ""}));
-  Player.start({items, speed: S.speed, readKo: !!S.readKo, exPlay: S.exPlay || 0, exRep: S.exRep || 1, reps: PL.pair || 1, pair: !!PL.pair, recallMs: S.recall ? 1000 : 0, title: PL.label}).catch(() => {});
+  const sp = spOn(); Player.start({items, speed: S.speed, readKo: !sp && !!S.readKo, exPlay: S.exPlay || 0, exRep: S.exRep || 1, reps: sp ? 2 : (PL.pair || 1), pair: !sp && !!PL.pair, recallMs: !sp && S.recall ? 1000 : 0, speakGap: sp ? S.spGap * 1000 : 0, shadow: !!S.shadow, title: PL.label}).catch(() => {});
 }
 if (NATIVE) {
   Player.addListener("item", d => {
     if (!PL || view !== "play" || !PL.playing) return;
     PL.i = Math.min(PL.list.length - 1, (PL.base || 0) + d.i); const w = PL.list[PL.i];
     renderPlay();
-    if (S.recall) setTimeout(() => { app.querySelector("#ko")?.classList.remove("hide"); app.querySelector("#parts")?.classList.remove("hide"); app.querySelector("#exk")?.classList.remove("hide"); }, 1000 / S.speed);
+    if (S.recall && !spOn()) setTimeout(() => { app.querySelector("#ko")?.classList.remove("hide"); app.querySelector("#parts")?.classList.remove("hide"); app.querySelector("#exk")?.classList.remove("hide"); }, 1000 / S.speed);
     S.seen[wid(w)] ||= dkey(); if (PL.key) { S.views[PL.key] = (S.views[PL.key] || 0) + 1; S.pos[PL.key] = PL.i; } save();
   });
+  Player.addListener("reveal", () => { if (!PL || view !== "play") return; PL.rv = PL.i; app.querySelector("#flash")?.classList.remove("sp"); });
   Player.addListener("ex", d => {
     if (!PL || view !== "play" || !PL.playing) return;
     const a = app.querySelector("#exa"), b = app.querySelector("#exb2");
@@ -668,23 +726,25 @@ async function loop(){
   while (PL && PL.playing && my === PL.token) {
     const w = PL.list[PL.i], sp = S.speed;
     renderPlay();
+    if (spOn()) { if (!(await speakItem(w, sp, my))) return; } else {
     if (S.recall) { await wait(1000 / sp); if (my !== PL.token) return; app.querySelector("#ko")?.classList.remove("hide"); app.querySelector("#parts")?.classList.remove("hide"); app.querySelector("#exk")?.classList.remove("hide"); }
     for (let r = 0; r < (PL.pair || 1); r++) {
-      await playTh(w.th, sp); if (my !== PL.token) return;
-      await wait(250 / sp);
+      const t0 = performance.now(); await playTh(w.th, sp); if (my !== PL.token) return;
+      await wait(S.shadow ? shadowMs(t0, sp) : 250 / sp);
       if (PL.pair || S.readKo) { await say(w.ko, "ko-KR", 1.0 * sp); if (my !== PL.token) return; if (PL.pair) await wait(350 / sp); }
     }
     if (S.exPlay) await needEx(w.th, 6000);
     if (my !== PL.token) return;
     if (S.exPlay && EX[w.th]) for (let r = 0; r < (S.exRep || 1); r++) {
       await wait(300 / sp); if (my !== PL.token) return;
-      app.querySelector("#exa")?.classList.add("on");
+      app.querySelector("#exa")?.classList.add("on"); const e0 = performance.now();
       await playExTh(w.th, sp); if (my !== PL.token) return;
-      app.querySelector("#exa")?.classList.remove("on");
+      app.querySelector("#exa")?.classList.remove("on"); if (S.shadow) { await wait(shadowMs(e0, sp)); if (my !== PL.token) return; }
       if (S.exPlay === 2) { await wait(250 / sp); if (my !== PL.token) return;
         app.querySelector("#exk")?.classList.remove("hide"); app.querySelector("#exb2")?.classList.add("on");
         await playExKo(w.th, Math.min(sp, 1.5)); if (my !== PL.token) return;
         app.querySelector("#exb2")?.classList.remove("on"); }
+    }
     }
     S.seen[wid(w)] ||= dkey(); if (PL.key) S.views[PL.key] = (S.views[PL.key] || 0) + 1; save();
     await wait(700 / sp); if (my !== PL.token) return;
@@ -699,6 +759,317 @@ function finish(){
   d.querySelector("#again").onclick = () => { d.remove(); if (PL.key) { const p = applyPass(PL.key); PL.label = PL.label.replace(/ · [①②③].*$/, "") + " · " + p.n; } PL.i = 0; PL.playing = true; loop(); };
   d.querySelector("#out").onclick = () => { d.remove(); leave(); };
 }
+/* ---------- 학습 v2: 복습 퀴즈(간격 반복) · 말하기 모드 · 성조 귀 훈련 · 말해보기 ---------- */
+const DAYMS = 864e5;
+const isNative = () => typeof NATIVE !== "undefined" && NATIVE;
+function logAct(n){ const d = dkey(); S.act[d] = (S.act[d] || 0) + (n || 1); }
+function streak(){
+  const days = new Set([...Object.keys(S.act || {}), ...Object.values(S.seen || {})]);
+  let k = dkey(), n = 0; if (!days.has(k)) k = addDays(k, -1);
+  while (days.has(k)) { n++; k = addDays(k, -1); }
+  return n;
+}
+/* 간격 반복: s = 기억이 90%로 떨어질 때까지 걸리는 날 수, d = 어려움(1~10) */
+function srsDue(){ const t = Date.now(); return Object.keys(S.srs).filter(th => S.srs[th].due <= t && BYTH.has(th) && !S.known[th]).sort((a, b) => S.srs[a].due - S.srs[b].due).map(th => BYTH.get(th)); }
+function srsNew(){ return LIST.filter(w => S.seen[wid(w)] && !S.srs[wid(w)]).sort((a, b) => (S.seen[wid(a)] < S.seen[wid(b)] ? -1 : S.seen[wid(a)] > S.seen[wid(b)] ? 1 : 0)); }
+function newLeft(){ const d = dkey(); return S.srsDay && S.srsDay.d === d ? Math.max(0, S.newPerDay - S.srsDay.n) : S.newPerDay; }
+function srsGrade(th, g){   // g: 0 틀림, 1 겨우, 2 맞음, 3 쉽게
+  const t = Date.now(); let c = S.srs[th];
+  if (!c) { c = {s: 0, d: 5, r: 0, l: 0}; const d = dkey(); if (!S.srsDay || S.srsDay.d !== d) S.srsDay = {d, n: 0}; S.srsDay.n++; }
+  const learning = !c.s || c.s < 0.5;
+  if (g === 0) { c.l = (c.l || 0) + 1; c.d = Math.min(10, c.d + 1.2); c.s = learning ? 0.02 : Math.max(0.3, c.s * 0.3); c.due = t + 10 * 60e3; }
+  else {
+    if (learning) c.s = [0, 1, 2.5, 4][g];
+    else {
+      const el = (t - (c.last || t)) / DAYMS, R = Math.exp(Math.log(0.9) * el / c.s);
+      const f = (g === 1 ? 1.25 : g === 2 ? 1.8 + (10 - c.d) * 0.12 : 2.6 + (10 - c.d) * 0.15) * (1 + 0.6 * (1 - R));
+      c.s = Math.min(3650, Math.max(c.s * f, c.s + 0.5));
+    }
+    c.d = Math.max(1, Math.min(10, c.d + (g === 1 ? 0.6 : g === 3 ? -0.8 : -0.15)));
+    c.due = t + c.s * DAYMS;
+  }
+  c.r = (c.r || 0) + 1; c.last = t; S.srs[th] = c; logAct(); save();
+}
+const fmtDays = s => s < 1 ? "오늘 다시" : s < 1.5 ? "내일" : s < 30 ? Math.round(s) + "일 뒤" : s < 365 ? Math.round(s / 30) + "달 뒤" : Math.round(s / 365) + "년 뒤";
+/* 보기 4개 만들기 (뜻이 겹치지 않게, 태국어 보기는 글자 수가 비슷한 것으로) */
+function pick4(w, th){
+  const out = [w], used = new Set([w.ko]);
+  let pool = WORDS.filter(x => x.c === w.c); if (pool.length < 40) pool = WORDS;
+  if (th) { const same = pool.filter(x => x.s.length === w.s.length); if (same.length > 30) pool = same; }
+  for (let g = 0; out.length < 4 && g < 400; g++) { const x = pool[Math.floor(Math.random() * pool.length)]; if (!used.has(x.ko) && x.th !== w.th) { used.add(x.ko); out.push(x); } }
+  return out.sort(() => Math.random() - .5);
+}
+const krMarks = w => w.kr.map((k, i) => k + mark(w.t[i])).join(" ");
+
+/* ---------- 말해보기 (음성 인식) ---------- */
+let Speech = null;
+try { if (window.Capacitor?.isNativePlatform?.()) Speech = window.Capacitor.registerPlugin("Speech"); } catch(e) { Speech = null; }
+const WebSR = window.SpeechRecognition || window.webkitSpeechRecognition;
+const canHear = () => !!(Speech || WebSR);
+let SR_ON = null;
+function hear(){
+  if (Speech) return Speech.listen({lang: "th-TH"}).then(r => r.matches || []);
+  return new Promise((res, rej) => {
+    try { const r = new WebSR(); SR_ON = r; r.lang = "th-TH"; r.maxAlternatives = 5; r.interimResults = false;
+      r.onresult = e => res([...e.results[0]].map(a => a.transcript)); r.onerror = e => rej({code: e.error}); r.onend = () => setTimeout(() => res([]), 400); r.start();
+    } catch(e) { rej({code: "fail"}); }
+  });
+}
+function stopHear(){ try { Speech && Speech.stop(); } catch(e) {} try { SR_ON && SR_ON.abort(); } catch(e) {} SR_ON = null; }
+const nz = s => String(s || "").replace(/[\s​.,!?'"ๆ]/g, "");
+const ntone = s => nz(s).replace(/[็-์]/g, "");
+function judge(target, alts){
+  const t = nz(target); if (alts.some(a => nz(a) === t || nz(a).includes(t))) return 2;
+  const tt = ntone(target); if (tt && alts.some(a => ntone(a).includes(tt))) return 1; return 0;
+}
+function micErr(e){
+  const c = String((e && (e.code || e.message)) || e);
+  if (/denied|not-allowed|e9/.test(c)) return "마이크 권한을 허용해 주세요 (휴대폰 설정 › 앱 › 태국어 빠른 암기 › 권한)";
+  if (/e7|no-match/.test(c)) return null;   // 못 알아들음 → 틀림으로 처리
+  if (/e6|no-speech/.test(c)) return "소리가 안 들렸어요. 마이크 가까이에서 또박또박 말해 보세요";
+  if (/e1[23]|language/.test(c)) return "휴대폰에 태국어 음성 인식이 없어요. Google 앱 › 설정 › 음성 › 언어에서 태국어를 추가해 주세요";
+  if (/e[124]|network/.test(c)) return "인터넷 연결을 확인해 주세요 (음성 인식은 인터넷이 필요해요)";
+  return "음성 인식이 안 됐어요 (" + c + ")";
+}
+const VERD = ["❌ 다르게 들렸어요", "🟡 거의 맞아요 — 성조·모음을 한 번 더", "✅ 정확해요!"];
+async function micTry(w, box, cb){
+  if (!box) return;
+  if (!canHear()) { box.innerHTML = `<div class="mr bad">이 화면에서는 음성 인식을 쓸 수 없어요. 앱(APK)이나 크롬에서 해 보세요.</div>`; return; }
+  stopAudio(); try { speechSynthesis.cancel(); } catch(e) {}
+  box.innerHTML = `<div class="mr live">🎤 듣고 있어요… 지금 말해 보세요</div>`;
+  let alts = [];
+  try { alts = await hear(); }
+  catch(e) { const m = micErr(e); if (m) { box.innerHTML = `<div class="mr bad">⚠️ ${esc(m)}</div>`; cb && cb(-1, []); return; } }
+  const j = judge(w.th, alts);
+  box.innerHTML = `<div class="mr ${["bad", "mid", "ok"][j]}"><b>${VERD[j]}</b><br><small>들린 말: <span class="th">${esc(alts[0] || "(못 알아들었어요)")}</span></small></div>`;
+  cb && cb(j, alts);
+}
+/* 내 목소리 녹음 → 내 것 듣고 → 원어민 듣기 */
+let REC = null;
+function playUrl(url){ return new Promise(res => { let d = false; const f = () => { if (!d) { d = true; res(); } }; player.onended = f; player.onerror = f; player.src = url; player.playbackRate = 1; player.play().catch(f); setTimeout(f, 8000); }); }
+async function recToggle(btn, w, box){
+  if (REC) { try { REC.stop(); } catch(e) {} return; }
+  try {
+    stopAudio(); const st = await navigator.mediaDevices.getUserMedia({audio: true});
+    const mr = new MediaRecorder(st), ch = []; REC = mr;
+    mr.ondataavailable = e => ch.push(e.data);
+    mr.onstop = async () => {
+      st.getTracks().forEach(t => t.stop()); REC = null; btn.textContent = "⏺ 녹음 비교"; btn.classList.remove("on");
+      const url = URL.createObjectURL(new Blob(ch, {type: mr.mimeType || "audio/webm"}));
+      if (box) box.innerHTML = `<div class="mr">▶ 내 목소리 → 원어민 순서로 들려줘요</div>`;
+      await playUrl(url); await wait(350); await playTh(w.th, 1); await wait(300); await playUrl(url); await wait(350); await playTh(w.th, 1);
+      if (box) box.innerHTML = `<div class="mr">높낮이(성조)가 같게 들렸나요? 다르면 원어민 소리를 따라 몇 번 더 말해 보세요.</div>`;
+    };
+    mr.start(); btn.textContent = "⏹ 멈추고 비교"; btn.classList.add("on");
+    if (box) box.innerHTML = `<div class="mr live">⏺ 녹음 중… 「${esc(w.th)}」를 말하고 ⏹를 누르세요</div>`;
+    setTimeout(() => { if (REC === mr) mr.stop(); }, 5000);
+  } catch(e) { REC = null; if (box) box.innerHTML = `<div class="mr bad">⚠️ 마이크를 쓸 수 없어요. 마이크 권한을 허용해 주세요.</div>`; }
+}
+
+/* ---------- 말하기 모드 (Pimsleur식: 뜻 → 잠깐 말해 보기 → 정답) ---------- */
+let NEXT_SPEAK;
+const spOn = () => !!(PL && (PL.speak !== undefined ? PL.speak : S.mode === "speak"));
+const shadowMs = (t0, sp) => Math.max(600, performance.now() - t0) * 1.1 + 600 / sp;
+/* 같은 단어를 3개 뒤, 10개 뒤에 다시 물어봐요 (점점 늘어나는 간격) */
+function giList(ws){
+  const out = [], pend = [];
+  for (const w of ws) {
+    while (pend.length && pend[0].at <= out.length) out.push(pend.shift().w);
+    out.push(w); const k = out.length; pend.push({w, at: k + 3}, {w, at: k + 10}); pend.sort((a, b) => a.at - b.at);
+  }
+  while (pend.length) out.push(pend.shift().w);
+  return out;
+}
+async function speakItem(w, sp, my){
+  const live = () => PL && my === PL.token;
+  await say(w.ko, "ko-KR", Math.min(1.5, sp)); if (!live()) return false;
+  await wait(S.spGap * 1000); if (!live()) return false;
+  PL.rv = PL.i; app.querySelector("#flash")?.classList.remove("sp");
+  for (let r = 0; r < 2; r++) { const t0 = performance.now(); await playTh(w.th, sp); if (!live()) return false; await wait(S.shadow ? shadowMs(t0, sp) : 450 / sp); if (!live()) return false; }
+  if (S.exPlay) await needEx(w.th, 4000); if (!live()) return false;
+  if (S.exPlay && EX[w.th]) for (let r = 0; r < (S.exRep || 1); r++) {
+    const t0 = performance.now(); app.querySelector("#exa")?.classList.add("on");
+    await playExTh(w.th, sp); if (!live()) return false; app.querySelector("#exa")?.classList.remove("on");
+    await wait(S.shadow ? shadowMs(t0, sp) : 300 / sp); if (!live()) return false;
+    if (S.exPlay === 2) { app.querySelector("#exk")?.classList.remove("hide"); await playExKo(w.th, Math.min(sp, 1.5)); if (!live()) return false; await wait(300 / sp); }
+  }
+  return true;
+}
+function startSpeak(){
+  let ws = srsDue().slice(0, 20);
+  if (ws.length < 20) { const seen = LIST.filter(w => S.seen[wid(w)] && !ws.includes(w)).sort((a, b) => (S.seen[wid(b)] > S.seen[wid(a)] ? 1 : -1)); ws = ws.concat(seen.slice(0, 20 - ws.length)); }
+  if (!ws.length) ws = LIST.slice(0, 20);
+  NEXT_PAIR = 0; NEXT_SPEAK = true; startPlay(giList(ws), `🗣 말하기 연습 · ${ws.length}단어`, null);
+}
+
+/* ---------- 복습 퀴즈 ---------- */
+let QZ = null;
+const QT = {listen: "🔊 듣고 뜻 고르기", read: "👀 읽고 뜻 고르기", rev: "🇰🇷 뜻 보고 태국어 고르기", speak: "🗣 뜻 보고 태국어로 말하기"};
+function qType(w){
+  const k = S.qKind || "mix"; if (k !== "mix") return k === "speak" && !canHear() ? "self" : k;
+  const c = S.srs[wid(w)], r = c ? c.r : 0;
+  const opts = r < 1 ? ["listen", "read"] : r < 3 ? ["listen", "read", "rev"] : ["listen", "rev", "rev", canHear() ? "speak" : "self"];
+  return opts[Math.floor(Math.random() * opts.length)];
+}
+function startQuiz(free){
+  let ws;
+  if (free) ws = LIST.filter(w => S.seen[wid(w)] || S.srs[wid(w)]).sort(() => Math.random() - .5).slice(0, 20);
+  else { const due = srsDue(); ws = due.slice(0, 20); if (ws.length < 20) ws = ws.concat(srsNew().slice(0, Math.min(newLeft(), 20 - ws.length))); }
+  if (!ws.length) ws = LIST.slice(0, 20);
+  preloadEx(ws);
+  QZ = {q: ws.map(w => ({w, type: qType(w), tries: 0})), i: 0, ok: 0, n: ws.length, ans: null, free: !!free, tok: 0, played: null, heard: "", self: false};
+  view = "quiz"; pushView(); renderQuiz();
+}
+function qAnswer(ok, g, pick){
+  const it = QZ.q[QZ.i]; if (QZ.ans) return;
+  const w = it.w, ms = Date.now() - (QZ.t0 || Date.now());
+  if (g === undefined) g = ok ? (ms < 2500 && it.type !== "listen" ? 3 : 2) : 0;
+  QZ.ans = {ok, g, pick};
+  if (!it.tries) { if (ok) QZ.ok++; srsGrade(wid(w), g); if (!ok) S.stars[wid(w)] = 1; }
+  else logAct();
+  if (!ok && it.tries < 2) QZ.q.splice(Math.min(QZ.q.length, QZ.i + 4), 0, {w, type: it.type === "listen" ? "read" : it.type, tries: it.tries + 1});
+  renderQuiz();
+  const my = ++QZ.tok;
+  playTh(w.th, 1).then(() => { if (ok && QZ && QZ.tok === my && view === "quiz") setTimeout(() => { if (QZ && QZ.tok === my && view === "quiz") qNext(); }, 650); });
+}
+function qNext(){ stopHear(); stopAudio(); QZ.i++; QZ.ans = null; QZ.tok++; if (QZ.i >= QZ.q.length) { qFinish(); return; } renderQuiz(); }
+function qFinish(){
+  const due = srsDue().length, nw = Math.min(newLeft(), srsNew().length);
+  const d = document.createElement("div"); d.className = "dim";
+  d.innerHTML = `<div class="dlg"><p>🎉 ${QZ.n}문제 중 <b>${QZ.ok}</b>개 맞았어요!</p><p class="m" style="font-size:1rem">틀린 단어는 ⭐에 넣고 10분 뒤에 다시 물어봐요.<br>남은 복습 ${due}개 · 오늘 새로 ${nw}개</p>
+    <div class="btns"><button class="btn" id="qagain">${due + nw ? "▶ 한 판 더 (20문제)" : "▶ 자유 연습 20문제"}</button><button class="btn alt" id="qspk">🗣 방금 단어로 말하기 연습</button><button class="btn alt" id="qout">홈으로</button></div></div>`;
+  document.body.append(d);
+  const words = [...new Set(QZ.q.map(x => x.w))];
+  d.querySelector("#qagain").onclick = () => { d.remove(); const free = !(due + nw); history.back(); setTimeout(() => startQuiz(free), 60); };
+  d.querySelector("#qspk").onclick = () => { d.remove(); history.back(); setTimeout(() => { NEXT_SPEAK = true; startPlay(giList(words), `🗣 말하기 연습 · ${words.length}단어`, null); }, 60); };
+  d.querySelector("#qout").onclick = () => { d.remove(); leave(); };
+}
+function renderQuiz(){
+  const it = QZ.q[QZ.i]; if (!it) { qFinish(); return; }
+  const w = it.w, A = QZ.ans, type = it.type;
+  if (!it.ch) it.ch = type === "speak" || type === "self" ? [] : pick4(w, type === "rev");
+  const c = S.srs[wid(w)];
+  let prompt;
+  if (type === "listen") prompt = A ? `<div class="th qth">${esc(w.th)}</div>` : `<button class="bigplay" id="qplay" aria-label="다시 듣기">🔊</button><div class="hint">눌러서 다시 듣기</div>`;
+  else if (type === "read") prompt = `<div class="th qth">${esc(w.th)}</div>`;
+  else prompt = `<div class="qko">${esc(w.ko)}</div>${A ? `<div class="th qth">${esc(w.th)}</div>` : `<div class="hint">태국어로 뭐라고 할까요?</div>`}`;
+  const ansBox = A ? `<div class="qv ${A.ok ? "ok" : "ng"}">${A.ok ? "✅ 맞았어요" : "❌ 정답은 이거예요"}</div>
+      <div class="fkr">${krMarks(w)}</div>${type === "rev" || type === "speak" || type === "self" ? "" : `<div class="fko">${esc(w.ko)}</div>`}
+      <div class="qnx">다음 복습: ${fmtDays(S.srs[wid(w)] ? S.srs[wid(w)].s : 0)}</div>` : "";
+  let body;
+  if (type === "speak" || type === "self") {
+    body = A ? "" : `<div class="spk">${type === "speak" ? `<button class="bigmic" id="qmic">🎤 눌러서 말하기</button>` : ""}
+      <button class="btn alt" id="qshow" style="margin-top:8px">${type === "speak" ? "속으로 말했어요 — 정답 보기" : "말해 본 뒤 눌러서 정답 보기"}</button></div><div class="mres" id="mres"></div>`;
+    if (!A && QZ.self) body = `<div class="qself"><div class="hint">정답을 듣고 내가 말한 게 맞았나요?</div><div class="btns2"><button class="btn" id="qyes">⭕ 맞았어요</button><button class="btn alt" id="qnoo">❌ 틀렸어요</button></div></div>`;
+  } else {
+    body = `<div class="quiz ${type === "rev" ? "thq" : ""}">${it.ch.map((x, i) => `<button data-q="${i}" class="${A ? (x === w ? "right" : (A.pick === i ? "wrong" : "")) : ""}"><span class="qn">${i + 1}</span>${type === "rev" ? `${esc(x.th)}<span class="qr">${x.kr.join(" ")}</span>` : esc(x.ko)}</button>`).join("")}</div>`;
+  }
+  app.innerHTML = `
+    <div class="ptop"><button class="back" id="home">‹ 🏠 홈</button><span>🧠 ${QZ.free ? "자유 연습" : "복습 퀴즈"}</span><span class="pnum">${Math.min(QZ.i + 1, QZ.q.length)} / ${QZ.q.length} · ✅${QZ.ok}</span></div>
+    <div class="pbar"><span style="width:${QZ.i / QZ.q.length * 100}%"></span></div>
+    <div class="qcard ${A ? (A.ok ? "isok" : "isng") : ""}"><div class="qk">${QT[type] || QT.speak}${it.tries ? " · 다시" : c ? "" : " · 새 단어"}</div>${prompt}${ansBox}${A && QZ.heard ? QZ.heard : ""}</div>
+    ${body}
+    ${A ? `<button class="btn" id="qnext" style="margin-top:12px">다음 ▶</button>` : type === "speak" || type === "self" ? "" : `<button class="skip" id="qno">❓ 모르겠어요</button>`}
+    <div class="opts"><div class="optrow"><span class="lb">문제 유형</span>${[["mix", "섞어서"], ["listen", "듣기"], ["read", "읽기"], ["rev", "한→태"], ["speak", "말하기"]].map(([k, l]) => `<button class="chip" data-qk="${k}" aria-pressed="${(S.qKind || "mix") === k}">${l}</button>`).join("")}</div>
+      <div class="optrow"><span class="lb">하루 새 단어</span>${[30, 50, 100, 200].map(n => `<button class="chip" data-np="${n}" aria-pressed="${S.newPerDay === n}">${n}</button>`).join("")}</div></div>
+    <p class="note">본 단어가 퀴즈로 들어와요. 맞힐수록 다음 복습이 멀어지고(1일→3일→1주→…), 틀리면 10분 뒤 다시 나와요.</p>`;
+  app.querySelector("#home").onclick = leave;
+  app.querySelector("#qplay")?.addEventListener("click", () => playTh(w.th, 1));
+  app.querySelectorAll("[data-q]").forEach(b => b.onclick = () => { if (QZ.ans) return; const i = +b.dataset.q; qAnswer(it.ch[i] === w, undefined, i); });
+  app.querySelector("#qno")?.addEventListener("click", () => qAnswer(false, 0));
+  app.querySelector("#qnext")?.addEventListener("click", () => { QZ.heard = ""; QZ.self = false; qNext(); });
+  app.querySelector("#qmic")?.addEventListener("click", e => { e.currentTarget.classList.add("on");
+    micTry(w, app.querySelector("#mres"), (j, alts) => { if (j < 0) return; QZ.heard = app.querySelector("#mres")?.innerHTML || "";
+      if (j === 2) qAnswer(true, 2); else if (j === 1) qAnswer(true, 1);
+      else { const box = app.querySelector("#mres"); playTh(w.th, 1); if (box) box.innerHTML += `<div class="btns2" style="margin-top:8px"><button class="btn alt" id="qme">인식이 틀렸어요<br><small>나는 맞게 말함</small></button><button class="btn" id="qmx">❌ 틀렸어요</button></div><div class="hint">정답: <span class="th">${esc(w.th)}</span> · ${krMarks(w)}</div>`;
+        app.querySelector("#qme").onclick = () => qAnswer(true, 1); app.querySelector("#qmx").onclick = () => qAnswer(false, 0); } }); });
+  app.querySelector("#qshow")?.addEventListener("click", () => { stopHear(); QZ.self = true; renderQuiz(); });
+  if (QZ.self && !A) { app.querySelector(".qcard").insertAdjacentHTML("beforeend", `<div class="th qth">${esc(w.th)}</div><div class="fkr">${krMarks(w)}</div>`); playTh(w.th, 1);
+    app.querySelector("#qyes").onclick = () => { QZ.self = false; qAnswer(true, 2); };
+    app.querySelector("#qnoo").onclick = () => { QZ.self = false; qAnswer(false, 0); }; }
+  app.querySelectorAll("[data-qk]").forEach(b => b.onclick = () => { S.qKind = b.dataset.qk; save(); if (!QZ.ans) { it.type = qType(w); it.ch = null; } for (let j = QZ.i + 1; j < QZ.q.length; j++) { QZ.q[j].type = qType(QZ.q[j].w); QZ.q[j].ch = null; } renderQuiz(); });
+  app.querySelectorAll("[data-np]").forEach(b => b.onclick = () => { S.newPerDay = +b.dataset.np; save(); renderQuiz(); });
+  if (!A) { QZ.t0 = Date.now(); if (type === "listen" && !QZ.played) { QZ.played = QZ.i + ":" + it.tries; playTh(w.th, 1); } }
+  if (A) QZ.played = null;
+}
+
+/* ---------- 성조 귀 훈련 (듣고 5개 성조 중 고르기, 틀리면 같은 소리·다른 성조 단어와 비교) ---------- */
+const TDESC = {"0": "보통 높이로 평평", "1": "낮게 깔림", "2": "높았다 뚝 떨어짐", "3": "높게 올라감", "4": "낮았다 쭉 올라감"};
+const bigMark = t => `<svg class="bm" viewBox="0 0 10 10" aria-hidden="true"><path d="${P[t]}" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+let TT = null, MP = null;
+function tonePool(){ return WORDS.filter(w => w.s.length === 1 && w.t.length === 1 && (!AUDIO || AUDIO[w.th])); }
+function minPairs(){ if (MP) return MP; MP = new Map(); for (const w of tonePool()) { const k = w.kr[0]; if (!MP.has(k)) MP.set(k, {}); MP.get(k)[w.t[0]] ||= w; } return MP; }
+function startTone(){
+  const pool = tonePool(), st = S.tone || {}, out = [];
+  // 약한 성조를 더 자주: 정답률이 낮을수록 많이
+  const acc = t => { const x = st[t]; return x && x[1] ? x[0] / x[1] : 0.5; };
+  const want = {}; let tot = 0; for (const t of "01234") { want[t] = 2 + Math.round((1 - acc(t)) * 4); tot += want[t]; }
+  for (const t of "01234") { const ws = pool.filter(w => w.t[0] === t).sort(() => Math.random() - .5); out.push(...ws.slice(0, Math.round(want[t] * 20 / tot))); }
+  TT = {q: out.sort(() => Math.random() - .5).slice(0, 20), i: 0, ok: 0, ans: null, sp: TT ? TT.sp : 1, tok: 0, played: -1};
+  view = "tone"; pushView(); renderTone();
+}
+function renderTone(){
+  const w = TT.q[TT.i]; if (!w) return;
+  const A = TT.ans, t = w.t[0], st = S.tone || {};
+  const pair = A && !A.ok ? minPairs().get(w.kr[0])?.[A.t] : null;
+  app.innerHTML = `
+    <div class="ptop"><button class="back" id="home">‹ 🏠 홈</button><span>🎵 성조 귀 훈련</span><span class="pnum">${TT.i + 1} / ${TT.q.length} · ✅${TT.ok}</span></div>
+    <div class="pbar"><span style="width:${TT.i / TT.q.length * 100}%"></span></div>
+    <div class="qcard ${A ? (A.ok ? "isok" : "isng") : ""}"><div class="qk">듣고 성조 고르기</div>
+      <button class="bigplay" id="tplay" aria-label="다시 듣기">🔊</button>
+      ${A ? `<div class="qv ${A.ok ? "ok" : "ng"}">${A.ok ? "✅ 맞았어요" : `❌ ${TN[t]}이에요`}</div><div class="th qth">${esc(w.th)}</div><div class="fkr">${krMarks(w)}</div><div class="fko">${esc(w.ko)}</div>
+        ${pair ? `<div class="pairs"><div class="hint">같은 소리, 성조만 달라요 — 번갈아 들어 보세요</div><button class="chip" id="pa">🔊 ${esc(w.th)} · ${TN[t]}</button> <button class="chip" id="pb">🔊 ${esc(pair.th)} · ${TN[A.t]} (${esc(pair.ko)})</button></div>` : ""}` : `<div class="hint">이 단어의 성조는?</div>`}
+    </div>
+    <div class="tones">${"01234".split("").map(x => `<button data-t="${x}" class="${A ? (x === t ? "right" : x === A.t ? "wrong" : "") : ""}">${bigMark(x)}<b>${TN[x]}</b><small>${TDESC[x]}</small></button>`).join("")}</div>
+    ${A ? `<button class="btn" id="tnext" style="margin-top:12px">다음 ▶</button>` : ""}
+    <div class="opts"><div class="optrow"><span class="lb">속도</span>${[[1, "보통"], [0.75, "천천히"]].map(([v, l]) => `<button class="chip" data-ts="${v}" aria-pressed="${TT.sp === v}">${l}</button>`).join("")}</div></div>
+    <p class="note">지금까지 정답률 · ${"01234".split("").map(x => { const a = st[x]; return `${TN[x]} ${a && a[1] ? Math.round(a[0] / a[1] * 100) + "%" : "-"}`; }).join(" · ")}<br>성조는 귀로 먼저 구별돼야 입으로도 나와요. 하루 5분이면 충분해요.</p>`;
+  app.querySelector("#home").onclick = leave;
+  app.querySelector("#tplay").onclick = () => playTh(w.th, TT.sp);
+  app.querySelectorAll("[data-t]").forEach(b => b.onclick = () => {
+    if (TT.ans) return; const x = b.dataset.t, ok = x === t; TT.ans = {ok, t: x};
+    S.tone ||= {}; const a = S.tone[t] ||= [0, 0]; a[1]++; if (ok) { a[0]++; TT.ok++; } logAct(); save();
+    renderTone(); const my = ++TT.tok;
+    playTh(w.th, TT.sp).then(() => { if (ok && TT && TT.tok === my && view === "tone") setTimeout(() => { if (TT && TT.tok === my && view === "tone") tNext(); }, 700); });
+  });
+  app.querySelector("#tnext")?.addEventListener("click", tNext);
+  app.querySelector("#pa")?.addEventListener("click", () => playTh(w.th, TT.sp));
+  app.querySelector("#pb")?.addEventListener("click", () => playTh(pair.th, TT.sp));
+  app.querySelectorAll("[data-ts]").forEach(b => b.onclick = () => { TT.sp = +b.dataset.ts; renderTone(); });
+  if (!A && TT.played !== TT.i) { TT.played = TT.i; playTh(w.th, TT.sp); }
+}
+function tNext(){
+  stopAudio(); TT.tok++; TT.i++; TT.ans = null;
+  if (TT.i >= TT.q.length) {
+    const d = document.createElement("div"); d.className = "dim";
+    d.innerHTML = `<div class="dlg"><p>🎵 ${TT.q.length}문제 중 <b>${TT.ok}</b>개 맞았어요!</p><div class="btns"><button class="btn" id="tagain">▶ 20문제 더</button><button class="btn alt" id="tout">홈으로</button></div></div>`;
+    document.body.append(d);
+    d.querySelector("#tagain").onclick = () => { d.remove(); history.back(); setTimeout(startTone, 60); };
+    d.querySelector("#tout").onclick = () => { d.remove(); leave(); };
+    return;
+  }
+  renderTone();
+}
+
+/* ---------- 홈 화면 상자 ---------- */
+function learnBox(){
+  const due = srsDue().length, nw = Math.min(newLeft(), srsNew().length), st = S.tone || {};
+  let ok = 0, n = 0; for (const t in st) { ok += st[t][0]; n += st[t][1]; }
+  const today = S.act[dkey()] || 0, sk = streak();
+  return `<div class="learn"><div class="lt">🚀 빨리 느는 연습 <small>보기만 하지 말고 꺼내고 말하기</small></div>
+    <div class="lbtns">
+      <button id="lq" class="${due + nw ? "due" : ""}">🧠 복습 퀴즈<small>${due + nw ? `복습 ${due} · 새로 ${nw}` : "오늘 끝! 자유 연습"}</small></button>
+      <button id="ls">🗣 말하기<small>뜻 듣고 태국어로</small></button>
+      <button id="lt">🎵 성조 귀<small>${n ? `정답률 ${Math.round(ok / n * 100)}%` : "듣고 성조 맞히기"}</small></button>
+    </div>
+    <div class="lm">🔥 연속 ${sk}일째 · 오늘 연습 ${today}문제 · 퀴즈에 들어온 단어 ${Object.keys(S.srs).length.toLocaleString()}개</div></div>`;
+}
+function bindLearn(){
+  app.querySelector("#lq").onclick = () => startQuiz(!(srsDue().length + Math.min(newLeft(), srsNew().length)));
+  app.querySelector("#ls").onclick = startSpeak;
+  app.querySelector("#lt").onclick = startTone;
+}
+
 /* ---------- 아는 단어 빠르게 고르기 ---------- */
 let SO = null;
 function startSort(){
@@ -766,6 +1137,7 @@ document.addEventListener("visibilitychange", () => {
 function pushView(){ try { if (!(history.state && history.state.tf)) history.pushState({tf: 1}, ""); } catch(e) {} }
 function goHome(){
   if (view === "play") stop(); if (view === "sort") { clearTimeout(SO && SO.tm); stopAudio(); }
+  if (view === "quiz" || view === "tone") { stopAudio(); stopHear(); if (QZ) QZ.tok++; if (TT) TT.tok++; } try { REC && REC.stop(); } catch(e) {}
   document.querySelector(".dim")?.remove(); refreshList(); view = "home"; render(); window.scrollTo(0, 0);
 }
 function leave(){ try { if (history.state && history.state.tf) { history.back(); return; } } catch(e) {} goHome(); }
