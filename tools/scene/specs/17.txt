@@ -1,0 +1,100 @@
+นกฮูก	night; tree@200,0,1.4; owl@205,46,1.2; moon@340,80
+นกอินทรี	mount; eagle@200,60,1.6; mountain@200,0,1
+นกแก้ว	room; parrot@200,20,1.6; say@250,96=안녕!; boy.happy@330
+นกยูง	zoo; peacock@200,0,1.4
+นกกระจอก	field; bird@180,0; bird@220,0; seeds@200,0
+จิ้งจก	room; gecko@200,100,1.6!; man.wow@320
+ตุ๊กแก	night; house@200,0,1.4; gecko@240,40,1.2; txt@270,70=똑께!
+ปาด	park; leaf@200,30,2.4; frog~green@200,34,.8
+ลูกอ๊อด	park; pond@200,0,1.6; tadpole@180,6; tadpole@210,8; tadpole@235,6
+ตั๊กแตน	field; grass@200,0,2; hopper@180,40,1.4; p@180,40:M-30 30Q0 -10 30 30
+จิ้งหรีด	night; grass@200,0,2; cricket@200,4,1.4; music@240,40
+หิ่งห้อย	night; firefly@150,70,1.2; firefly@210,50,1.2; firefly@270,80,1.2; tree@340,0,1
+แมงสาบ	kitchen; roach@200,0,1.8; woman.wow.cover@330
+น้ำผึ้ง	cafe; tea@200,0,1.8; honey@140,0,1.2; man.happy@320
+ใยแมงมุม	room; web@370,112,1.4; spider@330,80; woman.cover@200
+เกล็ด	kitchen; fish@200,0,1.8; scales@200,8,.8; knife@250,0; chef.happy@330
+ครีบ	underwater; fish@200,40,2.4; bubbles@250,60
+จะงอยปาก	park; bird@200,0,2.4; worm@240,0
+กรงเล็บ	mount; eagle@200,60,1.4; p@200,40:M-6 0l-4 8M0 0v8M6 0l4 8
+วางไข่	beach; turtle@200,0,1.4; egg2@250,0; egg2@262,0
+สัมผัส	class; book@200,0,1.6; txt@200,70=♪; girl.happy@320
+ประสาทสัมผัส	room; man.happy@200; hl@200,73,1; hl@200,62,.6; hl@215,72,.6
+มอง	room; window@200,30,1.6; man.happy@320
+ดม	park; flower@200,0,1.6; smell@200,40; woman.happy.love@300
+ต้อง	class; notebook@200,0,1.6; check@200,40; boy@320
+จับต้อง	shop; vase@200,0,1.6; sign@200,0,1=X; man@320
+สมอง	class; brain@200,30,2; man.think@320
+ปอด	room; lungs@200,30,1.6; cigarette@200,0,1.4; cross@280,60
+กระเพาะ	rest; stomach@200,30,1.6; man.sick@320
+กล้ามเนื้อ	gym; man.up.sport.happy@200; hl@178,64,.7; hl@222,64,.7
+ข้อ	room; man.sick@200; hl@183,46,.6; hl@217,46,.6
+ข้อศอก	office; desk@200; man.cry@280; hl@217,42,.6
+ข้อมือ	room; man.happy@200+watch; hl@216,27,.6
+ข้อเท้า	room; man.sad@200; hl@193,4,.7; icepack@260,0,1
+เอว	room; man.sad.hips@200; hl@200,32,1
+ก้น	room; chair@200; man.sit.sad@200,24; hl@200,26,1
+หน้าผาก	room; boy.sick.sweat@200; hl@200,82,.8; thermo@280,0,1
+ขนตา	bath; mirror@120,0,1.1; woman.happy@220; hl@220,76,.7
+ริมฝีปาก	room; woman.sad@200; hl@200,64,.7; lipbalm@280,0,1.4
+ลำคอ	room; man.sick@200; hl@200,56,.7; water@280,0,1
+ส่วน	class; book@200,0,1.6; hl@200,14,.9; man.sweat@320
+ส่วนสูง	room; p@200,0:M0 0V-90M-6 -90h12M-6 -70h6M-6 -50h12M-6 -30h6; boy.happy@230
+น้ำหนัก	room; bscale@200,0,1.6; man.wow@200,8; txt@260,96=+2kg
+ออกกำลังกาย	park; man.run.sport.happy@200; sun@340,72
+ผ่อน	street; car@200,0,1.6; calendar@300,40,1; money@100,10,1.2
+พักผ่อน	room; sofa@200; man.sit.happy@200,30; cushion@240,30
+ชะล้าง	rain; puddle@200; dust@200,40; sparkle@300,60
+ปลอดภัย	street; house@200,0,1.4; check@200,90; man.happy@330
+ความปลอดภัย	road; car@200,0,1.4; seatbelt@200,40; boy.happy@330
+อันตราย	kitchen; stove@200,0,1.2; fire@200,8,1.2; boy.wow@320; cross@300,96
+อุบัติเหตุ	road; car^-12@170,0,1.2; car^8@250,0,1.2; man.wow@340
+ไหม้	kitchen; pot@200,0,1.4; dust@200,40,2; woman.wow@320
+ไฟไหม้	street; house@200,0,1.4; fire@200,40,1.6; man.up.wow@330; say@330,96=불이야!
+ชีวิต	room; heart@200,40,2; baby.happy@200,0,1.2; woman.happy@320
+ช่วยชีวิต	hosp; doctor.happy@140; man.lie@260,10
+เข็มขัดนิรภัย	road; car@200,0,1.4; seatbelt@180,30,1.2; man.happy@330
+ทางออก	room; exit@200,60,1.6; door@200,0,1.2; man.think@330
+ทางออกฉุกเฉิน	room; exit@200,70,1.4; door@200,0,1.2; man.run@300
+ข้าม	river; boat@200,10,1.4; man.happy@200,30,.6
+ข้ามถนน	road; crosswalk@200,0,1.4; woman.walk@170; boy.walk@230
+หลงทาง	city; man.think.sweat@200; qmark@200,104; map@280,0,1.2
+แปลก	room; ring2@200,50,1.6; man.think@320; qmark@320,104
+คนแปลกหน้า	street; man.sad@200; boy.cover@120; cross@160,96
+กฎ	class; board_@200,20,1.4=규칙; teacher.point@340!
+รักษา	office; clock@200,50,1.6=9:00; man.wave@320
+ลำดับ	room; blocks@200,0,1.4; txt@200,70=1 2 3
+คิว	cafe; man.happy@200; ticket@260,0,1.2=12; txt@260,96=다음!
+ส่งเสียงดัง	school; shelf@200,0,1.3; man.angry@300; ring2@120,60
+หนังสือเรียน	class; book@200,0,1.8=교과서; boy.happy@320
+แผนที่	room; map@200,0,2; man.happy@320
+หนังสือภาพ	bedroom; pbook@200,0,1.8; girl.happy@320
+นิทาน	bedroom; bed@200,0,1.1; girl.lie.sleep@200,32; woman.sit.hold@280,24+pbook; chair@280
+บทกลอน	class; man.happy@200; music@250,80; book@140,0
+ปริศนา	room; man.think@200; qmark@200,104; qmark@140,96,.8
+โจทย์	class; board_@200,20,1.4=7+5=?; boy.sweat@340
+คำตอบ	class; check@200,50,2; board_@200,20,.8=12
+บวก	class; board_@200,20,1.4=2+3=5
+การบวก	class; board_@200,20,1.4=1+1; girl.happy@330
+ลบ	class; board_@200,20,1.4=10-4=6
+การลบ	class; board_@200,20,1.4=9-5; boy.sweat@330
+คูณ	class; board_@200,20,1.4=3×4=12
+การคูณ	class; board_@200,20,1.4=2×9=18; boy.happy@330
+การหาร	class; board_@200,20,1.4=8÷2; boy.sweat@330
+ตัวเลข	class; board_@200,20,1.4=1 2 3 4; boy.happy@330+pencil
+เท่ากับ	class; board_@200,20,1.4=1+1=2
+ความยาว	room; desk@200; ruler@200,40,1.6; man.happy@320
+พื้นที่	room; p@200,0:M-60 0L-40 -30H60L40 0Z; arrowr@200,20; man.think@320
+เซนติเมตร	class; ruler@200,10,1.8; txt@200,60=30cm
+เมตร	sea; pool@200,0,1.8; txt@200,40=2m; boy.happy@330
+กรัม	kitchen; scale@200,0,1.6; sugar@200,10,.8; txt@260,96=50g
+กิโลกรัม	shop; sack@200,0,1.6=5kg; man.carry.happy@320
+ลิตร	gym; water@180,0,1.4; water@220,0,1.4; txt@200,60=2L; man.happy@320
+วงกลม	class; circle@200,0,1.6; girl.happy@320+pencil
+เส้น	class; ruler@200,30,1.6; p@200,10:M-40 0H40; boy.happy@330
+กราฟ	office; graph@200,20,1.8; man.suit.point@330!
+การทดลอง	class; flask@180,0,1.6; flask@220,0,1.2; man.coat.happy@320
+สังเกต	park; magnifier@200,20,1.6; bug@200,0,1.2; boy.happy@320
+สำรวจ	park; forest@200,0,1.2; man.happy@330+map
+นำ	city; museum@200,0,1; teacher.point@140; student@250; student@290
+เสนอ	office; idea@200,60,1.6; man.happy.up@200; woman.happy@320
