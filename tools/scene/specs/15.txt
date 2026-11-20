@@ -1,0 +1,100 @@
+สงกรานต์	street; wgun@160,40,1.4; man.happy@120; woman.happy.wow@300; water_drop@240,70
+ตกลง	street; man.happy@160; woman.happy@240!; check@200,96,1.2
+เหรอ	room; man.wow@200; say@260,96=그래요?
+จริงเหรอ	room; man.wow@160; woman.happy@240!; heart@200,104; say@300,96=정말?
+แน่นอน	street; man.happy@160; woman.happy.up@240; check@200,96
+จะ	beach; man.happy.up@200; calendar@120,40,1.1
+อาจจะ	office; clock@200,50,1.6; man.sweat.phone@320+phone
+ระวัง	road; car@120,0,1.2; man.wow@250; woman.point@330!; say@300,96=조심!
+ยินดี	room; man.happy@160; woman.happy@240; heart@200,104
+ยินดีด้วย	class; testp@200,10,1.6; boy.happy.up@120; woman.happy@300
+ยินดีต้อนรับ	airport; man.wai.happy@160; woman.happy@260+flower
+ถึง	room; phone@200,0,1.6; man.happy.phone@320+phone; house@120,0,.6
+คิดถึง	office; man.sad.phone@200+phone; heart@260,96; think@140,96=house
+กังวล	room; man.sad.sweat@200; woman.happy@300; say@260,96=걱정 마요
+ตกใจ	room; man.wow@200; txt@260,96=!!
+อาย	street; girl.cover@180; man@280
+ภูมิใจ	class; trophy@200,0,1.4; man.happy@120; woman.happy@300; boy.up.happy@220,0
+เหงา	room; man.sit.sad@200,24; chair@200; window@100,30,1
+อิจฉา	room; boy.angry@160; girl.happy@240+gift
+ขอบใจ	room; man.happy.wave@200; boy.happy@280; say@240,96=고마워
+ยกโทษ	room; man.wai.sad@160; woman@260
+สัญญา	room; man.happy@160; woman.happy@240; p@200,64:M-10 0q10 -10 20 0
+โกหก	room; boy.happy@200; cross@260,80; txt@200,104=거짓말
+ความจริง	room; man.wai.happy@160; woman.happy@240; check@200,96
+ความฝัน	bedroom; bed@200,0,1.2; boy.lie.sleep@200,34; think@260,96=hospital
+หวัง	night; star@200,80,1.6; woman.happy.up@320
+ความหวัง	room; sun@200,60,1.4; man.happy.up@320
+ทำกับข้าว	kitchen; stove@200,0,1.2; pot@200,30,1.2; woman.happy@300
+ช่วยทำกับข้าว	kitchen; counter@200; board@200,36,1.2; girl.happy@140; woman.happy@280
+จัด	room; box@200,0,1.6; teddy@150; woman.happy@300; sparkle@240,60
+จัดโต๊ะ	kitchen; table@200,0,1.4; plate@180,55; plate@220,55; boy.happy@330
+ตักข้าว	kitchen; table@200; rice@200,39,1.3; boy.give.happy@120+rice; man.happy@300
+ต้มน้ำ	kitchen; kettle@200,0,1.6; steam@200,30; mug@260,0,1.2; man.happy@330
+เปิดไฟ	room; switch@200,46,1.6; hlamp@120,112; man.point@140; sparkle@120,60
+ปิดไฟ	room; switch@200,46,1.6; door@330,0,1.2; man.point@140; dark@200,0
+เปิดหน้าต่าง	room; window@200,30,1.6; woman.happy@320; wind@120,60
+ทิ้ง	room; teddy@170,0; ball@230,0; cross@200,50; woman.angry@320
+ทิ้งขยะ	street; bin@200,0,1.6; boy.happy.give@120+tbag
+ตาก	field; fish@180,10,1.2; fish@220,10,1.2; rack@200,0,1.6; sun@340,72
+ผ้า	shop; cloth@200,0,2; sparkle@200,40; woman.happy@320
+ตากผ้า	field; cline@200,0,1.2; sun@340,72; woman.up.happy@320
+ใส่รองเท้า	room; door@120,0,1.3; sneaker@200,0,1.6; man.happy@300
+ถอดรองเท้า	room; door@120,0,1.3; shoe@200,0,1.6; shoe@230,0,1.6; man.happy@300
+ตัดเล็บ	room; clipper@200,20,2; man.happy@320
+ตัดผม	street; shop@200,0,1.3; scissors@200,40,1.2; man.happy@320
+อาบน้ำฝักบัว	bath; shower@200,0,1.1; man.happy@205; sun@340,72
+นอนกลางวัน	bedroom; bed@200,0,1.1; boy.lie.sleep@200,32; sun@340,72
+ปลุก	bedroom; bed@200,0,1.1; man.lie.sleep@200,32; woman.wave@320; aclock@100,0,1
+สวดมนต์	temple; buddha@120,0,1.2; grandma.wai@260
+สวดมนต์ก่อนนอน	bedroom; bed@200,0,1.1; girl.wai.sit@200,32
+การเล่น	room; blocks@200,0,1.4; boy.floor.happy@120; girl.floor.happy@290
+ซน	room; boy.run.happy@200; vase@280,0,1.2; p@280,0:M-10 -4l20 -4; woman.angry@340
+วิ่งไล่จับ	park; boy.run.happy@150; girl.run.happy@250
+ลูกแก้ว	room; marbles@200,0,1.8; boy.floor.happy@290
+ลูกข่าง	room; top@200,0,1.8; boy.floor.happy@290
+เล่นทราย	beach; sandcastle@200,0,1.4; girl.floor.happy@290
+ฟองสบู่	park; bubbles@200,60,2; girl.happy@140+wand
+การวาดภาพ	room; sketch@200,0,1.8; boy.happy@320
+การร้องเพลง	stage; girl.happy@200+mic; music@250,80
+ปั่นจักรยาน	park; bike@200,0,1.5; boy.happy@200,24,.75
+ชุดว่ายน้ำ	shop; swimsuit@200,0,2; woman.happy@320
+ไปเรียน	school; school@200,0,1.2; sun@60,72; boy.walk@300+backpack
+เลิกเรียน	school; school@200,0,1.2; clock@340,70,1=4:00; boy.run.happy@100
+ชั่วโมงเรียน	class; clock@200,60,1.4; book@200,0,1.4; boy@320
+พักกลางวัน	school; clock@200,60,1.4=12:00; rice@200,0,1.4; boy.happy@320
+อาหารกลางวันโรงเรียน	school; table@200; rice@170,39; soup@230,39; boy.happy@330
+ระฆังดัง	school; bell@200,60,1.8; ring2@200,70,1.4; boy.run@330
+เคารพ	room; boy.wai@180; man.happy@260; woman.happy@320
+ธงชาติ	school; flag@200,0,1.4
+เคารพธงชาติ	school; flag@200,0,1.4; student.wai@120; student.wai@300; clock@340,70,1=8:00
+กีฬาสี	gym; flag@200,0,1; man.run.sport.happy@120; boy.run.happy@300
+ทัศนศึกษา	city; museum@200,0,1.1; bus@60,0,.7; boy.happy@340
+คบเพื่อน	park; boy.happy@160; boy.happy@240; heart@200,104
+อย่างดี	park; boy.happy@160; girl.happy@240; ball@200,0
+เงียบๆ	bedroom; bed@200,0,1.1; baby.sleep@200,32; woman.cover@320; say@360,96=쉿
+นั่งลง	room; chair@200; man.wave@120; woman.sit@200,24
+ลุกขึ้น	class; teacher.up@120; student.up@220; student.up@290
+ดูนี่	room; flower@200,0,1.6; girl.point.happy@120; say@280,96=예쁘죠?
+ตาม	street; woman.walk@160; girl.walk.happy@240!
+พูดตาม	class; teacher.happy@120; say@180,96=สวัสดี; boy.happy@300; say@340,96=สวัสดี
+อีกที	room; man.happy@140; woman.think@260; say@320,96=한 번 더?
+เก่ง	room; man.happy@200; say@260,96=ภาษาไทย ✓
+เก่งมาก	class; check@200,60,2; teacher.happy.up@320
+เห่า	park; dog@200,0,1.6; txt@250,70=멍멍; moon@340,80
+ร้อง	room; cat@200,0,1.6; pbowl@260,0; txt@240,70=야옹
+คลาน	room; baby.happy^-80@200,6,1.4; woman.happy@320
+ว่าย	underwater; fish@170,40,1.4; fish@240,60,1.2; bubbles@200,80
+กัด	park; dog@200,0,1.6; man.wow.sweat@320
+จิก	farm; hen@200,0,1.6; rice@240,0,.6; dust@240,4
+กระดิกหาง	park; dog@200,0,1.6; p@226,24:M0 0q8 -8 4 -16M6 2q10 -6 8 -14; man.happy@320
+ฟักไข่	farm; hen@200,0,1.6; nest@200,0,1.8
+ให้อาหาร	park; pond@200,0,1.6; fish@200,6,.8; man.happy@320
+กรง	room; cage@200,0,1.6; bird@200,10,.8
+คอก	farm; barn@200,0,1.2; cow@320,0,1
+ปวดฟัน	hosp; man.sick.cover@200; hl@210,64,.8
+น้ำมูก	room; boy.sick@200; tissue@280,0,1.2
+จาม	room; man.sick@200; dust@240,70,1.4; say@260,96=에취!
+สะอึก	room; man.wow@200; say@260,96=딸꾹!
+หาว	room; man.sleep.cover@200; zzz@230,104
+สัปหงก	class; desk@200; student.sit.sleep@200,24; chair@200

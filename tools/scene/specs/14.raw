@@ -1,0 +1,99 @@
+kitchen; counter@200; sauce@200,36,1.6=น้ำปลา; pot@140,36; woman.happy@330
+kitchen; counter@200; pan@200,36,1.4; oilb@140,36; steam@200,60; man.happy@330
+cafe; ginger@140,0,1.4; tea@200,0,1.6; man.sick.happy@320
+rest; noodle@200,0,1.6; herb@250,0,1.2; cross@250,40; woman.wave@330
+rest; dish@200,0,1.6; herb@170,10,.8; fegg@230,6,.6; man.happy@320
+kitchen; tomyum@200,0,1.6; lgrass@140,0,1.4; woman.happy@320
+rest; soup@200,0,1.6; wmelon@140,0,1.2; man.happy@320
+shop; ring~yellow@200,20,2.2; sparkle@160,60; woman.wow@330
+kitchen; pumpkin@140,0,1.4; soup@220,0,1.6; woman.happy@320
+market; rambutan@180,0,1.6; rambutan@215,0,1.4; woman.happy@320
+market; dragonfruit@200,0,2; woman.happy@320
+market; jackfruit@200,0,1.8; man.cover@320
+market; lychee@200,0,2; woman.happy.love@320
+market; longan@200,0,2; txt@200,60=1kg; man.happy@320
+room; strawberry@200,0,2; girl.happy.eat@300+strawberry
+kitchen; pan@200,0,1.4; sausage@200,6,.8; boy.happy@320
+rest; sandwich@200,0,2; man.happy@320
+kitchen; pan@200,0,1.4; fegg@190,6,.6; fegg@212,6,.6; woman.happy@320
+rest; chicken@200,0,1.4; cross@200,40; man.sad@320
+park; bbq@200,0,1.4; meat@200,46,.7; man.happy@320+tongs
+street; stall@200,0,1.2; skewer@180,22,.8; skewer@210,22,.8; man.happy@320
+kitchen; mortar@200,0,1.6; chili@140,0; garlic@260,0; woman.happy@330
+rest; somtam@200,0,1.8; man.happy@320
+rest; tomyum@200,0,1.8; shrimp@250,0,.8; woman.happy.love@320
+rest; padthai@200,0,1.8; man.happy@320
+rest; curry@200,0,1.8; chicken@260,0,.8; woman.happy@320
+cafe; cake@180,0,1.2; cake@220,0,1.2; txt@200,60=2; woman.happy@320
+street; stall@200,0,1.2; skewer@200,22,.9; txt@200,96=10฿
+cafe; tea@200,0,1.8; sun@340,72; grandpa.happy@320
+room; soda@200,0,1.8; boy.happy.love@320
+kitchen; yogurt@200,0,1.8; sun@340,72; woman.happy@320
+kitchen; wok@200,0,1.4; veg@200,8,.7; fire@200,0,.6; chef.happy@320
+kitchen; pot@200,0,1.4; egg@200,30,.8; clock@330,70,1=10'; woman.happy@120
+kitchen; steamer@200,0,1.4; fish@140,0,.9; lime@260,0; chef.happy@330
+kitchen; board@200,0,1.4; onion@200,6,1; knife@235,6; woman.happy@320
+kitchen; mbowl@200,0,1.4; flour@140,0; water@260,0; woman.happy@320
+kitchen; pot@200,0,1.4; man.happy.eat@320+spoon
+cafe; coffee@200,0,1.8; man.sad.sweat@320
+rest; soup@200,0,1.6; jar@140,0,1.2=소금; man.flat@320
+room; man.point.angry@140; woman.sad@280
+city; flag@200,0,1.4; man.wai.happy@140; woman.wai.happy@280
+rest; dish@200,0,1.6; check@200,50; man.happy.love@320
+shop; dress@180,0,1.4; shirt@230,0,1.4; txt@205,60=2벌; woman.happy@330
+school; student.happy@200+backpack; tshirt@300,0,1.4
+room; clock@200,50,1.6=10:10; man.think@330; say@360,96=느려
+room; shirt@200,0,1.8; money@200,30,.6; man.happy@320
+park; balloon@220,60,1.6; girl.cry@180
+shop; pbag@200,0,1.6; cross@200,40; woman.wave.smile@320
+street; postoffice@200,0,1.2; man.happy@320+letter
+street; bank@200,0,1.3; clock@200,70,.8=9:00; woman.think@330
+street; bus~yellow@200,0,1.2; boy.happy@330+backpack
+stage; man.happy@200+mic; music@250,80; music@150,70
+street; ftruck@160,0,1.2; fire@300,0,1.4; firefighter.happy@250
+station; train@200,0,1.2; man.think@330; qmark@330,104
+street; building@200,0,1.2; txt@200,80=POLICE; man.sad@320
+river; bridge@200,0,.9; man.walk@200,60,.8
+road; tlight@200,0,1.3; car@120,0,1; man.walk@320
+street; arrowr@200,60,1.6; man.think@120; stall@330,0,.8
+road; crosswalk@200,0,1.4; man.walk@170; woman.walk@230
+street; man.walk.happy@200; woman.walk@120
+airport; plane@200,40,1.2; clock@330,70,1; man.think@100
+sea; ship@200,10,1.2; dock@200,0,1.4
+farm; cow@160,0,1.2; cow@240,0,1.1; fence@330,0,.6
+farm; ricefield@200,0,1.4; farmer.happy@200
+farm; canefield@200,0,1.4; farmer.happy@340
+office; computer@200,0,1.4; man.think@320; say@360,96=새 일?
+city; factory@200,0,1.2; man.happy@330
+city; tower@200,0,1; man.suit@320
+city; tower@200,0,1; txt@200,40=5F; man.suit.happy@320
+street; shop@200,0,1.3; txt@200,64=식당; man.happy@330
+city; man.happy.up@200; shop@100,0,.8; bus@320,0,.8
+street; shop@200,0,1.3; txt@200,64=7-11; man.happy@330
+city; mall@200,0,1.1; woman.happy@330+shopbag
+shop; handbag~brown@200,0,2; woman.happy@320
+city; cinema@200,0,1.1
+room; board_@200,20,1.4=ะ า ิ ี; teacher.point@340!
+sea; pool@200,0,1.8; boy.happy@200,0,.8
+city; ferris@200,0,1.1; boy.happy@330
+city; museum@200,0,1.2; man@330
+rain; calendar@200,30,1.8; txt@200,96=-2
+airport; calendar@200,30,1.8; txt@200,96=+2; plane@330,80,.6
+office; calendar@200,30,1.8; man.sweat@330
+room; calendar@200,30,1.8; arrowr@270,40; woman.happy@340
+room; calendar@200,30,1.8; arrowl@130,40; man.think@330
+room; man.happy@130; woman.happy@190; boy.happy@250; girl.happy@310
+gym; calendar@120,40,1.2; man.run.sport.happy@240
+office; clock@200,50,1.6; man.run.sweat@320
+rest; calendar@200,30,1.6; dish@120,0; man.happy@320
+cafe; man.happy@200; txt@280,70=자주?
+rest; plate@200,0,1.6; man.sad@320; say@360,96=아직…
+room; man.wave.happy@200; say@260,96=곧 갈게요
+room; man.wave@200; say@260,96=천천히!
+office; clock@200,50,1.6; man.wai.sweat.sad@320
+hosp; baby.happy@200,10; woman.happy.love@300
+room; cake@200,0,1.8; candle@200,28,.8; girl.happy@320; qmark@320,104
+beach; calendar@140,40,1.2; man.happy.up@240
+kitchen; glass@200,0,1.4; p@200,0:M10 -10q10 0 14 10; man.give@320!
+school; calendar@200,30,1.8; boy.sweat@330
+airport; suitcase@200,0,1.6; plane@330,80,.6; boy.happy.up@120
