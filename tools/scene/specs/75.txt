@@ -1,0 +1,100 @@
+ความลึก	gym; pool@200,0,1.2; ruler^90@300,30; txt@300,80=2m
+ความกว้างของ	road; car@170,0,.7; car@230,0,.7; arrowl@140,40; arrowr@260,40
+เส้นผ่าศูนย์กลาง	room; circle@200,30,1; sline@200,30,.5; txt@200,80=10cm
+รอบเอว	shop; tmeasure@200,50; man@200; pants@300,30
+วัดขนาด	room; ruler@200,40,1.2; man@330; bed@100
+ชั่งน้ำหนัก	airport; bscale@200,0,1; suitcase@200,14,.8; man@330
+ขนาดที่แน่นอน	room; ruler@200,40,1.2; txt@200,80=?cm; man@330
+ประมาณเท่าไหร่	room; money@200,40; qmark@240,70; bed@100; man@330
+อย่างน้อย	bedroom; man.sleep.lie@200,24; bed@200; txt@300,80=7h+
+อย่างมาก	road; car@200,0,1; man@100; man@140; man@260; man@300; txt@200,80=max 5
+ขึ้นไป	office; door@200; txt@200,80=18+; man@300
+ต่ำกว่า	zoo; kid.happy@200; txt@200,96=<5; money@280,40; cross@280,40
+เกินกว่า	airport; bscale@200,0,1; suitcase@200,14,.8; txt@200,90=20kg+
+รวมทั้งหมด	shop; receipt@200,30,1.2; txt@200,90=2,000฿
+คนละ	rest; table@200; man.sit@140,24; woman.sit@260,24; chair@140; chair@260; txt@200,90=200฿/명
+คนละครึ่ง	road; taxi@200,0,1; man@100; woman@330; txt@200,80=½
+หนึ่งในสาม	class; girl@140; boy@200; boy@260; boy@320; girl@100; txt@200,96=⅓
+สองเท่าตัว	shop; pricetag@200,50,1.2=x2; arrowu@260,60
+หมายเลข	room; phone@200,40,1.2; txt@200,80=081-
+ลำดับที่	station; man@140; man@180; man@220; man.happy@260; txt@260,96=10
+รูปทรง	room; bottle@200,30,1.4; sparkle@240,60
+ทรงกลม	room; table@200; circle@200,60,.8
+สี่เหลี่ยมจัตุรัส	room; hanky@200,30,1.2
+สี่เหลี่ยมผืนผ้า	room; door@200; rect@300,40,.4
+วงรี	kitchen; egg@200,30,1.6; oval@280,30,.5
+สี่เหลี่ยมขนมเปียกปูน	park; kite@200,70,1.2; diamond@120,60,.5; kid.happy@330
+ห้าเหลี่ยม	class; pentagon@200,30,1.2; pencil@260,40
+หกเหลี่ยม	park; honeycomb@200,40,1.2; bee@260,70
+ทรงกระบอก	kitchen; tin@200,30,1.4; cylinder@280,30,.6
+ทรงกรวย	cafe; icecream@200,30,1.4; cone@280,30,.6
+ทรงกลมเหมือนลูกบอล	space; earth@200,40,1.4; ball@300,30
+พีระมิด	desert; pyramid@200,0,1.4; sun@330,90
+เส้นโค้ง	class; curve@200,40,1.2; pencil@280,50
+เส้นตรง	class; sline@200,40,1.2; ruler@200,30
+เส้นประ	class; dashline@200,40,1.2; scissors@260,50
+เส้นทะแยง	class; diag@200,30,1.2
+ขอบรอบ	kitchen; plate@200,30,1.6; hl@200,34,1
+มุมขอบ	room; table@200; hl@120,40,.4; kid@300
+สีเข้ม	room; paint@200,0; brush@240,40; shirt~navy@300,30
+สีอ่อน	bedroom; paint@200,0; brush@240,40; bed@120
+สีสด	room; kid.happy@200~red; ball~yellow@280,10; balloon@140,70
+สีมืด	room; sofa~black@200
+สีพาสเทล	room; paint@200,0; brush@240,40; bed@120; kid.happy@330
+สีเบจ	living; sofa~orange@200
+สีครีม	room; paint@200,0; brush@240,40; man@330
+สีเขียวขี้ม้า	city; soldier@200; flag@300,0,.6
+สีฟ้าใส	beach; sun@330,90; cloud@140,80; man.happy@200
+สีน้ำเงิน	school; boy~navy@200; school@320,0,.4
+สีม่วงแดง	park; flower~purple@200,10,1.4; flower~purple@250,10
+สีชมพูอ่อน	room; girl.happy~pink@200; bed@120
+สีบานเย็น	room; woman.happy@200; dress~pink@280,30
+สีกากี	street; police@200; flag@320,0,.5
+สีเทาเงิน	road; car~gray@200,0,1; man.happy@330
+ไม่มีสี	room; water@200,30,1.2; glass@250,20
+สีรุ้ง	kitchen; cake@200,30,1.2; rainbow@200,80,.5
+ด่างๆ	street; cat@200,0,1.2; dot@190,20; dot@210,24
+หลากสี	room; kid.happy~red@140; kid.happy~yellow@200; kid.happy~green@260
+สีพื้น	shop; shirt@170,30; shirt~blue@230,30; check@200,70
+ร้านผลไม้	market; stall@200,0,1; mango@180,40; banana@220,40; seller@300
+ผลไม้ตามฤดู	market; mango@170,30; durian@200,30; rambutan@230,30; calendar@300,60
+มะม่วงสุก	kitchen; mango~yellow@200,30,1.4; sparkle@260,60
+มะม่วงดิบ	kitchen; mango~green@200,30,1.4; sauce@260,30
+มะม่วงมัน	kitchen; mango~green@200,30,1.4; knife@260,40
+ใบตอง	kitchen; leaf@200,30,1.6; snack@260,30
+หัวปลี	rest; plate@200,30; padthai@0; man@330
+กล้วยไข่	kitchen; banana@200,30,1; sparkle@240,60
+กล้วยปิ้ง	street; grill@200,10; banana@200,30; seller@300
+กล้วยทอด	street; pan@200,30; banana@200,40; seller@300; steam@200,70
+เนื้อมะพร้าว	kitchen; coconut@200,30,1.2; spoon@240,40; snack@140,30
+มะพร้าวอ่อน	beach; coconut@200,30,1.2; straw@200,60; man.happy@330
+ส้มโอ	market; pomelo@200,0,1.6; man.wow@320
+ส้มเขียวหวาน	market; tangerine@180,0; tangerine@200,0; tangerine@220,0
+ชมพู่	market; roseapple@180,0,1.2; roseapple@220,0,1.2; water_drop@200,40
+สะละ	market; rambutan@200,0,1.2; hl@200,20,.5
+ลางสาด	market; jujube@200,0,1.4; seller@330
+ละมุด	market; mango@200,0,1; sugar@260,20; heart@200,60
+น้อยหน่า	market; durian@200,0,1; dot@200,30
+เสาวรส	cafe; glass@200,30,1.2; man.flat@330
+อะโวคาโด	kitchen; pear~green@200,0,1.2; heart@260,50
+กีวี	kitchen; kiwi@200,0,1.4; txt@200,80=C
+สาลี่	market; pear@200,0,1.4; flagkr@300,0,.5
+ลูกพลับ	market; persimmon@200,0,1.4
+ลูกพีช	market; peach@200,0,1.4; smell@200,40
+เชอรี่	shop; cherry@200,0,1.4; pricetag@260,40=฿฿฿
+บลูเบอร์รี่	kitchen; bowl@200,30; berry@200,40,.6; spoon@240,40
+เมลอน	shop; melon@200,0,1.4; pricetag@260,40=฿฿฿; flagjp@330,0,.5
+พุดซา	market; jujube@200,0,1.2; chili@260,20
+ถั่วฝักยาว	kitchen; wok@200,40; bean@200,50,.6; stove@200
+มะระ	kitchen; bittergourd@200,30,1.2; man.flat@330
+ซูกินี	kitchen; wok@200,40; zucchini@200,50,.6; stove@200
+กะหล่ำดาว	kitchen; cabbage@200,30,.6; heart@260,60
+ดอกกะหล่ำ	kitchen; wok@200,40; cauli@200,50,.6; shrimp@240,50
+ผักกวางตุ้ง	kitchen; pot@200,30; bokchoy@200,60,.6; steam@200,80
+ผักกาดหอม	kitchen; bowl@200,30; lettuce@200,40,.8
+ขึ้นช่าย	kitchen; pot@200,30; celery@200,60,.6
+ต้นหอมเล็ก	kitchen; bowl@200,30; soup@200,30; dot@200,46
+หอมแดง	kitchen; shallot@200,30,1.4; mortar@260,30
+พริกขี้หนู	kitchen; chili@200,30,1.6; fire@260,60,.4
+พริกหยวก	kitchen; bellpepper@200,30,1.4; check@260,60
+พริกชี้ฟ้า	kitchen; chili~red@200,30,2
