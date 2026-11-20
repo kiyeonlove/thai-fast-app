@@ -746,6 +746,127 @@ const O = {
   pipe: `<path d="M-30 -30H0V0" fill="none" stroke-width="6"/><path d="M-30 -30H0V0" fill="none" stroke="#fff" stroke-width="2"/><path d="M2 -14q-3 5 0 7q3 -2 0 -7" fill="#9cd" stroke-width="1"/>`,
   vest: `<path d="M-6 -30L-14 -26V0H-2L0 -20L2 0H14V-26L6 -30L0 -20Z" fill="${GR}"/>`,
   medpack: `<rect x="-12" y="-10" width="24" height="10" rx="2" fill="#fff"/><path d="M-12 -5h24" stroke-width="1"/><circle cx="-6" cy="-7" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="0" cy="-7" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="6" cy="-7" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="-6" cy="-2.5" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="0" cy="-2.5" r="1.6" fill="${GR}" stroke-width="1"/>`,
+  hl: `<circle cx="0" cy="0" r="12" fill="none" stroke-width="2" stroke-dasharray="4 3"/>`,
+  mailbox: `<path d="M0 0V-30" stroke-width="3"/><path d="M-14 -30V-44Q-14 -52 0 -52Q14 -52 14 -44V-30Z" fill="#fff"/><path d="M14 -46h6v-8h-6" fill="${GR}" stroke-width="1.6"/><rect x="-8" y="-46" width="12" height="3" fill="${K}"/>`,
+  plate: `<rect x="-14" y="-10" width="28" height="10" rx="2" fill="#fff"/>`,
+  cctv: `<path d="M-14 -10L10 -16L12 -8L-12 -2Z" fill="#fff"/><circle cx="-10" cy="-6" r="2" fill="${K}"/><path d="M10 -12h8v-14" fill="none" stroke-width="2.4"/>`,
+  sdoor: `<rect x="-30" y="-80" width="60" height="80" fill="#fff"/><path d="M0 -80V0M-6 -40v6M6 -40v6" stroke-width="2"/><path d="M-24 -70l10 -6M8 -60l12 -8" stroke="${L}" stroke-width="1.4"/>`,
+  grille: `<rect x="-26" y="-60" width="52" height="46" rx="2" fill="#fff"/><path d="M-18 -60v46M-9 -60v46M0 -60v46M9 -60v46M18 -60v46M-26 -37h52" stroke-width="2"/>`,
+  balcony: `<path d="M-50 0H50M-50 -30H50M-46 -30V0M-36 -30V0M-26 -30V0M-16 -30V0M-6 -30V0M4 -30V0M14 -30V0M24 -30V0M34 -30V0M46 -30V0" fill="none" stroke-width="2"/>`,
+  trowel: `<path d="M0 -36V-20" stroke-width="3.4"/><path d="M-6 -20H6L0 0Z" fill="${GR}"/>`,
+  shears: `<path d="M-4 0L4 -22M4 0L-4 -22" stroke-width="3"/><path d="M4 -22L2 -34M-4 -22L-2 -34" stroke-width="2"/><circle cx="0" cy="-11" r="1.6" fill="${K}"/>`,
+  hoe: `<path d="M10 -40L-6 -8" stroke-width="3"/><path d="M-6 -8L-14 -2L-10 2L-2 -4Z" fill="${GR}"/>`,
+  grass: `<path d="M-30 0l3 -10 3 10M-18 0l3 -12 3 12M-6 0l3 -9 3 9M6 0l3 -12 3 12M18 0l3 -10 3 10" fill="none" stroke-width="1.8"/>`,
+  bench: `<path d="M-34 -18H34M-34 -30H34M-28 -18V0M28 -18V0M-30 -30v12M30 -30v12" fill="none" stroke-width="3.4"/>`,
+  parasol: `<path d="M-40 -70Q0 -96 40 -70Z" fill="${GR}"/><path d="M0 -84V0M-14 0H14" stroke-width="3"/>`,
+  cline: `<path d="M-50 -60V0M50 -60V0M-50 -56Q0 -48 50 -56" fill="none" stroke-width="2.4"/><path d="M-30 -54v14h10v-14M-6 -52v18h12v-18M18 -53v12h10v-12" fill="${GR}" stroke-width="1.6"/>`,
+  acout: `<rect x="-22" y="-30" width="44" height="30" rx="2" fill="#fff"/><circle cx="-6" cy="-15" r="10" fill="${GR}"/><path d="M-6 -15l0 -8M-6 -15l7 4M-6 -15l-7 4" stroke-width="2"/><path d="M10 -24h8M10 -18h8M10 -12h8" stroke-width="1.4"/>`,
+  shed: `<path d="M-36 0V-40L0 -60L36 -40V0Z" fill="#fff"/><rect x="-14" y="-34" width="28" height="34" fill="${GR}"/><path d="M0 -34V0" stroke-width="1.4"/>`,
+  brack: `<path d="M-40 0V-20H40V0M-30 -20V0M-10 -20V0M10 -20V0M30 -20V0" fill="none" stroke-width="2.4"/>`,
+  hreel: `<circle cx="0" cy="-16" r="14" fill="#fff"/><circle cx="0" cy="-16" r="9" fill="${GR}" stroke-width="1.6"/><circle cx="0" cy="-16" r="3" fill="#fff" stroke-width="1.2"/><path d="M-12 0H12" stroke-width="3"/>`,
+  bbq: `<path d="M-20 -30Q-20 -12 0 -12Q20 -12 20 -30Z" fill="${K}"/><path d="M-22 -30H22" stroke-width="2.6"/><path d="M-10 -12L-16 0M10 -12L16 0" stroke-width="2.6"/>`,
+  charcoal: `<path d="M-14 0l2 -8h8l2 8ZM-2 0l2 -10h8l2 10ZM-8 -8l2 -8h8l2 8Z" fill="${K}" stroke-width="1.4"/>`,
+  firewood: `<rect x="-18" y="-8" width="36" height="8" rx="4" fill="#e8d9b8"/><rect x="-14" y="-16" width="30" height="8" rx="4" fill="#e8d9b8"/><circle cx="-18" cy="-4" r="4" fill="#fff" stroke-width="1.4"/>`,
+  postbox: `<rect x="-12" y="-46" width="24" height="46" rx="10" fill="${GR}"/><rect x="-7" y="-36" width="14" height="3" fill="${K}"/>`,
+  gate: `<path d="M-40 0V-60M40 0V-60" stroke-width="5"/><path d="M-36 -54H36V0H-36ZM-24 -54V0M-12 -54V0M0 -54V0M12 -54V0M24 -54V0" fill="none" stroke-width="2"/>`,
+  fence: `<path d="M-60 -24H60M-60 -10H60M-56 0V-32l4 -4 4 4V0M-36 0V-32l4 -4 4 4V0M-16 0V-32l4 -4 4 4V0M4 0V-32l4 -4 4 4V0M24 0V-32l4 -4 4 4V0M44 0V-32l4 -4 4 4V0" fill="none" stroke-width="2.2"/>`,
+  doghouse: `<path d="M-26 0V-30L0 -48L26 -30V0Z" fill="#fff"/><path d="M-30 -28L0 -50L30 -28" fill="none" stroke-width="3"/><path d="M-10 0V-16Q-10 -24 0 -24Q10 -24 10 -16V0Z" fill="${K}"/>`,
+  cathouse: `<path d="M-18 0V-20L0 -34L18 -20V0Z" fill="${GR}"/><circle cx="0" cy="-14" r="7" fill="${K}"/>`,
+  pbowl: `<path d="M-12 -8H12L10 0H-10Z" fill="${GR}"/><path d="M-10 -8q4 -4 6 0q4 -4 6 0q4 -4 6 0" fill="#e8d9b8" stroke-width="1.2"/>`,
+  wbowl: `<path d="M-12 -8H12L10 0H-10Z" fill="#fff"/><path d="M-10 -6H10" stroke="#8ab" stroke-width="1.6"/>`,
+  leash: `<path d="M-20 -6Q0 -30 20 -40" fill="none" stroke-width="2"/><circle cx="-20" cy="-6" r="3" fill="${GR}" stroke-width="1.2"/>`,
+  ppad: `<rect x="-20" y="-3" width="40" height="3" fill="#fff"/><path d="M-16 -1.5h32" stroke="${L}" stroke-width="1"/>`,
+  litter: `<path d="M-20 -14H20L16 0H-16Z" fill="${GR}"/><path d="M-16 -14q4 -3 8 0t8 0t8 0t8 0" fill="#e8d9b8" stroke-width="1.2"/>`,
+  cattower: `<path d="M0 0V-70" stroke-width="5"/><rect x="-20" y="-6" width="40" height="6" fill="${GR}"/><rect x="-18" y="-40" width="30" height="6" fill="${GR}"/><rect x="-8" y="-74" width="28" height="6" fill="${GR}"/>`,
+  sdriver: `<rect x="-5" y="-30" width="10" height="16" rx="3" fill="${GR}"/><path d="M0 -14V4" stroke-width="2"/><path d="M-3 2h6M0 -1v6" stroke-width="1.2"/>`,
+  fdriver: `<rect x="-5" y="-30" width="10" height="16" rx="3" fill="${GR}"/><path d="M0 -14V4" stroke-width="2"/><path d="M-3 4h6" stroke-width="1.6"/>`,
+  pliers: `<path d="M-2 0L2 -16L0 -26M2 0L-2 -16L0 -26" fill="none" stroke-width="3"/><path d="M-4 -4L-6 6M4 -4L6 6" stroke-width="4" stroke="${GR}"/>`,
+  wrench: `<path d="M-14 0L8 -22" stroke-width="4"/><path d="M8 -22q2 -10 10 -8l-5 5 3 3 5 -5q2 8 -8 10Z" fill="${GR}" stroke-width="1.6"/>`,
+  sockets: `<rect x="-24" y="-12" width="48" height="12" rx="2" fill="${GR}"/><circle cx="-14" cy="-6" r="3" fill="#fff"/><circle cx="-4" cy="-6" r="3.5" fill="#fff"/><circle cx="7" cy="-6" r="4" fill="#fff"/><circle cx="18" cy="-6" r="4.5" fill="#fff"/>`,
+  saw: `<path d="M-20 -10H20L24 0H-20Z" fill="#fff"/><path d="M-20 0l3 3 3 -3 3 3 3 -3 3 3 3 -3 3 3 3 -3 3 3 3 -3 3 3 3 -3 3 3" fill="none" stroke-width="1"/><rect x="20" y="-16" width="12" height="12" rx="3" fill="${GR}"/>`,
+  level: `<rect x="-28" y="-8" width="56" height="8" rx="2" fill="${GR}"/><rect x="-6" y="-7" width="12" height="6" rx="3" fill="#fff" stroke-width="1"/><circle cx="0" cy="-4" r="1.6" fill="${K}"/>`,
+  drill: `<path d="M-16 -26H10V-14H-6L-4 0H-14L-12 -14H-16Z" fill="${GR}"/><path d="M10 -20H24" stroke-width="2.4"/>`,
+  bit: `<path d="M-14 -4H10" stroke-width="3"/><path d="M-6 -6l2 4M0 -6l2 4M6 -6l2 4" stroke-width="1.2"/><path d="M10 -4l4 -2" stroke-width="1.6"/>`,
+  nail: `<path d="M0 0V-20M-4 -20H4" stroke-width="2.2"/>`,
+  screw: `<path d="M0 0V-16M-2 -12l4 -2M-2 -8l4 -2M-2 -4l4 -2" stroke-width="1.6"/><path d="M-5 -18H5L3 -16H-3Z" fill="${GR}" stroke-width="1.4"/>`,
+  bolt: `<path d="M-4 -24H4V-20H-4Z" fill="${GR}"/><path d="M0 -20V0M-2 -16l4 -2M-2 -12l4 -2M-2 -8l4 -2M-2 -4l4 -2" stroke-width="1.6"/>`,
+  nut: `<path d="M-8 -8L-4 -14H4L8 -8L4 -2H-4Z" fill="${GR}"/><circle cx="0" cy="-8" r="3" fill="#fff" stroke-width="1.2"/>`,
+  washer2: `<circle cx="0" cy="-8" r="7" fill="${GR}"/><circle cx="0" cy="-8" r="3" fill="#fff" stroke-width="1.2"/>`,
+  cgun: `<path d="M-24 -14H8V-6H-24Z" fill="#fff"/><path d="M8 -10h12M-6 -6l-4 12h6l2 -12" stroke-width="2.4" fill="${GR}"/>`,
+  gluegun: `<path d="M-14 -20H10L14 -16H-14Z" fill="${GR}"/><path d="M-8 -16L-10 0H-2L0 -16" fill="${GR}"/><path d="M14 -18h6M-14 -18h-8" stroke-width="2.4"/>`,
+  dtape: `<circle cx="0" cy="-10" r="10" fill="${GR}"/><circle cx="0" cy="-10" r="5" fill="#fff"/>`,
+  cutter: `<path d="M-16 -2H8L16 -6L8 -8H-16Z" fill="${GR}"/><path d="M8 -8L16 -6" stroke-width="1.4"/>`,
+  sandpaper: `<rect x="-14" y="-6" width="28" height="6" fill="${GR}"/><path d="M-10 -3h1M-4 -4h1M2 -3h1M8 -4h1" stroke-width="1.6"/>`,
+  paint: `<path d="M-14 0V-24H14V0Z" fill="#fff"/><ellipse cx="0" cy="-24" rx="14" ry="3" fill="${GR}"/><path d="M-14 -20Q0 -40 14 -20" fill="none" stroke-width="1.6"/>`,
+  proller: `<rect x="-14" y="-40" width="28" height="10" rx="5" fill="#fff"/><path d="M14 -35h4v14H0V0" fill="none" stroke-width="2.6"/>`,
+  flashlight: `<path d="M-16 -8H4L12 -12V0L4 -4H-16Z" fill="${GR}"/><path d="M16 -14l10 -6M16 -6h12M16 2l10 6" stroke-width="1.6" stroke="${L}"/>`,
+  lantern: `<path d="M-8 -6V-24H8V-6Z" fill="#fff"/><path d="M-10 -6H10V0H-10ZM-10 -24H10l-4 -6H-6Z" fill="${GR}"/><path d="M0 -30v-4" stroke-width="2"/><path d="M0 -10q-3 -5 0 -9q3 4 0 9" fill="${GR}" stroke-width="1"/>`,
+  batteries: `<rect x="-12" y="-20" width="9" height="20" rx="2" fill="${GR}"/><rect x="3" y="-20" width="9" height="20" rx="2" fill="${GR}"/><rect x="-9" y="-23" width="3" height="3" fill="${K}"/><rect x="6" y="-23" width="3" height="3" fill="${K}"/>`,
+  ctie: `<path d="M-16 -6H14" stroke-width="2.6"/><rect x="14" y="-9" width="5" height="6" fill="${K}"/>`,
+  wire: `<path d="M-20 -4q6 -12 12 0t12 0t12 0" fill="none" stroke-width="1.6"/>`,
+  rope: `<path d="M-20 -6q5 -4 10 0t10 0t10 0t10 0" fill="none" stroke-width="4"/><path d="M-20 -6q5 -4 10 0t10 0t10 0t10 0" fill="none" stroke="${GR}" stroke-width="1.4"/>`,
+  padlock: `<rect x="-9" y="-14" width="18" height="14" rx="2" fill="${GR}"/><path d="M-6 -14V-20Q-6 -26 0 -26Q6 -26 6 -20V-14" fill="none" stroke-width="2.4"/><circle cx="0" cy="-7" r="2" fill="${K}"/>`,
+  hinge: `<rect x="-12" y="-20" width="10" height="20" fill="${GR}"/><rect x="2" y="-20" width="10" height="20" fill="${GR}"/><path d="M0 -22V2" stroke-width="3"/>`,
+  pushpin: `<circle cx="0" cy="-12" r="5" fill="${GR}"/><path d="M0 -7V0" stroke-width="1.4"/>`,
+  mallet: `<path d="M0 0V-26" stroke-width="3"/><rect x="-12" y="-36" width="24" height="12" rx="4" fill="${K}"/>`,
+  hfan: `<path d="M0 0V-12" stroke-width="3"/><path d="M0 -12L-16 -30Q0 -40 16 -30Z" fill="${GR}"/><path d="M0 -12L-8 -34M0 -12V-36M0 -12L8 -34" stroke-width="1"/>`,
+  minifan: `<path d="M0 0V-18" stroke-width="4"/><circle cx="0" cy="-26" r="9" fill="#fff"/><path d="M0 -26q-6 -6 0 -8q2 4 0 8q8 0 6 6q-4 0 -6 -6q-2 8 -6 4q2 -4 6 -4" fill="${GR}" stroke-width="1"/>`,
+  shopbag: `<path d="M-14 0V-26H14V0Z" fill="${GR}"/><path d="M-7 -26Q-7 -36 0 -36Q7 -36 7 -26" fill="none" stroke-width="2"/>`,
+  paperbag: `<path d="M-12 0V-26H12V0Z" fill="#e8d9b8"/><path d="M-12 -26l3 4l3 -4l3 4l3 -4l3 4l3 -4l3 4" fill="none" stroke-width="1.2"/>`,
+  tcutter: `<path d="M-16 0V-10Q-16 -16 -8 -16H12V0Z" fill="${GR}"/><circle cx="-4" cy="-10" r="5" fill="#e8d9b8" stroke-width="1.4"/><path d="M12 -16l4 2" stroke-width="2"/>`,
+  keybox: `<rect x="-16" y="-26" width="32" height="26" rx="2" fill="#fff"/><path d="M-8 -20v8M0 -20v8M8 -20v8" stroke-width="2"/><circle cx="-8" cy="-10" r="2" fill="${GR}" stroke-width="1"/><circle cx="8" cy="-10" r="2" fill="${GR}" stroke-width="1"/>`,
+  gcloth: `<rect x="-12" y="-12" width="24" height="12" rx="1" fill="${GR}"/><path d="M-12 -6h24M0 -12v12" stroke-width=".8"/>`,
+  sewbox: `<rect x="-20" y="-16" width="40" height="16" rx="3" fill="#e8d9b8"/><path d="M-20 -16Q0 -28 20 -16" fill="#e8d9b8"/><circle cx="-8" cy="-22" r="4" fill="${GR}" stroke-width="1.2"/><circle cx="4" cy="-22" r="4" fill="#fff" stroke-width="1.2"/>`,
+  needle: `<path d="M-16 0L14 -16" stroke-width="1.8"/><ellipse cx="12" cy="-15" rx="2.4" ry="1.2" transform="rotate(-28 12 -15)" fill="#fff" stroke-width="1"/>`,
+  thread: `<rect x="-7" y="-20" width="14" height="20" fill="#fff"/><path d="M-9 -20H9M-9 0H9" stroke-width="3"/><path d="M-7 -16h14M-7 -12h14M-7 -8h14M-7 -4h14" stroke-width=".8"/>`,
+  sewm: `<path d="M-30 0V-10H30V0Z" fill="#fff"/><path d="M-24 -10V-40H20V-30H-14V-10" fill="${GR}"/><path d="M14 -30V-18M14 -18l2 4" stroke-width="2"/>`,
+  matches: `<rect x="-12" y="-8" width="24" height="8" fill="${GR}"/><path d="M6 -8L16 -28" stroke-width="1.8"/><circle cx="16" cy="-29" r="2" fill="${K}"/><path d="M16 -36q-3 3 0 5q3 -2 0 -5" fill="${GR}" stroke-width="1"/>`,
+  lighter: `<rect x="-6" y="-22" width="12" height="22" rx="3" fill="${GR}"/><rect x="-5" y="-26" width="10" height="5" fill="#fff" stroke-width="1.4"/><path d="M0 -36q-4 5 0 8q4 -3 0 -8" fill="#fff" stroke-width="1.2"/>`,
+  incense: `<path d="M-12 0H12L10 -10H-10Z" fill="${GR}"/><path d="M-4 -10L-6 -34M0 -10V-36M4 -10L6 -34" stroke-width="1.4"/><path d="M0 -38q-4 -6 0 -12q4 -6 0 -12" fill="none" stroke-width="1.2" stroke="${L}"/>`,
+  hwarmer: `<rect x="-10" y="-14" width="20" height="14" rx="5" fill="${GR}"/><path d="M-4 -18q-3 -4 0 -8M3 -18q-3 -4 0 -8" fill="none" stroke-width="1.2" stroke="${L}"/>`,
+  tiffin: `<rect x="-10" y="-12" width="20" height="12" rx="2" fill="#fff"/><rect x="-10" y="-24" width="20" height="12" rx="2" fill="#fff"/><rect x="-10" y="-36" width="20" height="12" rx="2" fill="#fff"/><path d="M-12 -38V2M12 -38V2M-12 -40Q0 -50 12 -40" fill="none" stroke-width="2"/>`,
+  picnic: `<path d="M-20 -18H20L16 0H-16Z" fill="#e8d9b8"/><path d="M-20 -18l4 -4h32l4 4M-8 -22q8 -14 16 0" fill="none" stroke-width="2"/><path d="M-16 -10h32" stroke-width="1"/>`,
+  bojagi: `<path d="M-16 0Q-20 -14 -10 -18H10Q20 -14 16 0Z" fill="${GR}"/><path d="M-6 -18l-6 -10 6 4 6 -4 -6 10ZM6 -18l6 -10" fill="${GR}" stroke-width="1.6"/>`,
+  ricefield: `<path d="M-60 0H60M-50 0v-8l-3 -4M-50 -8l3 -4M-30 0v-8l-3 -4M-30 -8l3 -4M-10 0v-8l-3 -4M-10 -8l3 -4M10 0v-8l-3 -4M10 -8l3 -4M30 0v-8l-3 -4M30 -8l3 -4M50 0v-8l-3 -4M50 -8l3 -4" fill="none" stroke-width="1.6"/>`,
+  pond: `<ellipse cx="0" cy="-6" rx="50" ry="8" fill="#eef"/><path d="M-30 -6q4 -3 8 0M10 -8q4 -3 8 0" fill="none" stroke-width="1.2"/>`,
+  rooster: `<path d="M-10 -10Q-12 -24 0 -22Q4 -30 10 -24Q14 -18 10 -10Q0 -2 -10 -10Z"/><path d="M6 -28l2 -6 2 4 2 -4 1 6" fill="${GR}" stroke-width="1.2"/><path d="M-10 -12q-8 -4 -6 -14q4 6 6 4" fill="${K}" stroke-width="1"/><path d="M14 -20l4 1-4 2" fill="${K}" stroke-width="1"/><path d="M-2 -8V0M4 -8V0" stroke-width="1.6"/>`,
+  mangorice: `<ellipse cx="0" cy="-2" rx="18" ry="4"/><path d="M-14 -4Q-12 -14 -2 -12Q0 -4 -14 -4Z" fill="#fff" stroke-width="1.6"/><path d="M0 -4Q2 -14 14 -12Q16 -4 0 -4Z" fill="#e8d9b8" stroke-width="1.6"/>`,
+  horse: `<path d="M-18 -26Q-20 -40 -2 -38H14L22 -50L30 -46L24 -32Q22 -22 16 -22H-14Z" fill="#fff"/><path d="M-14 -22V0M-6 -22V0M8 -22V0M14 -22V0" stroke-width="3"/><path d="M-18 -32q-10 4 -8 16" fill="none" stroke-width="3"/><path d="M14 -40l6 -10 4 2" fill="${K}" stroke-width="1"/><circle cx="24" cy="-44" r="1.2" fill="${K}"/>`,
+  duck: `<path d="M-14 -8Q-14 -18 0 -16Q4 -26 10 -24Q16 -22 12 -16Q16 -6 6 -2H-8Q-14 -2 -14 -8Z" fill="#fff"/><path d="M14 -21l7 1 -6 3" fill="${GR}" stroke-width="1.2"/><circle cx="9" cy="-21" r="1.2" fill="${K}"/><path d="M-6 -10q6 4 10 -2" fill="none" stroke-width="1.4"/>`,
+  mouse: `<ellipse cx="0" cy="-5" rx="9" ry="5" fill="${GR}"/><circle cx="-8" cy="-10" r="3" fill="${GR}"/><circle cx="-10" cy="-5" r="1" fill="${K}"/><path d="M9 -4q10 0 12 -8" fill="none" stroke-width="1.4"/>`,
+  rabbit: `<ellipse cx="2" cy="-9" rx="11" ry="9" fill="#fff"/><circle cx="-8" cy="-18" r="6" fill="#fff"/><path d="M-10 -23Q-14 -38 -8 -38Q-6 -32 -7 -24M-5 -23Q-2 -36 2 -34Q2 -28 -3 -22" fill="#fff" stroke-width="1.8"/><circle cx="-9" cy="-18" r="1.1" fill="${K}"/><circle cx="13" cy="-8" r="3" fill="#fff" stroke-width="1.4"/>`,
+  carrot: `<path d="M-3 -24L3 -24L0 0Z" fill="#e8b070"/><path d="M0 -24l-4 -8M0 -24l0 -9M0 -24l4 -8" stroke-width="1.6"/>`,
+  tiger: `<ellipse cx="6" cy="-22" rx="24" ry="12" fill="#e8b070"/><path d="M-6 -12V0M18 -12V0M-12 -12V0M24 -12V0" stroke-width="3.4"/><circle cx="-18" cy="-28" r="11" fill="#e8b070"/><path d="M-26 -36l-2 -5 5 2M-10 -36l2 -5 -5 2" fill="#e8b070" stroke-width="1.6"/><path d="M0 -32v8M8 -33v9M16 -32v8M-18 -38v4" stroke-width="2.2"/><circle cx="-22" cy="-29" r="1.2" fill="${K}"/><circle cx="-14" cy="-29" r="1.2" fill="${K}"/><path d="M30 -24q8 -4 6 -14" fill="none" stroke-width="2.6"/>`,
+  bear: `<ellipse cx="4" cy="-20" rx="22" ry="16" fill="#a77"/><path d="M-8 -6V0M16 -6V0" stroke-width="5"/><circle cx="-16" cy="-30" r="11" fill="#a77"/><circle cx="-24" cy="-38" r="4" fill="#a77"/><circle cx="-8" cy="-39" r="4" fill="#a77"/><ellipse cx="-18" cy="-26" rx="4" ry="3" fill="#fff" stroke-width="1.2"/><circle cx="-19" cy="-32" r="1.2" fill="${K}"/><circle cx="-12" cy="-32" r="1.2" fill="${K}"/>`,
+  honey: `<path d="M-10 0V-14Q-10 -18 -6 -18H6Q10 -18 10 -14V0Z" fill="#f2c94c"/><rect x="-11" y="-22" width="22" height="5" rx="1" fill="#fff"/><text x="0" y="-5" font-size="6" text-anchor="middle" fill="${K}" stroke="none" font-weight="700">HONEY</text>`,
+  frog: `<ellipse cx="0" cy="-8" rx="14" ry="8" fill="#9c9"/><circle cx="-7" cy="-16" r="4.5" fill="#9c9"/><circle cx="7" cy="-16" r="4.5" fill="#9c9"/><circle cx="-7" cy="-16" r="1.6" fill="${K}"/><circle cx="7" cy="-16" r="1.6" fill="${K}"/><path d="M-6 -6q6 4 12 0" fill="none" stroke-width="1.4"/>`,
+  turtle: `<path d="M-18 -6Q-16 -24 0 -24Q16 -24 18 -6Z" fill="${GR}"/><path d="M-8 -6L-4 -18H4L8 -6M-12 -14H12" fill="none" stroke-width="1.2"/><circle cx="24" cy="-10" r="5" fill="#fff"/><path d="M-12 -6v6M10 -6v6" stroke-width="3.4"/>`,
+  butterfly: `<path d="M0 -12Q-16 -28 -16 -14Q-16 -6 0 -12Q-12 -2 -6 2Q0 0 0 -12Q16 -28 16 -14Q16 -6 0 -12Q12 -2 6 2Q0 0 0 -12Z" fill="${GR}" stroke-width="1.6"/><path d="M0 -18V-2M0 -18l-3 -5M0 -18l3 -5" stroke-width="1.6"/>`,
+  bee: `<ellipse cx="0" cy="-8" rx="9" ry="6" fill="#f2c94c"/><path d="M-3 -14v12M3 -14v12" stroke-width="2.4"/><ellipse cx="-3" cy="-17" rx="4" ry="5" fill="#fff" stroke-width="1.2"/><ellipse cx="4" cy="-17" rx="4" ry="5" fill="#fff" stroke-width="1.2"/><path d="M9 -8l4 0" stroke-width="1.4"/>`,
+  crab: `<ellipse cx="0" cy="-8" rx="14" ry="8" fill="#e8806a"/><path d="M-12 -10l-8 -8M12 -10l8 -8" stroke-width="2.4"/><circle cx="-21" cy="-19" r="4" fill="#e8806a"/><circle cx="21" cy="-19" r="4" fill="#e8806a"/><path d="M-10 -2l-6 4M10 -2l6 4M-6 -1l-4 5M6 -1l4 5" stroke-width="1.6"/><circle cx="-4" cy="-12" r="1.2" fill="${K}"/><circle cx="4" cy="-12" r="1.2" fill="${K}"/>`,
+  shrimp: `<path d="M-14 -4Q-16 -18 0 -20Q12 -20 14 -10Q8 -14 2 -12Q-6 -10 -8 -4Z" fill="#e8806a"/><path d="M14 -10l6 -4M14 -10l6 2" stroke-width="1.4"/><path d="M-14 -4l-6 2l2 4Z" fill="#e8806a" stroke-width="1.2"/>`,
+  curry: `<path d="M-16 -10H16Q14 0 0 0Q-14 0 -16 -10Z"/><path d="M-13 -10H13" stroke-width="1"/><path d="M-12 -10Q0 -6 12 -10Z" fill="#9c9" stroke-width="1"/><circle cx="-4" cy="-11" r="2" fill="#fff" stroke-width="1"/>`,
+  sticky: `<path d="M-12 0L-14 -20Q0 -26 14 -20L12 0Z" fill="#e8d9b8"/><path d="M-14 -20Q0 -14 14 -20M-10 -12h20M-10 -6h20" fill="none" stroke-width="1.2"/>`,
+  pineapple: `<ellipse cx="0" cy="-12" rx="9" ry="12" fill="#f2c94c"/><path d="M-6 -18l12 10M-6 -8l12 -10M-8 -12l10 8" stroke-width="1"/><path d="M0 -24l-6 -10M0 -24v-12M0 -24l6 -10" stroke-width="2.4"/>`,
+  papaya: `<path d="M-6 -20Q-12 -10 -8 -2Q0 2 8 -2Q12 -10 6 -20Q0 -26 -6 -20Z" fill="#9c9"/><path d="M0 -24v-4" stroke-width="2"/>`,
+  lime: `<circle cx="0" cy="-8" r="8" fill="#9c9"/><circle cx="0" cy="-8" r="5" fill="#fff" stroke-width="1"/><path d="M0 -13v10M-5 -8h10" stroke-width=".8"/>`,
+  mangosteen: `<circle cx="0" cy="-9" r="9" fill="#857"/><path d="M-6 -18l3 3 3 -4 3 4 3 -3" fill="#9c9" stroke-width="1.4"/>`,
+  tlight: `<path d="M0 0V-40" stroke-width="3"/><rect x="-8" y="-72" width="16" height="34" rx="3" fill="${K}"/><circle cx="0" cy="-66" r="4" fill="#555" stroke="none"/><circle cx="0" cy="-56" r="4" fill="#555" stroke="none"/><circle cx="0" cy="-46" r="4" fill="#4c4" stroke="none"/>`,
+  rainbow: `<path d="M-50 0A50 50 0 0 1 50 0" fill="none" stroke="#e66" stroke-width="5"/><path d="M-44 0A44 44 0 0 1 44 0" fill="none" stroke="#fb4" stroke-width="5"/><path d="M-38 0A38 38 0 0 1 38 0" fill="none" stroke="#ee4" stroke-width="5"/><path d="M-32 0A32 32 0 0 1 32 0" fill="none" stroke="#6c6" stroke-width="5"/><path d="M-26 0A26 26 0 0 1 26 0" fill="none" stroke="#69e" stroke-width="5"/><path d="M-20 0A20 20 0 0 1 20 0" fill="none" stroke="#a6d" stroke-width="5"/>`,
+  bolt: `<path d="M4 -40L-8 -16H2L-6 4L12 -24H2L10 -40Z" fill="#f2c94c" stroke-width="1.8"/>`,
+  wind: `<path d="M-30 -20H10q8 0 8 -6t-6 -6M-30 -10H20q8 0 8 6t-6 6M-26 -30H-6" fill="none" stroke-width="2"/>`,
+  island: `<path d="M-40 0Q-20 -14 0 -14Q20 -14 40 0Z" fill="#e8d9b8"/><path d="M0 -14Q2 -34 -2 -50" fill="none" stroke-width="3"/><path d="M-2 -50q-14 -4 -22 6q12 -8 22 -6M-2 -50q14 -4 22 6q-12 -8 -22 -6" fill="${GR}" stroke-width="1.4"/>`,
+  forest: `<path d="M-50 0L-38 -40L-26 0ZM-30 0L-16 -50L-2 0ZM-6 0L8 -44L22 0ZM16 0L30 -38L44 0Z" fill="#9c9"/>`,
+  leaf: `<path d="M-8 0Q-12 -14 4 -18Q10 -6 -8 0Z" fill="#e8b070"/><path d="M-8 0L2 -14" stroke-width="1"/>`,
+  petal: `<ellipse cx="0" cy="-3" rx="5" ry="3" fill="#f6a" stroke-width="1.2"/>`,
+  sandcastle: `<path d="M-24 0V-16H-16V-24H-8V-16H8V-24H16V-16H24V0Z" fill="#e8d9b8"/><path d="M-4 0V-8Q0 -12 4 -8V0" fill="#fff" stroke-width="1.4"/><path d="M16 -24V-34l6 3 -6 3" fill="${GR}" stroke-width="1.2"/>`,
+  mangotree: `<path d="M-4 0V-26H4V0Z" fill="#e8d9b8"/><circle cx="0" cy="-46" r="22" fill="#9c9"/><ellipse cx="-10" cy="-36" rx="4" ry="5" fill="#f2c94c" stroke-width="1.4"/><ellipse cx="8" cy="-34" rx="4" ry="5" fill="#f2c94c" stroke-width="1.4"/><ellipse cx="2" cy="-52" rx="4" ry="5" fill="#f2c94c" stroke-width="1.4"/><ellipse cx="14" cy="-48" rx="4" ry="5" fill="#f2c94c" stroke-width="1.4"/>`,
+  sprout: `<path d="M0 0V-10" stroke-width="1.8"/><path d="M0 -8q-8 -2 -8 -8q6 0 8 8M0 -10q6 -6 10 -4q-2 6 -10 4" fill="#9c9" stroke-width="1.2"/>`,
+  hill: `<path d="M-80 0Q-40 -40 0 -30Q40 -40 80 0Z" fill="#cdc"/>`,
+  dark: `<rect x="-200" y="-112" width="400" height="120" fill="#555" stroke="none" opacity=".35"/>`,
+  medal: `<path d="M-6 -36L0 -22L6 -36" fill="none" stroke-width="2"/><circle cx="0" cy="-14" r="9" fill="#f2c94c"/><path d="M0 -19l1.5 3 3 .5-2 2 .5 3-3-1.5-3 1.5.5-3-2-2 3-.5z" fill="#fff" stroke-width=".8"/>`,
+  testp: `<path d="M-12 0V-30H12V0Z" fill="#fff"/><path d="M-8 -24h10M-8 -18h14M-8 -12h12M-8 -6h8" stroke-width="1.2"/><text x="6" y="-4" font-size="10" fill="#d33" stroke="none" font-weight="800">X</text>`,
+  colorchips: `<rect x="-36" y="-12" width="10" height="12" fill="#e44"/><rect x="-24" y="-12" width="10" height="12" fill="#fb4"/><rect x="-12" y="-12" width="10" height="12" fill="#ee4"/><rect x="0" y="-12" width="10" height="12" fill="#4b4"/><rect x="12" y="-12" width="10" height="12" fill="#49e"/><rect x="24" y="-12" width="10" height="12" fill="#a6d"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -764,8 +885,8 @@ const OS = {table: 1, desk: 1}; // 기본 크기 외
 function obj(name, mods, sc, txt, inHand) {
   let s = O[name];
   if (s === undefined) return "";
-  if (txt !== undefined && ["jar", "pump", "pack", "sack", "carton", "spray", "tin", "tube", "box", "bottle", "medpack", "pillbox", "detergent", "container", "memo", "jbox", "toolbox", "spray"].includes(name)) {
-    const LY = {jar: -8, pump: -10, pack: -9, sack: -10, carton: -8, spray: -8, tin: -5, tube: -4, box: -6, bottle: -10, detergent: -6, container: -5, memo: -14, medpack: -12, pillbox: -11, jbox: -4, toolbox: -5};
+  if (txt !== undefined && ["jar", "pump", "pack", "plate", "paint", "sack", "carton", "spray", "tin", "tube", "box", "bottle", "medpack", "pillbox", "detergent", "container", "memo", "jbox", "toolbox", "spray"].includes(name)) {
+    const LY = {jar: -8, pump: -10, plate: -3, paint: -9, pack: -9, sack: -10, carton: -8, spray: -8, tin: -5, tube: -4, box: -6, bottle: -10, detergent: -6, container: -5, memo: -14, medpack: -12, pillbox: -11, jbox: -4, toolbox: -5};
     s += tx(0, LY[name], txt, name === "memo" ? 8 : 6.5);
   }
   if (txt !== undefined && (name === "sign" || name === "board_" || name === "money" || name === "paper" || name === "calendar" || name === "card")) {
@@ -830,6 +951,7 @@ function bubble(kind, x, y, content) {
 }
 
 /* ---------- 조립 ---------- */
+const TINT = {red: "#e45b5b", blue: "#6aa8e8", sky: "#8cc8f0", green: "#5cb85c", yellow: "#f2d04c", black: "#333", white: "#fff", pink: "#f4a6c6", purple: "#a77bd0", orange: "#f39a3c", brown: "#a0714a", gray: "#999", navy: "#2f3f73"};
 const SURF = {table: 39, desk: 40, ctable: 22, chair: 24, stool: 26, sofa: 30, bed: 30, counter: 36, shelf: 54, tvstand: 20, cab: 70, wshelf: 0};
 const PEOPLE = new Set(Object.keys(TYPE));
 function parse(tok) {
@@ -840,8 +962,8 @@ function parse(tok) {
   let held; const hi = tok.indexOf("+"); if (hi >= 0) { held = tok.slice(hi + 1); tok = tok.slice(0, hi); }
   let flip = false; if (tok.endsWith("!")) { flip = true; tok = tok.slice(0, -1); }
   let pos = []; const ai = tok.indexOf("@"); if (ai >= 0) { pos = tok.slice(ai + 1).split(","); tok = tok.slice(0, ai); }
-  const [name, ...mods] = tok.split(".");
-  return {name, mods, held, txt, flip, x: pos[0] === undefined || pos[0] === "" ? 200 : +pos[0], lift: pos[1] === undefined || pos[1] === "" ? 0 : (isNaN(+pos[1]) ? (SURF[pos[1]] || 0) : +pos[1]), s: pos[2] ? +pos[2] : 1};
+  let tint; const [name, ...mods] = tok.split(".").map(x => { const i = x.indexOf("~"); if (i >= 0) { tint = x.slice(i + 1); return x.slice(0, i); } return x; });
+  return {tint, name, mods, held, txt, flip, x: pos[0] === undefined || pos[0] === "" ? 200 : +pos[0], lift: pos[1] === undefined || pos[1] === "" ? 0 : (isNaN(+pos[1]) ? (SURF[pos[1]] || 0) : +pos[1]), s: pos[2] ? +pos[2] : 1};
 }
 function render(spec) {
   const parts = String(spec || "").split(";"); const bg = (parts.shift() || "").trim();
@@ -858,6 +980,7 @@ function render(spec) {
     else if (p.name === "zzz") g = zzz(0, 0);
     else if (PEOPLE.has(p.name)) g = person(p.name, p.mods, p.held, p.txt, p.lift);
     else g = obj(p.name, p.mods, 1, p.txt);
+    if (p.tint) { const c = TINT[p.tint] || p.tint; g = g.replace(/fill="(#ddd|#fff|#e8d9b8)"/g, `fill="${c}"`); }
     const tr = `translate(${p.x} ${GY - p.lift})${p.s !== 1 ? ` scale(${p.s})` : ""}${p.flip ? " scale(-1 1)" : ""}`;
     body += `<g transform="${tr}">${g}</g>`;
   }
@@ -878,7 +1001,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");
-      const nm = main.split("@")[0].replace(/!$/, ""); const [name, ...mods] = nm.split(".");
+      const nm = main.split("@")[0].replace(/!$/, "").replace(/~[a-z#0-9]*/g, ""); const [name, ...mods] = nm.split(".");
       if (["say", "think", "txt", "zzz"].includes(name)) continue;
       if (SC.people.includes(name)) { for (const m of mods) if (!MODS.has(m)) bad.push("mod:" + m); }
       else if (!SC.objects.includes(name)) bad.push(name);

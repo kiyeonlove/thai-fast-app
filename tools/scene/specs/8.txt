@@ -1,0 +1,100 @@
+ม้า	farm; horse@200,0,1.3; boy.happy@205,30,.8; fence@340,0,.6
+หมู	farm; pig@200,0,1.6; house@60,0,.8; grandma.happy@320
+เป็ด	park; pond@200,0,1.4; duck@180,4,1.2; duck@230,6,1
+หนู	kitchen; mouse@200,0,1.6; woman.wow.cover@320
+กระต่าย	field; rabbit@180,0,1.6; carrot@240,0,1.4
+ลิง	temple; monkey@200,0,1.6; bag@240,0; woman.wow@330
+เสือ	park; fence@200,0,1.4; tiger@200,0,1.4; boy.wow@340
+หมี	mount; bear@180,0,1.3; honey@260,0,1.6
+งู	field; grass@200,0,2; snake@200,0,1.2; man.wow.sweat@330
+กบ	rain; frog@170,0,1.6; frog@240,0,1.2; say@250,70=개굴
+เต่า	park; turtle@200,0,1.6; txt@250,40=…
+ผีเสื้อ	park; flower@140,0,1.4; flower@260,0,1.4; butterfly@200,50,1.6; butterfly@300,70
+ผึ้ง	park; flower@140,0,1.4; bee@200,40,1.6; man.wow.sweat@320
+มด	kitchen; table@200; snack@200,39,1.2; ant@170,39,1.2; ant@232,39,1.2
+ยุง	park; mosquito@180,50,1.8; mosquito@230,70,1.4; man.sad@320; hl@320,14,1
+แมลงวัน	rest; table@200; dish@200,39,1.3; fly@180,80,1.4; fly@230,70,1.2; woman.angry@330
+ไก่ตัวผู้	farm; rooster@200,0,1.8; sun@340,72; say@260,96=꼬끼오
+ปู	market; stall@200,0,1.2; crab@200,22,1.3; man.happy@330
+กุ้ง	rest; shrimp@200,10,2; cross@200,50,1.2; man.sad@330
+เนื้อ	market; meat@200,10,1.8; cross@200,50; cow@100,0,.8; man.wave@330
+เนื้อหมู	market; meat@200,10,1.8; pig@120,0,.8; txt@250,60=½kg; woman.happy@330
+เนื้อไก่	rest; chicken@200,10,1.8; man.happy.love@320
+ไข่	rest; table@200; fegg@200,39,1.6; man.happy@320
+ผัก	kitchen; veg@170,0,1.8; carrot@220,0,1.4; cabbage@260,0,1.2; woman.happy@340
+ก๋วยเตี๋ยว	rest; table@200; noodle@200,39,1.5; chili@240,39; man.happy.love@320
+แกง	rest; table@200; curry@200,39,1.6; woman.happy.love@320
+โจ๊ก	rest; table@200; soup@200,39,1.5; sun@340,72; man.happy@320
+ข้าวผัด	rest; table@200; friedrice@200,41,1.5; shrimp@215,48,.6; plate@200,39,1.4; woman.happy@320
+ข้าวเหนียว	field; sticky@200,0,1.8; man.happy@320
+ลูกอม	room; candy@200,20,2; girl.happy.love@320
+ไอศกรีม	beach; icecream@200,0,2; sun@340,72; boy.happy@320
+แตงโม	beach; watermelon@200,0,2; sun@340,72; man.happy@320
+สับปะรด	beach; pineapple@200,0,2; island@80,0,.8; woman.happy@320
+มะละกอ	market; papaya@200,0,1.8; board@200,0; woman.happy@320
+มะพร้าว	beach; coconut@200,0,1.8; straw@200,22; man.happy@320
+ส้ม	market; orange@180,0,1.6; orange@205,0,1.6; orange@230,0,1.6; txt@205,60=50฿/kg
+แอปเปิ้ล	kitchen; apple@200,0,2.2; txt@200,60=1; man.happy@320
+องุ่น	kitchen; grapes@200,0,2; cross@245,40; woman.happy@320
+มะนาว	kitchen; soup@200,0,1.6; lime@240,20,1.2; man.happy@320
+ทุเรียน	market; durian@200,0,2; man.cover@320; woman.happy.love@90
+มังคุด	market; mangosteen@200,0,2; txt@200,60=여왕; woman.happy@320
+พริก	rest; chili@200,10,2; cross@200,50; man.wave@320
+อร่อย	rest; table@200; dish@200,39,1.4; man.happy.love@320; txt@320,100=อร่อย!
+เผ็ด	rest; table@200; dish@200,39,1.4; fire@300,90,.6; man.sweat.wow@320
+หวาน	cafe; smoothie~orange@200,0,1.8; woman.wow.sweat@320
+เค็ม	rest; table@200; soup@200,39,1.4; man.sad.sweat@320; jar@140,39=소금
+เปรี้ยว	kitchen; mango@200,0,2; woman.sad.sweat@320
+หิว	street; man.sad@200; think@260,96=rice
+หิวน้ำ	rest; table@200; glass@200,39,1.4; man.sad.sweat@320
+อิ่ม	rest; table@200; plate@200,39,1.4; man.happy.hips@320
+สี	room; colorchips@200,10,1.8; woman.think@320
+สีแดง	shop; dress~red@200,0,2.2; woman.happy.point@100
+สีฟ้า	room; paint~blue@180,0,1.6; proller@240,0,1.2; man.happy@320
+สีเขียว	road; tlight@200,0,1.3; car@100,0,1; man.walk@320
+สีเหลือง	street; taxi~yellow@180,0,1.4; man.wave@320
+สีดำ	temple; man.suit@170; woman.suit@240
+สีขาว	room; tshirt~white@200,0,2; dust@200,24,1.6; man.sad@320
+สีชมพู	room; girl~pink.happy@200; heart~pink@260,80; dress~pink@320,0,1.6
+สีม่วง	park; flower~purple@170,0,2; flower~purple@230,0,1.6; woman.happy@320
+สีส้ม	temple; monk~orange.wai@200; monk~orange.wai@260
+สีน้ำตาล	shop; shoe~brown@200,0,2.4; man.happy@320
+สีเทา	sky; cloud~gray@140,70,1.6; cloud~gray@260,80,1.4; man.sad@200
+สีกรมท่า	school; student~navy@170; student~navy@240
+ศูนย์	room; phone@200,0,2; txt@200,70=0; man.happy@320
+สี่	city; building@200,0,1.1; txt@200,60=4; woman.happy.point@320!
+ห้า	shop; water@170,0; water@190,0; water@210,0; water@230,0; water@250,0; txt@210,60=5
+หก	bedroom; aclock@200,0,2; say@260,96=6:00; man.happy@320
+เจ็ด	room; calendar@200,30,2; txt@200,96=7일
+แปด	shop; shop@200,0,1.4; clock@200,64,1=8:00; woman.happy@330
+เก้า	room; boy.happy@200; cake@280,0,1.2; txt@280,50=9
+สิบ	room; clock@200,50,1.6=10:10; txt@270,70=10분; man.happy@330
+ยี่สิบ	room; cake@200,0,1.6; txt@200,60=25; woman.happy@320
+ร้อย	market; money@200,10,2=100฿; man.happy@320
+พัน	station; ticket@200,10,2; txt@200,60=1000฿; woman.happy@320
+หมื่น	office; money@180,10,1.6=10000; money@225,14,1.6=10000; man.happy@320
+มาก	room; man.wai.happy@180; woman.happy@260; heart@220,100
+น้อย	cafe; mug@200,0,1.8; spoon@240,0,1.2; txt@240,40=조금; woman.happy@320
+ทั้งหมด	market; shopbag@180,0,1.4; shopbag@220,0,1.4; man.think@320; say@350,96=?
+ป้อน	room; woman.sit.happy@170,24; chair@170; baby.happy@245,20; spoon@225,46
+ดื่ม	gym; man.eat.happy@200+water
+หลับ	bedroom; bed@200,0,1.3; man.lie.sleep@200,36; sun@340,70
+ตื่น	bedroom; bed@170,0,1.2; aclock@300,0,1.2; man.up.happy@170,30,.9
+อาบน้ำ	bath; shower@200,0,1.1; man.happy.up@205
+ล้าง	kitchen; sink@200,0,1.5; plate@200,30,1; man.happy@320; woman.happy@110
+เล่น	park; ball@200,0,1.4; boy.run.happy@140; girl.run.happy@280
+ทำงาน	office; desk@200; computer@200,40,1.2; man.sit.suit@200,24; chair@200; clock@330,70,1=6:00
+เรียน	room; desk@200; book@200,40,1.4; txt@200,80=ภาษาไทย; woman.sit.happy@200,24; chair@200
+สอน	class; teacher.point.happy@140; board_@240,20,1.2=1+1=2
+รู้	street; shop@200,0,1.2; clock@200,64,1; man.think@330
+ไม่รู้	street; man.shrug@200; woman.think@320!
+ชอบ	rest; table@200; curry@200,39,1.5; man.happy.love@320
+รัก	room; woman.hold.happy@200+teddy; baby.happy@200,30; heart@240,100
+อยาก	beach; man.think@300; think@220,96=wave
+ให้	room; boy.give.happy@170+candy; girl.happy@250
+รับ	cafe; mug@200,0,1.6; woman.give.happy@120+mug; man.happy@300
+ซื้อ	market; stall@200,0,1.2; veg@200,22; woman.happy@320+ecobag
+ขาย	market; stall@200,0,1.2; fruits@200,22,1; seller.happy@200
+เปิด	room; window@200,30,1.5; man.happy.point@320!
+ปิด	bedroom; switch@200,46,1.6; moon@100,80; man.point@140
+ขึ้น	station; train@200,0,1.2; man.happy@320

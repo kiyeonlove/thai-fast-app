@@ -1,0 +1,100 @@
+มิเตอร์น้ำ	street; house@110,0,1; meter@200,10,1.4; worker.holdr@300!+notebook
+ตู้จดหมาย	street; house@110,0,1; mailbox@200,0,1.3; letter@200,44,.7; woman.happy@300
+ป้ายบ้านเลขที่	street; house@200,0,1.2; gate@200,0,.9; plate@268,40,1.1=123; man.point@340!
+กล้องวงจรปิด	street; house@200,0,1.2; cctv@150,62,1.2; cctv@255,62,1.2!
+ประตูระเบียง	room; sdoor@200,0,1.2; p@200,40:M-60 -20q10 -6 20 0M-58 -10q10 -6 20 0; woman.happy@320
+เหล็กดัด	street; grille@200,30,1.4; house@60,0,.8; man.happy@330
+ตู้บิวท์อิน	bedroom; closet@200,0,1.05; woman.happy@320
+ระเบียง	city; balcony@200,40,1.4; cline@200,40,.8; woman.up.happy@200,40,.8
+บาลคอนี	city; balcony@200,30,1.4; man.happy@200,30,.9+mug
+ต้นไม้ประดับ	street; house@110,0,1; plant@200,0,1.4; flower@240,0,1.4; woman.happy@310
+บัวรดน้ำ	park; tree@140,0,1.1; wcan@230,0,1.6; man.happy@320
+ดิน	room; plant@170,0,1.3; sack@250,0,1.3=흙; woman.happy@330
+ปุ๋ย	field; plant@170,0,1.3; sack@250,0,1.3=비료; man.happy@330
+ช้อนปลูก	field; trowel@200,0,1.5; plant@140,0,1; woman.floor.happy@290
+กรรไกรตัดกิ่ง	park; tree@170,0,1.2; shears@240,0,1.6; man.happy@320
+เสียม	farm; hoe@200,0,1.6; grandma.happy@300; veg@120,0
+ดอกไม้	park; flower@140,0,1.6; flower@180,0,1.4; rose@220,0,1.6; flower@260,0,1.5; woman.happy@330
+ต้นไม้	park; tree@200,0,2; man.wow@320
+หญ้า	park; grass@200,0,2; sign@200,0,1.2=X; man.point@320!
+ม้านั่ง	park; bench@200,0,1.3; man.sit.happy@185,24; woman.sit.happy@220,24
+ร่มสนาม	beach; parasol@200,0,1.1; cchair@230,0,1; woman.shades.happy@320
+เชือกตากผ้า	field; cline@200,0,1.2; woman.up.happy@320
+คอมแอร์	street; house@120,0,1.2; acout@220,0,1.3
+โกดัง	street; shed@200,0,1.4; box@300,0,1.2; man.carry@330+box
+ประตูโกดัง	street; shed@200,0,1.4; padlock@200,30,1.2; man.happy@320
+ที่จอดจักรยาน	street; brack@200,0,1.2; bike@200,0,1.3; man.happy@330
+ที่ม้วนสายยาง	street; hreel@200,0,1.4; hose@270,0,.8; man.happy@330
+เตาบาบีคิว	park; bbq@200,0,1.4; meat@200,46,.7; steam@200,64; man.happy@320+tongs
+ถ่าน	park; bbq@200,0,1.4; charcoal@200,44,.9; fire@200,46,.6; man.happy@320
+ฟืน	mount; firewood@200,0,1.6; man.carry.happy@300+firewood; moon@60,80
+ตู้ไปรษณีย์	street; shop@100,0,.9; postbox@200,0,1.3; woman.give.happy@290!+letter
+ประตูรั้ว	street; gate@200,0,1; man.happy@200
+รั้ว	park; fence@200,0,1.2; dog@200,40,1.3; boy.wow@330
+บ้านหมา	park; doghouse@200,0,1.5; dog@270,0,1; zzz@270,30
+บ้านแมว	room; cathouse@200,0,1.6; cat@280,0,1.2; woman.happy@340
+อาหารสัตว์	room; sack@200,0,1.8=사료; dog@280,0; man.shrug.sad@340
+ชามอาหารสัตว์	room; pbowl@200,0,1.6; dog@260,0; woman.happy@340
+ชามน้ำ	room; wbowl@200,0,1.6; dog@260,0; man.happy@340+water
+สายจูง	park; dog@240,0,1.2; man.happy@150; leash@195,0,1
+แผ่นรองฉี่	room; ppad@200,0,1.8; dog@200,4,1; woman.point@320!
+ทรายแมว	room; litter@200,0,1.6; cat@270,0,1; woman.happy@340
+คอนโดแมว	room; cattower@200,0,1.2; cat@210,89,.8; zzz@225,104
+ค้อน	room; hammer@200,10,1.8; nail@250,10,1.6; man.happy@320
+ไขควง	room; sdriver@200,10,1.6; screw@245,10,1.6; man.happy@320
+ไขควงแฉก	room; sdriver@200,10,1.4; man.give@320!+sdriver
+ไขควงแบน	room; fdriver@200,10,1.6; can@250,0,1.4; woman.happy@320
+คีม	room; pliers@200,10,1.6; wire@250,0,1.2; man.happy@320
+คีมตัด	room; pliers@200,10,1.4; cable@260,0,.8; worker.happy@330
+ประแจ	room; wrench@200,10,1.6; nut@250,0,1.4; man.happy@330
+ประแจบ๊อก	room; sockets@200,10,1.6; man.happy@320
+ประแจเลื่อน	room; wrench@200,10,1.8; nut@245,0,1.6; worker.happy@330
+เลื่อย	room; saw@200,30,1.6; firewood@200,0,1.2; man.happy@330
+ระดับน้ำ	room; wshelf@200,60,1.6; level@200,60,1.1; man.up.happy@310
+สว่านไฟฟ้า	room; drill@200,40,1.6; p@150,60:M0 0a4 4 0 1 0 .1 0; worker.happy@320
+ดอกสว่าน	room; bit@200,20,2; cross@240,40; man.sad@320
+ตะปู	room; nail@200,0,1.6; nail@226,0,1.6; man.wow.sweat@320
+สกรู	room; screw@200,10,2; sdriver@250,10,1.4; man.happy@320
+โบลต์	room; bolt@200,10,2; nut@250,10,1.6; man.happy@320
+น็อต	room; nut@200,10,2.2; think@280,96=nut; man.sad@330
+แหวนรอง	room; washer2@200,10,2; nut@250,10,1.6; man.happy@330
+กาวยาง	room; tube@200,6,2=본드; shoe@270,0,1.6; man.happy@340
+กาวตราช้าง	room; tube@200,6,2=순간접착제; man.cry@320
+ซิลิโคน	bath; sink@200,0,1.4; cgun@200,46,1.2; worker.happy@320
+ปืนกาว	room; gluegun@200,10,1.6; blocks@260,0,1; girl.happy@330
+เทปพันสายไฟ	room; tape@200,10,1.8; cable@260,0,.8; man.happy@330
+เทปผ้า	room; dtape@200,10,1.8; box@260,0,1.4; man.happy@330
+คัตเตอร์	room; cutter@200,10,1.8; parcel@260,0,1.3; woman.happy@340
+กระดาษทราย	room; sandpaper@200,10,2; firewood@260,0,1; man.happy@330
+สีทาบ้าน	shop; paint@170,0,1.6=흰색; paint@225,0,1.6=흰색; man.happy@320
+ลูกกลิ้งทาสี	room; proller@200,0,1.6; wallpaper@120,0,.8; worker.happy@320
+ไฟฉาย	night; flashlight@200,30,1.8; man.wow@320
+ตะเกียง	field; tent@200,0,1.3; lantern@200,48,1; moon@340,80
+ถ่านไฟฉาย	living; remote@200,0,2; batteries@250,0,1.4; man.sad@330
+หลอดไฟ	bath; hlamp@200,112; cross@230,82; man.sad@300
+สายต่อพ่วง	room; multitap@200,0,1.6; fan@280,0,1.2; man.happy@100
+เคเบิลไท	room; ctie@200,10,2; cable@200,0,1; man.happy@320
+ลวด	park; wire@200,30,1.8; tree@120,0,1; man.happy@320
+เชือก	room; sneaker@200,0,2; man.happy@320
+เชือกฟาง	room; box@200,0,1.8; rope@200,24,1.2; man.happy@320
+เชือกเส้นใหญ่	river; lboat@200,0,1.4; rope@250,10,1.4; man.sweat@330
+แม่กุญแจ	street; bike@200,0,1.4; padlock@220,10,1.4; man.happy@320
+บานพับ	room; door@200,0,1.3; hinge@180,40,1; ring2@180,50; man.cover@320
+หมุด	school; memo@200,40,2; pushpin@200,104,1; boy.happy@320
+ค้อนยาง	bath; tile@200,0,1; mallet@270,10,1.4; worker.happy@340
+หีบเครื่องมือ	room; toolbox@200,0,1.8=공구; hammer@200,40,1.2; man.happy@320
+พัด	room; hfan@200,30,2; man.sweat.sad@320
+พัดลมพกพา	park; minifan@200,20,1.8; sun@340,72; woman.happy@300
+ร่มกันแดด	city; woman.happy@200+umbrella*1.6; sun@340,72
+ถุงช้อปปิ้ง	shop; shopbag@200,0,1.8; woman.happy.holdr@300!+shopbag
+ถุงกระดาษ	shop; paperbag@200,0,1.8; pbag@260,0,1.2; cross@260,40; woman.happy@340
+กล่อง	room; box@200,0,2.2; man.carry.sweat@150+box; woman.carry@250+box
+ที่ตัดเทป	room; tcutter@200,10,1.6; box@270,0,1.2; man.happy@330
+กระดาษหนังสือพิมพ์	room; news@200,20,1.6; plate@200,0,1.2; man.happy@320
+ถังขยะเล็ก	office; desk@180; bin@240,0,1.2; paper@238,36,.7; man.happy@320
+กล่องเก็บกุญแจ	room; keybox@200,40,1.4; key@200,52,1; woman.point@120
+นาฬิกาข้อมือ	room; watch@200,20,2.2; man.happy@320
+ผ้าเช็ดแว่น	room; glasses@200,40,1.6; gcloth@200,10,1.5; oldman.happy@320
+แว่นสายตายาว	room; book@200,0,1.4; glasses@200,40,1.6; grandma.hold.happy@320+book
+กล่องเย็บผ้า	room; sewbox@200,0,1.6; needle@200,50,1.2; grandma.happy@320
+เข็ม	room; needle@200,40,2.4; thread@270,0,1.2; woman.sweat@340
