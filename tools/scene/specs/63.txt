@@ -1,0 +1,100 @@
+ค่อยเป็นค่อยไป	class; stairs@200,0,1; man.walk@200,30; book@120,10
+เริ่มจากสิ่งเล็กๆ	room; sprout@140,0; plant@200,0; tree@280,0,.8
+การทำซ้ำสำคัญ	class; card@200,40=กิน; arrowr@250,40; card@300,40=กิน; man@100
+ยินดีที่ได้รู้จัก	office; man.happy.wai@140; woman.happy.wai@260; say@140,96=안녕하세요
+ผมชื่อ	room; man.happy@200; say@280,96=민수
+ผมเป็นคนเกาหลี	room; man.happy@200; flagkr@300,0,.8
+มาจากไหน	airport; man@140; woman.happy@260; say@260,96=?
+มาจากเกาหลี	airport; man.happy@140; flagkr@220,0,.7; plane@300,80,.5
+พูดภาษาไทยได้นิดหน่อย	room; man.happy@200; say@280,96=นิดหน่อย
+กำลังเรียนภาษาไทย	room; desk@200; man.sit@200,24; chair@200; book@220,50; txt@300,80=ก
+ทำงานอะไร	office; man@140; woman.happy@260; say@260,96=?; laptop@200,30
+ขายพรม	market; mat@200,0,1; seller.happy@300
+เปิดร้านค้า	shop; stall@200,0,1; woman.happy@300
+อยู่ที่ไหน	city; house@200,0,1; man@100; qmark@300,80
+แต่งงานหรือยัง	room; ring@200,50,1.2; qmark@240,70; man@140; woman@300
+มีลูกไหม	room; kid@200; man@120; qmark@280,80
+งานอดิเรกคืออะไร	room; guitar@160,10; ball@240,10; qmark@200,80
+ขอเบอร์โทรหน่อย	room; phone@200,40,1.2; man.happy@120; woman@300
+เบอร์โทรศัพท์	room; phone@200,40,1.2; txt@200,96=08x-xxx; man@320
+ไอดีไลน์	room; phone@200,40,1.2; chat@260,70; man.happy@320
+แล้วจะติดต่อไป	airport; plane@200,70,.6; flagkr@120,0,.6; phone@300,50
+ดีใจที่ได้เจอ	cafe; man.happy@140; woman.happy@260; heart@200,90
+แล้วพบกันอีก	street; man.happy.wave@140; woman.happy.wave@260
+เข้าใจไหม	class; teacher@140; student.think@280; qmark@280,96
+หมายความว่าอะไร	class; dict@200,10,1.2; qmark@240,70; student@320
+ภาษาไทยเรียกว่าอะไร	room; bottle@200,20,1.2; qmark@240,70; man@320
+พูดอีกครั้งได้ไหม	room; man.think@200; say@120,96=?
+ช่วยเขียนให้หน่อย	room; paper@200,10,1.2; pen@240,20; man@330
+ห้องน้ำอยู่ที่ไหน	shop; toilet@200,0,.8; man.sweat@320; qmark@320,96
+นี่คืออะไร	market; durian@200,10,1; qmark@240,60; man@320
+นานไหม	road; car@200,0,1; plane@330,80,.5; clock@100,70
+กี่โมงแล้ว	room; aclock@200,30,1.2; qmark@260,70; man@330
+ตอนนี้กี่โมง	night; flagkr@200,0,.8; clock@280,70; man@120
+วันนี้วันอะไร	room; calendar@200,50,1.2; qmark@260,70; man@330
+อากาศดีจัง	park; sun@330,80; man.happy@200; tree@100,0
+ร้อนมากเลย	street; sun@330,80; man.sweat@200
+ฝนท่าจะตก	street; raincloud@200,90,1.2; man.wow@200
+หิวแล้ว	rest; man.sad@200; stomach@200,40,.5; arrowr@280,60
+กินอะไรดี	office; man.think@200; think@280,92=rice
+กินด้วยกัน	rest; table@200; man.sit.happy@140,24; woman.sit.happy@260,24; chair@140; chair@260; rice@200,46
+ผมเลี้ยงเอง	rest; table@200; man.happy@280+money; woman.happy.sit@140,24; chair@140
+รสชาติเป็นยังไง	rest; tomyum@200,40,1; man.think@320; qmark@320,96
+เผ็ดมาก	rest; somtam@200,40,1; man.sweat@320; fire@320,96,.4
+จะจ่ายเงิน	rest; man.wave@200; clerk@300; bill@140,40
+ขอใบเสร็จด้วย	shop; receipt@200,30,1.2; man@330
+จ่ายบัตรได้ไหม	shop; card@200,40,1.2; qmark@260,70; man@330
+ขอถุงด้วย	shop; pbag@200,20,1.2; man.happy@330
+ไม่เอาถุง	shop; ecobag@200,20,1.2; pbag@140,20; cross@140,50; man@330
+มีสีอื่นไหม	shop; dress@160,20; dress~blue@240,20; qmark@200,80; woman@330
+มีใหญ่กว่านี้ไหม	shop; shirt@160,20; shirt@250,30,1.4; woman@330
+ลองได้ไหม	shop; dress@200,20,1.2; woman.happy@330; curtain@100,30
+ดูเฉยๆ	shop; man.flat.shrug@200; cross@280,70
+ขอดูก่อน	shop; man.think@200; qmark@200,96
+ไปไหนครับ	road; taxi@200,0,1; driver.happy@330; qmark@330,96
+ไปที่นี่ครับ	road; taxi@200,0,1; map@330,40
+เปิดมิเตอร์ด้วย	road; taxi@200,0,1; meter@200,50,.8
+ขับช้าๆหน่อย	road; taxi@200,0,1; man.flat@330; say@330,96=ช้าๆ
+ลงตรงนี้	road; taxi@200,0,1; man.happy.wave@330
+หลงทางแล้ว	street; man.sweat@200; qmark@200,96; map@280,40
+ช่วยได้ไหม	street; man.sad@200; woman.happy@300; qmark@200,96
+ช่วยเรียกตำรวจให้หน่อย	street; phone@200,40,1.2; police@320
+ต้องไปโรงพยาบาล	hosp; man.sick@200; ambulance@300,0,.8
+เจ็บตรงนี้	hosp; doctor@300; man.sad.point@160; patch@150,50
+ร้านขายยาอยู่ไหน	street; shop@200,0,1; rx@200,60,.8; qmark@300,80
+เป็นอะไรหรือเปล่า	room; man.sick@140; woman.wow@260; qmark@260,96
+อย่ากังวล	room; man.sad@140; woman.happy@260; heart@200,90
+สู้ต่อไปนะ	gym; man.sweat.run@200; fist@300,60,.6
+ขอแสดงความยินดี	room; man.happy@140; woman.happy@260; gift@200,20
+ขอบพระคุณมาก	room; man.happy.wai@200; heart@200,96
+ขอโทษจริงๆ	room; man.sad.wai@200
+เป็นความผิดของผม	room; man.sad@200; vase@140,0; ecrack@140,20,.3
+ไม่เป็นไรครับ	room; man.happy@200+box
+ขอให้มีวันที่ดี	city; man.happy.wave@200; sun@330,80
+เที่ยวให้สนุกนะ	beach; man.happy@200; sun@330,80; palm@100,0
+สุขสันต์วันปีใหม่	night; fireworks@200,80,1.2; man.happy@330
+สุขสันต์วันคริสต์มาส	room; xtree@200,0,1; gift@260,0; man.happy@330
+เคลื่อนไหว	street; police@200; say@280,96=หยุด!; cross@100,60
+หยุดนิ่ง	street; car@200,0,1; house@320,0,.8
+อยู่เฉยๆ	room; woman.angry@140; kid.dance@260
+เขย่าขวด	kitchen; bottle@200,30,1.2; wind@240,40; woman@330
+โยนทิ้ง	room; bin@200,0,1.2; shoe@170,40; man.walk@300
+ทำตก	room; glass@200,40; arrowd@200,20; man.wow@300
+เก็บขึ้นมา	room; man.floor@200; coin@200,4; woman.point@320
+ยัด	room; suitcase@200,0,1.2; shirt@200,30; man@320
+ดึงออก	room; man.sweat@200; bottle@260,40
+หยิบออก	kitchen; fridge@200; woman@300+apple
+ใส่เข้าไป	room; box@200,0,1.2; arrowd@200,50; man@320
+ปิดคลุม	kitchen; table@200; plate@200,40; cloth@200,46
+ฉีกออก	room; parcel@200,10,1.2; scissors@240,20; hl@200,30,.6
+ตัดด้วยกรรไกร	room; paper@200,10,1.4; scissors@240,30
+หั่นด้วยมีด	kitchen; board@200,36; knife@230,40; veg@200,40; table@200
+เหลา	room; pencil@200,40,1.4; sharpener@250,40; man@330
+ทุบ	beach; coconut@200,10,1.4; knife@250,30; man@330
+กดแรงๆ	room; button@200,40,1.4; hand@230,40,.6
+บีบ	room; cloth@200,40,1.2; water_drop@200,10; water_drop@210,20; man@330
+พับกระดาษ	room; bird@200,40; paper@140,10; kid.happy@300
+ม้วน	room; map@200,40,1.2; arrowr@260,40
+คลี่	park; cloth@200,60,1.4; sun@330,90
+ซ้อน	kitchen; plate@200,40; plate@200,46; plate@200,52; table@200
+เรียงแถว	school; student@140; student@180; student@220; student@260; teacher.point@330
