@@ -102,6 +102,7 @@ function person(type, mods, held, txt, lift) {
     else if (m === "glasses") gl = 1; else if (m === "shades") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><path d="M-9 -83h18v4q-3 3 -6 0h-6q-3 3 -6 0Z" fill="${K}"/></g>`;
     else if (m === "mask") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><rect x="-8" y="-77" width="16" height="8" rx="3"/><path d="M-8 -75l-4 -3M8 -75l4 -3" stroke-width="1"/></g>`;
     else if (m === "smask") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><rect x="-10" y="-88" width="20" height="16" rx="5" fill="#fff" stroke-width="1.4"/><circle cx="-4.5" cy="-81" r="1.4" fill="${K}" stroke="none"/><circle cx="4.5" cy="-81" r="1.4" fill="${K}" stroke="none"/></g>`; else if (HATS[m]) hat = m;
+    else if (m === "beard") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><path d="M-6 -76q6 -3 12 0q-2 2 -6 1q-4 1 -6 -1Z" fill="${K}"/></g>`;
     else if (m === "love") extra += heart(16, -96, .7);
   }
   const P = POSE[pose], C = 8, sc = T.s || 1, L = (lift || 0) / sc;
@@ -1167,6 +1168,12 @@ const O = {
   pie: `<circle cx="0" cy="-20" r="20" fill="#fff"/><path d="M0 -20V-40A20 20 0 0 1 20 -20Z" fill="#6aa8e8"/><path d="M0 -20L20 -20A20 20 0 0 1 -12 -4Z" fill="#f2d04c"/>`,
   angle: `<path d="M-20 0H24M-20 0L14 -30" fill="none" stroke-width="2.4"/><path d="M-4 0A16 16 0 0 0 -8 -10" fill="none" stroke-width="1.6"/>`,
   cube: `<path d="M-14 0V-20L0 -28L14 -20V0L0 8Z" fill="#fff"/><path d="M-14 -20L0 -12L14 -20M0 -12V8" fill="none" stroke-width="1.6"/>`,
+  radio: `<rect x="-18" y="-20" width="36" height="20" rx="3" fill="#fff"/><circle cx="-7" cy="-10" r="6" fill="${GR}"/><path d="M4 -14h10M4 -10h10M4 -6h10M10 -20l8 -10" stroke-width="1.6"/>`,
+  stele: `<path d="M-14 0V-40Q-14 -48 0 -48Q14 -48 14 -40V0Z" fill="#ccc"/><path d="M-8 -38h16M-8 -32h16M-8 -26h16M-8 -20h16M-8 -14h16" stroke-width="1"/>`,
+  receipt: `<path d="M-10 0V-28H10V0L6 -3L2 0L-2 -3L-6 0Z" fill="#fff"/><path d="M-6 -22h12M-6 -17h12M-6 -12h8" stroke-width="1"/>`,
+  bankbook: `<rect x="-12" y="-28" width="24" height="28" rx="2" fill="#6aa8e8"/><text x="0" y="-12" font-size="7" text-anchor="middle" fill="#fff" stroke="none" font-weight="700">BANK</text>`,
+  shield: `<path d="M0 -36L16 -30V-16Q16 -4 0 2Q-16 -4 -16 -16V-30Z" fill="#9c9"/><path d="M-6 -16l4 4 8 -8" fill="none" stroke-width="2.4"/>`,
+  wood: `<rect x="-24" y="-8" width="48" height="8" fill="#e8d9b8"/><path d="M-20 -4h10M0 -5h14" stroke-width="1"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1303,7 +1310,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
   SC.lint = function (spec) {
     const bad = [], parts = String(spec).split(";"), bg = parts.shift().trim();
     if (!SC.bgs.includes(bg)) bad.push("bg:" + bg);
-    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", "beanie", "veil", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
+    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", "beanie", "veil", "beard", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");

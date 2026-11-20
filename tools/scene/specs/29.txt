@@ -1,0 +1,100 @@
+ใบเสร็จ	shop; receipt@200,0,1.6; man.happy@320
+คืนเงิน	shop; phone@200,0,1.4; cross@200,40; money@260,10,1; woman.happy@330
+แลก	shop; tshirt@170,0,1.2; arrowr@205,30; tshirt@245,0,1.6; woman.happy@330
+แลกเปลี่ยน	class; book@170,0,1.2; arrowr@205,30; book@245,0,1.2; student@120; student@300
+แลกเงิน	street; bank@200,0,1.2; money@120,10,1=฿; money@280,10,1=₩
+ค่าธรรมเนียม	street; bank@200,0,1.2; money@300,10,1=+수수료
+ค่าไฟ	room; paper@200,0,1.6=전기; bulb@260,30,1; man.sad@330
+ค่าน้ำ	room; paper@200,0,1.6=수도; faucet@260,30,1; man@330
+ค่าเช่า	room; house@200,0,1; money@300,10,1.2=월세
+หมายถึง	class; board_@200,20,1.4=?; man.think@340
+เป็นตัวแทน	class; student.happy.up@200; student@120; student@280
+วิจารณ์	room; man.angry.point@140; woman.sad@260
+คำชม	class; teacher.happy@140; boy.happy@260; heart@260,104
+เตือน	street; car@100,0,1; woman.point@220!; boy@300
+ตักเตือน	class; teacher.angry.point@140; boy.sad@260
+เน้น	class; board_@200,20,1.4=중요!; teacher.point@340!
+ยืนยัน	room; man.wave@200; cross@260,80; say@300,96=제가 안 했어요
+สมมุติ	room; man.think@200; think@270,96=moneybag
+สรุปผล	class; flask@200,0,1.4; paper@260,0,1=결론; man.happy@330
+จุดประสงค์	class; board_@200,20,1.4=목표; teacher.point@340!
+ขั้นตอน	room; paper@200,0,1.6=1→2→3; man.happy@320
+ระดับขั้น	room; stairs@200,0,1.2; man.happy@230,48,.8
+ผลสำเร็จ	gym; trophy@200,0,1.4; man.sweat.happy@320
+ความพยายาม	room; man.sweat@200+book; trophy@280,0,1
+ทำตามความฝัน	room; boy.happy.up@200; star@260,90; target@320,20,.8
+อาชีพในฝัน	room; girl.happy@200; think@270,96=hospital
+ตื่นอยู่	bedroom; bed@200,0,1.1; man.happy@200,34; moon@340,80
+หลับไป	living; sofa@200; man.sit.sleep@200,30; tvstand@340; tv@340,20
+นอนไม่หลับ	bedroom; bed@200,0,1.1; man.sweat.lie@200,34; moon@340,80; clock@100,70,1=3:00
+ง่วงนอน	office; desk@200; man.sit.sleep@200,24; chair@200; zzz@230,104
+บิด	room; cloth@200,20,1.4; water_drop@200,10,.6; woman.happy@300
+บิดขี้เกียจ	bedroom; bed@200,0,1.1; man.up.happy@300; sun@340,72
+ล้างหน้าแปรงฟัน	bath; sink@200,0,1.4; man.happy@300+toothbrush
+แต่งหน้า	bath; mirror@120,0,1.1; woman.happy@220+lipstick
+หนวด	room; man.beard.happy@200
+โกนหนวด	bath; mirror@120,0,1.1; man.happy@220+razor
+เป่าผม	bath; mirror@120,0,1.1; woman.happy@220+dryer
+เลือกเสื้อผ้า	bedroom; closet@200,0,1.05; woman.think@320; tshirt@300,0,1
+ติดกระดุม	room; shirt@200,0,1.6; button@200,20,.8; boy.happy@300
+รูดซิป	room; backpack@200,0,1.8; zipper@200,10,.8
+ผูกเชือก	room; sneaker@200,0,1.8; boy.happy@300
+สะพาย	school; boy.happy@200+backpack; school@340,0,.6
+สะพายกระเป๋า	room; handbag@200,0,1.4; woman.happy@300
+ออกจากบ้าน	street; house@200,0,1.2; clock@100,70,1=7:00; man.walk@320+bag
+เคาะประตู	room; door@200,0,1.3; man.point@145; say@220,94=똑똑
+กดกริ่ง	room; door@200,0,1.3; switch@235,50,1.2; man.point@180
+เชิญเข้ามา	room; door@200,0,1.3; woman.wave.happy@260; man.happy@320
+นั่งรอ	room; chair@200; man.sit@200,24; clock@100,60,1
+รีบร้อน	room; man.happy@200; say@260,96=천천히
+ชักช้า	room; boy.sleep@200; clock@100,60,1; woman.angry@320
+เกือบสาย	office; clock@200,50,1.6=8:59; man.run.sweat@320
+ตกรถ	street; bus@140,0,1; man.run.sad.sweat@300
+นั่งรถไป	road; car@200,0,1.4; man.happy@195,26,.6
+เดินไป	street; school@300,0,.8; boy.walk.happy@180+backpack
+วิ่งไป	street; boy.run.happy@170; woman.happy@300
+กลับมา	street; house@300,0,1; man.walk@180; arrowr@240,60
+แวะ	street; cafe2@200,0,1.2; man.happy@330
+ไปรับ	school; school@200,0,1; woman.happy@300; boy.happy@340,0,.8
+ไปส่ง	airport; man.happy.wave@200; woman.wave@300+suitcase
+พาไป	zoo; woman.happy@180; boy.happy@230; elephant@320,0,.8
+พาไปส่ง	street; car@200,0,1.4; school@340,0,.6; boy.happy@200,24,.6
+พามา	room; man.think@200; boy@300; qmark@250,104
+นำทาง	city; man.happy.point@200+flag; man@280; woman@320
+บอกทาง	street; man.think@140; woman.point@260!; say@200,96=역은 저쪽
+เดินหลง	market; stall@120,0,.8; stall@280,0,.8; man.think.sweat@200
+ลองหา	room; drawer@200,0,1.4; man.think@320
+เจอ	street; wallet@200,0,1.6; man.happy.up@320
+เจอกัน	cafe; man.happy@160; woman.happy.wave@240!
+สวนกัน	street; house@200,0,1.2; man.wave@140; woman.wave@260!
+ทักทายกัน	street; man.wave.happy@160; woman.wave.happy@240!
+จับมือกัน	gym; man.sport.happy@160; man.sport.happy@240!; p@200,40:M-8 0h16
+คุยเล่น	park; bench@200,0,1.2; man.sit.happy@170,24; woman.sit.happy@230,24; say@200,96=…
+พูดเล่น	room; man.happy@160; woman.angry@240; say@180,96=농담이야
+พูดจริง	room; man.flat@200; say@260,96=진지하게
+เบาๆ	room; boy.happy@200; man@300; p@250,40:M-6 0h12
+พูดเบาๆ	room; baby.sleep@120,0,1; man.cover@200; woman@300
+พูดดังๆ	room; grandpa.cover@200; say@260,96=크게!
+พึมพำ	room; grandma.flat@200; txt@260,96=중얼중얼
+ร้องตะโกน	mount; man.happy@200; say@260,96=야호!; mountain@100,0
+กรีดร้อง	park; snake@200,0; woman.wow.cover@320; txt@320,104=꺄!
+ร้องไห้โฮ	room; boy.cry@200; txt@260,90=으앙
+น้ำตาไหล	living; tvstand@200; tv@200,20,1.2; woman.cry.sit@320,24; chair@320
+ยิ้มแย้ม	room; girl.happy@200; sun@330,80
+หัวเราะดัง	room; man.happy@140; woman.happy@200; boy.happy@260; txt@200,104=하하하
+หัวเราะคิกคัก	room; girl.happy@170; girl.happy@230; txt@200,104=킥킥
+หน้าบึ้ง	room; man.angry@200; cloud~gray@200,100,.6
+ส่ายหน้า	room; woman.sad@200; cross@260,80
+ยักไหล่	room; man.shrug@200; qmark@200,104
+กะพริบตา	room; man@200; hl@200,73,.9
+ขยิบตา	room; man.happy@200; star@225,82,.4; woman.happy@300
+จ้อง	room; man.angry@200; woman.sad@300
+เหลือบมอง	room; clock@200,50,1.4; man@320
+มองไปรอบๆ	park; woman.think@200; qmark@200,104; boy@340,0,.7
+ดูให้ดี	shop; shirt@200,0,1.6; man.think@320; magnifier@280,30,.8
+เงี่ยหู	night; man.wow@200; ring2@140,70; qmark@140,90
+แอบมอง	room; window@200,30,1.6; man.happy@200,10,.7
+ลองดม	room; bin@200,0,1.4; man.cover@320; stink@200,40
+ลองชิม	kitchen; curry@200,0,1.6; woman.happy.eat@320+spoon
+ลองจับ	shop; bag@200,0,1.6; man.happy@320
+ลองใส่	shop; mirror@120,0,1.1; dress@200,0,1.6; woman.happy@300
