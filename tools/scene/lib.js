@@ -1451,6 +1451,8 @@ const O = {
   watercan: `<path d="M-12 -2V-20H8V-2Z" fill="#6aa8e8"/><path d="M8 -16L22 -24" stroke-width="3"/><path d="M-12 -18q-6 2 -4 10" fill="none" stroke-width="2"/>`,
   safe: `<rect x="-16" y="-30" width="32" height="30" rx="2" fill="#bbb"/><circle cx="0" cy="-15" r="6" fill="#fff"/><path d="M0 -15l3 -3" stroke-width="1.4"/>`,
   queue: `<path d="M-40 0V-30M40 0V-30M-40 -26H40" stroke-width="2"/>`,
+  drone: `<rect x="-10" y="-20" width="20" height="8" rx="2" fill="#bbb"/><path d="M-10 -16H-24M10 -16H24M-24 -16v-4M24 -16v-4" stroke-width="2"/><path d="M-32 -20H-16M16 -20H32" stroke-width="2"/><circle cx="0" cy="-10" r="2.5" fill="${K}"/>`,
+  cfan: `<path d="M0 -8V6" stroke-width="2"/><ellipse cx="0" cy="8" rx="6" ry="3" fill="#bbb"/><path d="M-6 8H-34M6 8H34" stroke-width="4"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,

@@ -1,0 +1,35 @@
+ถือโอกาส	mount; man.happy@140; man.happy@220; mountain@320,0,.6
+ทันทีที่	street; house@200,0,1; raincloud@200,96; man.wow@300
+ไปพลาง	park; man.happy.walk@160; woman.happy.walk@240; chat@200,80
+แทนที่จะ	street; car@120,0,.6; cross@120,40; man.happy.walk@260
+ยิ่งมากยิ่งดี	kitchen; veg@170,30; veg@200,30; veg@230,30; arrowu@280,60; heart@280,90
+เร็วๆเข้า	station; bus@300,0,.6; man.run@200; woman.wave@120
+ค่อยๆทำ	room; man.happy@200; hand@240,40,.5; turtle@120,0,.5
+ระวังๆ	room; puddle@200,0,1.2; man.walk.sweat@200; sign@300,20=!
+พยายามเข้า	class; testp@200,10,1; student.sweat@300; calendar@120,50
+ทำพอประมาณ	room; man.shrug@200; paper@280,30; check@280,60
+ทำให้ถูก	room; man@200; box@280,10; check@280,50; txt@200,96=1부터
+ทำดีๆ	class; teacher.angry.point@200; student.sad@300
+ตามใจ	street; man.happy.point@200; arrowl@120,60; arrowr@280,60
+ตามอำเภอใจ	room; man.grin@200; woman.angry@300; cross@300,96
+ไม่ได้ตั้งใจ	room; man.sad.wai@200; vase@280,0; ecrack@280,20,.3
+ช่วยไม่ได้	rain; raincloud@200,96; man.shrug@200
+จำใจ	street; man.sad.walk@200; arrowr@280,60
+ยินดีช่วย	room; man.happy@200; hand@260,60,.6; heart@200,96
+เต็มใจ	street; man.happy@200+box; oldwoman.happy@300
+ไม่เต็มใจ	office; man.flat@200; paper@260,40
+อย่างเงียบๆ	bedroom; kid.sleep.lie@200,24; bed@200; woman.walk@320; txt@320,96=쉿
+แอบๆ	room; kid.grin@200+candy; cab@120; woman@330
+จับแน่น	road; woman@200; kid@240; hand@220,40,.4; car@330,0,.6
+ปิดสนิท	room; jar@200,30,1.2=?; hand@240,50,.5
+เปิดกว้าง	room; window@200,60,1.2; wind@260,60; man.happy@330
+อย่างสมบูรณ์	hosp; man.happy.up@200; doctor.happy@300; check@200,96
+บางส่วนเท่านั้น	office; man.shrug@200; check@260,90; cross@300,90
+โดยตรง	room; phone@200,40,1.2; man@300; boss@120
+โดยอ้อม	room; man@200; say@280,96=…; woman.think@330
+อย่างเป็นธรรมชาติ	class; man.happy@200; say@280,96=สวัสดีครับ
+โดยอัตโนมัติ	street; door@200; arrowl@170,40; arrowr@230,40; man@320
+ฟรีๆ	room; ticket@200,40,1.2; txt@200,80=FREE
+ของฟรี	shop; box@200,10; clerk.happy.give@300+gift; man.happy@120
+เสียเงินนะ	street; toilet@200,0,.6; coin@260,40; txt@260,70=5฿
+ใครมาก่อนได้ก่อน	shop; man.run@140; man.run@200; man@260; box@330,10

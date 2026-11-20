@@ -1,0 +1,100 @@
+รูปลักษณะ	street; man.shades@140; man.sad@260; cross@200,90; eye@200,70,.5
+แต่งตัวสวย	room; girl.happy@200; mirror@120,60
+กลุ้มใจ	room; kid.sad.think@200; think@280,92=…; kid@100
+ความกลุ้มใจ	room; kid.sad@200; woman.happy@300; heart@250,90
+ขอคำปรึกษา	class; teacher.happy@140; student.sit@240,24; chair@240; table@190
+ระบาย	cafe; man.sad@140; man.happy@260; say@140,96=…
+ความในใจ	room; woman.happy@140; girl@260; heart@200,96
+เห็นใจ	room; man.sad@140; man@260; hand@200,50,.5; heart@200,90
+ได้รับกำลังใจ	room; man.happy@200; heart@140,90; heart@260,90; man@100; woman@300
+ความฝันคืออะไร	room; kid.happy@200; qmark@200,96; man.point@300
+อยากเป็น	class; kid.happy@200; think@280,92=book; board_@100,60
+เส้นทางอาชีพ	class; teacher@140; student@260; map@200,50,.6
+เข้ามหาวิทยาลัย	school; university@200,0,.8; kid.happy@330+suitcase
+สอบเข้ามหาลัย	class; testp@200,10,1.2; student.sweat@320; calendar@120,50
+สอบใหม่ปีหน้า	class; testp@200,10,1.2; cross@200,40; student.sad@320
+งานโรงเรียน	school; kid.dance@160; kid.dance@240; music@200,90
+ทัศนาจร	road; bus@200,0,.8; mountain@330,0,.6
+รูปรับปริญญา	class; student.gradcap.happy@200; man.happy@140; woman.happy@260; camera@330,40
+สภานักเรียน	class; kid.happy@200; student@140; student@260
+ประธานนักเรียน	stage; student.happy@200+mic; check@200,96
+นักเรียนฝ่ายปกครอง	school; student.hips@200; gate@300,0; student@100
+ตรวจเครื่องแบบ	school; teacher.glasses@200; student@140; student@260; magnifier@200,60
+ระเบียบทรงผม	school; student@200; scissors@260,80; ruler@140,80
+เข้าแถวตอนเช้า	school; flag@200,0,1; student@140; student@180; student@220; student@260
+ร้องเพลงชาติ	school; flag@200,0,1; student@140; student@260; music@200,96
+บทสวดมนต์	temple; kid.wai@160; kid.wai@240; music@200,96
+หลังเลิกเรียน	class; desk@200; student.sit@200,24; chair@200; teacher@320; clock@120,70=16:00
+กิจกรรมชมรม	class; student.happy@200+guitar; music@260,80; student@120
+กิจกรรมจิตอาสา	park; student.happy@200+broom; bin@260,0; student@120
+การเรียนรู้นอกห้อง	farm; student.happy@200; cow@280,0,.6; teacher@120
+การดูงาน	room; factory@200,0,.8; student@120; student@160; teacher@330
+วันกีฬาสี	gym; student.happy.run@140; student.happy.run@200; flag@300,0,.6
+เชียร์กีฬา	gym; man.happy.up@140; woman.happy.up@200; student.run@300
+ทีมสีฟ้า	gym; kid.happy~blue@200; flag~blue@280,0,.6
+ทีมสีแดง	gym; kid.happy.up~red@200; flag~red@280,0,.6; trophy@120,40
+การแข่งขันระหว่างห้อง	gym; student@140; student@180; arrowr@220,60; student@260; student@300
+ได้ที่หนึ่ง	gym; student.happy.up@160; student.happy.up@240; trophy@200,60
+ที่โหล่	gym; student.sad@200; flag@300,0,.6; txt@200,96=꼴찌
+ได้อันดับหนึ่ง	class; testp@200,10,1.2; txt@200,40=1; kid.happy@320
+เกรดขึ้น	class; graph@200,30,1; arrowu@270,70; student.happy@330
+เกรดตก	room; laptop@200,40; graph@120,40,.6; arrowd@140,70; kid.sad@320
+โดนพ่อแม่ดุ	room; man.angry@140; woman.angry@200; kid.sad@280; clock@330,70
+ชมเชย	class; teacher.happy@200; student.happy@300; thumbup@200,96
+ให้รางวัล	class; teacher.glasses@200+trophy; student.happy@300
+รางวัลตอบแทน	office; man.happy@200+money; boss@300; check@200,96
+รักษาคำพูด	room; man.happy@200; kid.happy@300; hand@250,40,.5; check@250,80
+เด็กมีมารยาท	room; kid.wai.happy@200; woman.happy@300
+เด็กดี	room; kid.happy@200; woman.happy@300; heart@250,90
+เด็กดื้อ	room; kid.grin@200; woman.angry@300; cross@200,96
+เด็กฉลาด	room; kid.happy@200; idea@200,96; book@260,10
+นักเรียนขยัน	class; student.sit@200,24; desk@200; chair@200; book@220,50; stars@200,96
+นักเรียนตัวอย่าง	class; student.happy@200; trophy@260,40; student@120
+ย้ายโรงเรียน	school; kid@200+backpack; truck@320,0,.5; school@100,0,.4
+นักเรียนใหม่	class; student.sad@200; teacher.happy@300; student@100
+อย่างยิ่ง	room; man.wai.happy@200; heart@200,96
+สุดๆ	rest; plate@200,30; man.wow@300; stars@300,96
+จริงจังมาก	room; man.flat@200; say@280,96=진짜야
+พอสมควร	room; man.happy@200; say@280,96=สวัสดีครับ; thumbup@120,80
+ค่อนข้างจะ	street; sun@330,90; man.sweat@200
+โดยรวม	beach; man.happy@200; check@260,80; camera@140,40
+ส่วนมากจะ	room; sofa@200; man.happy.sit@200,24; house@330,0,.5
+เป็นพิเศษ	room; cake@200,30,1.2; heart@260,60; woman.happy@330
+โดยปกติ	rest; basket@200,30,1; man.happy@330
+ปกติแล้ว	bedroom; aclock@200,60=6:00; man@300
+แต่เดิม	field; ricefield@200,0,1; arrowr@260,60; building@330,0,.6
+จริงๆแล้ว	room; man.flat@200; cross@200,96; door@300
+สุดท้ายแล้ว	road; man.happy@140; woman.happy@220; arrowr@300,60
+ดีกว่า	room; calendar@200,60=내일; check@200,60; man@330
+กลับกลายเป็น	room; pills@200,40; man.sick@300; arrowd@260,60
+ทำไมต้อง	rain; calendar@200,60=오늘!; man.angry@330
+ไม่น่าจะ	room; man.think@200; man.grin@300; qmark@200,96
+ดูเหมือนว่า	rain; raincloud@200,90; man.think@330; qmark@330,96
+แน่ชัด	room; check@200,60,1.2; magnifier@260,40
+ไม่ผิดแน่	room; man.grin@200; vase@280,0; ecrack@280,20,.3; magnifier@120,40
+แม้จะ	office; man.sweat@200; moon@330,90; check@200,96
+ถึงแม้ว่า	shop; pricetag@200,50=฿฿฿; man.happy@300+bag
+หาก	rain; raincloud@200,90; cross@300,70; man@120
+ถ้าหาก	room; phone@200,40,1.2; man.sweat@330; ring2@200,60
+ไม่อย่างนั้น	street; man.run@200; clock@300,70; arrowr@120,60
+ด้วยเหตุนี้	room; coin@200,40; pbank@200,0; man@330
+ผลก็คือ	class; testp@200,10,1.2; check@200,40; student.happy.up@320
+ในทางกลับกัน	market; pricetag@200,50=50฿; arrowr@250,50; pricetag@300,50=100฿
+ขณะเดียวกัน	rain; raincloud@200,90; man@120+umbrella
+อีกทั้ง	market; stall@200,0,1; money@260,40; tomyum@140,40; stars@200,96
+ยิ่งไปกว่านั้น	street; house@200,0,1; shop@330,0,.5; man.happy@120
+โดยเฉพาะอย่างยิ่ง	market; mango@200,30,1.4; heart@260,60; man.happy@330
+เช่นว่า	market; durian@200,30,1.2; mango@140,30; man.point@330
+นั่นคือ	room; man.flat@200; cross@200,96; phone@260,40
+จึงทำให้	road; raincloud@200,96; car@140,0,.6; car@220,0,.6
+เป็นเพราะ	road; car@140,0,.6; car@200,0,.6; car@260,0,.6; man.sweat@340
+เพราะความผิดของ	gym; man.sad@200; ball@280,10; cross@200,96
+ตามที่บอก	room; man.happy.point@200; check@280,80
+เหมือนอย่าง	room; man.happy@200; think@280,92=gift; gift@140,10
+เท่ากับที่	rest; plate@200,30; man.happy@300; stars@200,80
+ราวๆ	street; aclock@200,60=6:00; man@140; woman@260
+มากกว่าที่	room; man.wow@200; stars@200,96; book@260,10
+มีแค่	room; wallet@200,40,1.2; txt@200,80=100฿; man.sad@330
+จำต้อง	street; man.sweat.walk@200; car@100,0,.6; cross@100,40
+เหมือนจะ	room; man.sick@200; thermo@260,40; tissue@140,30
+ทำท่า	room; man.flat.shrug@200; woman.happy@300; ball@260,10
