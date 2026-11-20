@@ -1,0 +1,100 @@
+พระราชวัง	city; palace@200,0,1.1; man.wow@330
+วัดพระแก้ว	temple; temple@200,0,1.2; buddha~green@200,30,.6
+วัดอรุณ	river; temple@200,30,1; sun@330,20; wave@200,0,1.4
+พระนอน	temple; rbuddha@200,0,1.6; man.wow@330,0,.7
+ชนะสงคราม	city; flag@200,0,1.2; soldier.happy.up@120; soldier.happy.up@280
+กองทัพ	street; flood@200,0,1; soldier@160; soldier@240; boat@320,0,.6
+แม่ทัพ	city; general.point@200; soldier@280; soldier@320
+อาวุธ	city; sword@200,0,1.4; cross@200,60; sign@300,0,1=X
+ดาบ	field; soldier@200+sword; flag@300,0,1
+การสู้รบ	field; soldier.angry@160+sword; soldier.angry@240!+sword; boom@200,90,.5
+รุกราน	city; soldier.angry@120; soldier@170; house@300,0,.8; boom@300,60,.5
+ป้องกันตัว	gym; man.angry@200; arrowl@120,60; thief@60
+ยึดครอง	city; soldier@160; soldier@240; flag@330,0,1
+ปลด	room; phone@200,0,1.6; padlock@250,30,1; man.happy@320
+การปลดปล่อย	city; dove@200,60,1.4; man.up.happy@140; woman.up.happy@260
+อาณานิคม	city; flag@200,0,1.2; cross@300,70; txt@200,104=식민지 X
+ทำสนธิสัญญา	office; paper@200,0,1.4; flag@120,0,1; flagt@280,0,1=?
+การปฏิวัติ	city; man.angry.up@140; woman.angry.up@200; flag@300,0,1
+ระบอบราชาธิปไตย	city; king.happy@200; govt@320,0,.6
+ชนชาติ	city; man.happy@140; woman.happy@200; flag@300,0,1
+บุคคลสำคัญ	city; statue@200,0,1.6; man.wai@320
+วันที่ระลึก	city; calendar@200,30,1.6; flag@300,0,1
+อนุสรณ์	city; monument@200,0,1.2; flower@200,0,.8
+โบราณวัตถุ	city; museum@200,0,.9; urn@200,0,.8
+มรดกทางวัฒนธรรม	temple; temple@200,0,1.2; heart@200,96
+มรดกโลก	city; pagoda@160,0,1; pagoda@240,0,.8; earth@330,30,.6
+โบราณคดี	field; man.straw.happy@200+shovel; urn@280,0,1
+ตำนาน	city; castle@200,0,.9; book@300,0,1=전설
+เทพ	temple; buddha@200,0,1.4; fairy@300,20,.8; sparkle@260,80
+เทพนิยาย	bedroom; pbook@200,0,1.6; fairy@300,20,.8
+นิทานพื้นบ้าน	room; grandma.happy@200; boy@280; girl@320; book@120,0
+คำสอนของพระพุทธเจ้า	temple; buddha@200,0,1.2; monk~orange.happy@300+book
+พระธรรม	temple; monk~orange@200; man.floor@300; book@120,0
+พระสงฆ์	temple; monk~orange@140; monk~orange@200; monk~orange@260
+สามเณร	temple; novice~orange.happy@200; monk~orange@300
+แม่ชี	temple; nun~white.wai@200
+กราบ	temple; buddha@200,0,1.4; man.floor.wai@300
+ถวาย	temple; monk~orange@140; woman.wai@260+rice
+จุดเทียน	temple; candle@200,0,1.6; candle@240,0,1.2; woman.wai@320
+ถวายดอกบัว	temple; lotus@200,0,1.4; buddha@120,0,1; woman.wai@300
+ปิดทอง	temple; buddha@200,0,1.6; sparkle~yellow@200,60; woman.wai@320
+ทำสมาธิ	temple; man.floor.sleep@200; monk~orange.floor@300
+ศีลห้า	temple; buddha@200,0,1.2; txt@200,104=5
+บาป	room; thief@200; cross@200,96
+การเวียนว่ายตายเกิด	temple; circle@200,10,1.6; arrowr@230,60; arrowl@170,30
+นิพพาน	temple; buddha@200,0,1.2; sparkle@140,80; sparkle@260,80
+เข้าพรรษา	temple; monk~orange@200; calendar@300,40,1=3개월
+ออกพรรษา	temple; monk~orange.happy@200; candle@300,0
+วันมาฆบูชา	temple; candle@140,0,1.2; candle@260,0,1.2; moon@200,80; man.wai@330
+วันวิสาขบูชา	temple; buddha@200,0,1.4; flower@140,0; flower@260,0; man.wai@330
+วันอาสาฬหบูชา	temple; monk~orange@200; temple@320,0,.6; moon@60,80
+ชาวพุทธ	city; man.wai@140; woman.wai@200; man.wai@260; temple@340,0,.6
+ศาสนาคริสต์	city; church@200,0,1.2
+ศาสนาอิสลาม	city; mosque@200,0,1.2
+ศาสนาฮินดู	city; temple@200,0,1; flagt@330,0,1=India
+เทวดา	room; fairy.happy@200; sparkle@260,80
+วิญญาณ	room; ghost@200,30,1.2; man.wow@320
+นรก	room; fire@200,0,1.6; monster@300,0,.8
+เครื่องราง	room; amulet@200,20,1.6; man.happy@320
+ดูดวง	temple; man@200; monk~orange@300; star@250,90
+โชคร้าย	room; man.sad@200; raincloud@200,100,.6; cross@260,80
+ความเชื่อโบราณ	room; ghost@200,30,1; man.think@320
+ศาลพระภูมิ	street; spirithouse@200,0,1.4; house@330,0,.6
+รำไทย	stage; dancer.happy.dance@200
+ร่ายรำ	stage; dancer.happy.dance@200; music@260,80
+โขน	stage; khon@200,30,1.4; man.wow@330
+หุ่นกระบอก	stage; puppet@200,0,1.2; boy.happy@330
+หนังตะลุง	stage; shadowp@200,0,1.2
+เพลงพื้นบ้าน	stage; music@160,80; guitar@200,0,1.2; man.happy@300
+ป๊อป	school; boy.happy.hips@200; girl.love@300; heart@300,104
+เพลงป๊อป	stage; singer.happy@200+mic; girl.happy@320; music@260,80
+เพลงลูกทุ่ง	road; taxi@200,0,1.2; radio@200,30,.4; music@260,60
+หมอลำ	temple; singer.happy@200+mic; music@260,80; drum@120,0
+วงดนตรี	stage; drum@120,0; guitar@200,0; piano@290,0,.6; music@200,90
+คอนเสิร์ต	stage; singer.happy@200+mic; man.up.happy@100; woman.up.happy@300
+แต่งเพลง	room; guitar@200,0,1.2; man.happy@300+pen; heart@260,96
+เนื้อเพลง	room; sheetmusic@200,10,1.6; man.happy@320
+ทำนอง	room; music@160,80; music@240,70; man.happy@320
+จังหวะ	stage; drum@200,0,1.4; music@260,80
+โน้ตเพลง	class; sheetmusic@200,10,1.6; man.think@320
+เล่นดนตรี	room; piano@200,0,1; boy.happy@200,24,.8
+ฝีมือ	room; worker.happy@200+hammer; check@280,70
+ฝีมือการร้อง	stage; singer.happy@200+mic; star@260,90
+รูปปั้น	park; statue@200,0,1.4; elephant@200,20,.4
+เครื่องปั้นดินเผา	room; vase@180,0,1.4; vase@230,0,1.2; clay@280,0
+งานฝีมือ	market; basket@170,0; sewm@240,0,.6; woman.happy@330
+ทอ	room; loom@200,0,1.2; grandma.happy@300
+ผ้าทอ	shop; cloth~purple@200,0,1.8; sparkle@200,40
+นิทรรศการ	city; gallery@200,0,1; man.happy@330
+หอศิลป์	city; gallery@200,0,1; man@330
+ศิลปิน	room; easel@200,0,1.2; artist.happy@300
+สร้างผลงาน	room; easel@200,0,1.2; artist.happy@300; sparkle@200,80
+การสร้างสรรค์	room; idea@200,60,1.4; artist.happy@320
+มีพรสวรรค์	room; piano@200,0,1; girl.happy@200,24,.8; star@300,90
+ความงาม	mount; sun@330,72; mountain@200,0,1.2; flower@100,0
+งานอดิเรก	room; guitar@150,0,1; book@200,0,1; camera@250,0,1; man.happy@330
+เวลาว่าง	room; sofa@200; man.sit.happy@200,30; book@200,60,.6
+เล่นกีฬา	park; ball@200,0,1.2; man.run.sport.happy@140
+ดูกีฬา	living; tvstand@200; tv@200,20,1.2; ball@200,32,.6; man.sit.happy@320,24; chair@320
+อาชีพนักกีฬา	gym; man.sport.happy@200; trophy@300,0,1

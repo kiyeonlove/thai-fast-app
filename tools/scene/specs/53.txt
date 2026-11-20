@@ -1,0 +1,100 @@
+โค้ช	gym; coach.happy.point@200+whistle; man.sport.run@320
+ผู้จัดการทีม	gym; man.suit.happy@200; man.sport@300; man.sport@340
+กัปตันทีม	gym; man.sport.happy.up@200; flag@300,0,1; txt@200,104=주장
+คู่แข่ง	gym; man.sport.angry@160; man.sport.angry@240!
+ทีมคู่แข่ง	gym; man.sport@120; man.sport@160; man.sport.angry@240!; man.sport.angry@280!
+กองเชียร์	stage; man.up.happy@140; woman.up.happy@200; boy.up.happy@260; flag@330,0,.8
+การทำประตู	park; goal@280,0,1; ball@260,30; man.run.sport.happy@160
+ยิง	park; ball@260,30; man.run.sport@160; dust@220,30
+ยิงประตู	park; goal@280,0,1; ball@280,20; man.up.sport.happy@160
+ผู้รักษาประตู	park; goal@200,0,1.2; man.sport.up@200
+ส่งบอล	park; ball@200,0; man.sport@140; man.sport.happy@260
+ฟาวล์	park; man.sport@160; man^-70@240,4; whistle@320,40,1
+ใบเหลือง	park; ycard@200,40,1.4; man.sport.sad@300
+ใบแดง	park; rcard@200,40,1.4; man.sport.sad@300
+เสมอกัน	gym; txt@200,60=1 : 1; man.sport@120; man.sport@280
+ต่อเวลา	gym; clock@200,60,1.4; txt@200,104=+30분
+รอบชิงชนะเลิศ	gym; trophy@200,0,1.6; txt@200,104=결승
+รอบรองชนะเลิศ	gym; trophy@200,0,1.2; txt@200,104=준결승
+รอบคัดเลือก	gym; man.run.sport@140; man.run.sport@200; man.run.sport@260; txt@200,104=예선
+ถ้วยรางวัล	gym; trophy@200,0,1.6; man.up.happy@120; man.up.happy@280
+เหรียญทอง	gym; medal~yellow@200,30,1.8; man.sport.happy@320
+เหรียญเงิน	gym; medal~gray@200,30,1.8; man.sport.happy@320
+เหรียญทองแดง	gym; medal~brown@200,30,1.8; man.sport.happy@320
+สถิติ	office; graph@200,20,1.4; man.sport@330
+ทำลายสถิติ	gym; man.run.sport.happy@200; clock@320,70,1; txt@330,104=신기록
+โอลิมปิก	city; fireworks@200,80,1.2; flagt@200,0,1=Olympic; txt@200,104=4년
+ฟุตบอลโลก	park; goal@200,0,1.2; earth@330,30,.6; ball@200,10
+เทนนิส	gym; racket2@170,0,1.2; tball@230,40; man.happy@330
+ปิงปอง	room; table@200; pingpong@200,40,1; boy.happy@120; man.happy@300
+กอล์ฟ	field; golf@200,0,1.4; man.happy@320
+โบว์ลิ่ง	gym; bowling@200,0,1.4; man.happy@320
+ยิมนาสติก	gym; girl.up.happy@200; ymat@200,0,1.2
+กรีฑา	gym; man.run.sport@200; txt@200,104=육상
+มาราธอน	road; man.run.sport.sweat@200; sign@300,0,1=42km
+การแข่งว่ายน้ำ	sea; pool@200,0,1.6; man.sport@160,4,.7; man.sport@240,4,.7
+การปั่นจักรยาน	road; bike@200,0,1.4; man.sport.happy@200,24,.8
+ปีน	park; tree@200,0,1.4; cat@210,40,.8
+การปีนเขา	mount; mountain@200,0,1.4; man.up.happy@205,58,.5
+การตั้งแคมป์	mount; tent@200,0,1.2; fire@280,0,.6
+ตกปลา	river; rod@200,0,1.2; grandpa.happy@150; fish@260,0
+ดำน้ำ	underwater; diver@200,40,1.4; fish@300,50; bubbles@160,60
+ดำน้ำตื้น	sea; diver@200,30,1.2; fish@260,10; coral@300,0
+โต้คลื่น	beach; surfboard@200,30,1.2; man.happy@200,34,.8; wave@200,0,2
+เทควันโด	gym; boy.happy.up@200; belt2@200,40,.6
+มวยไทยโบราณ	gym; boxer.happy@170; boxer@240!; flag@330,0,.8
+ตะกร้อ	park; takraw@200,60,1.2; boy.up.happy@140; boy.happy@260
+การแข่งว่าว	sky; kite@160,70; kite@240,80; kite@300,64
+แข่งเรือ	river; rboat@200,0,1.2
+เล่นไพ่	room; cards@200,10,1.4; man.happy@120; woman.happy@280
+ต่อจิ๊กซอว์	room; puzzle@200,0,1.6; boy.floor.happy@300
+การอ่านหนังสือ	room; book@200,0,1.6; woman.happy@320
+การเขียน	office; notebook@200,0,1.6; man.happy@320+pen
+การถ่ายภาพ	park; camera@200,0,1.6; man.happy@320
+การทำอาหาร	kitchen; pot@200,0,1.4; flag@120,0,.6; woman.happy@320
+การทำสวน	park; flower@170,0,1.4; wcan@230,0,1.2; woman.happy@320
+ถัก	room; scarf@200,0,1.6; needles@260,10,1; grandma.happy@330
+การถักไหมพรม	room; needles@200,10,1.6; sweater@270,0,1
+การเย็บผ้า	room; sewm@200,0,1.2; dress@300,0,1.2; woman.happy@120
+สะสม	room; coins@200,0,1.6; magnifier@250,30,1; man.happy@320
+แสตมป์	street; postoffice@200,0,1; stamp2@320,20,1.4
+เรียนดนตรี	class; guitar@140,0,1; piano@260,0,.8; boy.happy@200
+เล่นกีตาร์	room; guitar@200,0,1.4; man.happy@300; music@260,80
+เล่นเปียโน	room; piano@200,0,1; girl.happy@200,24,.8
+คาราโอเกะ	room; karaoke@200,0,1.2; man.happy@120+mic; woman.happy@300
+เดินเล่นในสวน	park; man.walk.happy@170; woman.walk.happy@230; tree@330,0
+ขับรถเล่น	road; car@200,0,1.4; man.happy@195,26,.6; sun@330,72
+ไปปิกนิก	park; picnic@200,0,1.4; mat2@200,0,1.2; man.happy@120; woman.happy@300
+วันพัก	bedroom; bed@200,0,1.1; man.lie.sleep@200,32; sun@330,72
+พักผ่อนเต็มที่	room; sofa@200; man.sit.happy@200,30; sparkle@260,80
+เพื่อความสนุก	park; boy.happy.up@200; ball@280,0
+สนุกกับ	beach; man.happy.up@200; suitcase@300,0
+เวลาที่มีความสุข	beach; man.happy@160; woman.happy@240; heart@200,104; sun@330,72
+วอร์มอัพ	gym; man.sport.happy.up@200; arrowu@280,60
+หอบ	room; stairs@200,0,1.2; man.sweat.sad@230,48,.8
+หมดแรง	gym; man.sport.sweat.sad@200
+มีกล้าม	gym; man.sport.happy.hips@200; dumbbell@290,0
+ทรงตัว	park; boy.happy.up@200; p@200,0:M-10 0h20
+กระโดดสูง	gym; boy.happy.up@200,24; p@200,4:M-30 0H30; arrowu@260,60
+ขว้าง	park; man.happy@200+rock; cross@260,80; woman.point@330!
+การขว้าง	gym; ball@260,60; man.sport.happy@200
+การรับ	gym; ball@200,60; man.up.sport.happy@200
+การเตะ	gym; ball@260,20; man.run.sport@200
+วิ่งแข่ง	gym; boy.run.happy@140; girl.run.happy@200; boy.run@260; flag@340,0,.8
+ชักเย่อ	gym; rope@200,10,2; boy.angry@120; boy.angry@280!
+วิดพื้น	gym; man.sport^-80@200,6; txt@280,60=×30
+ซิทอัพ	gym; ymat@200,0,1.2; man.sport.floor@200,4
+กว้างใหญ่	farm; ricefield@200,0,1.6; sun@330,72; txt@200,104=광활
+มหึมา	sea; ship@200,10,1.8
+เล็กน่ารัก	room; house@200,0,.6; heart@200,60,.6
+เล็กนิดเดียว	room; ant@200,0,1.6; magnifier@240,30,1
+เรียว	room; woman.happy@200; p@200,0:M-8 -30v30M8 -30v30
+หนาใหญ่	park; tree@200,0,1.8
+อ้วนใหญ่	room; dog@200,0,2
+ยาวเหยียด	station; man@60; woman@100; man@140; woman@180; man@220; woman@260; man@300; woman@340
+แบน	road; car@200,0,1.4; ptire@280,0,1; man.sad@340
+นูน	room; man.happy@200,-60,1.8; hl@200,90,.8
+เว้า	kitchen; spoon@200,0,2; p@200,30:M-6 -10Q0 -4 6 -10
+เรียบเสมอ	room; wfloor@200,4,1.6; sparkle@200,30; check@260,60
+ขรุขระ	road; gravel@200,0,2.4; man.sweat@320
+โค้ง	road; p@200,0:M100 -60Q0 -60 -40 0; car@200,0,.8
