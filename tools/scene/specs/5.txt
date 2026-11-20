@@ -1,0 +1,100 @@
+กระดาษ	office; paper@200,0,2; man.give.smile@120+paper
+กระดาษเอสี่	office; a4@200,0,2; printer@120,0,1.3; woman.happy@320
+แฟ้ม	office; folder@200,0,2; paper@140,0,1.3; man.happy@320
+แฟ้มเอกสาร	office; desk@200; binder@180,40,1.3; binder@205,40,1.3; woman.point@330!
+ตู้เอกสาร	office; fcab@200,0,1.3; paper@270,0,1.4=계약서; man.happy@330
+แฟลชไดรฟ์	office; laptop@200,0,1.6; usb@250,0,1.6; man.happy@330
+ฮาร์ดดิสก์	room; hdd@200,0,1.8; picture@130,0,1.2; frame@260,0,1.2; woman.happy@330
+หูฟัง	street; bus@140,0,1.1; man.happy@290; earphone@340,60,1.2; music@250,80
+หูฟังแบบครอบ	room; headphone@200,30,2; music@150,80; music@250,84; man.happy@320
+กล้องเว็บแคม	office; webcam@200,60,1.5; laptop@200,0,1.8; woman.wave.happy@320
+แท็บเล็ต	living; sofa@180; tablet@180,48,1.4; boy.sit.hold.happy@180,30+tablet
+สายชาร์จ	office; cable@180,0,1.2; charger@200,0,1.6; man.give@320!+phone
+พาวเวอร์แบงก์	airport; pbank@200,0,2; suitcase@120,0,1.3; woman.happy@320
+แผ่นรองเขียน	school; board2@200,0,1.8; paper@200,4,1.3; boy.happy@320
+ที่วางหนังสือ	room; desk@200; bstand@200,40,1.2; book@200,52,.9; woman.sit@200,24
+ของเล่น	room; teddy@140,0; blocks@200,0,1.3; ball@260; boy.happy@330; woman.point@60
+ตัวต่อ	room; blocks@200,0,1.8; boy.floor.happy@120; girl.floor.happy@290
+จิ๊กซอว์	room; puzzle@200,0,2; txt@200,70=1000; man.floor.think@310
+ตุ๊กตาหมี	bedroom; bed@200,0,1.1; girl.lie.sleep@205,33; teddy@245,33,1.4
+ลูกบอล	park; ball@200,0,1.5; boy.run.happy@140; girl.run.happy@280
+เชือกกระโดด	gym; jrope@200,0,1.6; woman.happy@300
+จักรยาน	city; bike@200,0,1.6; man.happy@200,24,.9
+สกู๊ตเตอร์	park; scooter@200,0,1.6; boy.happy.love@300
+หมวกกันน็อก	road; moto@200,0,1.4; man.helmet.happy@200,6; helmet@330,0,1.4
+บอร์ดเกม	living; bgame@200,0,2; man.floor.happy@120; woman.floor.happy@290
+ไพ่	park; table@200; cards@200,39,1.4; oldman.sit.happy@140,24; grandpa.sit.happy@260,24; chair@140; chair@260
+สมุดระบายสี	room; cbook2@200,0,2; crayons@270,0,1.2; grandma.happy@110
+สีเทียน	room; crayons@200,0,1.8; sketch@120,0,1.4; girl.floor.happy@300
+สีน้ำ	room; paints@200,0,1.8; sketch@130,30,1.4; woman.happy@320
+สมุดวาดเขียน	park; sketch@200,0,2; man.holdr.happy@300!+pencil
+เครื่องดนตรี	stage; guitar@140,0,1.6; piano@250,0,.8; music@200,80; man.think@340
+กีตาร์	room; guitar@200,0,2; man.happy@320; music@260,80
+เปียโน	room; piano@200,0,1.1; chair@200; girl.sit.happy@200,24; music@270,86
+ฮาร์โมนิก้า	room; grandpa.happy@200+harmonica*1.4; music@250,80; harmonica@300,10,1.6
+ระนาด	class; xylo@200,10,2; boy.happy@120; girl.happy@300
+ขลุ่ย	class; recorder@200,0,2; boy.happy.eat@120+recorder; girl.happy.eat@300+recorder
+แทมบูรีน	stage; tambourine@200,30,2; woman.happy.dance@300; music@140,80
+คันเบ็ด	river; rod@200,0,1.4; man.happy@150; fish@280,0,1
+เป้เดินป่า	mount; hpack@200,0,2; man.sweat@310
+เต็นท์	river; tent@200,0,1.2; man.happy@330
+เสื่อ	park; mat2@200,0,1.6; lunchbox@200,4,1; man.floor.happy@160,4; woman.floor.happy@245,4
+เก้าอี้สนาม	field; cchair@200,0,1.4; tent@60,0,.9; man.happy@320
+กระติกน้ำแข็ง	beach; cooler@200,0,1.6; beer@200,40,1; man.happy@320
+เครื่องออกกำลังกาย	gym; treadmill@200,0,1.4; man.run.sport@195,8,.9
+ดัมเบล	gym; man.sport.up.happy@200; dumbbell@176,98,1; dumbbell@224,98,1; txt@300,70=30
+เสื่อโยคะ	room; ymat@200,0,1.8; woman.floor.happy@200,4
+ฮูล่าฮู้ป	room; hoop@200,40,1.6; woman.happy.hips@200
+สายวัด	room; tmeasure@200,10,1.6; man.wow@310
+กล้องถ่ายรูป	room; camera@200,0,2; say@260,96=₩₩₩; man.happy@330
+ขาตั้งกล้อง	park; tripod@200,0,1.3; man.wave.happy@280; woman.wave.happy@330
+อัลบั้ม	living; album@200,0,2; heart@200,64; woman.happy@320
+หมากรุก	park; chess@200,0,2; man.floor.think@120; woman.floor.happy@290
+กระดานโกะ	park; goboard@200,0,2; grandpa.floor.think@120; oldman.floor.happy@290
+ไพ่ฮวาทู	room; hwatu@200,0,2; man.floor.happy@120; woman.floor.happy@290
+กล่องปฐมพยาบาล	kitchen; cab@200,40,1; firstaid@200,44,1.1; woman.point@100
+พลาสเตอร์ปิดแผล	kitchen; bandaid@200,40,1.6; knife@140,0,1.2; man.sad@310
+ผ้าพันแผล	hosp; doctor.happy@140; man.sad@260; bandage@330,0,1.4
+ยาฆ่าเชื้อ	room; bottle@200,0,1.8=소독약; bandaid@260,0,1.2; woman.happy@320
+ยาทา	room; tube@200,6,2=연고; mosquito@130,60,1.3; man.sad@320
+แผ่นแปะแก้ปวด	room; patch@200,10,2; man.sad.hips@310
+ปรอทวัดไข้	bedroom; thermo@200,0,2; girl.sick.sweat@300
+เครื่องวัดความดัน	room; bpmon@200,0,1.8; man.happy@320
+กล่องยา	room; pillbox@200,0,2=월화수목금; grandma.happy@320
+อาหารเสริม	kitchen; jar@200,0,2=영양제; woman.happy@320
+วิตามิน	kitchen; bread@140,0,1.2; jar@200,0,2=비타민; man.happy@320
+ยาแก้หวัด	bedroom; medpack@200,0,2=감기약; man.sick.sweat@320
+ยาลดไข้	bedroom; bottle@200,0,1.8=해열제; girl.sick.sweat@320; thermo@120,0,1.2
+ยาแก้ปวด	room; medpack@200,0,2=진통제; man.sick.cover@320
+ยาช่วยย่อย	rest; table@140; dish@140,39; medpack@230,0,1.8=소화제; man.sweat.hips@320
+ยาหยอดตา	room; edrop@200,0,2.2; woman.happy@320
+เจลล้างมือ	rest; table@200; rice@200,39; gel@140,0,1.8; man.happy@320
+ถุงประคบร้อน	room; hotpack@200,10,2; woman.sick@320
+ถุงน้ำแข็ง	room; icepack@200,10,2; man.sad@320; sock@260,0
+ปากคีบ	room; tweezers@200,30,2; thorn@200,10,1.2; man.sad@320
+ผ้าก๊อซ	room; gauze@200,10,2; bandaid@260,10,1; woman.happy@320
+ประตู	room; door@200,0,1.3; man.point@120
+ธรณีประตู	room; door@200,0,1.3; threshold@200,0,1.2; man.run.wow@280
+กรอบหน้าต่าง	room; wframe@200,10,1.3; dust@180,24,1.6; dust@220,24,1.6; woman.sad@330
+กระจกหน้าต่าง	street; house@120,0,1; bwindow@200,10,1.2; ball@260,0,1.2; boy.wow@330
+ผนัง	room; wallpaper@200,0,1; frame@200,40,1.6; man.up.happy@310
+พื้น	room; puddle@200,0,1.6; man.run.wow.sweat@300
+เพดาน	room; p@200,112:M-100 0H100; lizard@200,96,1.6!; woman.wow@320
+เสา	field; house@200,0,1.6; pillar@135,0,.6; pillar@265,0,.6
+บันได	room; stairs@200,0,1.2; oldman@170,48,.9
+ราวบันได	room; stairs@200,0,1.2; rail@200,0,1.2; grandma@180,36,.9
+พื้นไม้	room; wfloor@200,4,1.6; boy.floor.happy@160; girl.floor.happy@250
+แผ่นปูพื้น	room; mat2@200,0,2.4; steam@170,20; steam@230,20; man.floor.happy@200,4
+กระเบื้อง	bath; tile@200,0,1.2; man.sad@320
+วอลเปเปอร์	bedroom; wallpaper@200,0,1; woman.happy@320
+บัวผนัง	room; door@200,0,1.3; p@200,0:M-28 -104H28M-28 -106V0M28 -106V0; man.happy@320
+หลอดนีออน	kitchen; ftube@200,104,1.6; p@200,80:M-20 0l-4 -4M20 0l4 -4M0 0v-6; woman.sad@320
+หลอดแอลอีดี	room; led@200,104,1.6; sparkle@200,70; man.happy@320
+สวิตช์ตัดไฟ	night; fusebox@200,40,1.4; man.point@300!
+เครื่องตรวจจับควัน	kitchen; smoke@200,110,1.6; pan@200,40,1.2; steam@200,66; ring2@200,94; chef.wow@320
+ถังดับเพลิง	room; extinguisher@200,0,1.8; man.point@300!
+วาล์วแก๊ส	kitchen; gvalve@200,30,1.6; door@340,0,1.2; woman.happy@120
+เครื่องตรวจจับแก๊ส	kitchen; gdetect@200,80,1.6; stove@200,0,1; woman.happy@320
+ตัวปรับอุณหภูมิ	room; thermostat@200,46,1.6; say@260,96=25℃; man.happy@330
+ช่องระบายอากาศ	bath; vent@200,80,1.8; man.happy@320+cloth
+ท่อน้ำ	kitchen; sink@200,0,1.4; pipe@220,0,1.2; puddle@220,0,.8; man.sad.sweat@320

@@ -1,0 +1,100 @@
+เครื่องอบแห้ง	kitchen; counter@200; dehyd@200,36,1.4; mango@140,36; banana@262,36; woman.happy@340
+เครื่องทำวาฟเฟิล	kitchen; counter@200; waffle@195,36,1.3; wafflep@250,36,1.2; sun@60,70; woman.happy.holdr@335!+fork
+เครื่องทำขนมปัง	kitchen; counter@200; breadm@200,36,1.3; flour@145,36,1.1; moon@340,80; woman.smile@330
+เตาปิ้งย่างไฟฟ้า	kitchen; counter@200; grill@200,36,1.4; meat@190,44,.8; steam@200,74; man.holdr.happy@320!+tongs*1.5
+ตาชั่ง	kitchen; counter@200; scale@200,36,1.5; flour@200,42,.9; say@265,96=200g; woman.think@340
+ตัวจับเวลา	kitchen; counter@200; timer@200,36,1.6; say@265,96=10분; woman.point@105
+หม้อ	kitchen; counter@200; stove@200,36,1.2; pot@200,44,1.6; woman.holdr.happy@330!+ladle*1.4
+กระทะ	kitchen; counter@200; stove@200,36,1.2; pan@190,44,1.5; fegg@190,46,.8; man.happy@330
+หม้อดิน	kitchen; counter@200; stove@200,36,1.2; claypot@200,44,1.5; woman.happy@330
+ซึ้งนึ่ง	kitchen; counter@200; stove@200,36,1.2; steamer@200,44,1.6; bun@120,36,1.1; man.happy@330
+หม้ออัดแรงดัน	kitchen; counter@200; stove@200,36,1.2; pcooker@200,44,1.5; chicken@120,36,1.1; woman.wow@330
+กระทะก้นลึก	kitchen; counter@200; stove@200,36,1.2; wok@195,44,1.4; veg@195,52,.7; fire@200,40,.6; chef.holdr.happy@330!+spatula*1.3
+กาน้ำ	kitchen; counter@200; stove@200,36,1.2; skettle@200,44,1.5; steam@212,82; woman.wow@330
+ทัพพี	kitchen; counter@200; pot@150,36,1.3; soup@235,36,1.1; woman.holdr.happy@320!+ladle*1.5
+ตะหลิว	kitchen; counter@200; stove@200,36,1.2; pan@195,44,1.3; fish@195,58,.9; man.holdr.happy@320!+turner*1.4
+ไม้พาย	kitchen; counter@200; stove@200,36,1.2; pot@200,44,1.4; woman.holdr.happy@320!+spatula*1.4
+ทัพพีตักข้าว	kitchen; counter@200; ricecooker@160,36,1.2; rice@235,36,1.2; woman.holdr.happy@320!+paddle*1.4
+ที่คีบ	kitchen; counter@200; grill@180,36,1.3; meat@180,44,.8; man.holdr.happy@300!+tongs*1.6
+ตะกร้อตีไข่	kitchen; counter@200; mbowl@190,36,1.2; egg@250,36; egg@265,36; woman.holdr.happy@330!+whisk*1.4
+ตะแกรง	kitchen; counter@200; colander@200,36,1.4; veg@190,46,.8; veg@210,46,.8; woman.happy@330
+กระชอน	kitchen; counter@200; mbowl@200,36,1.2; sieve@195,60,1.3; dust@195,46; flour@120,36; woman.happy@330
+ชามผสม	kitchen; counter@200; mbowl@200,36,1.5; flour@125,36; egg@270,36; egg@284,36; woman.happy@345
+มีด	kitchen; counter@200; board@200,36,1.4; knife@200,42,1.8; man.wow.sweat@320
+มีดปอกผลไม้	kitchen; counter@200; apple@190,36,1.4; woman.holdr.happy@300!+fknife*1.5
+มีดทำครัว	kitchen; counter@200; board@200,36,1.4; meat@190,42; cleaver@225,52,1.2; chef.happy@330
+ที่เสียบมีด	kitchen; counter@200; kblock@200,36,1.5; woman.point@100
+เขียง	kitchen; counter@200; board@200,36,1.5; veg@180,42; veg@200,42; knife@232,42; woman.happy@335
+กรรไกร	kitchen; counter@200; bag@180,36,1; scissors@232,46,1.4; woman.happy@335
+ที่ปอกเปลือก	kitchen; counter@200; potato@180,36,1.4; potato@210,36,1.2; woman.holdr.happy@320!+peeler*1.4
+ที่ขูด	kitchen; counter@200; grater@180,36,1.4; cheese@232,36,1.3; chef.happy@330
+ที่เปิดขวด	kitchen; counter@200; drawer@200,0,1.3; bopener@200,52,1.3; man.point@100
+ที่เปิดกระป๋อง	kitchen; counter@200; can2@200,36,2.2; man.holdr.happy@310!+copener*1.4
+ที่เปิดไวน์	kitchen; ctable@200,0,1.4; wine@185,31,1.4; wglass@220,31; man.shrug.sad@310; think@345,96=corkscrew
+ถ้วยตวง	kitchen; counter@200; mcup@200,36,1.6; pot@130,36,1.1; woman.happy@335
+ช้อนตวง	kitchen; counter@200; mspoon@190,36,1.7; sugar@240,36,1.3; woman.happy@335
+ไม้นวดแป้ง	kitchen; counter@200; dough@200,36,1.5; rpin@200,44,1.3; woman.happy@335
+ชามนวดแป้ง	kitchen; counter@200; mbowl@200,36,1.6; pg@200,52:M-14 0Q0 -12 14 0Z; chef.happy@335
+กระดาษอเนกประสงค์	kitchen; counter@200; pan@180,36,1.2; ptowel@250,36,1.2; woman.happy@335
+ฟิล์มห่ออาหาร	kitchen; counter@200; bowl@185,36,1.4; wrap@245,36,1.1; woman.happy@335
+ฟอยล์	kitchen; counter@200; oven@200,0,1.4; foil@120,36,1.2; fish@120,44,.7; man.happy@330
+ถุงซิป	kitchen; fridge@185,0,1.1; zipbag@260,0,1.5; meat@260,4,.6; woman.happy@335
+ถุงมือพลาสติก	kitchen; counter@200; mbowl@200,36,1.4; veg@200,48,.7; pglove@245,36,1.2; woman.up.happy@335
+ถุงมือยาง	kitchen; sink@200,0,1.5; rglove@135,0,1.3; woman.happy@300
+ผ้ากันเปื้อน	kitchen; counter@200; stove@200,36,1.2; apron@130,0,1.5; woman.happy@300
+ผ้าเช็ดจาน	kitchen; counter@200; plate@175,36,1.2; cloth@230,36,1.2; woman.happy@330
+ฟองน้ำล้างจาน	kitchen; sink@200,0,1.5; sponge@200,42,1.2; dust@240,48; man.sad@315
+น้ำยาล้างจาน	kitchen; counter@200; detergent@200,36,1.6; man.shrug.sad@315
+ที่รองหม้อ	kitchen; counter@200; trivet@200,36,1.6; pot@200,40,1.5; woman.happy@335
+ถุงมือกันร้อน	kitchen; oven@180,0,1.4; mitt@260,0,1.5; chef.happy@335
+กรวย	kitchen; counter@200; oilb@175,36,1.4; funnel@225,48,1.2; bottle@225,36,1.1; woman.happy@335
+ครก	kitchen; counter@200; mortar@200,36,1.6; chili@140,36; garlic@265,36; woman.happy@340
+ที่บดกระเทียม	kitchen; counter@200; garlicp@200,44,1.6; garlic@145,36,1.2; woman.happy@335
+ที่ซอยผัก	kitchen; counter@200; slicer@180,36,1.1; cabbage@240,36,1.2; woman.happy@335
+เสื่อม้วนซูชิ	kitchen; counter@200; smat@200,36,1.8; sushi@180,40; sushi@205,40; sushi@230,40; woman.happy@340
+พิมพ์คุกกี้	kitchen; counter@200; dough@200,36,1.5; ccutter@200,44,1.2; cookie@140,36; cookie@265,36; girl.happy@340
+แปรงทาเนย	kitchen; counter@200; bread@200,36,1.4; brush@238,40,1.2; chef.happy@335
+ตะแกรงทอด	kitchen; counter@200; rack@200,36,1.5; chicken@200,48,.9; man.happy@335
+ชาม	kitchen; ctable@200,0,1.4; noodle@200,31,1.5; woman.happy@320
+ถ้วยข้าว	kitchen; table@200; rice@200,39,1.5; woman.holdr.happy@320!+paddle*1.4
+ถ้วยแกง	kitchen; table@200; soup@200,39,1.5; man.sweat.wow@320
+จาน	kitchen; sink@200,0,1.5; plate@195,30,1.3; sparkle@245,60; woman.happy@325
+จานเล็ก	rest; table@200; plate@170,39,.9; plate@230,39,.9; noodle@200,39; man.wave@330
+ชามใหญ่	rest; table@200; mbowl@200,39,1.5; veg@200,48,.8; veg@188,48,.6; woman.happy@330
+ถาด	room; tray@200,48,1.2; mug@190,54; mug@212,54; woman.carry.happy@200
+แก้ว	rest; table@200; glass@190,39,1.3; man.wave.smile@320
+แก้วมัค	room; mug@200,0,2; steam@200,58; woman.eat.happy@300+mug
+แก้วน้ำ	kitchen; waterp@140,0,1.3; glass@230,0,1.8; woman.happy@320
+แก้วไวน์	kitchen; counter@200; wglass@185,36,1.4; wglass@215,36,1.4; woman.wow@330
+แก้วเก็บความเย็น	park; tumbler@190,0,1.6; ice@175,10; ice@205,14; sun@340,72; woman.happy@300
+ขวดน้ำ	gym; water@190,0,1.8; man.run.happy@290
+ช้อน	rest; table@200; rice@200,39,1.3; spoon@170,39,1.2; fork@230,39,1.2; man.happy@330
+ตะเกียบ	rest; table@200; noodle@200,39,1.5; woman.happy.eat@320+chop*1.4
+ส้อม	rest; table@200; rice@200,39,1.3; fork@170,39,1.3; spoon@235,39,1.3; man.happy@330
+มีดโต๊ะ	rest; table@200; steak@200,39,1.4; man.holdr.happy@320!+fknife*1.4
+ช้อนชา	room; ctable@200,0,1.3; teacup@200,29,1.4; sugar@240,29,1; woman.holdr.happy@320!+spoon*1.2
+หลอด	rest; table@200; smoothie@200,39,1.4; woman.give.happy@120+straw*1.2
+ที่ใส่ช้อนส้อม	rest; table@200; cutlery@200,39,1.5; man.holdr.happy@320!+spoon*1.3
+โต๊ะกินข้าว	room; table@200,0,1.4; chair@120; chair@280; man.sit.happy@120,24; woman.sit.happy@280,24; girl.happy@200; rice@185,55; soup@215,55
+เก้าอี้	room; table@120; chair@230; man.carry.happy@300
+ผ้าปูโต๊ะ	room; tcloth@200,0,1.4; vase@200,50,1; woman.happy@330
+แผ่นรองจาน	room; table@200,0,1.4; pmat@160,55,1.1; pmat@240,55,1.1; plate@160,58,.9; plate@240,58,.9; woman.happy@340
+ผ้าเช็ดปาก	rest; table@200; noodle@190,39; man.holdr.happy@315!+napkin*1.4
+ไม้จิ้มฟัน	rest; table@200; toothpick@200,39,1.6; man.give.smile@100
+กล่องข้าว	kitchen; counter@200; lunchbox@200,36,1.5; friedrice@200,48,.8; woman.happy@320; girl.happy@370
+กล่องใส่กับข้าว	kitchen; fridge@120,0,1; counter@240; container@240,36,1.3; kimchi@240,40,.8; woman.happy@345
+กล่องสุญญากาศ	kitchen; counter@200; container@185,36,1.5; cross@235,64; woman.happy@335
+กระติกน้ำ	park; thermos@185,0,1.5; teacup@225,0,1.2; steam@225,24; man.happy@310
+ถ้วยชา	room; ctable@200,0,1.3; teacup@200,29,1.6; sparkle@170,64; sparkle@232,70; woman.wow@320
+กาน้ำชา	room; ctable@200,0,1.3; teapot@200,29,1.5; teacup@245,29; steam@205,66; oldwoman.happy@320
+ที่คว่ำจาน	kitchen; sink@140,0,1.4; drack@235,36,1.3; counter@235; woman.happy@335
+ตู้ถ้วยชาม	kitchen; cab@200,0,1.3; plate@200,58,1.2; woman.point@100
+ที่รองแก้ว	room; ctable@200,0,1.3; coaster@200,29,1.6; mug@200,31,1.3; man.happy@320
+แก้วเหล้า	rest; table@200; man.holdr.happy@160+shot*1.8; woman.holdr.happy@240!+shot*1.8; sparkle@200,96
+แก้วโซจู	rest; table@200; soju@200,39,1.2; shot@235,39,1.3; man.happy@320
+แก้วเบียร์	kitchen; fridge@190,0,1.1; beer@265,0,1.6; man.happy@330
+ทิชชู่เปียก	room; wipes@140,0,1.5; woman.holdr.happy@230+wipes; girl.happy@300
+อ่างล้างจาน	kitchen; sink@200,0,1.6; plate@180,28,1; plate@210,30,1; plate@195,34,1; woman.sad@325
+ก๊อกน้ำ	kitchen; sink@200,0,1.5; faucet@205,46,1.3; man.happy@320
+ท่อระบายน้ำ	kitchen; sink@200,0,1.5; drain@200,30,1.2; puddle@200,30,.8; man.sweat.sad@320
+ถังขยะเศษอาหาร	kitchen; fbin@200,0,1.5; rice@200,46,.9; woman.give@125+rice

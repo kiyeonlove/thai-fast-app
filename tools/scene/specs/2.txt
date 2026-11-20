@@ -1,0 +1,100 @@
+ถังแยกขยะ	street; sortbin@200,0,1.6; bottle@160,52; man.give@95+water
+ถังรีไซเคิล	street; sortbin@200,0,1.6; can@228,52; woman.give.happy@310!+can
+ถุงขยะ	kitchen; tbag@200,0,1.7; woman.give.happy@300!+tbag
+ตู้กับข้าว	kitchen; cab@200,40,1; noodlepack@200,44,1.1; noodlepack@230,48,1; woman.up.happy@310
+ลิ้นชัก	kitchen; drawer@200,0,1.4; spoon@200,44,1; woman.point@105
+ชั้นวางของ	room; wshelf@200,60,1.6; box@200,60,1.2; man.up.happy@300
+ขวดเครื่องปรุง	kitchen; counter@200; jar@200,36,1.6=후추; woman.happy@330
+ชั้นวางเครื่องปรุง	kitchen; counter@200; stove@200,36,1.2; wshelf@200,74,1.4; jar@180,74=소금; jar@200,74=후추; jar@220,74=설탕; woman.point@95
+ถังข้าวสาร	kitchen; tin@200,0,2.2=쌀; man.sad.shrug@305
+ข้าวสาร	shop; sack@200,0,1.9=5kg; man.carry.happy@300+sack
+เกลือ	kitchen; counter@200; pot@200,36,1.3; jar@140,36,1.3=소금; woman.holdr.smile@315!+spoon
+น้ำตาล	rest; table@200; mug@190,39,1.4; sugar@240,39; cross@240,62; woman.hips@320
+พริกไทย	kitchen; counter@200; fegg@200,36,1.6; jar@210,60,1=후추; dust@205,44; man.happy@330
+ซีอิ๊ว	rest; table@200; dumpling@180,39,1.2; dumpling@205,39,1.2; bowl@235,39,.8; man.happy.eat@330+chop
+เต้าเจี้ยว	kitchen; counter@200; stove@200,36,1.2; pot@200,44,1.4; tofu@125,36,1.2; jar@270,36,1.2=된장; woman.happy@350
+ซอสพริกเกาหลี	kitchen; counter@200; jar@200,36,1.8=고추장; chili@145,36; man.sweat.happy@320
+น้ำมันพืช	kitchen; counter@200; stove@200,36,1.2; pan@195,44,1.4; oilb@130,36,1.2; man.happy@330
+น้ำมันงา	kitchen; counter@200; oilb@190,36,1.3; sparkle@190,90; bowl@240,36; woman.happy.love@330
+น้ำส้มสายชู	rest; table@200; noodle@200,39,1.5; bottle@150,39=식초; man.happy@320
+พริกป่น	kitchen; counter@200; mbowl@200,36,1.4; chili@200,52,.8; jar@140,36,1.2=고춧가루; woman.happy@330
+งา	kitchen; counter@200; rice@200,36,1.5; seeds@200,56; jar@250,36,1=깨; woman.happy@330
+กระเทียม	kitchen; counter@200; garlic@170,36,1.5; garlic@205,36,1.3; garlic@235,36,1.4; man.happy@330
+หัวหอม	kitchen; counter@200; board@200,36,1.4; onion@195,42,1.2; woman.cry@330
+ต้นหอม	kitchen; counter@200; soup@200,36,1.5; scallion@250,36,1.2; man.happy@330
+ไข่ไก่	shop; eggtray@200,40,1.6; table@200; woman.happy.point@100
+นม	kitchen; table@200; milk@200,39,1.4; girl.eat.happy@300+glass
+น้ำ	rest; table@200; water@200,39,1.5; man.wave@320
+น้ำผลไม้	rest; table@200; smoothie@200,39,1.4; orange@160,39; woman.happy@320
+กาแฟ	kitchen; coffeem@170,0,1.6; man.sleep.eat@290+mug
+ชาเขียว	rest; table@200; smoothie@200,39,1.4; ice@200,62; woman.happy@320
+บะหมี่กึ่งสำเร็จรูป	night; moon@340,80; noodle@200,0,1.8; steam@200,32; man.happy.eat@100+chop
+ขนม	school; boy.happy.eat@160+snack; snack@240,0,1.5; girl.happy@300
+ขนมปัง	shop; bread@200,0,2; man.happy.holdr@300!+bread
+ผลไม้	market; fruits@200,0,1.6; mango@140,0,1.2; durian@265,0,1.1; woman.happy@340
+ตะกร้า	kitchen; table@200; fruits@200,39,1.3; woman.happy@320
+แม่เหล็ก	kitchen; fridge@200,0,1.1; magnet@195,60,.9; frame@215,64,.9; woman.point@105
+กระดานโน้ต	kitchen; memo@200,40,2=장 볼 것; woman.holdr.happy@305!+pen
+ถุงผ้า	shop; ecobag@200,0,1.8; woman.happy.holdr@300!+ecobag
+ถุงพลาสติก	shop; pbag@200,0,1.6; cross@200,48; woman.wave.smile@310
+หนังยาง	kitchen; counter@200; snack@195,36,1.4; rband@195,50,1.2; woman.happy@330
+เครื่องพิมพ์ฉลาก	office; box@170,0,2=책; labeler@250,0,1.4; man.happy@330
+กล่องเก็บของ	bedroom; box@195,0,2=장난감; teddy@180,30; ball@215,30; boy.happy@300
+ที่แขวนผ้า	kitchen; counter@200; hrail@200,56,1.6; cloth@200,56,1.1; woman.happy@330
+อ่างล้างหน้า	bath; sink@200,0,1.4; woman.cover.happy@300
+กระจก	bath; mirror@180,0,1.15; woman.holdr.happy@250+comb
+โถส้วม	bath; toilet@200,0,1.6; man.holdr.happy@310!+tbrush*1.3
+ฝาชักโครก	bath; toilet@200,0,1.6; p@180,56:M0 0L14 -30; man.point@300!
+สายฉีดชำระ	bath; toilet@180,0,1.6; bidet@225,0,1.3; man.happy@320
+อ่างอาบน้ำ	bath; btub@200,0,1.5; woman.happy@200,6; steam@170,52; steam@230,52
+ฝักบัว	bath; shower@200,0,1.15; man.happy.up@205
+ม่านห้องน้ำ	bath; scurtain@200,0,1.05; man.happy.point@120
+ฉากกั้นอาบน้ำ	bath; booth@200,0,1.05; man.happy@200; sparkle@120,40
+ผ้าเช็ดตัว	bath; towel@200,0,2; man.give.smile@120+towel
+ราวแขวนผ้า	bath; hrail@200,62,1.6; towel@200,60,1.2; woman.happy@320
+ผ้าเช็ดเท้า	bath; mat@200,0,2; puddle@200,2,1.2; man.sad@310
+แปรงสีฟัน	bath; toothbrush@200,0,2.2; calendar@280,50,1.2; man.happy@100
+ยาสีฟัน	bath; tube@200,6,2.2=치약; man.sad.shrug@310
+ที่ใส่แปรงสีฟัน	bath; sink@200,0,1.3; holder@200,40,1.3; woman.happy@310
+แก้วแปรงฟัน	bath; sink@180,0,1.3; cup@170,40,1.1; man.eat@280+cup
+ไหมขัดฟัน	rest; table@200; rice@170,39; floss@230,39,1.4; man.happy@320
+น้ำยาบ้วนปาก	bath; sink@180,0,1.3; bottle@180,40,1.2=가글; moon@345,80; woman.eat@290+cup
+สบู่	bath; sink@200,0,1.4; soap@200,40,1.3; dust@180,48; dust@220,48; man.happy@310
+ที่วางสบู่	bath; sink@200,0,1.4; pmat@200,40,.8; soap@200,42,1.2; woman.point@105
+แชมพู	bath; pump@200,0,2=샴푸; sparkle@165,60; woman.happy.love@300
+ครีมนวดผม	bath; pump@200,0,2=린스; woman.happy@300; sparkle@300,96
+ครีมหมักผม	bath; jar@200,0,2.2=10분; clock@120,50,1.2=10:10; woman.happy@300
+ครีมอาบน้ำ	bath; pump@200,0,2=바디워시; flower@140,0,1.6; woman.happy@300
+โลชั่นทาผิว	bath; pump@200,0,2=로션; woman.happy.love@300
+โฟมล้างหน้า	bath; tube@200,6,2.2=폼클렌징; sink@100,0,1.2; man.happy@310
+คลีนซิ่งออยล์	bath; pump@200,0,2=오일; mirror@100,0,1.1; woman.happy@300
+มีดโกน	bath; razor@200,0,2.2; man.wow@310
+ครีมโกนหนวด	bath; mirror@120,0,1.1; tube@210,4,1.8=면도크림; man.happy@310
+โฟมโกนหนวด	bath; spray@200,0,2.2=폼; man.shrug.sad@310
+หวี	room; comb@200,20,2; door@90,0,1.3; woman.holdr.happy@290+comb
+ไดร์เป่าผม	bath; mirror@120,0,1.1; woman.holdr.happy@230+dryer*1.2
+เครื่องหนีบผม	bath; mirror@120,0,1.1; woman.holdr.happy@230+iron2*1.2
+ที่คาดผม	bath; sink@120,0,1.2; hband@200,40,1.6; woman.happy@290
+ผ้าถูตัว	bath; shower@140,0,1.1; man.holdr.happy@250+scrub*1.3
+ผ้าขัดขี้ไคล	bath; man.floor.happy@180; scrub@260,0,1.6; txt@300,80=때!
+เก้าอี้อาบน้ำ	bath; stool@200,0,1.5; man.sit.happy@200,39
+กะละมัง	bath; basin@200,0,1.7; shirt@200,14,.8; woman.happy@310
+ขันน้ำ	bath; basin@150,0,1.4; man.holdr.happy@250+dipper*1.3
+ที่แขวนทิชชู่	bath; toilet@150,0,1.4; hrail@230,50,1; tp@230,40,1.2; woman.point@320!
+แปรงขัดส้วม	bath; toilet@180,0,1.6; tbrush@240,0,1.5; man.happy@320
+ที่ปั๊มส้วม	bath; toilet@180,0,1.6; plunger@260,0,1.5; man.sweat.wow@330
+รองเท้าห้องน้ำ	bath; puddle@200; rslipper@185,0,1.6; rslipper@215,0,1.6; man.happy@320
+ชั้นวางของห้องน้ำ	bath; wshelf@200,60,1.6; pump@185,60=샴푸; pump@215,60=린스; woman.up.happy@310
+ตะแกรงท่อน้ำ	bath; drain@200,0,1.8; p@200,4:M-6 -4q4 -8 0 -14q-4 -8 2 -14; man.sweat@310
+ที่ตัดเล็บ	room; clipper@200,10,2; woman.happy@300
+ไม้แคะหู	room; earpick@200,30,2; man.happy@300
+สำลีก้าน	room; swab@200,30,2.2; woman.happy@300
+สำลี	bath; mirror@120,0,1.1; cpad@200,10,2; bottle@240,0,1.1=토너; woman.happy@310
+ผ้าอนามัย	shop; pack@200,0,2=생리대; woman.happy@310
+เครื่องชั่งน้ำหนัก	bath; bscale@200,0,1.8; man.wow@200,10; say@260,98=70kg
+แปรงขัดพื้น	bath; fbrush@200,0,1.6; man.happy@300
+น้ำยาฟอกขาว	bath; detergent@200,0,2=락스; shirt@120,0,1.4; woman.happy@310
+น้ำยาทำความสะอาด	bath; sink@200,0,1.4; spray@250,40,1.2=세정제; woman.happy@320
+สเปรย์ปรับอากาศ	bath; toilet@150,0,1.4; spray@230,0,1.8=향; flower@265,40; woman.happy@330
+ใยขัดตัว	bath; scrub@200,10,1.6; girl.happy.holdr@290+scrub
+เกลืออาบน้ำ	bath; btub@200,0,1.5; jar@100,0,1.4=입욕제; woman.happy@200,6

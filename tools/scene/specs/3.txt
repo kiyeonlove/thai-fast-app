@@ -1,0 +1,100 @@
+เครื่องซักผ้า	room; washer@200,0,1.4; ring2@200,48,1.6; man.cover.sad@315
+เครื่องอบผ้า	room; raincloud@80,74; washer@210,0,1.4; steam@210,86; woman.happy@320
+ตะกร้าซักผ้า	room; basket@200,0,1.8; shirt@195,24,.8; tshirt@210,24,.7; woman.carry.happy@310+basket
+ตะกร้าผ้าสกปรก	room; basket@200,0,1.8; sock@190,26; tshirt@212,24,.7; man.give@115+sock
+ผงซักฟอก	room; washer@200,0,1.4; pack@120,0,1.4=세제; woman.holdr.happy@305!+spoon
+น้ำยาปรับผ้านุ่ม	room; washer@200,0,1.4; bottle@270,0,1.5=유연제; flower@130,0,1.4; woman.happy.love@340
+น้ำยาซักผ้าขาว	room; detergent@170,0,2=표백제; shirt@250,0,1.6; sparkle@250,48; woman.happy@340
+ราวตากผ้า	field; dryrack@200,0,1.4; sun@340,72; woman.up.happy@320
+ไม้หนีบผ้า	room; hrail@200,80,2.4; sock@185,48; peg@185,72,.8; sock@215,48; peg@215,72,.8; woman.happy@320
+ไม้แขวนเสื้อ	room; coatrack@205,0,1.1; hanger@205,62,1.2; shirt@205,32,1; man.happy@320
+เตารีด	room; iboard@200,0,1.2; iron@200,36,1.2; shirt@170,36,.9; woman.happy@320
+โต๊ะรีดผ้า	room; iboard@200,0,1.3; man.happy@320
+เครื่องทำน้ำอุ่น	bath; boiler@200,40,1.2; shower@100,0,1; man.sad.cry@320; cross@200,96
+ที่ปรับอุณหภูมิ	room; thermostat@200,46,1.6; say@250,96=25℃; woman.point.happy@110
+ตู้ไฟ	room; door@120,0,1.3; fusebox@200,46,1.4; man.point@300!
+เบรกเกอร์	night; fusebox@200,40,1.4; man.sweat.wow@300; woman.wow@110
+มิเตอร์	street; meter@200,30,1.4; worker.holdr@300!+notebook
+กระดานซักผ้า	room; basin@200,0,1.5; wboard@185,6,1.1; woman.floor.happy@270
+ถุงตาข่ายซักผ้า	room; washer@200,0,1.4; mesh@115,0,1.5; woman.happy@320
+เครื่องตัดขุยผ้า	room; lint@200,10,2; tshirt@140,0,1.6; sparkle@140,40; woman.happy@320
+ลูกกลิ้งเก็บฝุ่น	room; roller@200,10,1.8; cat@120,0,1.1; dust@160,20; man.happy@310
+ถังน้ำ	street; car@120,0,1.2; bucket@220,0,1.4; man.carry.happy@300+bucket
+สายยาง	park; tree@140,0,1.2; hose@230,0,1.2; man.happy@320
+น้ำประปา	room; faucet@200,40,1.6; cross@240,90; building@60,0,.9; man.sad.shrug@320
+กล่องจัดระเบียบ	room; box@200,0,1.8=전선; cable@120,0,.8; man.happy@310
+ลัง	room; box@200,0,2.2; man.carry.sweat@160+box; woman.carry@240+box
+บันไดพับ	room; hlamp@200,112; ladder@200,0,1; man.up.happy@205,46,.85
+แท่นเหยียบ	bath; sink@200,0,1.3; step@200,0,1.3; boy.happy@200,18
+กล่องเครื่องมือ	room; toolbox@200,0,1.6=공구; driver@200,40,1.2; man.point@100
+เครื่องดูดฝุ่น	room; vacuum@200,0,1.3; woman.happy@140
+เครื่องดูดฝุ่นไร้สาย	room; cvac@200,0,1.3; man.holdr.happy@270!+cvac*.8
+หุ่นยนต์ดูดฝุ่น	room; robovac@200,0,1.6; door@340,0,1.2; sparkle@200,30
+ไม้กวาด	park; tree@100,0,1.2; broom@200,0,1.2; p@250,4:M-6 -4q6 -6 12 0M8 -2q6 -6 12 0; man.happy@290
+ที่ตักผง	room; dustpan@200,0,1.6; broom@150,0,1.1; dust@200,24; woman.happy@300
+ไม้ถูพื้น	room; mop@200,0,1.3; puddle@200,0,.8; man.happy@300
+เครื่องถูพื้นไอน้ำ	room; smop@200,0,1.3; sparkle@160,20; woman.happy@300
+ผ้าขี้ริ้ว	room; table@200,0,1.3; rag@200,51,1.2; woman.happy@310
+ไม้ปัดฝุ่น	room; shelf@200,0,1.3; duster@245,70,1.1; dust@200,90; woman.happy@320
+ผ้าไมโครไฟเบอร์	room; desk@200; computer@200,40,1.3; cloth@240,40; man.happy@320
+แผ่นถูพื้น	room; cmop@200,0,1.3; woman.happy@300
+น้ำยาเช็ดกระจก	room; window@200,30,1.5; spray@270,40,1.2=유리; sparkle@200,70; man.happy@330
+ขวดสเปรย์	room; plant@200,0,1.6; spray@260,40,1.3; woman.happy@330
+ถุงขยะแบบจ่ายเงิน	street; tbag@200,0,1.7; txt@200,66=종량제; man.happy@320
+สเปรย์ดับกลิ่น	room; sneaker@180,0,1.6; spray@240,0,1.6=탈취; man.happy@320
+ยาฆ่าแมลง	room; ant@170,0,1.6; ant@200,0,1.6; spray@250,0,1.6=살충제; woman.wow@330
+ยากันยุง	bedroom; bed@120,0,.9; mcoil@230,0,1.4; moon@340,80; man.happy@320
+ไม้ตียุง	night; mosquito@200,70,1.8; racket@260,30,1.6; man.angry@320
+ไม้ตีแมลงวัน	room; fly@200,70,1.6; swatter@250,30,1.6; woman.angry@320
+มุ้งลวด	room; screen@200,30,1.5; mosquito@150,70,1.3; cross@150,86; man.happy@310
+ถุงดูดความชื้น	bedroom; closet@200,0,1.05; desic@200,6,1.4; woman.happy@320
+น้ำยาขจัดเชื้อรา	bath; mold@170,60,1.6; spray@240,30,1.6=곰팡이; man.sad@330
+เตียง	bedroom; bed@200,0,1.4; man.happy.lie@200,40
+ที่นอน	bedroom; mattress@200,0,1.4; man.happy.lie@200,22
+โครงเตียง	bedroom; bframe@200,0,1.1; man.hips.happy@320
+ผ้าห่ม	bedroom; bed@200,0,1.3; man.lie.sleep@200,36; woman.give@320+blanket
+หมอน	bedroom; bed@170,0,1.1; pillow@140,42,1.6; man.shrug.sad@320
+ปลอกหมอน	bedroom; bed@200,0,1.1; pcase@200,0,1.6; woman.happy.holdr@320!+pillow
+ปลอกผ้าห่ม	bedroom; washer@200,0,1.2; quilt@110,0,1.1; woman.happy@320
+ผ้าปูที่นอน	bedroom; bed@200,0,1.3; sparkle@120,70; woman.happy@320
+ผ้าห่มขนแกะ	living; sofa@180; woman.sit.happy@180,30; quilt@180,30,1.3; tvstand@340; tv@340,20
+ผ้าห่มไฟฟ้า	snow; ebanket@200,0,1.5; man.lie.sleep@200,8
+ที่นอนน้ำอุ่น	bedroom; mattress@200,0,1.2; ebanket@200,19,1.2; woman.lie.sleep@200,24
+โต๊ะข้างเตียง	bedroom; bed@120; ctable@265,0,1.2; glasses@265,26,1.5; man.point@350!
+ไฟหัวเตียง	bedroom; bed@200,0,1.1; dlamp@120,0,1.4; woman.sit.hold@210,33+book
+โคมไฟกลางคืน	bedroom; bed@200,0,1.1; nlight@120,0,1.4; girl.lie.sleep@205,33
+นาฬิกาปลุก	bedroom; ctable@200,0,1.3; aclock@200,29,1.6; say@265,96=5:30
+โต๊ะเครื่องแป้ง	bedroom; vanity@200,0,1.1; stool@200,0,1.1; woman.sit.happy@200,29+lipstick
+เก้าอี้โต๊ะเครื่องแป้ง	bedroom; vanity@200,0,1.1; stool@200,0,1.4; woman.point@320!
+กระจกพกพา	room; hmirror@200,0,2.2; handbag@120,0,1.4; woman.happy@310
+ตู้ลิ้นชัก	bedroom; dresser@200,0,1.4; sock@200,76; woman.give@320!+sock
+ตู้เสื้อผ้า	bedroom; closet@200,0,1.05; p@200,0:M-30 -40l-10 6M30 -30l10 6; man.sweat.shrug@320
+ราวแขวนเสื้อ	room; crack@200,0,1.05; coat@190,46,1.1; coat@218,46,1.1; man.happy@320
+ผ้าม่านทึบแสง	room; window@200,30,1.6; curtain@200,0,1.1; moon@100,80; woman.lie.sleep@320,8
+หน้าต่าง	room; window@200,30,1.6; p@200,40:M-30 -20q10 -6 20 0M-28 -12q10 -6 20 0; woman.happy.up@320
+ประตูห้อง	room; door@200,0,1.3; woman.point@110
+ลูกบิดประตู	room; door@200,0,1.3; knob@225,40,1.3; man.sad@310
+สวิตช์	room; switch@240,46,2; man.point@150
+ที่ชาร์จ	office; charger@200,0,2; think@300,96=charger; man.sad@330
+โทรศัพท์มือถือ	room; battery@200,40,2.2; man.wow.holdr@320!+phone
+แว่นตา	room; book@200,0,1.6; glasses@200,40,1.4; oldman.hold@320+book
+กล่องแว่น	room; gcase@200,10,2; glasses@200,30,1.4; woman.happy@320
+แว่นขยาย	room; news@180,30,1.6; magnifier@215,30,1.6; oldwoman.holdr@320!+magnifier
+ชุดนอน	bedroom; pajama@200,0,2; teddy@140,0; girl.happy@300
+ผ้าปิดตา	bedroom; eyemask@200,40,2; man.lie.sleep@200,6
+ที่อุดหู	bedroom; earplug@200,20,2; ring2@60,60,1.4; music@80,80; woman.cover@300
+กล่องเครื่องประดับ	bedroom; jbox@200,0,2; earring@200,30,1.2; woman.happy@320
+แหวน	room; ring@200,20,2.4; sparkle@170,70; sparkle@235,60; woman.happy.love@320
+สร้อยคอ	room; necklace@200,10,2; woman.happy@310; sparkle@240,70
+ต่างหู	room; earring@200,20,2.4; think@290,96=earring; woman.sad@330
+กระเป๋าสตางค์	room; wallet@200,0,2; door@90,0,1.3; man.sweat.wow@320
+กระเป๋า	room; bag@200,0,2.2; book@185,30; teddy@215,30; woman.happy@320
+กระเป๋าถือ	street; woman.holdr.happy@200+handbag*1.5
+อัลบั้มรูป	living; sofa@200; man.sit.hold.happy@180,30+album; woman.sit.happy@220,30; heart@200,100
+สมุดบันทึก	bedroom; desk@200; diary@200,40,1.5; moon@340,80; woman.holdr.happy@280!+pen
+เสื้อผ้า	bedroom; closet@200,0,1.05; woman.shrug.sad@320
+เสื้อยืด	room; tshirt@170,0,2; shorts@230,0,1.6; man.happy@320
+เสื้อเชิ้ต	room; iboard@200,0,1.2; shirt@200,36,1.2; man.happy@320
+เสื้อเบลาส์	room; blouse@200,0,2.2; woman.happy@320; sparkle@140,60
+กางเกง	room; pants@200,0,2.6; man.wow@320
+กางเกงยีนส์	room; jeans@200,0,2.6; calendar@100,46=5년; man.happy@320
