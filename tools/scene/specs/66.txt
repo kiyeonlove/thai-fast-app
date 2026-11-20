@@ -1,0 +1,100 @@
+พูดไปสองไพเบี้ยนิ่งเสียตำลึงทอง	gym; man.happy@200+dumbbell; say@120,96=…; check@280,80
+ช้าๆได้พร้าเล่มงาม	road; turtle@200,0,1; man.walk@300; check@200,60
+หญ้าของเพื่อนบ้านเขียวกว่า	park; grass@140,0,1.2; fence@200,0; grass~green@260,0,1.4; man.sad@100
+ความประทับใจแรก	office; man.suit.happy.wave@140; woman.happy@260; heart@200,90
+หน้าด้าน	room; man.grin@200; money@260,40; woman.angry@120
+เสียหน้า	office; man.sweat.sad@200; man@120; woman@280; say@200,96=앗
+รักษาหน้า	office; man.happy@140; man.sad@260; hand@200,50,.6
+รู้กาลเทศะ	room; kid.happy@200; idea@200,96; man@300
+ไม่รู้กาลเทศะ	room; man.grin@200; woman.angry@300; qmark@120,90
+ปากสว่าง	room; woman@140; man.grin@260; say@260,96=비밀!
+ปากหนัก	room; woman.flat@200; padlock@200,60,.6
+หูเบา	room; grandma.wow@200; say@120,96=정말?
+มือเติบ	kitchen; grandma.happy@200; plate@140,30; plate@260,30; table@200
+ใจบุญ	street; man.happy.give@200+money; oldman.happy@300
+ใจแคบ	room; man.angry@200; heart@200,96,.6
+ใจอ่อน	room; man.happy.sit@200,24; sofa@200; kid.happy@280+candy
+ใจแข็ง	room; woman.flat@200; fist@280,60,.6
+ใจร้อนมาก	room; man.angry@200; clock@300,60
+ใจกล้า	gym; kid.happy@200; ladder@280,0
+ใจเด็ด	room; cigarette@200,40; cross@200,40; man.happy.up@300
+ใจเสาะ	room; kid.wow@200; ghost@300,30
+ใจลอย	office; man.happy@200; heart@200,96; cloud@280,80
+ใจสลาย	room; woman.cry@200; heart@200,96; ecrack@200,96,.2
+ใจชื้น	room; kid.happy@200; woman.happy@300; heart@250,90
+หนักใจ	office; man.sad@200; box@200,60
+โล่งใจมาก	class; testp@200,10,1; check@200,40; student.happy.up@320
+อุ่นใจ	room; kid.happy@200; man.happy@280; shield@140,40
+ใจตรงกัน	room; man.happy@140; woman.happy@260; heart@200,90
+ห่วงใย	room; woman.think@200; think@280,92=kid
+วุ่นวายใจ	office; man.sweat@200; paper@140,40; paper@260,40; phone@300,50
+ปวดหัวกับเรื่องนี้	office; man.sad@200; brain@200,96,.5; hand@220,70,.5
+ใช้หัว	class; man.think@200; brain@200,96,.5; idea@260,90
+ตาสูง	room; woman@200; stars@200,96; man@300; cross@300,96
+หลับตาข้างหนึ่ง	office; man.happy@200; hand@260,70,.6; boss@330
+วางมือ	office; man.sit@200,24; chair@200; man.happy@300
+จับมือร่วมกัน	office; building@140,0,.6; building@260,0,.6; hand@200,50
+รู้จักคนเยอะ	room; woman.happy@200; man@120; woman@280; man@330
+ถอนตัว	office; man.walk@200; folder@120,30; arrowr@280,60
+ถูกปาก	rest; tomyum@200,30; man.happy@300; heart@300,96
+กินยาก	kitchen; veg@200,40; cross@200,40; kid.angry@300
+กินง่าย	rest; plate@200,30; man.happy@300; check@300,96
+นอนเก่ง	bedroom; bed@200; kid.sleep.lie@200,24; clock@300,60
+พูดมาก	street; woman.happy@200; say@280,96=…………
+พูดน้อย	room; man.flat@200; heart@200,96
+ใช้เงินเป็นเบี้ย	shop; money@200,40; money@240,60; man.grin@300
+ขี้ตืด	rest; man.flat@200; money@200,50; cross@260,70
+คนขี้โม้	room; man.grin@200; say@280,96=대단해!
+คนโกหก	room; man.grin@200; woman.flat@300; cross@300,96
+คนขี้เกียจ	bedroom; man.sleep.lie@200,24; sofa@200; clock@300,60
+คนบ้างาน	office; man.sweat@200; laptop@200,40; moon@330,90
+หนอนหนังสือ	room; woman.happy.glasses@200; book@260,10; book@140,10
+ติดบ้าน	room; woman.happy.sit@200,24; sofa@200; house@330,0,.4
+ลูกแหง่	room; woman@140; man.sad@200; qmark@200,96
+ขี้งก	market; seller.grin@200; money@260,40
+ประจบ	office; man.grin.wai@200; boss.happy@300
+นินทา	room; woman@140; woman.grin@200; say@170,96=수근수근; man.sad@330
+ฟ้อง	room; kid.cry.point@200; woman@300; boy@120
+สอดรู้	street; woman.grin@200; fence@260,0; house@330,0,.6
+แกล้งทำ	room; man.sleep@200; say@120,96=척
+ทำเป็นไม่รู้	room; man.flat@200; magnifier@260,40; qmark@200,96
+ทำเป็นเก่ง	office; man.grin@200; stars@200,96
+โง่	room; man.sad@200; hand@220,70,.5; cross@280,70
+คนโง่	room; man.angry.point@200; kid.sad@300; cross@200,96
+หัวไว	class; kid.happy@200; idea@200,96; check@260,80
+ดวงดี	road; car@200,0,1; check@200,40; man.happy@330
+ซวย	rain; man.angry@200; raincloud@200,90
+เยี่ยมไปเลย	office; man.happy.up@200; fireworks@200,90
+งั้นๆ	room; man.flat.sit@200,24; chair@200
+สบายๆ	beach; man.happy.sit@200,24; chair@200; palm@100,0
+ต้องสนุกไว้ก่อน	office; man.happy@200; laptop@260,30; heart@200,96
+ความเกรงใจ	room; man.happy.wai@140; woman.happy.wai@260
+โทษคนอื่น	room; man.point@200; man.sad@300; cross@120,80
+หาข้ออ้าง	room; man.shrug@200; say@280,96=그게…
+ผิดนัด	cafe; man.happy@200; woman.angry@300; clock@120,60
+เบี้ยวนัด	cafe; clock@200,60; woman.angry@300; chair@140
+ตรงต่อเวลา	office; clock@200,60; man.suit@140; man.suit@260; check@200,96; flagjp@330,0,.5
+บ้านพักอาศัย	street; house@120,0,.7; house@200,0,.7; house@280,0,.7
+บ้านเดี่ยว	park; house@200,0,1; tree@300,0; man.happy@100
+ทาวน์เฮาส์	street; house@140,0,.6; house@200,0,.6; house@260,0,.6; money@330,20
+ตึกแถว	street; building@200,0,1; shop@200,0,.5
+บ้านไม้	park; house~brown@200,0,1; tree@100,0; sun@330,80
+บ้านทรงไทย	park; temple@200,0,.8; grandma.happy@330
+บ้านใต้ถุนสูง	river; house@200,24,.8; pillar@170,0,.6; pillar@230,0,.6; flood@200,0,.8
+เจ้าของบ้าน	room; man.happy@200; key@260,40; house@330,0,.4
+ผู้เช่า	room; student.happy@200; bed@120; key@280,40
+ห้องเช่า	room; door@200; paper@280,40=5000฿; key@140,40
+ย้ายออก	street; truck@200,0,.8; box@300,10; man.walk@120
+ย้ายเข้า	street; truck@200,0,.8; man.happy.wave@300; house@100,0,.6
+งานขึ้นบ้านใหม่	room; man.happy@140; woman.happy@200; gift@260,10; cake@320,20
+ห้องนั่งเล่น	living; sofa@200; tvstand@200; tv@200,20
+ห้องนอน	bedroom; bed@200; ac@200,80
+ห้องอาบน้ำ	bath; btub@200,0,1; shower@260,40
+ห้องใต้หลังคา	room; roof@200,90; box@200,10; box@240,10; ladder@120,0
+ห้องใต้ดิน	room; stairs@200,0,1; box@300,0
+ทางเข้าบ้าน	room; door@200; shoe@170,0; shoe@230,0; man@300
+หลังบ้าน	park; rope@200,70; shirt@170,50; pants@230,50; house@330,0,.5
+หน้าบ้าน	park; mangotree@200,0; house@330,0,.6
+ดาดฟ้า	night; house@120,40,.6; star@200,90; man.happy@200,40
+ท่อน้ำทิ้ง	street; drain@200,0,1.2; water_drop@200,20; man.sad@320
+ท่อประปา	street; pipe@200,30,1.2; water_drop@200,40; water_drop@220,30; man.wow@320
