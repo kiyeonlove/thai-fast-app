@@ -1,0 +1,100 @@
+ผิดกฎหมายบ้านเมือง	city; jail@200,0,.8; thief.sad@200
+ถูกกฎหมาย	shop; shop@200,0,1.2; check@200,80; paper@300,0,1=허가
+นายตำรวจ	street; police.happy.point@200; man.think@320
+การพิจารณาคดี	city; gavel@200,0,1.4; judge@300
+คำพิพากษา	city; judge@200; gavel@280,0,1.2; paper@120,0,1
+พยาน	city; man.happy@200; hl@200,72,.7; judge@320
+ผู้เสียหาย	city; man.sad@200; bandage@193,10,.4; police@320
+ผู้กระทำผิด	city; thief.sad@200; police@300; handcuff@200,30
+ค่าปรับ	street; paper@200,0,1.6=500฿; police@320
+เสียค่าปรับ	street; car@200,0,1.2; paper@280,0,1=벌금; man.sad@340
+ใบเตือน	road; police.point@200; man.sad@320; paper@260,0,1=경고
+ใบอนุญาต	office; paper@200,0,1.6=허가; seal@250,0,1
+บัตรประชาชน	office; card@200,10,1.8=ID; man.happy@320
+ลงทะเบียน	class; paper@200,0,1.6=등록; student.happy@320+pen
+ลายเซ็น	office; paper@200,0,1.6; pen@240,0,1.2; txt@200,60=서명
+ใบรับรอง	hosp; paper@200,0,1.6=증명서; doctor@320
+สูติบัตร	hosp; paper@200,0,1.6=출생증명; baby.happy@300,10
+ทะเบียนบ้าน	office; paper@200,0,1.6=주민등록; house@300,0,.6
+ความเป็นระเบียบ	class; student@140; student@180; student@220; student@260; check@320,70
+กฎความปลอดภัย	class; sign@200,0,1.4=!; flask@300,0,1
+ป้ายห้าม	street; sign@200,0,1.6=P×; car@320,0,.8
+คำเตือน	room; bottle@200,0,1.6; sign@250,0,1=!
+ความรับผิดชอบต่อสังคม	park; bin@200,0,1.4; earth@300,0,.8; man.happy@120+tbag
+ทางวิทยาศาสตร์	class; flask@170,0,1.2; microscope@240,0,1; idea@200,96,.6
+อุปกรณ์ทดลอง	class; flask@170,0,1.2; ttube@220,0,1.2; beaker@260,0,1
+หลอดทดลอง	class; ttube@200,0,1.6; water_drop@200,40,.6
+บีกเกอร์	class; beaker@200,0,1.6; water@260,0,1
+ตะเกียงแอลกอฮอล์	class; alamp@200,0,1.6; ttube@200,30,.8
+เทอร์โมมิเตอร์	class; thermo@200,0,1.8
+การสังเกต	class; magnifier@200,30,1.4; bug@200,0; boy.happy@320
+การวัด	class; ruler@200,10,1.4; scale@280,0,1; man.think@330
+บันทึกผล	class; notebook@200,0,1.6; graph@300,20,.8; boy.happy@330+pen
+ตัวแปร	class; board_@200,20,1.4=x, y
+ควบคุม	class; thermo@200,0,1.6; man.point@320!
+ธาตุ	class; board_@200,20,1.4=Au Fe O; teacher.point@340!
+สารประกอบ	class; water@200,0,1.6; molecule@260,40,1
+สารผสม	class; wind@200,60,1.6; molecule@140,40,.8; molecule@270,50,.8
+โมเลกุล	class; molecule@200,30,1.8
+อิเล็กตรอน	class; atom@200,30,1.6; txt@260,80=e⁻
+โปรตอน	class; atom@200,30,1.6; txt@260,80=p⁺
+นิวตรอน	class; atom@200,30,1.6; txt@260,80=n
+กรด	kitchen; lime@200,0,1.6; txt@200,60=산
+เบส	bath; soap@200,0,1.8; txt@200,60=염기
+น้ำเกลือ	bath; glass@200,0,1.6; jar@250,0,1=소금; man.cover@330
+ละลายน้ำ	kitchen; glass@200,0,1.6; sugar@250,0,1; arrowd@200,40
+ปฏิกิริยา	class; ttube@170,0,1.2; ttube@230,0,1.2; boom@200,50,.6
+ปฏิกิริยาเคมี	class; beaker@200,0,1.6; bubbles@200,40; boom@240,60,.4
+เผา	street; bin@200,0,1.4; fire@200,30,1; cross@280,60
+การเผาไหม้	room; fire@200,0,1.6; candle@280,0,1
+สนิม	street; gate@200,0,1; rust@200,30,.6
+โลหะ	room; can@170,0,1.2; key@220,0,1.2; bars@270,0
+อโลหะ	room; pbottle@200,0,1.6; txt@200,60=비금속
+อะลูมิเนียม	room; can@200,0,1.6; txt@200,60=Al
+เหล็กกล้า	river; bridge@200,0,.9; txt@200,96=강철
+ตะกั่ว	room; txt@200,60=Pb; sign@260,0,1=!
+ปรอท	class; thermo@200,0,1.8; txt@250,60=Hg
+เพชร	shop; gem@200,10,2; ring@250,10,1; woman.wow@330
+ถ่านหิน	city; factory@200,0,1; coal@120,0,1.4
+ก๊าซธรรมชาติ	kitchen; stove@200,0,1.2; fire@200,8,1; txt@200,96=가스
+พลังงานนิวเคลียร์	city; powerplant@200,0,1.2; atom@330,40,.8
+แผงโซลาร์	street; house@200,0,1.2; solar@200,52,1; sun@330,80
+โรงไฟฟ้า	city; powerplant@200,0,1.2; tower@340,0,.6
+แรงดันไฟฟ้า	room; socket@200,30,1.6; txt@200,70=220V
+ประหยัดไฟ	room; switch@200,46,1.6; check@260,70; man.point@120
+ไฟดับ	night; house@140,0,1; house@260,0,1; dark@200,0
+ไฟช็อต	room; socket@200,30,1.4; shock@200,40,1; man.wow@320
+ตัวนำ	class; coil@200,10,2; bulb@270,30,1
+ฉนวน	class; tire@200,0,1.2; txt@200,60=절연
+สนามแม่เหล็ก	class; magnet@200,0,1.8; earth@300,20,.8
+ความเร็วแสง	space; sun@100,60,1.2; p@200,60:M-60 0H80; arrowr@290,60
+คลื่นเสียง	class; soundwave@200,50,1.6; speaker@100,0,1
+การสั่นสะเทือน	room; phone@200,0,1.6; p@200,30:M-14 0l-4 -4M14 0l4 -4
+การเปลี่ยนพลังงาน	class; fire@140,0,1; arrowr@200,30; bulb@260,30,1
+การเคลื่อนที่	road; car@200,0,1.4; arrowr@270,40
+ความเร่ง	road; car@200,0,1.4; arrowr@270,40,1.4; dust@120,10
+มวล	class; scale@200,0,1.4; box@200,10,.8
+ปริมาตรวัตถุ	class; beaker@200,0,1.6; box@200,0,.6
+ความหนาแน่น	class; beaker@200,0,1.6; oilb@260,0,1; water@140,0,1
+คาน	class; lever@200,0,1.2; man.push@280
+รอก	field; well@200,0,1.2; pulley@200,30,.6; man@300
+ล้อ	road; tire@200,0,1.4; ptire@280,0,1; man.sad@340
+เฟือง	room; clock@200,50,1.6; gear@200,20,.8
+เยื่อหุ้มเซลล์	class; circle@200,0,1.6; microscope@300,0,1
+ดีเอ็นเอ	hosp; dna@200,10,1.6; doctor@320
+จุลินทรีย์	class; microscope@200,0,1.4; bacteria@280,60,.8; sprout@120,0
+แบคทีเรีย	bath; sink@200,0,1.4; bacteria@200,50,1.2; man.happy@320
+ไวรัส	hosp; germ@200,50,1.6; man.sick@320
+เชื้อรา	kitchen; bread@200,0,1.6; mold@200,20,.8
+พยาธิ	kitchen; veg@200,0,1.6; worm2@200,20,1; cross@260,60
+ฮอร์โมน	room; man.happy@140; man.angry@260; brain@200,90,.6
+สารอาหาร	rest; veg@150,0; egg@200,0; fish@250,0; check@320,60
+คาร์โบไฮเดรต	rest; rice@170,0,1.2; bread@230,0,1.2; txt@200,60=탄수화물
+แคลเซียม	kitchen; milk@200,0,1.6; skeleton@300,0,.8
+ธาตุเหล็ก	kitchen; spinach@200,0,1.6; txt@200,60=Fe
+ใยอาหาร	market; apple@170,0,1.2; banana@230,0,1.2; txt@200,60=식이섬유
+ระบบย่อยอาหาร	hosp; stomach@200,30,1.4; intestine@280,20,.8
+ระบบหายใจ	hosp; lungs@200,30,1.6; dust@280,60
+ระบบไหลเวียนโลหิต	hosp; organ@200,60,1.4; p@200,60:M-30 10q-20 10 -30 30M30 10q20 10 30 30
+ระบบประสาท	hosp; brain@200,50,1.4; p@200,30:M0 0V-20
+ระบบภูมิคุ้มกัน	hosp; shield@200,20,1.4; germ@280,50; cross@280,60
