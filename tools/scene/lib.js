@@ -44,6 +44,7 @@ const HAIR = {
   bald: ``,
 };
 const HATS = {
+  beret: `<path d="M-13 -88Q-12 -100 4 -98Q16 -96 13 -88Z" fill="${K}"/><path d="M4 -98v-3" stroke-width="2"/>`,
   scout: `<path d="M-20 -86H20M-11 -86L-7 -100H7L11 -86" fill="#a0714a" stroke-width="2"/>`,
   gradcap: `<path d="M-18 -94L0 -100L18 -94L0 -88Z" fill="${K}"/><path d="M-10 -92v6h20v-6" fill="${K}"/><path d="M14 -94v10" stroke-width="1.4"/>`,
   crown: `<path d="M-10 -88V-98L-5 -93L0 -101L5 -93L10 -98V-88Z" fill="#f2d04c" stroke-width="1.8"/>`,
@@ -74,7 +75,7 @@ const TYPE = { // 머리, 옷, 크기, 기본 모자/안경
   monk: {h: "bald", robe: 1}, police: {h: "m", hat: "police", dark: 1}, doctor: {h: "m", coat: 1, gl: 1}, nurse: {h: "wb", d: 1, coat: 1},
   chef: {h: "m", hat: "chef", coat: 1}, farmer: {h: "m", hat: "straw"}, worker: {h: "m", hat: "helmet"}, student: {h: "m", s: .86, tie: 1},
   teacher: {h: "wb", d: 1, gl: 1}, driver: {h: "m", hat: "cap"}, baby: {h: "bald", s: .5, baby: 1}, soldier: {h: "m", hat: "helmet", dark: 1},
-  boss: {h: "om", tie: 1, gl: 1}, dentist: {h: "wb", d: 1, coat: 1}, minister: {h: "om", tie: 1, dark: 1}, prince: {h: "m", hat: "crown"}, princess: {h: "w", d: 1, hat: "crown"}, king: {h: "om", hat: "crown"}, queen: {h: "w", d: 1, hat: "crown"}, witch: {h: "w", d: 1, hat: "witch", dark: 1}, fairy: {h: "g", d: 1, wing: 1}, hero: {h: "m", cape: 1}, giant: {h: "m", s: 1.25}, firefighter: {h: "m", hat: "helmet", dark: 1}, singer: {h: "m"}, guard: {h: "m", hat: "police"}, seller: {h: "wb", d: 1, apron: 1}, kid: {h: "g", d: 1, s: .74},
+  boss: {h: "om", tie: 1, gl: 1}, judge: {h: "om", robe2: 1, gl: 1}, lawyer: {h: "m", tie: 1, dark: 1}, pilot: {h: "m", hat: "cap", dark: 1, tie: 1}, scientist: {h: "om", coat: 1, gl: 1}, artist: {h: "m", hat: "beret"}, dentist: {h: "wb", d: 1, coat: 1}, minister: {h: "om", tie: 1, dark: 1}, prince: {h: "m", hat: "crown"}, princess: {h: "w", d: 1, hat: "crown"}, king: {h: "om", hat: "crown"}, queen: {h: "w", d: 1, hat: "crown"}, witch: {h: "w", d: 1, hat: "witch", dark: 1}, fairy: {h: "g", d: 1, wing: 1}, hero: {h: "m", cape: 1}, giant: {h: "m", s: 1.25}, firefighter: {h: "m", hat: "helmet", dark: 1}, singer: {h: "m"}, guard: {h: "m", hat: "police"}, seller: {h: "wb", d: 1, apron: 1}, kid: {h: "g", d: 1, s: .74},
 };
 const FACE = {
   smile: `<path d="M-4 -74q4 4 8 0" fill="none" stroke-width="1.8"/>`,
@@ -115,6 +116,7 @@ function person(type, mods, held, txt, lift) {
   if (T.robe) body = `<path d="M-12 -66Q-16 -66 -16 -60L-18 ${sit ? -34 : -8}H18L16 -60Q16 -66 12 -66Z" fill="${GR}"/><path d="M-10 -64L12 -36" stroke-width="1.6" fill="none"/>`;
   else if (T.d) body = `<path d="M-10 -66Q-14 -66 -14 -61L-19 -30H19L14 -61Q14 -66 10 -66Z" fill="${T.dark ? GR : "#fff"}"/>`;
   else body = `<path d="M-11 -66Q-15 -66 -15 -61L-14 -34H14L15 -61Q15 -66 11 -66Z" fill="${T.dark ? GR : "#fff"}"/>`;
+  if (T.robe2) body += `<path d="M-12 -66Q-16 -66 -16 -60L-18 -24H18L16 -60Q16 -66 12 -66Z" fill="${K}"/>`;
   if (T.coat) body += `<path d="M0 -66V-34M-4 -60l4 4 4 -4" fill="none" stroke-width="1.5"/>`;
   for (const m of mods) { const C2 = COST[m]; if (C2) body += C2; }
   if (T.tie) body += `<path d="M0 -65l-2 10 2 4 2 -4Z" fill="${K}"/>`;
@@ -1114,6 +1116,35 @@ const O = {
   crackling: `<path d="M-14 -4Q-10 -12 -2 -8Q6 -14 14 -6Q10 0 0 -2Q-8 2 -14 -4Z" fill="#e8b070"/><path d="M-8 -6l2 -2M2 -8l2 -2M8 -5l2 -2" stroke-width="1"/>`,
   scouthat: `<path d="M-18 -4H18M-10 -4L-6 -16H6L10 -4" fill="#a0714a"/>`,
   sharp: `<path d="M-2 0L-3 -6V-28H3V-6Z" fill="${GR}"/><path d="M-3 -6L0 6L3 -6" fill="#e8d9b8" stroke-width="1.2"/>`,
+  church: `<path d="M-30 0V-44L0 -64L30 -44V0Z" fill="#fff"/><path d="M0 -64V-84M-6 -78H6" stroke-width="2.6"/><path d="M-8 0V-20Q0 -30 8 -20V0" fill="${GR}"/><circle cx="0" cy="-42" r="6" fill="#8cc8f0" stroke-width="1.4"/>`,
+  mosque: `<path d="M-30 0V-30H30V0Z" fill="#fff"/><path d="M-24 -30Q-24 -60 0 -64Q24 -60 24 -30Z" fill="#9c9"/><path d="M0 -64v-8" stroke-width="2"/><path d="M-40 0V-60M40 0V-60" stroke-width="5"/><path d="M-6 0V-16Q0 -22 6 -16V0" fill="${GR}"/>`,
+  university: `<path d="M-60 0V-40H60V0Z" fill="#fff"/><path d="M-66 -40L0 -64L66 -40Z" fill="${GR}"/><path d="M-50 -6V-34M-30 -6V-34M30 -6V-34M50 -6V-34" stroke-width="3"/><path d="M-10 0V-24H10V0" fill="${GR}"/><path d="M-12 -52L0 -56L12 -52L0 -48Z" fill="${K}"/>`,
+  kinder: `<path d="M-40 0V-34H40V0Z" fill="#fff"/><path d="M-46 -34L0 -54L46 -34Z" fill="#f4a6c6"/><circle cx="-20" cy="-18" r="7" fill="#f2d04c" stroke-width="1.4"/><rect x="2" y="-24" width="14" height="24" fill="#8cc8f0"/><path d="M-36 -2h6v-6h-6zM24 -6h8v6h-8z" fill="#9c9" stroke-width="1"/>`,
+  stadium: `<path d="M-80 0V-30Q0 -50 80 -30V0Z" fill="#fff"/><path d="M-70 -30Q0 -44 70 -30" fill="none" stroke-width="1.4"/><path d="M-60 -4Q0 -16 60 -4" fill="#9c9" stroke-width="1.4"/><path d="M-80 -30V-50M80 -30V-50" stroke-width="2"/>`,
+  target: `<circle cx="0" cy="-20" r="20" fill="#fff"/><circle cx="0" cy="-20" r="13" fill="#e45b5b"/><circle cx="0" cy="-20" r="7" fill="#fff"/><circle cx="0" cy="-20" r="3" fill="#e45b5b"/><path d="M30 -40L2 -21" stroke-width="2"/>`,
+  dove: `<path d="M-14 -10Q-6 -20 6 -16Q12 -24 20 -22Q14 -16 14 -10Q4 -2 -14 -10Z" fill="#fff"/><path d="M-4 -14Q-10 -30 4 -36Q6 -24 4 -16" fill="#fff" stroke-width="1.6"/><path d="M20 -22l6 -2" stroke-width="1.6"/><path d="M24 -24q4 -4 8 -2" fill="none" stroke="#5cb85c" stroke-width="1.6"/>`,
+  boom: `<path d="M0 -40L6 -26L20 -32L12 -18L26 -12L10 -8L14 4L0 -4L-14 4L-10 -8L-26 -12L-12 -18L-20 -32L-6 -26Z" fill="#f39a3c"/>`,
+  justice: `<path d="M0 0V-40M-20 0H20M-24 -36H24" stroke-width="2.4"/><path d="M-24 -36L-30 -18H-18ZM24 -36L18 -18H30Z" fill="none" stroke-width="1.2"/><path d="M-32 -18Q-24 -10 -16 -18ZM16 -18Q24 -10 32 -18Z" fill="#f2d04c"/>`,
+  gavel: `<rect x="-14" y="-24" width="20" height="10" rx="2" fill="#a0714a" transform="rotate(-20 -4 -19)"/><path d="M0 -18L16 -2" stroke-width="3"/><rect x="-16" y="-4" width="24" height="4" fill="#a0714a"/>`,
+  satellite: `<rect x="-6" y="-26" width="12" height="12" fill="${GR}"/><rect x="-30" y="-24" width="20" height="8" fill="#6aa8e8"/><rect x="10" y="-24" width="20" height="8" fill="#6aa8e8"/><path d="M-10 -20H-6M6 -20h4M0 -14v6" stroke-width="1.6"/>`,
+  solar: `<path d="M-30 0L-20 -24H30L20 0Z" fill="#6aa8e8"/><path d="M-25 -12H25M-8 -24L-12 0M8 -24L4 0" stroke="#fff" stroke-width="1.2"/>`,
+  circuit: `<rect x="-24" y="-30" width="48" height="30" fill="none" stroke-width="2"/><rect x="-30" y="-20" width="12" height="10" fill="${GR}"/><path d="M14 -34a6 6 0 1 0 .1 0" fill="#f2d04c" stroke-width="1.4"/>`,
+  lens: `<ellipse cx="0" cy="-14" rx="6" ry="14" fill="#cef"/>`,
+  atom: `<circle cx="0" cy="-20" r="3" fill="#e45b5b"/><ellipse cx="0" cy="-20" rx="20" ry="7" fill="none" stroke-width="1.4"/><ellipse cx="0" cy="-20" rx="20" ry="7" fill="none" stroke-width="1.4" transform="rotate(60 0 -20)"/><ellipse cx="0" cy="-20" rx="20" ry="7" fill="none" stroke-width="1.4" transform="rotate(-60 0 -20)"/>`,
+  dna: `<path d="M-6 0Q10 -10 -6 -20Q10 -30 -6 -40M6 0Q-10 -10 6 -20Q-10 -30 6 -40" fill="none" stroke-width="2"/><path d="M-2 -5h4M-2 -15h4M-2 -25h4M-2 -35h4" stroke-width="1.4"/>`,
+  liver: `<path d="M-20 -6Q-22 -22 0 -22Q20 -24 18 -14Q10 -2 -20 -6Z" fill="#a0714a"/>`,
+  kidney: `<path d="M-6 -24Q-18 -24 -16 -10Q-14 0 -4 -4Q-8 -12 -4 -16Q0 -22 -6 -24ZM6 -24Q18 -24 16 -10Q14 0 4 -4Q8 -12 4 -16Q0 -22 6 -24Z" fill="#e8806a"/>`,
+  intestine: `<path d="M-14 -22H14Q20 -22 14 -16H-14Q-20 -10 -14 -10H14Q20 -4 14 -4H-10" fill="none" stroke="#f4a6c6" stroke-width="5"/>`,
+  drum: `<ellipse cx="0" cy="-24" rx="16" ry="5" fill="#fff"/><path d="M-16 -24V-4Q0 4 16 -4V-24" fill="#e45b5b"/><path d="M-16 -18l8 10 8 -10 8 10 8 -10" fill="none" stroke-width="1.2"/><path d="M10 -30l12 -12M-10 -30l-10 -12" stroke-width="2"/>`,
+  statue: `<rect x="-14" y="-12" width="28" height="12" fill="${GR}"/><circle cx="0" cy="-34" r="6" fill="#ddd"/><path d="M-6 -28Q-10 -18 -8 -12H8Q10 -18 6 -28Z" fill="#ddd"/>`,
+  hotel: `<rect x="-30" y="-90" width="60" height="90" fill="#fff"/><rect x="-24" y="-100" width="48" height="10" fill="${GR}"/><text x="0" y="-92" font-size="8" text-anchor="middle" fill="${K}" stroke="none" font-weight="700">HOTEL</text><path d="M-20 -78h10M2 -78h10M-20 -62h10M2 -62h10M-20 -46h10M2 -46h10M-20 -30h10M2 -30h10" stroke-width="3"/><rect x="-8" y="-16" width="16" height="16"/>`,
+  easel: `<path d="M-14 0L0 -60L14 0M0 -60V0" fill="none" stroke-width="2"/><rect x="-18" y="-54" width="36" height="28" fill="#fff"/><path d="M-12 -32l8 -12 6 8 4 -4 6 8" fill="none" stroke-width="1.4"/>`,
+  subway: `<rect x="-50" y="-36" width="100" height="30" rx="6" fill="#ddd"/><path d="M-42 -30h16v10h-16zM-20 -30h16v10h-16zM2 -30h16v10h-16zM24 -30h16v10h-16z" fill="#fff" stroke-width="1.2"/><path d="M-60 0H60" stroke-width="2"/><path d="M-60 -50H60" stroke-width="3"/>`,
+  skytrain: `<rect x="-50" y="-70" width="100" height="26" rx="6" fill="#ddd"/><path d="M-42 -64h16v10h-16zM-20 -64h16v10h-16zM2 -64h16v10h-16zM24 -64h16v10h-16z" fill="#fff" stroke-width="1.2"/><path d="M-70 -42H70" stroke-width="4"/><path d="M-40 -42V0M40 -42V0" stroke-width="6"/>`,
+  hwsign: `<path d="M0 0V-50" stroke-width="3"/><rect x="-24" y="-66" width="48" height="20" rx="2" fill="#5cb85c"/><path d="M-12 -56h20M2 -60l6 4-6 4" stroke="#fff" stroke-width="2" fill="none"/>`,
+  oil: `<path d="M-10 0V-28H10V0Z" fill="${K}"/><ellipse cx="0" cy="-28" rx="10" ry="3" fill="#555"/><path d="M0 -40q-4 6 0 8q4 -2 0 -8" fill="${K}"/>`,
+  ore: `<path d="M-14 0L-10 -14L4 -18L14 -8L10 0Z" fill="${GR}"/><path d="M-6 -10l4 -2M4 -10l3 2" stroke="#f2d04c" stroke-width="2.4"/>`,
+  co2: `<text x="0" y="-6" font-size="14" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">CO₂</text>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1250,7 +1281,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
   SC.lint = function (spec) {
     const bad = [], parts = String(spec).split(";"), bg = parts.shift().trim();
     if (!SC.bgs.includes(bg)) bad.push("bg:" + bg);
-    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
+    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");

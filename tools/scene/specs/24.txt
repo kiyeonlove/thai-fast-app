@@ -1,0 +1,100 @@
+นุ่มลิ้น	rest; steak@200,0,1.6; man.happy.love@320
+สุก	market; mango~yellow@200,0,1.8; check@250,50; woman.happy@320
+ดิบ	kitchen; meat@200,0,1.6; cross@200,40; woman.point@320!
+บูด	kitchen; rice@200,0,1.6; stink@200,30; bin@280,0,1.2; man.cover@340
+สด	market; fish@200,0,1.8; sparkle@170,30; boat@60,0,.6; man.happy@320
+ร้านทำผม	street; shop@200,0,1.3; scissors@200,60,1; woman.happy@320; girl.happy@360
+ร้านขายยา	street; shop@200,0,1.3; txt@200,64=약국; medpack@200,30,1
+ร้านเบเกอรี่	street; shop@200,0,1.3; bread@200,30,1.2; smell@200,50; man.happy@330
+ร้านกาแฟ	cafe; table@200; mug@200,39,1.3; man.sit.happy@140,24; chair@140; woman.sit.happy@260,24; chair@260
+ซัก	room; washer@200,0,1.4; calendar@100,50,1=토; woman.happy@320
+ร้านซักรีด	street; shop@200,0,1.3; suitobj@200,30,1; iron@250,0,1; man.happy@340
+ร้านหนังสือ	street; shop@200,0,1.3; book@200,30,1.2; man.happy@340
+เครื่องเขียน	school; pencil@170,0,1.4; notebook@210,0,1.2; ruler@250,0,1; boy.happy@330
+ร้านเครื่องเขียน	street; shop@200,0,1.3; pencil@185,30; pen@210,30; girl.happy@330
+แผงลอย	street; stall@200,0,1.2; fruits@200,22; woman.happy@330
+นัด	room; calendar@200,30,1.6; man.happy.phone@320+phone; clock@100,60,1=7:00
+ตลาดนัด	night; stall@140,0,1; stall@270,0,1; skewer@140,22; moon@340,80
+ตลาดน้ำ	river; lboat@200,0,1.4; seller.happy@200,10,.8; fruits@230,14,.6
+สนามกีฬา	city; stadium@200,0,1.2; ball@200,24,.6
+โรงยิม	gym; dumbbell@150,0,1.2; treadmill@250,0,1; man.sport.happy@330
+โบสถ์	city; church@200,0,1.2; man.happy@330
+มัสยิด	city; mosque@200,0,1.2
+ศาลากลาง	city; govt@200,0,1.2; man.happy@330+paper
+สถานทูต	city; govt@200,0,1.2; flagkr@200,40,.8; passport@300,0,1.2
+มหาวิทยาลัย	city; university@200,0,1.2; woman.gradcap.happy@340
+อนุบาล	school; kinder@200,0,1.2; boy.happy@330,0,.8
+มัธยม	school; school@200,0,1.2; student@330; txt@330,104=중2
+ประถม	school; school@200,0,1.2; boy.happy@330+backpack; txt@330,104=5학년
+ความคิด	room; idea@200,60,1.6; man.happy.up@300
+ความคิดเห็น	office; man.happy@140; woman.think@220; man.think@300; say@180,96=제 생각엔…
+เหตุผล	room; man.think@200; qmark@200,104; say@260,96=왜?
+สาเหตุ	street; house@200,0,1.2; fire@200,40,1.2; police.think@320; qmark@320,104
+ผลลัพธ์	class; graph@200,20,1.6; check@270,70; man.happy@330
+เป้าหมาย	gym; target@200,30,1.4; txt@200,104=ภาษาไทย; man.happy@330
+วิธี	room; man.happy.point@200; arrowr@260,60; check@320,60
+ปัญหา	room; man.sweat.think@200; qmark@200,104; say@260,96=문제?
+แก้ปัญหา	office; man.happy@160; woman.happy@240; idea@200,104,.8
+ประสบการณ์	office; grandpa.happy@200; trophy@280,0,1; book@120,0,1.2
+ความรู้	school; book@200,0,1.6; idea@200,60,1; boy.happy@330
+ปัญญา	room; grandpa.think@200; idea@200,104,.8; puzzle@300,0,1
+ความสามารถ	gym; man.up.happy@200; trophy@300,0,1.2; star@120,80
+สวรรค์	park; flower@140,0,1.4; rainbow@200,40,1; man.happy.up@320
+พรสวรรค์	room; piano@200,0,1; girl.happy@200,24,.8; music@280,80
+โอกาส	office; door@200,0,1.3; sparkle@200,80; man.happy@320
+ทางเลือก	room; arrowl@170,60,1.2; arrowr@230,60,1.2; man.think@200; qmark@200,104
+การเปลี่ยนแปลง	room; sprout@120,0,1.4; plant@200,0,1.4; tree@290,0,.8
+พัฒนา	room; boy.happy@170,0,.7; boy.happy@230,0,.9; arrowr@270,60
+การพัฒนา	city; building@140,0,.8; tower@200,0,1; tower@270,0,1.1; arrowu@340,60
+การเจริญเติบโต	room; sprout@140,0,1.2; plant@200,0,1.2; tree@280,0,.8
+ความสัมพันธ์	room; man.happy@140; woman.happy@200; boy.happy@260; heart@200,104
+มิตรภาพ	park; boy.happy@170; boy.happy@230; heart@200,104
+ความรัก	room; woman.hold.happy@200; baby.happy@200,30,1.1; heart@200,104,1.4
+ความสุข	park; man.happy.up@200; sun@340,72; heart@260,96
+ความเศร้า	room; man.cry@200; raincloud@200,100,.8
+ความกลัว	night; boy.wow.sweat@200; ghost@300,30,1
+ความกล้า	room; hero.happy.up@200; boy.happy@300,0,.8
+อิสรภาพ	field; bird@200,80,1.6; man.happy.up@200; p@200,0:M-40 -20l20 -10
+สันติภาพ	field; dove@200,40,1.8; earth@200,0,.8
+สงคราม	field; boom@200,30,1.6; cross@300,70; man.sad@100
+ความเท่าเทียม	city; justice@200,0,1.6; man@120; woman@280
+ความยุติธรรม	city; gavel@200,0,1.6; justice@280,0,1
+ศีล	temple; monk~orange.wai@200; man.wai@300
+ศีลธรรม	class; teacher.happy@200; boy.wai@300; heart@250,104
+มโน	room; man.happy@200; think@270,96=castle; cross@340,96
+มโนธรรม	room; man.wai.happy@200; heart@200,50,.8
+นิสัย	bedroom; aclock@200,0,1.4; sun@340,72; man.happy.up@300
+บุคลิก	room; man.happy@200; star@270,80; sparkle@140,60
+ลักษณะ	room; cat@200,0,1.6; hl@180,24,.8
+ชนิด	market; durian@140,0,1; mango@200,0,1.4; rambutan@260,0
+ศูนย์กลาง	city; thaimap@200,0,1.4; txt@200,104=방콕
+ระดับ	class; book@200,0,1.6; txt@200,60=초급; man.happy@320
+ปริมาณ	kitchen; sugar@200,0,1.6; arrowu@250,40; woman.wow@330
+คุณภาพ	shop; box@200,0,1.6; check@200,50; sparkle@240,60; man.happy@330
+คุณค่า	room; clock@200,50,1.6; moneybag@280,0,1.2; man.happy@330
+ความหมาย	class; board_@200,20,1.4=? = !; man.think@340
+ตัวอย่าง	class; board_@200,20,1.4=예) …; teacher.point@340!
+ลับ	kitchen; knife@200,10,1.8; sparkle@230,24; man.happy@330
+ความลับ	room; man.cover@170; woman.happy@240!; txt@200,104=쉿
+ข่าว	room; news@200,10,1.6; man.happy@320+phone
+ข้อมูล	office; laptop@200,0,1.6; wifi@200,50; man.happy@320
+พยัญชนะ	class; board_@200,20,1.4=ก ข ค ฆ; teacher.point@340!
+วรรณยุกต์	class; board_@200,20,1.4=่ ้ ๊ ๋; teacher.point@340!
+ไวยากรณ์	class; book@200,0,1.6; txt@200,60=문법; boy.sweat@330
+คำนาม	class; dog@200,0,1.6; txt@200,60=명사
+คำกริยา	class; rice@200,0,1.6; txt@200,60=동사; man.happy.eat@320+spoon
+คำคุณศัพท์	class; flower@200,0,1.6; txt@200,60=형용사
+ย่อ	park; ball@120,60; man.cover^-10@240
+ย่อหน้า	class; book@200,0,1.6; p@200,6:M-10 -16h8; boy@320
+หัวข้อ	class; board_@200,20,1.4=주제; teacher.point@340!
+เนื้อหา	room; book@200,0,1.6; txt@200,60=…; woman.happy@320
+สรุป	office; paper@200,0,1.6; man.happy@320; say@360,96=요약
+นักเขียน	office; desk@200; book@200,40,1.2; man.sit.happy@200,24; chair@200
+กวี	room; book@200,0,1.6; txt@200,60=กลอน; grandpa.happy@320
+นวนิยาย	bedroom; book@200,0,1.6; woman.sit.happy@300,24; chair@300
+การ์ตูน	living; tvstand@200; tv@200,20,1.2; boy.happy.floor@320
+เขียนจดหมาย	room; desk@200; letter@200,40,1.4; woman.sit@200,24; chair@200
+สุภาษิต	class; board_@200,20,1.4=속담; teacher.point@340!
+ทวีป	space; earth@200,10,2.2; txt@200,104=7
+เอเชีย	space; earth@200,10,2.2; txt@300,90=아시아
+ยุโรป	airport; plane@200,60,1; txt@200,104=유럽; man.happy@330
