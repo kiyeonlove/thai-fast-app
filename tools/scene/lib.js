@@ -103,6 +103,7 @@ function person(type, mods, held, txt, lift) {
     else if (m === "mask") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><rect x="-8" y="-77" width="16" height="8" rx="3"/><path d="M-8 -75l-4 -3M8 -75l4 -3" stroke-width="1"/></g>`;
     else if (m === "smask") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><rect x="-10" y="-88" width="20" height="16" rx="5" fill="#fff" stroke-width="1.4"/><circle cx="-4.5" cy="-81" r="1.4" fill="${K}" stroke="none"/><circle cx="4.5" cy="-81" r="1.4" fill="${K}" stroke="none"/></g>`; else if (HATS[m]) hat = m;
     else if (m === "beard") extra += `<g transform="translate(0 -80) scale(1.25) translate(0 80)"><path d="M-6 -76q6 -3 12 0q-2 2 -6 1q-4 1 -6 -1Z" fill="${K}"/></g>`;
+    else if (m === "preg") extra += `<ellipse cx="0" cy="-36" rx="13" ry="11" fill="#fff"/>`;
     else if (m === "love") extra += heart(16, -96, .7);
   }
   const P = POSE[pose], C = 8, sc = T.s || 1, L = (lift || 0) / sc;
@@ -1378,6 +1379,18 @@ const O = {
   coins: `<circle cx="-8" cy="-6" r="6" fill="#f2d04c"/><circle cx="4" cy="-6" r="6" fill="#ccc"/><circle cx="-2" cy="-14" r="6" fill="#e8806a"/>`,
   karaoke: `<rect x="-30" y="-50" width="60" height="36" fill="#333"/><path d="M-20 -26h40" stroke="#f2d04c" stroke-width="3"/><path d="M-20 -36h30" stroke="#fff" stroke-width="2"/>`,
   belt2: `<path d="M-12 -40L12 0" stroke="#333" stroke-width="5"/>`,
+  stroller: `<path d="M-20 -30Q-20 -46 0 -46V-30Z" fill="${GR}"/><path d="M-20 -30H10L14 -40H22M-14 -30L-10 -6M6 -30L2 -6" fill="none" stroke-width="2.4"/><circle cx="-12" cy="-4" r="4" fill="${K}"/><circle cx="6" cy="-4" r="4" fill="${K}"/>`,
+  diaper: `<path d="M-16 -16H16L10 0H-10Z" fill="#fff"/><path d="M-16 -16q16 10 32 0" fill="none" stroke-width="1.4"/>`,
+  babybottle: `<path d="M-6 0V-20H6V0Z" fill="#fff"/><path d="M-4 -20L-3 -26H3L4 -20Z" fill="#f2d04c"/><path d="M-6 -12H6" stroke-width="1"/>`,
+  atm: `<rect x="-20" y="-70" width="40" height="70" fill="#ddd"/><rect x="-14" y="-62" width="28" height="18" fill="#6aa8e8" stroke-width="1"/><path d="M-10 -36h20M-10 -30h20M-10 -24h20" stroke-width="1.4"/><rect x="-8" y="-16" width="16" height="4" fill="${K}"/><text x="0" y="-64" font-size="6" text-anchor="middle" fill="${K}" stroke="none" font-weight="700">ATM</text>`,
+  coupon: `<path d="M-18 -16H18V-10Q14 -8 18 -6V0H-18V-6Q-14 -8 -18 -10Z" fill="#f2d04c"/><text x="0" y="-5" font-size="7" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">-10%</text>`,
+  stockup: `<rect x="-26" y="-36" width="52" height="36" fill="#fff"/><path d="M-20 -8l10 -6 8 4 10 -12 10 -6" fill="none" stroke="#e45b5b" stroke-width="2.4"/>`,
+  stockdown: `<rect x="-26" y="-36" width="52" height="36" fill="#fff"/><path d="M-20 -30l10 6 8 -4 10 12 10 6" fill="none" stroke="#6aa8e8" stroke-width="2.4"/>`,
+  land: `<path d="M-50 0L-40 -16H40L50 0Z" fill="#9c9"/><path d="M-40 -16v-10M40 -16v-10M-40 -26h80" stroke-width="1.4" stroke-dasharray="3 2"/>`,
+  dollar: `<rect x="-16" y="-14" width="32" height="14" rx="2" fill="#9c9"/><text x="0" y="-3" font-size="10" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">$</text>`,
+  won: `<rect x="-16" y="-14" width="32" height="14" rx="2" fill="#cde"/><text x="0" y="-3" font-size="10" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">₩</text>`,
+  coinpurse: `<path d="M-12 0Q-14 -14 0 -14Q14 -14 12 0Z" fill="#f4a6c6"/><path d="M-6 -14Q0 -20 6 -14" fill="none" stroke-width="1.6"/>`,
+  embroidery: `<circle cx="0" cy="-16" r="16" fill="#fff" stroke-width="3" stroke="#a0714a"/><path d="M-6 -16q6 -8 12 0q-6 8 -12 0Z" fill="#f4a6c6" stroke-width="1"/><path d="M14 -30l10 -10" stroke-width="1.2"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1515,7 +1528,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
   SC.lint = function (spec) {
     const bad = [], parts = String(spec).split(";"), bg = parts.shift().trim();
     if (!SC.bgs.includes(bg)) bad.push("bg:" + bg);
-    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", "beanie", "veil", "beard", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
+    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", "beanie", "veil", "beard", "preg", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");

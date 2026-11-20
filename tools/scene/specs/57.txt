@@ -1,0 +1,100 @@
+หุ้น	office; stockup@200,0,1.4; man.happy@320
+ตลาดหุ้น	office; stockdown@200,0,1.4; man.sad@320
+ได้กำไร	shop; moneybag@200,0,1.4; arrowu@250,60; man.happy@320
+ขาดทุนไป	shop; stockdown@200,0,1.2; man.sad@320
+ความเสี่ยง	office; stockdown@200,0,1.2; sign@300,0,1=!
+อสังหาริมทรัพย์	city; house@170,0,1; tower@250,0,.8
+ที่ดิน	field; land@200,0,1.4; grandpa.happy@330
+ราคาบ้าน	city; house@200,0,1.2; money@300,10,1=₩₩₩; flagkr@100,0,.6
+ทรัพย์สิน	office; house@140,0,.8; car@230,0,.8; moneybag@310,0
+มรดกตกทอด	street; house@200,0,1.2; grandpa@120; boy@320
+เริ่มทำธุรกิจ	city; shop@200,0,1.2; man.suit.happy@330
+เปิดร้าน	cafe; cafe2@200,0,1.2; woman.happy@330
+ปิดร้าน	night; shop@200,0,1.2; moon@330,80; sign@200,0,.8=CLOSED
+เจ๊ง	street; shop@200,0,1.2; sign@200,0,.8=폐업; man.sad@330
+นักธุรกิจที่ประสบความสำเร็จ	office; man.suit.happy.up@200; trophy@300,0,1
+ส่วนแบ่งตลาด	office; pie@200,10,1.4
+ผู้บริโภค	shop; man@140; woman@200; man@260; shopbag@320,0
+ผู้ผลิต	city; factory@200,0,1; box@320,0,1
+อุปทาน	shop; box@200,0,1; arrowd@250,50; man@330
+อุปสงค์	shop; man@120; woman@160; man@200; arrowu@280,60
+ค่าครองชีพสูง	city; money@200,10,1.6=₩₩₩; man.sweat@320
+ของแพงขึ้น	shop; shopbag@200,0,1.4; arrowu@250,60; woman.sad@320
+เงินเฟ้อ	shop; money@200,10,1.4; arrowd@250,40; balloon@300,40
+เศรษฐกิจถดถอย	city; stockdown@200,0,1.2; man.sad@320
+การส่งออกนำเข้า	sea; ship@200,10,1.2; box@170,30,.6; box@200,30,.6; arrowl@100,40; arrowr@300,40
+ระหว่างประเทศ	space; earth@200,10,1.6; arrowl@120,60; arrowr@280,60
+การค้าระหว่างประเทศ	sea; ship@200,10,1.2; flag@100,0,.6; flagkr@320,0,.6
+อุตสาหกรรม	city; factory@200,0,1; car@320,0,.8
+อุตสาหกรรมท่องเที่ยว	beach; hotel@200,0,1; man.shades@320+camera
+ผลผลิตทางการเกษตร	farm; ricefield@200,0,1.2; corn@320,0; mango@100,0
+ผลิตภัณฑ์	shop; box@200,0,1.6; sparkle@240,60
+แบรนด์	shop; bag@200,0,1.6; star@200,50
+ยี่ห้อ	shop; box@200,0,1.4=Brand; man.think@320
+สินค้าหมด	shop; shelf@200,0,1.3; txt@200,104=품절
+สินค้าเข้าใหม่	shop; box@200,0,1.4; sparkle@240,60; txt@200,96=NEW
+ราคาพิเศษ	shop; sale@200,40,1.8
+ราคาเต็ม	shop; pricetag@200,20,1.6; money@260,10
+เซล	city; mall@200,0,1; sale@200,70,.8
+คูปอง	shop; coupon@200,10,1.8; woman.happy@320
+แต้ม	shop; card@200,10,1.4=POINT; gift@270,0,1
+บัตรสมาชิก	shop; card@200,10,1.6=MEMBER; man.happy@320
+ตู้เอทีเอ็ม	street; atm@200,0,1.2; man@300
+เปิดบัญชี	street; bank@200,0,1.2; bankbook@300,0,1.2; man.happy@340
+ฝากเงิน	street; bank@200,0,1.2; money@300,10,1; arrowr@250,40
+ถอนเงิน	street; atm@200,0,1.2; money@280,10,1; man.happy@320
+ส่งเงิน	room; phone@200,0,1.4; arrowr@250,40; flagkr@320,0,.8
+ยอดเงินคงเหลือ	room; bankbook@200,0,1.6; txt@200,60=₩
+สมุดบัญชี	room; bankbook@200,0,1.6; man.happy@320
+เสียค่าธรรมเนียม	street; bank@200,0,1.1; coin@300,10,1=+
+เสียภาษี	office; paper@200,0,1.6=세금; man.happy@320
+ภาษีมูลค่าเพิ่ม	shop; receipt@200,0,1.6; txt@200,60=VAT
+รับใบเสร็จ	shop; receipt@200,0,1.6; man.happy@320
+ซื้อเงินผ่อน	shop; tv@200,10,1.2; calendar@300,40,1=할부
+จ่ายเต็ม	shop; car@200,0,1.2; money@300,10,1.4=일시불
+เงินมัดจำ	room; key@200,0,1.4; money@260,10,1=보증금
+เงินดาวน์	office; house@200,0,1; money@300,10,1=계약금
+เปรียบเทียบราคา	shop; tshirt@160,0,1.2; tshirt@240,0,1.2; txt@200,60=vs
+ต่อราคา	market; seller@200; man.wai@300; say@250,96=깎아줘요
+คุ้มค่า	rest; dish@200,0,1.6; check@260,60; money@140,10,.8
+แพงแต่ดี	shop; shoe@200,0,1.8; star@200,40; money@260,10,1
+จูบ	room; woman.happy.love@200; baby.happy@230,30,.7
+ถีบ	room; door@200,0,1.3; man.angry@120; cross@260,80
+จูง	street; woman.walk.happy@170; boy.walk@230
+หาม	room; table@200,0,1.2; man.carry@120+box; man.carry@280!+box
+หิ้ว	street; shopbag@200,0,1.4; woman.carry.sweat@300+shopbag
+ทูน	market; basket@200,60,1; seller.happy@200
+เอน	room; sofa@200; man.sit.happy@200,30; cushion@240,30
+ไต่	room; ant@200,60,1.6; p@200,0:M0 -112V0
+สะดุด	road; rock@200,0,1.2; man^-60@240,4
+พาย	river; canal@200,0,1.2; lboat@200,8,1; man.happy@200,24,.6
+โผล่	room; box@200,0,1.6; cat@200,24,1
+มุด	room; table@200; boy.floor@200; ball@260,0
+ลอด	park; fence@200,0,1.2; boy.floor@200,0,.8
+หัน	room; man.happy@200!; arrowl@140,60
+แกว่ง	park; bench@200,0,1.2; girl.sit.happy@200,24
+เหวี่ยง	park; man.happy@200; p@200,40:M-20 0Q0 -30 20 0
+ปา	street; dog@200,0; rock@160,30; man.angry@120; cross@140,96
+ฉวย	street; thief.run@200+bag; woman.wow@320
+ยื้อ	room; teddy@200,0,1.2; boy.angry@140; girl.angry@260!
+แย่ง	room; cookie@200,0,1.2; boy.angry@140; boy.cry@260
+ปล้น	shop; thief@200; necklace@260,30; man.wow@330
+โกง	market; seller.happy@200; man.sad@320; money@260,10
+ขู่	room; man.angry@200; police@320; say@260,96=신고할 거야!
+ตะคอก	room; man.angry@200; boy.cry@300; say@250,96=야!
+ชวน	beach; man.happy@160; woman.happy@240; say@200,96=바다 갈래?
+อ้อนวอน	shop; toycar@200,0,1.4; boy.wai.cry@300; woman@120
+แบ่งปัน	street; woman.happy.give@170+dish; man.happy@250
+เฉือน	kitchen; meat@200,0,1.4; knife@240,10; chef.happy@320
+ฝาน	kitchen; mango@200,0,1.4; knife@240,10; woman.happy@320
+คั้น	kitchen; juicer@200,0,1.4; orange@150,0; glass@260,0
+ขยำ	room; paper@200,0,1.4; cross@200,40; man.angry@320
+ปัก	room; embroidery@200,0,1.6; grandma.happy@320
+นุ่ง	temple; woman~purple.happy@200
+ห่ม	bedroom; bed@200,0,1.1; boy.lie.sleep@200,32; woman.happy@320
+ถอย	room; man.wave@200; arrowl@140,60
+ขยับ	room; man.happy@200; arrowr@270,60; woman@330
+ถอยหลัง	road; car@200,0,1.4; arrowl@120,30
+เดินหน้า	road; man.walk@200; arrowr@270,60
+เงยหน้า	park; man.happy@200; star@200,96
+หันหลัง	street; man.happy@200!; woman@300
