@@ -44,6 +44,7 @@ const HAIR = {
   bald: ``,
 };
 const HATS = {
+  scout: `<path d="M-20 -86H20M-11 -86L-7 -100H7L11 -86" fill="#a0714a" stroke-width="2"/>`,
   gradcap: `<path d="M-18 -94L0 -100L18 -94L0 -88Z" fill="${K}"/><path d="M-10 -92v6h20v-6" fill="${K}"/><path d="M14 -94v10" stroke-width="1.4"/>`,
   crown: `<path d="M-10 -88V-98L-5 -93L0 -101L5 -93L10 -98V-88Z" fill="#f2d04c" stroke-width="1.8"/>`,
   witch: `<path d="M-20 -88H20M-11 -88L4 -112L10 -88Z" fill="${K}" stroke-width="2"/>`,
@@ -1086,6 +1087,33 @@ const O = {
   palace: `<path d="M-60 0V-24H60V0Z" fill="#fff"/><path d="M-66 -24L0 -50L66 -24Z" fill="#f2d04c"/><path d="M-30 -40L0 -74L30 -40" fill="#f2d04c"/><path d="M0 -74V-90" stroke-width="2.4"/><path d="M-50 -16h8M-30 -16h8M22 -16h8M42 -16h8" stroke-width="2"/>`,
   govt: `<path d="M-50 0V-36H50V0Z" fill="#fff"/><path d="M-54 -36H54L0 -56Z" fill="${GR}"/><path d="M-40 -6V-30M-24 -6V-30M-8 -6V-30M8 -6V-30M24 -6V-30M40 -6V-30" stroke-width="2.4"/>`,
   thaimap: `<path d="M-6 -60L6 -58L10 -44L22 -40L20 -26L8 -26L4 -14L0 0L-4 -2L-2 -16L-10 -30L-14 -46Z" fill="#9c9"/><circle cx="-2" cy="-26" r="2" fill="#e45b5b"/>`,
+  elevator: `<rect x="-24" y="-80" width="48" height="80" fill="#ddd"/><path d="M0 -80V0" stroke-width="1.6"/><rect x="28" y="-46" width="8" height="14" rx="2" fill="#fff" stroke-width="1.4"/><path d="M32 -42l-2 2h4ZM32 -36l-2 -2h4Z" fill="${K}" stroke-width="1"/><text x="0" y="-84" font-size="9" text-anchor="middle" fill="${K}" stroke="none" font-weight="700">5</text>`,
+  garage: `<path d="M-40 0V-40L0 -56L40 -40V0Z" fill="#fff"/><rect x="-28" y="-34" width="56" height="34" fill="${GR}"/><path d="M-28 -26h56M-28 -18h56M-28 -10h56" stroke-width="1"/>`,
+  cross4: `<path d="M-80 -16H-16V-60M16 -60V-16H80M-80 16H-16V30M16 30V16H80" fill="none" stroke-width="2"/><path d="M-60 0h12M-30 0h12M18 0h12M48 0h12M0 -50v12M0 -26v12" stroke-width="2" stroke="${L}"/>`,
+  busstop: `<path d="M0 0V-60" stroke-width="3"/><rect x="-14" y="-74" width="28" height="18" rx="2" fill="#6aa8e8"/><text x="0" y="-61" font-size="8" text-anchor="middle" fill="#fff" stroke="none" font-weight="800">BUS</text><path d="M10 -40H50V0M10 -40V-30" fill="none" stroke-width="2"/><path d="M16 -14H44" stroke-width="3"/>`,
+  gaspump: `<rect x="-14" y="-50" width="28" height="50" rx="3" fill="#e45b5b"/><rect x="-9" y="-44" width="18" height="10" fill="#fff" stroke-width="1.2"/><path d="M14 -30q10 0 10 14V-4" fill="none" stroke-width="2.4"/><rect x="20" y="-6" width="8" height="6" fill="${K}"/>`,
+  wpump: `<rect x="-14" y="-18" width="28" height="18" rx="3" fill="#6aa8e8"/><path d="M-20 -10h-14M14 -10q10 0 10 -14V-34" fill="none" stroke-width="3"/><circle cx="0" cy="-9" r="5" fill="#fff" stroke-width="1.2"/>`,
+  fireworks: `<path d="M0 0l0 -14M0 0l10 -10M0 0l14 0M0 0l10 10M0 0l0 14M0 0l-10 10M0 0l-14 0M0 0l-10 -10" stroke="#f2d04c" stroke-width="2.4"/><circle cx="0" cy="0" r="3" fill="#e45b5b" stroke="none"/>`,
+  fnet: `<path d="M0 -40L-30 0H30Z" fill="none" stroke-width="1.6"/><path d="M-20 -14H20M-10 -28H10M0 -40V0M-15 -20L5 0M15 -20L-5 0" stroke-width=".7"/>`,
+  cert: `<rect x="-20" y="-30" width="40" height="30" fill="#fff"/><rect x="-16" y="-26" width="32" height="22" fill="none" stroke-width="1"/><path d="M-10 -20h20M-10 -15h20" stroke-width="1"/><circle cx="12" cy="-8" r="4" fill="#f2d04c" stroke-width="1"/>`,
+  shootstar: `<path d="M-30 20L0 0" stroke="#f2d04c" stroke-width="2"/><path d="M0 -6l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1z" fill="#f2d04c" stroke-width="1"/>`,
+  milkyway: `<path d="M-100 -10Q0 -60 100 -90" fill="none" stroke="#ddd" stroke-width="18" opacity=".7"/><circle cx="-60" cy="-26" r="1.6" fill="${K}"/><circle cx="-20" cy="-40" r="1.6" fill="${K}"/><circle cx="20" cy="-58" r="1.6" fill="${K}"/><circle cx="60" cy="-72" r="1.6" fill="${K}"/>`,
+  pills: `<ellipse cx="-6" cy="-4" rx="5" ry="3" fill="#fff"/><ellipse cx="6" cy="-4" rx="5" ry="3" fill="#fff"/>`,
+  kapi: `<rect x="-10" y="-16" width="20" height="16" rx="2" fill="#a77bd0"/><rect x="-11" y="-20" width="22" height="5" fill="#fff"/>`,
+  palmsugar: `<path d="M-10 0V-8Q-10 -14 0 -14Q10 -14 10 -8V0Z" fill="#e8b070"/>`,
+  cmilk: `<rect x="-8" y="-22" width="16" height="22" rx="2" fill="#fff"/><text x="0" y="-8" font-size="5" text-anchor="middle" fill="${K}" stroke="none" font-weight="700">COCO</text><circle cx="0" cy="-16" r="3" fill="#a0714a" stroke-width="1"/>`,
+  tamarind: `<path d="M-16 -4Q-14 -10 -6 -8Q0 -12 6 -8Q14 -10 16 -4Q12 0 6 -2Q0 2 -6 -2Q-12 0 -16 -4Z" fill="#a0714a"/>`,
+  kleaf: `<path d="M-14 -2Q-10 -12 -2 -8Q0 -4 -14 -2ZM-2 -8Q4 -16 14 -10Q10 -2 -2 -8Z" fill="#5cb85c" stroke-width="1.4"/>`,
+  galangal: `<path d="M-14 -4Q-16 -12 -6 -12H8Q16 -12 14 -4Q8 0 -14 -4Z" fill="#f3e2b8"/><path d="M-6 -12v8M2 -12v8" stroke-width="1"/>`,
+  sprouts: `<path d="M-10 0q2 -10 -2 -16M-4 0q0 -10 4 -18M2 0q2 -8 -2 -14M8 0q-2 -10 2 -16" fill="none" stroke-width="1.6"/><circle cx="-12" cy="-16" r="1.6" fill="#f2d04c"/><circle cx="0" cy="-18" r="1.6" fill="#f2d04c"/><circle cx="10" cy="-16" r="1.6" fill="#f2d04c"/>`,
+  mglory: `<path d="M-14 0q4 -14 0 -26M0 0q2 -14 -2 -28M12 0q-4 -12 0 -24" fill="none" stroke="#5cb85c" stroke-width="2"/><path d="M-4 -26q-8 -4 -6 -10q6 2 6 10M4 -24q8 -4 8 -10q-6 0 -8 10" fill="#5cb85c" stroke-width="1"/>`,
+  napa: `<path d="M-10 0Q-14 -20 0 -30Q14 -20 10 0Z" fill="#cec"/><path d="M0 -30V0M-6 -20q6 2 6 8M6 -20q-6 2 -6 8" fill="none" stroke-width="1"/>`,
+  broccoli: `<path d="M-3 0V-12H3V0Z" fill="#9c9"/><circle cx="-8" cy="-16" r="6" fill="#5cb85c"/><circle cx="0" cy="-20" r="7" fill="#5cb85c"/><circle cx="8" cy="-16" r="6" fill="#5cb85c"/>`,
+  spinach: `<path d="M0 0V-10" stroke-width="1.6"/><path d="M0 -8Q-14 -10 -10 -24Q0 -22 0 -8Q4 -24 14 -22Q12 -10 0 -8Z" fill="#5cb85c"/>`,
+  lotusroot: `<rect x="-16" y="-10" width="32" height="10" rx="5" fill="#f3e2b8"/><circle cx="-8" cy="-5" r="2" fill="#fff" stroke-width="1"/><circle cx="0" cy="-5" r="2" fill="#fff" stroke-width="1"/><circle cx="8" cy="-5" r="2" fill="#fff" stroke-width="1"/>`,
+  crackling: `<path d="M-14 -4Q-10 -12 -2 -8Q6 -14 14 -6Q10 0 0 -2Q-8 2 -14 -4Z" fill="#e8b070"/><path d="M-8 -6l2 -2M2 -8l2 -2M8 -5l2 -2" stroke-width="1"/>`,
+  scouthat: `<path d="M-18 -4H18M-10 -4L-6 -16H6L10 -4" fill="#a0714a"/>`,
+  sharp: `<path d="M-2 0L-3 -6V-28H3V-6Z" fill="${GR}"/><path d="M-3 -6L0 6L3 -6" fill="#e8d9b8" stroke-width="1.2"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1222,7 +1250,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
   SC.lint = function (spec) {
     const bad = [], parts = String(spec).split(";"), bg = parts.shift().trim();
     if (!SC.bgs.includes(bg)) bad.push("bg:" + bg);
-    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
+    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");

@@ -1,0 +1,99 @@
+room; card@200,10,1.4=초대; man.happy@300; check@300,96
+room; cigarette@200,20,1.2; cross@200,40; woman.point@120; man.sad@300
+room; man.think@200; think@270,96=rocket
+room; man.happy.up@200; heart@260,96
+street; man.think@200; qmark@200,104; door@330,0,1.2
+room; man.angry.think@200; woman.sad@300; qmark@200,104
+room; man.wow@200; idea@200,104,.8
+room; boy.happy@160; boy.sad@240; txt@200,104=vs
+class; testp@200,10,1.4; teacher.happy@320
+office; calc@200,0,1.6; paper@140,0,1.2; man.think@320
+room; tin@200,0,1.6=저금; coin@200,24,1; man.happy@320
+shop; money@200,10,1.6; shopbag@140,0; shopbag@260,0; woman.happy@320
+office; laptop@200,0,1.6; clock@100,60,1; money@280,30,1; man.sad@340
+room; key@200,0,1.6; qmark@200,40; boy.sad@320
+room; bag@200,0,1.6; phone@200,40,1; man.sweat.think@320
+class; microscope@200,0,1.4; idea@280,96,.8; doctor.happy@320
+kitchen; table@200; cake@200,39,1.2; arrowr@260,60; calendar@320,40,1
+bedroom; bed@200,0,1.1; pillow@200,30,1.2; gift@200,40,.6; boy.happy@330
+park; boy.happy.run@200; woman.happy@320
+room; man.happy@200; heart@260,96; apple@300,0
+room; grandma.happy@200; girl.happy@280; heart@240,104
+hosp; nurse.happy@140; man.lie@260,10
+room; house@200,0,1.2; worker.happy@320+hammer
+field; house@200,0,1.2; worker.happy@320+hammer; box@120,0
+rain; house^12@200,0,1.2; storm@120,60,1
+street; truck@200,0,1.2; box@170,40,.6; box@200,40,.6; man.carry@330+box
+street; truck@200,0,1.2; box@170,40,.6; box@195,40,.6; box@220,40,.6
+room; desk@200; book@180,40; book@180,44; book@180,48; book@180,52; man.happy@320
+street; gaspump@200,0,1.2; car@300,0,1
+kitchen; glass@200,0,1.6; water@240,20,1; man.happy@320
+kitchen; bottle@200,0,1.6; p@200,30:M-14 0l-4 -4M14 0l4 -4; woman.happy@320
+room; door@200,0,1.3; knob@225,40,1.2; man.happy@300
+room; elevator@200,0,1; man.point@300!
+kitchen; drawer@200,0,1.4; woman.happy@300
+room; door@200,0,1.3; man.point@145; say@220,94=똑똑
+room; man.sad@200; bite@217,30; hl@217,30,.6
+room; woman.hold.happy@200; boy.happy@200,10,.7; heart@250,100
+room; woman.happy.love@200; boy.happy@230,0,.7; heart@215,96,.6
+office; man.suit.happy@160; man.suit.happy@240!; p@200,40:M-8 0h16
+stage; man.happy@200+mic; man.up.happy@100; woman.up.happy@300
+street; man.wave.happy@200; woman.wave@300!
+room; man.happy@200; check@260,80
+room; woman.happy@200; sparkle@250,80
+hosp; dentist.happy@200; tooth@280,20,1.2; man.sad@340
+room; man.sad@200; txt@260,90=휴…
+room; woman.angry@200; say@260,96=소리치지 마!
+room; man.cover@170; woman.happy@230!
+office; man.happy.wave@200; sun@340,72
+class; testp@200,10,1.6; trophy@120,0,1; man.happy.up@320
+room; picture@200,36,1.8; sparkle@150,70; check@260,80
+class; check@200,50,2; board_@200,20,.8=2+2=4
+class; teacher.point@200; say@260,96=분명하게!
+office; paper@200,0,1.6; qmark@180,50; qmark@220,60; man.sweat@320
+room; man.happy@200; check@260,80; txt@260,104=간단!
+street; shop@200,0,1.3; man@100; woman@130; man@280; woman@310
+stage; music@160,80; music@240,84; man.up.happy@140; woman.up.happy@260
+shop; handbag@200,0,1.6; txt@200,60=₩₩₩; woman.wow@320
+shop; handbag@200,0,1.6; cross@200,50; woman.point@320!
+room; pizza@200,0,1.4; boy.happy@140; girl.happy@260
+room; boy.wai.happy@200; grandpa.happy@300
+room; boy.angry@200; say@260,96=…; woman.sad@320
+class; teacher.angry@200; boy.sweat@320
+room; man.happy@200; trophy@280,0,1.2
+room; man.sweat.angry@200; txt@260,90=!!
+room; man.sweat.sad@200; heart@260,90
+room; man.happy@200; heart@260,90; txt@200,104=침착
+street; man.angry.run@200; clock@330,70,1
+room; man.happy@200+moneybag; cross@280,60
+kitchen; candy@200,0,1.6; man.sad@320; hl@316,27,.7
+room; man.hips@200; tin@280,0,1.2; coin@280,20
+room; grandma.happy.give@200+money; boy.happy@300; heart@250,104
+office; desk@200; man.sit.happy@200,24; chair@200; check@260,80
+office; paper@200,0,1.6; man.suit.happy@320
+school; desk@200; boy.sit.happy@200,24; chair@200; book@200,40
+road; crosswalk@200,0,1.4; man.walk@200
+city; temple@200,0,1; clock@330,70,.8
+room; man.happy@200; sun@330,72; check@260,90
+class; teacher.happy@200; think@260,96=book; boy.happy@330
+room; phone@120,0,1.2; man.happy@200; boy.happy@280+laptop
+temple; temple@200,0,1.2; txt@200,104=100년
+park; man.think@200; clock@300,70,1
+class; calendar@200,30,1.8; txt@200,96=3개월
+class; calendar@200,30,1.8=금; notebook@300,0,1.2; boy.sweat@330
+room; calendar@200,30,1.8; arrowr@270,40; book@120,0,1.2=ภาษา
+room; man.think@200; arrowl@140,60; txt@260,96=처음부터
+kitchen; pot@200,0,1.4; man.happy.love@320; trophy@120,0
+class; testp@200,10,1.6; check@200,50; man.happy.up@320
+street; man.wow@200; raincloud@200,90,1.2
+park; grandpa.walk@200; snail@300,0,1
+class; book@200,0,1.4; arrowu@200,40,1.4; man.happy@320
+room; man.happy@200; say@260,96=다시!
+room; medpack@200,0,1.6; txt@200,60=×2; man.happy@320
+room; man.think@200; say@260,96=몇 번?
+city; tower@200,0,1; txt@200,104=10층
+city; tower@200,0,1; txt@200,50=3F; man.happy@320
+room; elevator@200,0,1; man.happy@200; txt@260,90=5
+school; p@200,0:M-80 -90V0M80 -90V0; boy.run@200; cross@200,96
+street; garage@200,0,1.2; car@200,0,.8
+city; tower@200,0,1; tower@280,0,.8
