@@ -60,29 +60,29 @@
 เจอกันใหม่	street; man.wave@160; woman.wave@240!; say@200,96=내일 또
 ลาก่อน	street; man.wave@200; woman.wave@300!; say@250,96=안녕히
 โลโก้	office; design@200,0,1.4; man.happy@320
-พรมโลโก้	shop; logomat@200,0,1.4; man.happy@320
-พรมหน้าประตู	street; house@100,0,.8; door@200,0,1.2; logomat@200,0,.6; woman.happy@320
-พรมเช็ดเท้าห้องน้ำ	bath; mat@200,0,1.8; toilet@120,0,1
-พรมห้องครัว	kitchen; sink@200,0,1.2; logomat@200,0,1.2; woman.happy@320
+พรมโลโก้	shop; matfront@200,0,1.15; man.happy@320
+พรมหน้าประตู	street; house@100,0,.8; door@200,0,1.2; matfront@200,0,.6; woman.happy@320
+พรมเช็ดเท้าห้องน้ำ	bath; matfront~gray@200,0,1; toilet@120,0,1
+พรมห้องครัว	kitchen; sink@200,0,1.2; matfront@200,0,1.05; woman.happy@320
 กันลื่น	bath; rubberfloor@200,0,1; man.happy@200,6
-พรมกันลื่น	bath; mat@200,0,1.8; check@200,40; sign@320,0,1=!
-พรมกันกระแทก	room; mat@200,0,1.8; baby.happy@200,4,1.2
+พรมกันลื่น	bath; matfront~gray@200,0,1; check@200,40; sign@320,0,1=!
+พรมกันกระแทก	room; matfront~gray@200,0,1; baby.happy@200,4,1.2
 พื้นยาง	gym; rubberfloor@200,0,1.4; man.sport.happy@200,6
-ดักฝุ่น	shop; logomat@200,0,1.4; dust@200,14,1.2; sneaker@260,0,1
+ดักฝุ่น	shop; matfront@200,0,1.15; dust@200,14,1.2; sneaker@260,0,1
 พรมดักฝุ่น	shop; door@200,0,1.2; logomat@200,0,.7; man.walk@320
 ซับน้ำ	bath; towel@200,0,1.6; water_drop@200,30,.6
-การดูดซับ	bath; mat@200,0,1.8; water_drop@190,10; water_drop@210,12
+การดูดซับ	bath; matfront~gray@200,0,1; water_drop@190,10; water_drop@210,12
 ความทนทาน	gym; rubberfloor@200,0,1.4; check@200,40; txt@200,80=튼튼
-กันน้ำ	rain; mat@200,0,1.8; water_drop@200,10; umbrella@300,0,.8
+กันน้ำ	rain; matfront~gray@200,0,1; water_drop@200,10; umbrella@300,0,.8
 ซักได้	room; washer@200,0,1.4; logomat@300,0,.6
 แห้งเร็ว	field; cline@200,0,1.2; cloth@200,30,.8; sun@340,72
-สีไม่ซีด	shop; logomat@200,0,1.4; sparkle@200,30; check@260,50
-ใช้ภายนอก	street; logomat@200,0,1.4; sun@340,72
-ใช้ภายใน	room; mat@200,0,1.8; sofa@200,20,.6
+สีไม่ซีด	shop; matfront@200,0,1.15; sparkle@200,30; check@260,50
+ใช้ภายนอก	street; matfront@200,0,1.15; sun@340,72
+ใช้ภายใน	room; matfront~gray@200,0,1; sofa@200,20,.6
 ตามสั่ง	office; design@200,0,1.4; woman.happy@320
 ทำตามสั่ง	office; factory@200,0,.9; logomat@200,0,.8
-ต้องการ	shop; logomat@200,0,1.4; txt@200,40=몇 장?; man.think@330
-ตามขนาดที่ต้องการ	shop; logomat@200,0,1.4; ruler@200,20,1.2
+ต้องการ	shop; matfront@200,0,1.15; txt@200,40=몇 장?; man.think@330
+ตามขนาดที่ต้องการ	shop; matfront@200,0,1.15; ruler@200,20,1.2
 ตามสีที่ต้องการ	shop; colorchips@200,10,1.6; logomat@300,0,.6
 กรุณา	office; man.wai.happy@200; clock@300,60,1
 ไฟล์	office; laptop@200,0,1.6; letter@260,40,1
