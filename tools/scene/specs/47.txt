@@ -1,0 +1,100 @@
+ได้ยินไม่ค่อยชัด	room; man.phone.sweat@200+phone; say@260,96=안 들려요
+พูดดังขึ้นหน่อย	room; man.phone@200+phone; say@260,96=크게 말해 주세요
+หลุด	street; dog@200,0,1.4; house@60,0,.8; man.wow@330
+สายหลุด	room; phone@200,0,1.6; cross@200,50; man.sad@320
+แบตจะหมด	room; phone@200,0,1.6; battery@250,30,1; man.sweat@320
+ส่งข้อความมา	room; phone@200,0,1.6; chat@240,50,.8; man.happy@320
+แอดไลน์หน่อย	room; phone@200,0,1.6; qr@250,0,1; man.happy@320
+ส่งรูป	room; phone@200,0,1.6; picture@200,40,.6; arrowr@250,40
+เดี๋ยวส่งรูปให้	room; phone@200,0,1.6; picture@200,40,.6; man.happy@320
+เช็กแล้ว	office; paper@200,0,1.6; check@200,40; man.happy@320
+รับทราบ	office; man.wai.happy@200; check@260,80
+ดำเนินการ	city; shop@200,0,1.2; man.suit.happy@330
+จะดำเนินการให้	office; paper@200,0,1.4; man.happy@320; check@260,80
+ภายในวันนี้	office; calendar@200,30,1.6=오늘; clock@330,70,1
+ภายในพรุ่งนี้	office; calendar@200,30,1.6=내일
+ภายในสัปดาห์นี้	office; calendar@200,30,1.6=이번 주
+เร็วที่สุดเท่าที่ทำได้	office; clock@200,60,1.4; man.run@320
+ด่วนมาก	office; paper@200,0,1.6=급; man.sweat@320; fire@200,40,.5
+ไม่ต้องรีบ	office; man.happy@200; say@260,96=천천히 해요
+ต้องใช้เวลา	street; car@200,0,1.4; clock@330,70,1; man.sweat@120
+รอแป๊บนึง	room; man.wave@200; say@260,96=잠깐만요
+แป๊บเดียว	room; man.happy@200; say@260,96=금방이에요
+ติดประชุม	office; table@200; man.sit.suit@160,24; woman.sit@240,24; chair@160; chair@240; phone@340,0
+ออกไปข้างนอก	room; door@200,0,1.3; man.walk@280; woman.phone@100+phone
+ออกไปข้างนอกอยู่	street; house@140,0,1; man.walk@280; clock@330,80,.8
+เลิกงานแล้ว	office; door@200,0,1.3; clock@200,90,.8=5:00; cross@120,70
+วันนี้หยุด	shop; shop@200,0,1.2; sign@200,0,1=휴무
+ลาพักร้อนอยู่	beach; calendar@120,40,1; man.shades.happy@240
+ไปต่างจังหวัด	road; car@200,0,1.4; mountain@330,0,.6
+ผู้รับผิดชอบ	office; man.suit.happy.point@200; paper@120,0,1
+จะโอนสายให้	office; phone@200,0,1.4; arrowr@250,40; clerk.happy@320
+จะจดข้อความไว้	office; memopad@200,0,1.6; clerk.happy@320+pen
+ขอทราบชื่อด้วย	office; clerk.happy@200+phone; say@260,96=성함이?
+ฝาก	airport; hotel@200,0,1; suitcase@300,0,1.2; clerk@120
+ฝากเบอร์ติดต่อไว้	office; paper@200,0,1.6=010-; clerk.happy@320
+อีเมล	office; laptop@200,0,1.6; letter@260,40; man.happy@320
+จะส่งทางอีเมล	office; laptop@200,0,1.6; letter@260,40; arrowr@290,40
+แนบ	office; laptop@200,0,1.6; picture@260,40,.6; clip@240,50
+ไฟล์แนบ	office; laptop@200,0,1.6; clip@240,50; cross@270,60; man.sad@330
+กรุณาดูไฟล์แนบ	office; laptop@200,0,1.6; clip@240,50; man.point@330!
+ตอบกลับ	office; laptop@200,0,1.6; letter@260,40; man.sad@330; qmark@330,104
+รบกวนตอบกลับด้วย	office; laptop@200,0,1.6; letter@260,40; man.wai@330
+ขอโทษที่รบกวน	office; man.wai@200; woman@300; say@250,96=실례합니다
+ขอบคุณครับ	office; man.wai.happy@200; say@260,96=수고하셨습니다
+วันที่	room; calendar@200,30,1.6; man.think@320; qmark@320,104
+ขอให้เป็นวันที่ดี	office; man.happy.wave@200; sun@330,72; say@140,96=좋은 하루
+ไว้ติดต่อใหม่	office; man.wave@200; say@260,96=또 연락해요
+กรุณาเซ็นสัญญา	office; paper@200,0,1.6=계약서; pen@250,0,1; man.happy@320
+กรุณาประทับตรา	office; paper@200,0,1.6; seal@250,0,1; man.happy@320
+จ่ายเงินยังไง	shop; money@200,10,1.4; card@250,0,.8; qr@150,0,.8; man.think@330
+ขอเลขบัญชี	office; bankbook@200,0,1.6; man.think@320; qmark@320,104
+โอนแล้ว	room; phone@200,0,1.6; check@240,40; man.happy@320
+ช่วยเช็กยอดให้หน่อย	office; money@200,10,1.6; magnifier@250,20; clerk@320
+ส่งใบเสร็จให้ด้วย	office; receipt@200,0,1.6; man.happy@320
+ขอเลื่อนนัด	room; calendar@200,30,1.6; arrowr@270,40; man.wai@330
+ขอยกเลิก	room; phone@200,0,1.6; cross@240,40; man.wai@330
+อยากจอง	rest; phone@200,0,1.4; table@120,0,.8; man.happy@320
+ยืนยันแล้ว	rest; check@200,60,1.6; phone@140,0,1; man.happy@320
+มีปัญหา	office; man.sweat.think@200; qmark@200,104; boom@120,60,.6
+ไม่มีปัญหา	office; man.happy@200; check@260,80
+ไม่มีปัญหาครับ	office; man.happy.up@200; check@260,80; say@140,96=문제없어요
+ทำให้ดีที่สุด	office; man.sport.up@200; star@260,90
+จะทำให้ดีที่สุด	office; man.happy.up@200; star@260,90; say@140,96=최선을!
+ตั้งตารอครับ	office; man.happy@200; calendar@300,40,1; heart@260,96
+ยินดีที่ได้ร่วมงาน	office; man.suit.happy@160; man.suit.happy@240!; p@200,40:M-8 0h16
+พนักงานบริษัท	city; tower@200,0,1; man.suit.happy@320
+ที่ทำงาน	office; desk@200; man.sit.suit@200,24; chair@200; house@340,0,.6
+ไปทำงาน	street; man.suit.walk@200+bag; clock@330,70,1=8:00
+ทำงานล่วงเวลา	office; desk@200; man.sit.suit.sweat@200,24; chair@200; moon@340,80
+ลูกน้อง	office; boss.happy@140; man.suit@240; man.suit@300
+เพื่อนร่วมงาน	office; man.suit.happy@160; woman.happy@240; man.happy@310
+เจ้าของกิจการ	shop; shop@200,0,1.2; man.happy@330; txt@330,104=사장
+ประธานบริหาร	office; boss.happy@200; flag@300,0,1
+ผู้จัดการฝ่าย	office; boss.point@200; man.suit@300; woman@340
+ผู้จัดการ	office; boss.happy@200; clerk@300
+เลขานุการ	office; clerk.happy@200; paper@120,0,1
+นักศึกษา	city; university@200,0,1; girl.happy@330+book
+นักศึกษาฝึกงาน	office; student.happy@200+paper; clerk@300
+พนักงานใหม่	office; man.suit.happy.wai@200; txt@260,96=신입
+ไปสัมภาษณ์งาน	office; man.suit.sweat@200; boss@320; table@260
+ประวัติส่วนตัว	office; paper@200,0,1.6=이력서; man.happy@320
+ได้งาน	office; boy.suit.happy.up@200; woman.happy@300
+หางาน	office; paper@200,0,1.6=구인; man.think@320; magnifier@260,20
+คนตกงาน	city; man.sad@160; woman.sad@240; graph@330,10,.8
+ลาออก	office; man.suit.wave@200; box@280,0,1; door@100,0,1
+ไล่ออก	office; boss.angry.point@140; man@220; man@270; man@320
+ตำแหน่ง	office; man.suit.happy@200; txt@260,96=직위?
+เลื่อนตำแหน่ง	office; stairs@200,0,1.2; man.suit.happy@230,48,.8
+เงินเดือนต่อปี	office; money@200,10,1.6; calendar@120,40,1=연봉
+โบนัส	office; moneybag@200,0,1.6; man.suit.happy.up@320
+ลาป่วย	room; man.sick@200; phone@280,0,1; bed@120,0,.6
+ไปทำงานต่างจังหวัด	road; car@200,0,1.4; mountain@330,0,.6; man.suit.happy@200,24,.6
+เวลาทำงาน	office; clock@200,60,1.4=9-6; man.suit@320
+หน้าที่การงาน	office; paper@200,0,1.6; man.suit.happy@320
+โครงการ	office; graph@200,20,1.4; man.suit.happy.point@330!
+แผนงาน	office; calendar@200,30,1.4=금; paper@120,0,1; man@330
+ปิดงาน	office; paper@200,0,1.6; check@200,40; clock@330,70,1; man.happy@120
+ทำผลงาน	office; graph@200,20,1.4; arrowu@270,70; man.suit.happy.up@330
+บรรลุเป้าหมาย	office; target@200,20,1.4; man.suit.happy.up@330
+รับสาย	office; phone@200,0,1.4; ring2@200,30; man.sad.wai@320
