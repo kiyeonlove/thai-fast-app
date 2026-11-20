@@ -44,6 +44,9 @@ const HAIR = {
   bald: ``,
 };
 const HATS = {
+  gradcap: `<path d="M-18 -94L0 -100L18 -94L0 -88Z" fill="${K}"/><path d="M-10 -92v6h20v-6" fill="${K}"/><path d="M14 -94v10" stroke-width="1.4"/>`,
+  crown: `<path d="M-10 -88V-98L-5 -93L0 -101L5 -93L10 -98V-88Z" fill="#f2d04c" stroke-width="1.8"/>`,
+  witch: `<path d="M-20 -88H20M-11 -88L4 -112L10 -88Z" fill="${K}" stroke-width="2"/>`,
   cap: `<path d="M-12 -86C-12 -98 12 -98 12 -86Z" fill="${K}"/><path d="M8 -87h12" stroke-width="3"/>`,
   police: `<path d="M-13 -88h26l-3 -8h-20Z" fill="${K}"/><path d="M-14 -87h28" stroke-width="2.6"/>`,
   chef: `<path d="M-10 -88v-6c-8 -2 -6 -12 2 -10c2 -6 14 -6 16 0c8 -2 10 8 2 10v6Z"/>`,
@@ -70,7 +73,7 @@ const TYPE = { // 머리, 옷, 크기, 기본 모자/안경
   monk: {h: "bald", robe: 1}, police: {h: "m", hat: "police", dark: 1}, doctor: {h: "m", coat: 1, gl: 1}, nurse: {h: "wb", d: 1, coat: 1},
   chef: {h: "m", hat: "chef", coat: 1}, farmer: {h: "m", hat: "straw"}, worker: {h: "m", hat: "helmet"}, student: {h: "m", s: .86, tie: 1},
   teacher: {h: "wb", d: 1, gl: 1}, driver: {h: "m", hat: "cap"}, baby: {h: "bald", s: .5, baby: 1}, soldier: {h: "m", hat: "helmet", dark: 1},
-  boss: {h: "om", tie: 1, gl: 1}, firefighter: {h: "m", hat: "helmet", dark: 1}, singer: {h: "m"}, guard: {h: "m", hat: "police"}, seller: {h: "wb", d: 1, apron: 1}, kid: {h: "g", d: 1, s: .74},
+  boss: {h: "om", tie: 1, gl: 1}, prince: {h: "m", hat: "crown"}, princess: {h: "w", d: 1, hat: "crown"}, king: {h: "om", hat: "crown"}, queen: {h: "w", d: 1, hat: "crown"}, witch: {h: "w", d: 1, hat: "witch", dark: 1}, fairy: {h: "g", d: 1, wing: 1}, hero: {h: "m", cape: 1}, giant: {h: "m", s: 1.25}, firefighter: {h: "m", hat: "helmet", dark: 1}, singer: {h: "m"}, guard: {h: "m", hat: "police"}, seller: {h: "wb", d: 1, apron: 1}, kid: {h: "g", d: 1, s: .74},
 };
 const FACE = {
   smile: `<path d="M-4 -74q4 4 8 0" fill="none" stroke-width="1.8"/>`,
@@ -119,7 +122,9 @@ function person(type, mods, held, txt, lift) {
   if (T.baby) head = `<circle cx="0" cy="-80" r="13"/><path d="M-2 -93q2 -4 4 0" fill="none" stroke-width="1.6"/>` + EYES[eyes] + FACE[face];
   if (gl) head += `<circle cx="-4.5" cy="-81" r="3.6" fill="none" stroke-width="1.3"/><circle cx="4.5" cy="-81" r="3.6" fill="none" stroke-width="1.3"/><path d="M-1 -81h2" stroke-width="1.2"/>`;
   if (hat && HATS[hat]) head += HATS[hat];
-  const back = T.h === "w" ? `${g}${hg}<path d="M-13 -80C-17 -99 17 -99 13 -80L15 -64H-15Z" fill="${K}"/></g></g>` : "";
+  let wingb = T.wing ? `${g}<path d="M-8 -56Q-34 -80 -30 -46Q-26 -36 -8 -46ZM8 -56Q34 -80 30 -46Q26 -36 8 -46Z" fill="#cfe" stroke-width="1.6"/></g>` : "";
+  if (T.cape) wingb += `${g}<path d="M-10 -66L-22 -14H22L10 -66Z" fill="#e45b5b"/></g>`;
+  const back = wingb + (T.h === "w" ? `${g}${hg}<path d="M-13 -80C-17 -99 17 -99 13 -80L15 -64H-15Z" fill="${K}"/></g></g>` : "");
   const hands = arms.map(a => `<circle cx="${f(a[2][0])}" cy="${f(a[2][1])}" r="3.3" stroke-width="1.6"/>`).join("");
   let hs = "";
   if (held) { const h = P.h || [0, -46]; const [hn, hsc] = held.split("*"); hs = `<g transform="translate(${h[0]} ${h[1] + up})">${obj(hn, [], .72 * (+hsc || 1), txt, 1)}</g>`; }
@@ -1039,6 +1044,24 @@ const O = {
   graph: `<rect x="-24" y="-36" width="48" height="36" fill="#fff"/><path d="M-18 -6V-30M-18 -6H20" stroke-width="1.4"/><rect x="-12" y="-14" width="6" height="8" fill="#6aa8e8" stroke-width="1"/><rect x="-2" y="-20" width="6" height="14" fill="#6aa8e8" stroke-width="1"/><rect x="8" y="-28" width="6" height="22" fill="#6aa8e8" stroke-width="1"/>`,
   idea: `<path d="M-6 -8Q-12 -16 -8 -24Q0 -32 8 -24Q12 -16 6 -8Z" fill="#f2d04c"/><path d="M-4 -8V-2H4V-8" fill="${GR}" stroke-width="1.6"/><path d="M-14 -30l-3 -3M14 -30l3 -3M0 -34v-4" stroke-width="1.6"/>`,
   cigarette: `<rect x="-14" y="-4" width="24" height="4" fill="#fff" stroke-width="1"/><rect x="10" y="-4" width="5" height="4" fill="#f39a3c" stroke-width="1"/><path d="M-16 -6q-4 -6 0 -10" fill="none" stroke="${L}" stroke-width="1.2"/>`,
+  compass: `<circle cx="0" cy="-22" r="22" fill="#fff"/><path d="M0 -40L5 -22L0 -4L-5 -22Z" fill="${GR}" stroke-width="1.4"/><path d="M0 -40L5 -22H-5Z" fill="#e45b5b" stroke-width="1.4"/><text x="0" y="-44" font-size="8" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">N</text>`,
+  castle: `<path d="M-50 0V-50H-36V-44H-26V-50H-16V-40H16V-50H26V-44H36V-50H50V0Z" fill="#fff"/><path d="M-50 -50L-43 -66L-36 -50M36 -50L43 -66L50 -50M-10 -40V-70H10V-40M-10 -70L0 -86L10 -70" fill="${GR}"/><path d="M-10 0V-20Q0 -30 10 -20V0" fill="${K}"/>`,
+  crown: `<path d="M-12 0V-12L-6 -6L0 -16L6 -6L12 -12V0Z" fill="#f2d04c"/>`,
+  ghost: `<path d="M-14 0V-24Q-14 -38 0 -38Q14 -38 14 -24V0L9 -5L4 0L-1 -5L-6 0L-10 -5Z" fill="#fff"/><circle cx="-5" cy="-26" r="2.4" fill="${K}"/><circle cx="5" cy="-26" r="2.4" fill="${K}"/><ellipse cx="0" cy="-17" rx="3" ry="4" fill="${K}"/>`,
+  monster: `<path d="M-20 0V-30Q-20 -50 0 -50Q20 -50 20 -30V0Z" fill="#9c9"/><path d="M-14 -46l-4 -10 8 6M14 -46l4 -10 -8 6" fill="#fff" stroke-width="1.4"/><circle cx="0" cy="-34" r="7" fill="#fff"/><circle cx="0" cy="-34" r="3" fill="${K}"/><path d="M-10 -18h20l-3 4 -3 -4 -4 4 -3 -4 -3 4Z" fill="#fff" stroke-width="1.4"/>`,
+  chest: `<rect x="-20" y="-20" width="40" height="20" fill="#a0714a"/><path d="M-20 -20Q0 -36 20 -20Z" fill="#a0714a"/><rect x="-4" y="-22" width="8" height="8" fill="#f2d04c"/><circle cx="-8" cy="-30" r="3" fill="#f2d04c" stroke-width="1"/><circle cx="6" cy="-32" r="3" fill="#f2d04c" stroke-width="1"/>`,
+  witchhat: `<path d="M-18 0H18M-10 0L4 -30L10 0" fill="${K}"/>`,
+  magic: `<path d="M-16 0L12 -24" stroke-width="2.4"/><path d="M14 -30l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1z" fill="#f2d04c" stroke-width="1"/>`,
+  cape: `<path d="M-10 -66L-22 -10H22L10 -66Z" fill="#e45b5b"/>`,
+  jelly: `<path d="M-12 0V-12Q-12 -20 0 -20Q12 -20 12 -12V0Z" fill="#f4a6c6"/><circle cx="-4" cy="-12" r="1.6" fill="#fff" stroke="none"/>`,
+  choco: `<rect x="-16" y="-10" width="32" height="10" rx="1" fill="#6b4a2a"/><path d="M-8 -10v10M0 -10v10M8 -10v10M-16 -5h32" stroke="#fff" stroke-width=".8"/>`,
+  milktea: `<path d="M-8 0L-10 -26H10L8 0Z" fill="#f39a3c"/><rect x="-11" y="-30" width="22" height="5" rx="2" fill="#fff"/><path d="M3 -30L8 -40" stroke-width="2"/>`,
+  icecoffee: `<path d="M-8 0L-10 -26H10L8 0Z" fill="#a0714a"/><rect x="-6" y="-22" width="6" height="6" fill="#fff" stroke-width="1"/><rect x="1" y="-16" width="6" height="6" fill="#fff" stroke-width="1"/><path d="M3 -26L8 -38" stroke-width="2"/>`,
+  sale: `<path d="M-18 -14H14L20 -7L14 0H-18Z" fill="#e45b5b"/><text x="-2" y="-4" font-size="8" text-anchor="middle" fill="#fff" stroke="none" font-weight="800">50%</text>`,
+  chat: `<rect x="-12" y="-22" width="24" height="22" rx="3" fill="#fff"/><path d="M-8 -16h16M-8 -11h12M-8 -6h14" stroke-width="1.2"/>`,
+  timetable: `<rect x="-26" y="-36" width="52" height="36" fill="#fff"/><path d="M-26 -28h52M-26 -20h52M-26 -12h52M-26 -4h52M-14 -36v36M0 -36v36M14 -36v36" stroke-width=".8"/>`,
+  diploma: `<rect x="-14" y="-6" width="28" height="6" rx="3" fill="#fff"/><path d="M4 -6v6" stroke="#e45b5b" stroke-width="2.4"/>`,
+  gradcap: `<path d="M-16 -6L0 -12L16 -6L0 0Z" fill="${K}"/><path d="M12 -6V4" stroke-width="1.4"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1175,7 +1198,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
   SC.lint = function (spec) {
     const bad = [], parts = String(spec).split(";"), bg = parts.shift().trim();
     if (!SC.bgs.includes(bg)) bad.push("bg:" + bg);
-    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
+    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");
