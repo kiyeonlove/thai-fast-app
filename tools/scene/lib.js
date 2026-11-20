@@ -1338,6 +1338,21 @@ const O = {
   molecule: `<circle cx="0" cy="-16" r="7" fill="#e45b5b"/><circle cx="-12" cy="-6" r="5" fill="#fff"/><circle cx="12" cy="-6" r="5" fill="#fff"/><path d="M-5 -12l-4 3M5 -12l4 3" stroke-width="2"/>`,
   bacteria: `<rect x="-14" y="-12" width="28" height="10" rx="5" fill="#9c9"/><path d="M14 -7q6 -2 10 2M-14 -7q-6 -4 -10 0" fill="none" stroke-width="1.2"/>`,
   worm2: `<path d="M-14 -4q4 -6 8 0t8 0t8 0" fill="none" stroke="#f3e2b8" stroke-width="4"/>`,
+  flagt: `<path d="M0 0V-60" stroke-width="2.4"/><rect x="0" y="-60" width="40" height="24" fill="#fff" stroke-width="1.4"/>`,
+  dam: `<path d="M-60 0V-40H60V0Z" fill="#ccc"/><path d="M-60 -40Q0 -30 60 -40" fill="none" stroke-width="1.4"/><path d="M-20 0V-30M0 0V-30M20 0V-30" stroke="#8ab" stroke-width="3"/>`,
+  mangrove: `<path d="M0 -20V-50M0 -20L-12 0M0 -20L-4 0M0 -20L6 0M0 -20L14 0" fill="none" stroke="#a0714a" stroke-width="2.4"/><circle cx="0" cy="-58" r="16" fill="#5a9"/>`,
+  throne: `<path d="M-20 0V-30H20V0M-24 -30H24M-20 -30V-70Q0 -84 20 -70V-30" fill="#f2d04c"/><rect x="-14" y="-28" width="28" height="10" fill="#e45b5b"/>`,
+  bell2: `<path d="M-10 -6Q-10 -26 0 -26Q10 -26 10 -6Z" fill="#f2d04c"/><path d="M-12 -6H12" stroke-width="2.4"/><circle cx="0" cy="-2" r="2.6" fill="${K}"/><circle cx="10" cy="-26" r="4" fill="#e45b5b" stroke="none"/>`,
+  vcall: `<rect x="-14" y="-40" width="28" height="40" rx="4"/><rect x="-11" y="-36" width="22" height="32" fill="#eee" stroke-width="1"/><circle cx="0" cy="-26" r="5" fill="#fff" stroke-width="1"/><path d="M-6 -12Q0 -20 6 -12" fill="#fff" stroke-width="1"/><circle cx="6" cy="-8" r="3" fill="#e45b5b" stroke="none"/>`,
+  crackphone: `<rect x="-10" y="-30" width="20" height="30" rx="3"/><rect x="-8" y="-27" width="16" height="24" fill="#ddd" stroke-width="1"/><path d="M-6 -24l6 8 -4 6 8 6" fill="none" stroke-width="1.2"/>`,
+  code: `<rect x="-24" y="-34" width="48" height="34" rx="2" fill="#333"/><path d="M-18 -26l-4 4 4 4M18 -26l4 4 -4 4" fill="none" stroke="#9c9" stroke-width="1.6"/><path d="M-12 -22h10M-8 -16h16M-12 -10h12" stroke="#fff" stroke-width="1.4"/>`,
+  ai: `<rect x="-20" y="-36" width="40" height="30" rx="8" fill="#ddd"/><circle cx="-8" cy="-22" r="4" fill="#6aa8e8"/><circle cx="8" cy="-22" r="4" fill="#6aa8e8"/><path d="M0 -36v-8" stroke-width="1.6"/><circle cx="0" cy="-46" r="3" fill="#f2d04c"/><text x="0" y="-8" font-size="7" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">AI</text>`,
+  subtitle: `<rect x="-30" y="-40" width="60" height="36" fill="#333"/><rect x="-24" y="-14" width="48" height="6" fill="#fff" stroke="none"/>`,
+  cloudup: `<path d="M-20 0a10 10 0 0 1 4 -18a13 13 0 0 1 24 -2a10 10 0 0 1 12 20Z" fill="#fff"/><path d="M0 -4V-16M-5 -11l5 -5 5 5" fill="none" stroke-width="2"/>`,
+  link: `<path d="M-10 -4a6 6 0 0 1 0 -12h8M10 -16a6 6 0 0 1 0 12h-8M-6 -10h12" fill="none" stroke-width="2.6"/>`,
+  cursor: `<path d="M0 -20L0 0L5 -5L9 2L12 0L8 -7L14 -8Z" fill="#fff" stroke-width="1.4"/>`,
+  searchbar: `<rect x="-40" y="-12" width="80" height="12" rx="6" fill="#fff"/><circle cx="30" cy="-6" r="3" fill="none" stroke-width="1.4"/><path d="M32 -4l3 3" stroke-width="1.4"/>`,
+  folder2: `<path d="M-18 0V-22H-6L-2 -26H18V0Z" fill="#f2d04c"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1356,8 +1371,9 @@ const OS = {table: 1, desk: 1}; // 기본 크기 외
 function obj(name, mods, sc, txt, inHand) {
   let s = O[name];
   if (s === undefined) return "";
-  if (txt !== undefined && ["jar", "pump", "pack", "nplate", "paint", "sack", "carton", "spray", "tin", "tube", "box", "bottle", "medpack", "pillbox", "detergent", "container", "memo", "jbox", "toolbox", "spray"].includes(name)) {
-    const LY = {jar: -8, pump: -10, nplate: -3, paint: -9, pack: -9, sack: -10, carton: -8, spray: -8, tin: -5, tube: -4, box: -6, bottle: -10, detergent: -6, container: -5, memo: -14, medpack: -12, pillbox: -11, jbox: -4, toolbox: -5};
+  if (txt !== undefined && name === "flagt") { s += `<g transform="translate(20 0)">${tx(0, -44, txt, 8)}</g>`; }
+  else if (txt !== undefined && ["jar", "pump", "pack", "nplate", "paint", "flagt", "sack", "carton", "spray", "tin", "tube", "box", "bottle", "medpack", "pillbox", "detergent", "container", "memo", "jbox", "toolbox", "spray"].includes(name)) {
+    const LY = {jar: -8, pump: -10, nplate: -3, paint: -9, flagt: -44, pack: -9, sack: -10, carton: -8, spray: -8, tin: -5, tube: -4, box: -6, bottle: -10, detergent: -6, container: -5, memo: -14, medpack: -12, pillbox: -11, jbox: -4, toolbox: -5};
     s += tx(0, LY[name], txt, name === "memo" ? 8 : 6.5);
   }
   if (txt !== undefined && (name === "sign" || name === "board_" || name === "money" || name === "paper" || name === "calendar" || name === "card")) {

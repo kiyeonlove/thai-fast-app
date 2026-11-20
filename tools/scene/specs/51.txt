@@ -1,0 +1,100 @@
+ทวีปต่างๆ	space; earth@200,10,2.2; txt@200,104=7대륙
+แอฟริกา	field; flagt@200,0,1.4=Africa; elephant@320,0,.8; giraffe@100,0,.6
+อเมริกาเหนือ	snow; flagt@200,0,1.4=Canada; maple@300,0,1.2
+อเมริกาใต้	jungle; flagt@200,0,1.4=Brazil; parrot@300,30
+โอเชียเนีย	field; flagt@200,0,1.4=Australia; kangaroo@320,0,.8
+ขั้วโลกใต้	snow; penguin@200,0,1.4; flagt@300,0,1=남극
+ขั้วโลกเหนือ	snow; flagt@200,0,1.2=북극; bear~white@300,0,.8
+เส้นศูนย์สูตร	space; earth@200,10,2.2; p@200,54:M-44 0H44
+ละติจูด	class; globe@200,0,1.6; p@200,48:M-14 0H14M-12 -10H12
+ลองติจูด	class; globe@200,0,1.6; p@200,48:M0 -16V16M-8 -14V14
+มหาสมุทรแปซิฟิก	sea; wave@200,0,2.4; txt@200,104=태평양
+อินเดีย	rest; curry@200,0,1.6; flagt@300,0,1=India
+มหาสมุทรอินเดีย	sea; wave@200,0,2.4; txt@200,104=인도양
+มหาสมุทรแอตแลนติก	sea; wave@200,0,2.4; txt@200,104=대서양
+ทะเลอันดามัน	beach; island@200,0,1.2; flagt@300,0,1=Andaman
+อ่าวไทย	beach; palm@200,0,1.2; txt@200,104=타이만; flag@330,0,.8
+เอเชียตะวันออกเฉียงใต้	space; earth@200,10,1.6; flagkr@330,0,.6; flagjp@60,0,.6; flagcn@100,0,.6
+อาเซียน	city; flag@120,0,.6; flagt@170,0,.6=ASEAN; flagt@240,0,.6=10
+ลาว	field; flag@140,0,1; flagt@260,0,1=Laos; p@200,0:M0 0V-60
+กัมพูชา	temple; flagt@200,0,1.2=Cambodia; temple@300,0,.8
+เมียนมา	temple; flagt@200,0,1.2=Myanmar; pagoda@300,0,.8
+มาเลเซีย	city; flagt@200,0,1.2=Malaysia; tower@300,0,.8
+เวียดนาม	rest; noodle@200,0,1.6; flagt@300,0,1=Vietnam
+สิงคโปร์	city; flagt@200,0,1.2=Singapore; tower@300,0,.8
+อินโดนีเซีย	beach; flagt@200,0,1.2=Indonesia; island@300,0,.8
+ฟิลิปปินส์	beach; flagt@200,0,1.2=Philippines; palm@300,0
+ฝรั่งเศส	shop; bread@200,0,1.6; flagt@300,0,1=France
+เยอรมัน	road; car@200,0,1.4; flagt@330,0,1=Germany
+รัสเซีย	snow; flagt@200,0,1.2=Russia; earth@300,10,.8
+ออสเตรเลีย	field; kangaroo@200,0,1.2; flagt@300,0,1=Australia
+แคนาดา	snow; flagt@200,0,1.2=Canada; snowman@300,0,.8
+คนเอเชีย	city; man@140; woman@200; man@260; earth@330,0,.6
+ภาษาต่างประเทศ	class; flagt@140,0,.8=EN; flagt@200,0,.8=JP; flagt@260,0,.8=CN
+ภาษาแม่	room; flagkr@200,0,1.2; man.happy@320; say@360,96=한국어
+ภาษาราชการ	office; flag@200,0,1.2; paper@300,0,1=ภาษาไทย
+ภาษาถิ่น	field; thaimap@200,0,1.4; say@120,96=사투리
+ภาษาอีสาน	farm; man.happy@200; say@260,96=เว้าอีสาน
+ภาษาเหนือ	mount; grandma.happy@200; say@260,96=คำเมือง
+ภาษาใต้	beach; man.happy@200; say@260,96=ภาษาใต้
+เชียงใหม่	mount; temple@200,0,1; mountain@200,0,.6; man.pad.happy@330
+ภูเก็ต	beach; island@200,0,1.2; txt@200,104=Phuket
+พัทยา	beach; flagt@200,0,1.2=Pattaya; tower@300,0,.6
+หัวหิน	beach; flagt@200,0,1.2=Hua Hin; man.happy@330
+กระบี่	beach; island@200,0,1.4; cliff@100,0,.6
+เกาะสมุย	sea; ferry@200,10,1; island@320,0,.8
+กาญจนบุรี	river; bridge@200,0,.9; txt@200,104=콰이강
+พระนครศรีอยุธยา	city; pagoda@160,0,1; pagoda@240,0,.8; txt@200,104=Ayutthaya
+โคราช	field; flagt@200,0,1.2=Korat; man.happy@330
+อุบล	field; man.happy@200; flagt@300,0,1=Ubon
+ขอนแก่น	city; university@200,0,1; flagt@330,0,.8=KhonKaen
+ปริมณฑล	city; tower@200,0,1; house@330,0,.6; arrowr@270,40
+ภูมิภาค	field; thaimap@200,0,1.6
+ดินแดน	field; mountain@200,0,1.2; forest@200,0,.6
+อาณาเขต	field; thaimap@200,0,1.6; p@200,0:M-30 -60l60 60
+ข้ามชายแดน	field; fence@200,0,1.2; flag@120,0,1; flagt@300,0,1=Laos
+พื้นที่ทั้งหมด	city; man@140; woman@200; man@260; txt@200,104=면적
+ความหนาแน่นของประชากร	city; man@120; man@150; man@180; man@210; man@240; man@270; man@300
+ภูมิประเทศ	mount; mountain@200,0,1.2; river@200,0,1
+ที่ราบ	field; ricefield@200,0,1.4
+ที่ราบสูง	mount; hill@200,0,1.4; house@200,40,.5
+เทือกเขา	mount; mountain@140,0,.8; mountain@200,0,1; mountain@260,0,.9
+แอ่ง	mount; valley@200,0,1.2; tower@200,0,.4
+สามเหลี่ยมปากแม่น้ำ	sea; p@200,0:M-60 0L0 -30L60 0Z; river@200,0,1
+ปลายน้ำ	river; house@200,0,1; arrowd@300,40; river@200,0,1
+ต้นน้ำ	mount; mountain@200,0,1.2; water_drop@200,60
+เขื่อน	river; dam@200,0,1.2
+อ่างเก็บน้ำ	river; lake@200,0,1.2; dam@330,0,.5
+เขตภูมิอากาศ	space; earth@200,10,2; txt@200,104=기후대
+เขตอบอุ่น	park; flagkr@200,0,1.2; sun@300,80; cloud@120,80
+เขตหนาว	snow; snowman@200,0; thermo@300,0,1
+มรสุม	rain; raincloud@200,90,1.6; wind@120,60
+ลมมรสุม	rain; wind@200,60,1.6; boat@300,0,.6
+ป่าดิบชื้น	jungle; forest@200,0,1.4
+เลน	road; car@140,0,1; arrowu@140,50; p@200,0:M0 0V-60
+ป่าชายเลน	river; mangrove@170,0,1; mangrove@250,0,.8
+แนวปะการัง	underwater; coral@160,0,1.2; coral@200,0,1.4; coral@250,0,1.2; fish@300,40
+ทรัพยากรธรรมชาติ	mount; forest@200,0,1; river@200,0,1; mountain@200,20,.6
+พื้นที่เกษตร	farm; ricefield@200,0,1.4; canefield@330,0,.6
+การชลประทาน	farm; ricefield@200,0,1.4; river@200,0,1; canal@200,10,.6
+วาดแผนที่	class; map@200,0,1.6; girl.happy@320+pencil
+เข็มทิศ	field; compass@200,20,1.4; man.happy@330
+ทิศทาง	field; wind@200,60,1.6; arrowr@200,30,1.4
+ทิศตะวันออกเฉียงเหนือ	field; compass@200,20,1.4; arrowr@260,60; arrowu@260,80
+มาตราส่วน	class; map@200,0,1.6; txt@200,60=1:1000
+ความสูง	city; tower@200,0,1; ruler@300,0,1; arrowu@330,60
+ความสูงจากระดับน้ำทะเล	mount; mountain@200,0,1.4; txt@200,104=1000m
+เหนือระดับน้ำทะเล	mount; mountain@200,0,1.4; wave@200,0,1.6; arrowu@300,60
+มาตรฐาน	office; check@200,50,1.6; shield@260,30,1
+เวลามาตรฐาน	class; clock@200,60,1.4; flag@300,0,1
+ทางประวัติศาสตร์	class; book@200,0,1.6=역사; pagoda@300,0,.8
+สมัยก่อนประวัติศาสตร์	class; dino@200,10,1.2; fire@300,0,.8
+ยุคปัจจุบัน	city; tower@200,0,1; phone@300,0,1.2
+สมัยใหม่	city; car@200,0,1.2; tower@300,0,.8
+อาณาจักร	city; castle@200,0,1.2; crown@330,0,1
+ราชธานี	city; palace@200,0,1.1; txt@200,104=수도
+กษัตริย์	city; king.happy@200; temple@330,0,.6
+มเหสี	city; queen.happy@200; man.wai@320
+ราชบัลลังก์	city; throne@200,0,1.2
+ขึ้นครองราชย์	city; throne@200,0,1.2; king.happy@200,10,.9
+วัง	city; palace@200,0,1.1; man.happy@330+camera
