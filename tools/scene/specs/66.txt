@@ -26,7 +26,7 @@
 โล่งใจมาก	class; testp@200,10,1; check@200,40; student.happy.up@320
 อุ่นใจ	room; kid.happy@200; man.happy@280; shield@140,40
 ใจตรงกัน	room; man.happy@140; woman.happy@260; heart@200,90
-ห่วงใย	room; woman.think@200; think@280,92=kid
+ห่วงใย	room; woman.think@200; think@280,92=heart
 วุ่นวายใจ	office; man.sweat@200; paper@140,40; paper@260,40; phone@300,50
 ปวดหัวกับเรื่องนี้	office; man.sad@200; brain@200,96,.5; hand@220,70,.5
 ใช้หัว	class; man.think@200; brain@200,96,.5; idea@260,90
