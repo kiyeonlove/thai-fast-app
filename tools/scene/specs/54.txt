@@ -1,0 +1,100 @@
+เบี้ยว	room; picture^-12@200,40,1.6; man.think@320
+ตรงดิ่ง	road; arrowu@200,40,2; man.walk@320
+วิบวับ	night; star@140,80; star@200,96; star@260,84; sparkle@170,70; sparkle@230,90
+สว่างจ้า	room; hlamp@200,112; sparkle@170,60; sparkle@230,60; man.cover@320
+พร่ามัว	room; man.glasses@200,-60,1.8; p@200,40:M-30 -10q10 -6 20 0
+โปร่งใส	room; gbottle@200,0,1.6; sparkle@230,40
+หรูหรา	temple; groom.happy@170; bride.happy@230; sparkle@140,80; sparkle@260,80
+เรียบง่าย	room; woman.happy@200; tshirt@280,0,1
+หรู	city; hotel@200,0,1; sparkle@140,80; sparkle@260,80
+ของถูก	market; tshirt@200,0,1.4; money@260,10,1=싸요; ecrack@200,10,.3
+เก่าแก่	street; house@200,0,1.2; mold@180,40; ecrack@220,30,.4
+ล่าสุด	room; phone@200,0,1.8; sparkle@170,60; txt@200,96=NEW
+เก่าแก่มาก	temple; temple@200,0,1.2; txt@200,104=500년
+ทันสมัยมาก	city; tower@200,0,1; sparkle@140,80; sparkle@260,80
+แบบดั้งเดิม	field; house@200,0,1.2; pillar@150,0,.5; pillar@250,0,.5
+แปลกใหม่	shop; shop@200,0,1.2; sparkle@200,90; star@120,80
+ไม่เหมือนใคร	shop; star@200,80,1.6; dress@200,0,1.2
+ธรรมดาสามัญ	room; man@200; txt@260,90=평범
+พบบ่อย	room; nplate@200,40,1.6=สมชาย
+หายาก	park; bird~blue@200,40,1.6; sparkle@240,60
+ล้ำค่า	room; gift@200,0,1.6; sparkle@170,40; heart@230,50
+มีประโยชน์	room; book@200,0,1.6; check@240,40; idea@200,60,.7
+ไร้ประโยชน์	room; box@200,0,1.4; cross@200,40; bin@280,0
+เพียงพอ	rest; dish@150,0; dish@200,0; dish@250,0; check@320,70
+อุดมสมบูรณ์	farm; ricefield@200,0,1.4; fruits@320,0,.8; sun@330,80
+เต็มเปี่ยม	kitchen; jar@200,0,1.6; water@250,0; check@200,50
+ว่างเปล่า	room; window@200,30,1.4
+ยุ่งเหยิง	street; car@140,0,.8; car@200,0,.8; car@260,0,.8; man.sweat@330
+เรียบง่ายมาก	room; tshirt@200,0,1.6; check@250,50
+สะดวกสบาย	city; hotel@200,0,1; bed@320,0,.6; check@200,104
+มั่นคง	office; shield@200,20,1.4; man.suit.happy@320
+ล่อแหลม	mount; cliff@180,0,1; man.sweat@120; sign@300,0,1=!
+แข็งแรงทนทาน	road; bridge@200,0,.9; check@200,90
+เปราะ	kitchen; glass@200,0,1.4; ecrack@200,10,.2; sign@260,0,1=!
+แตกง่าย	kitchen; plate@200,0,1.6; ecrack@200,4,.3; cross@260,40
+หนักอึ้ง	airport; suitcase@200,0,1.6; man.carry.sweat@320+bag
+เบาหวิว	room; tshirt@200,0,1.6; feather@250,40
+ร้อนจัด	field; sun@200,70,1.8; thermo@300,0,1; man.sweat@100
+เย็นเฉียบ	river; water_drop@200,30,1; ice@240,10; man.cover@330
+อบอุ่นสบาย	room; heater@200,0,1.4; man.happy@320
+เย็นฉ่ำ	beach; coconut@200,0,1.6; straw@200,22; ice@240,0
+ชื้นแฉะ	rain; mud@200,0,1.6; puddle@200,0,1
+แห้งกรัง	farm; dryland@200,0,1.6; sun@330,72
+สกปรกมาก	bath; toilet@200,0,1.4; stink@200,40; mold@180,20
+สะอาดสะอ้าน	room; window@200,30,1.4; sparkle@140,60; sparkle@260,60
+หอมหวาน	park; jasmine@200,0,1.8; smell@200,40; woman.happy.love@320
+น่าขยะแขยง	room; bin@200,0,1.4; stink@200,40; man.cover@320
+น่ากิน	rest; somtam@200,0,1.6; man.happy.love@320
+น่าอร่อย	room; snack@200,0,1.6; sparkle@200,40; boy.happy@320
+ดูดี	room; man.suit.happy@200; sparkle@260,80
+เท่	street; car@200,0,1.6; sparkle@140,60
+ดูเท่	street; man.shades.hips@200; star@260,90
+น่าชัง	room; boy.happy@200,0,.8; heart@250,90; woman.happy.love@320
+น่าเวทนา	street; dog@200,0,1.4; tear@190,30; man.sad@320
+น่าขำ	room; man.happy@140; woman.happy@220; txt@200,104=하하
+น่าทึ่ง	city; statue@200,0,1.4; man.wow@320
+ลึกลับ	jungle; forest@200,0,1.4; fog@200,40,1.4; qmark@200,96
+ดูอันตราย	mount; cliff@180,0,1; sign@300,0,1=!
+น่าสงสัย	street; thief@200; man.think@320; qmark@320,104
+ไม่น่าเชื่อ	room; man.wow@200; cross@260,80; txt@200,104=믿기지 않아
+น่าเชื่อถือ	office; man.suit.happy@200; check@260,80
+น่านับถือ	class; teacher.happy@200; star@260,90; student.wai@320
+น่าอิจฉา	airport; plane@200,70,1; man.happy@100; woman.sad@320; heart@320,104
+พึงประสงค์	class; boy.wai.happy@200; check@260,80
+เหมาะสม	shop; money@200,10,1.6; check@260,60
+พอเหมาะ	cafe; coffee@200,0,1.6; sugar@250,0; check@250,40
+มากเกิน	rest; dish@150,0; dish@200,0; dish@250,0; man.sick.hips@330
+สุดโต่ง	room; man.happy.up@200; boom@140,60,.5; qmark@260,90
+ปกติ	hosp; bpmon@200,0,1.6; check@260,60; doctor.happy@320
+ผิดปกติ	hosp; paper@200,0,1.6; cross@200,40; doctor.sweat@320
+เป็นไปได้สูง	sky; raincloud@200,90,1.4; check@300,70; txt@300,96=90%
+เป็นไปไม่ได้เลย	room; man.shrug@200; cross@260,80; txt@200,104=불가능
+ชัดเจนแน่นอน	room; man.happy.point@200; check@260,80
+คลุมเครือ	room; man.think@200; qmark@180,104; qmark@220,104; woman@300
+แม่นยำ	room; clock@200,50,1.6; check@260,70
+คร่าวๆ	room; man.happy@200; say@260,96=대충…
+ละเอียดถี่ถ้วน	office; magnifier@200,30,1.4; paper@200,0,1.2; woman.happy@320
+รวดเร็ว	shop; man.vest.happy.run@200+tray
+เชื่องช้า	room; laptop@200,0,1.6; snail@260,0; man.sad@330
+กะทันหัน	room; man.wow@200; door@120,0,1.2; boom@260,80,.5
+นิรันดร์	room; man.happy@160; woman.happy@240; heart@200,104; star@200,90
+ชั่วคราว	room; box@200,0,1.4; clock@280,60,1; txt@200,60=임시
+ถาวร	office; paper@200,0,1.6=영주; passport@270,0,1
+พิจารณา	office; man.think@200; clock@280,60,1
+ทบทวนดู	office; paper@200,0,1.6; man.think@320; magnifier@260,20
+ตัดสินใจเลือก	shop; dress@170,0,1.2; dress@230,0,1.2; man.point@330!
+เดา	room; box@200,0,1.4; qmark@200,40; man.think@320
+คาดว่า	station; clock@200,60,1.4=2:00; train@330,0,.6
+ปรารถนา	temple; man.wai@200; heart@200,96; star@260,90
+จำเป็นต้อง	park; tree@200,0,1.4; wcan@280,0,1.2; man.happy@330
+ถูกตัดสิน	office; gavel@200,0,1.2; check@260,60
+เลือกสรร	shop; mango@170,0; mango@200,0; mango@230,0; check@200,40; woman.happy@320
+ลองเปรียบเทียบ	shop; phone@170,0,1.2; phone@230,0,1.2; man.think@320
+แยกออก	room; boy@170; boy@230; qmark@200,104
+สังเกตเห็น	street; man.happy@200; idea@200,104,.6; woman@300
+รู้ตัว	room; man.sad.wai@200; idea@200,104,.6
+นึกออก	room; man.happy@200; idea@200,104,.7; say@260,96=생각났다!
+นึกไม่ออก	street; shop@300,0,1; man.think@200; qmark@200,104
+นึกถึง	beach; man.sad@200; think@270,96=house; wave@100,0
+ลองนึกภาพ	room; man.happy@200; think@270,96=house
