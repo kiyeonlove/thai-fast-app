@@ -1,0 +1,100 @@
+ฮัลโหล	room; man.phone@200+phone; say@260,96=여보세요?
+หวัดดี	street; man.wave.happy@160; boy.happy@240; say@200,96=안녕!
+ไปละนะ	street; man.wave@200; boy.wave@300!; say@250,96=잘 가
+ไว้เจอกัน	street; man.wave.happy@160; woman.wave.happy@240!; say@200,96=또 봐
+ทัก	park; boy.happy.wave@160; girl@260; say@210,96=안녕!
+ทักมานะ	room; phone@200,0,1.4; house@300,0,.8; chat@240,40,.8
+ตอบด้วย	room; phone@200,0,1.4; chat@240,40,.8; man.happy@320
+อ่านแล้วเงียบ	room; phone@200,0,1.6; chat@240,50,.8; check@270,70; man.sad@330
+เซลฟี่	beach; man.happy.phone@180+phone; woman.happy@240; sparkle@300,90
+รูปสวยปัง	beach; camera@200,0,1.4; sparkle@140,60; woman.happy.hips@320
+ร้านดัง	city; cafe2@200,0,1.2; man@120; woman@300; star@200,96
+ร้านคิวยาว	street; shop@200,0,1.2; man@260; woman@290; man@320; woman@350
+คุ้มมาก	shop; dress@200,0,1.6; money@260,10,1=싸요; check@300,70; woman.happy@340
+เสียดายเงิน	room; box@200,0,1.4; money@260,10,1; man.sad@330
+อวดรวย	room; phone@200,0,1.6; moneybag@260,0,1; man.happy.hips@330
+ติ่ง	room; girl.happy.love@200; heart@260,90; picture@330,40,1
+แฟนคลับ	stage; singer@200+mic; man.up.happy@100; woman.up.happy@140; girl.up.happy@300
+ไอดอล	stage; singer.happy@180+mic; singer.happy@240+mic; heart@330,90
+ซีรีส์เกาหลี	living; tvstand@200; tv@200,20,1.2; flagkr@200,32,.4; woman.sit.happy@320,24; chair@320
+คนโปรด	stage; singer.happy@200+mic; girl.happy.love@320; heart@320,104
+อาหารโปรด	rest; dish@200,0,1.6; heart@200,50; boy.happy@320
+เครียดจัง	office; paper@170,0,1.2; paper@200,0,1.2; paper@230,0,1.2; man.sweat.sad@320
+ฮีลใจ	beach; man.happy.up@200; heart@260,96; wave@100,0
+ความสุขเล็กๆ	cafe; mug@200,0,1.4; heart@200,40,.8; woman.happy@320
+สมดุลชีวิตกับงาน	office; scale@200,0,1.4; laptop@150,20,.6; heart@250,20,.8
+หมดไฟ	office; desk@200; man.sit.sleep.sad@200,24; chair@200; fire@200,100,.4
+หมดไฟแล้ว	office; man.sad.sweat@200; battery@280,30,1.2
+เบื่อวันจันทร์	office; calendar@200,30,1.6=월; man.sad@320
+ศุกร์สุดชิล	night; calendar@200,30,1.6=금; man.happy.dance@320; music@120,80
+ทำโอที	office; desk@200; man.sit.sweat@200,24; chair@200; clock@330,70,1=9:00
+เลิกงาน	office; clock@200,60,1.4=5:00; man.happy.walk@320+bag
+เลิกงานตรงเวลา	office; clock@200,60,1.4=5:00; check@260,70; man.happy.up@330
+เงินเดือนออกแล้ว	room; phone@200,0,1.4; money@250,20,1; man.happy.up@320
+ถังแตก	room; wallet@200,0,1.6; cross@200,40; man.sad@320; calendar@100,40,1
+ประหยัดมัธยัสถ์	room; tin@200,0,1.6; coin@200,24; man.happy@320
+ช้อปปิ้ง	city; mall@200,0,1; woman.happy@330+shopbag
+ติดช้อปปิ้ง	city; woman.happy@200+shopbag; shopbag@260,0; shopbag@290,0
+ของมาส่งแล้ว	room; door@120,0,1.2; parcel@200,0,1.6; woman.happy.up@320
+ไลฟ์ขายของ	room; livephone@200,0,1.6; seller.happy@300+dress
+ส่งฟรี	shop; truck@200,0,1; txt@200,96=무료 배송
+ส่งฟรีนะ	room; parcel@200,0,1.4; txt@200,96=무료 배송!; check@260,70
+ของหมดเกลี้ยง	shop; shelf@200,0,1.3; txt@200,104=SOLD OUT
+รอคิว	cafe; bubbletea@330,0,1; man@120; woman@170; man@220; woman@270
+รอคิวยาว	cafe; ticket@200,10,1.4=99; man.sweat@320
+แอคปลอม	room; phone@200,0,1.6; ghost@260,30,.8
+คอมเมนต์แรง	room; phone@200,0,1.6; chat@240,50,.8; man.angry@320
+ชาวเน็ต	room; phone@200,0,1.6; chat@170,50,.7; chat@240,60,.7; chat@200,80,.6
+ชาวเน็ตปากร้าย	room; phone@200,0,1.6; chat@240,60,.8; boom@240,60,.5; man.sad@330
+ไวรัล	room; phone@200,0,1.6; cat@200,10,.6; arrowu@260,60; fireworks@300,80,.6
+ยอดวิว	room; play@200,30,1.4; eye@200,80,1; txt@270,60=1M
+ติดตาม	room; play@200,30,1.4; man.happy.point@320!; say@360,96=구독!
+ผู้ติดตาม	room; phone@200,0,1.4; heart@200,50; txt@270,60=10k
+ช่อง	room; play@200,30,1.6; txt@200,90=NEW; man.happy@330
+ผู้ติดตามช่อง	room; play@200,30,1.4; man@120; woman@160; txt@270,60=+1000
+พิธี	temple; clock@200,60,1.2=9:00; monk~orange@120; man.wai@300
+พิธีเปิด	stage; fireworks@140,80; flag@200,0,1; fireworks@280,90
+พิธีปิด	stage; fireworks@200,80,1.4; man.wave@120; woman.wave@300
+จัดงาน	school; balloon@140,40; balloon@260,40; bunting@200,90,1
+จัดงานแต่ง	temple; groom.happy@170; bride.happy@230; heart@200,104
+ซองงานแต่ง	temple; envelope2@200,10,1.6; man.happy@320
+รดน้ำสังข์	temple; groom.happy@170; bride.happy@230; grandpa.happy@310+dipper
+สินสอด	room; groom.suit@170; money@250,10,1.2; gift@300,0,1
+แขกที่มางาน	temple; man@120; woman@160; groom.happy@220; bride.happy@260; man@330
+อวยพร	room; grandpa.happy.wai@140; groom.wai@230; bride.wai@280
+คำอวยพร	room; man.happy@200+mic; heart@260,96
+ของขวัญแสดงความยินดี	room; gift@200,0,1.6; heart@200,40; woman.happy@320
+ไปงานศพ	temple; man.suit.sad@180; woman.suit.sad@240
+แสดงความเสียใจ	temple; man.wai.sad@200; woman.suit.sad@300
+การเผาศพ	temple; temple@200,0,1.2; dust@200,90,1.4
+ผู้ล่วงลับ	temple; picture@200,40,1.4; flower@160,0,1; flower@240,0,1; man.suit.wai@330
+ขอแสดงความเสียใจด้วย	temple; man.suit.wai.sad@200; woman.suit@300
+บวช	temple; monk~orange.wai@200; woman.happy.cry@320
+งานบวช	temple; monk~orange@200; man@300; woman@340; bunting@200,96,.8
+พิธีขึ้นบ้านใหม่	street; house@200,0,1.2; monk~orange.wai@100; man.happy@320; bunting@200,90,.8
+งานวันเกิด	room; cake@200,0,1.4; balloon@120,40; balloon@280,40; girl.happy@330
+ตัดเค้ก	room; cake@200,0,1.6; knife@240,30,1; man.happy@120; woman.happy@300
+เป่าเทียน	room; cake@200,0,1.6; candle@200,28,.8; girl.happy@300; txt@270,60=후~
+อธิษฐาน	temple; man.wai@200; heart@260,96; house@120,0,.6
+แลกของขวัญ	room; boy.give.happy@160+gift; girl.give.happy@240!+gift
+งานเลี้ยงปีใหม่	night; fireworks@200,90,1.2; table@200; man.happy@120; woman.happy@300
+ฉลอง	room; cake@200,0,1.4; grandma.happy@300; man.happy@100; balloon@200,90
+งานฉลอง	stage; txt@200,90=10; balloon@120,40; balloon@280,40; man.suit.happy@200
+รับไหว้	room; grandpa.happy.wai@200; boy.wai@300
+คุกเข่า	temple; man.wai@200,0; buddha@100,0,1
+ห้ามจับหัว	room; boy.happy@200; man@300; cross@200,100; hl@300,80,.8
+ห้ามชี้เท้า	temple; monk~orange@200; man.floor@300; cross@300,40
+เคารพผู้ใหญ่	room; boy.wai@200; grandpa.happy@300; heart@250,104
+ลุกให้นั่ง	street; bus@200,0,1.2; oldwoman.sit@180,30; boy.happy@280
+ผู้อาวุโส	room; boy.wai@200; grandpa.happy@300
+รุ่นพี่ที่เคารพ	school; student.wai@200; student.happy@300
+ท่าน	room; door@120,0,1.2; grandpa.happy@220; man.wai@300
+คุณท่าน	office; door@120,0,1.2; man.happy@220; say@280,96=계세요?
+หลวงพ่อ	temple; monk~orange.happy@200; man.wai@300
+รับประทาน	rest; dish@200,0,1.4; grandpa.happy@320; man.wai@120
+พักผ่อนครับ	room; sofa@200; grandpa.sit.happy@200,30; man.wai@320
+อยู่ครับ	room; door@120,0,1.2; man.wai@220; say@280,96=계세요?
+เรียนถาม	class; prof@200; student.wai@320; qmark@320,104
+ทราบ	office; man.wai@200; check@260,80; say@300,96=알겠습니다
+เรียนให้ทราบ	office; paper@200,0,1.6; man.wai@320
+ขอเรียนให้ทราบ	office; paper@200,0,1.6; man.suit.wai@320
