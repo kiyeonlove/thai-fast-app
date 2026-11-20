@@ -93,7 +93,7 @@ station; clock@200,60,1.4; man.flat@320
 cafe; man.happy@200+mug; music@260,80
 room; water@180,0,1.4; water@210,0,1.4; txt@200,60=2L
 room; pills@200,10,1.6; txt@200,60=1
-car; car@200,0,1.4; man.happy@120; woman.happy@300; arrowr@200,60
+road; car@200,0,1.4; man.happy@120; woman.happy@300; arrowr@200,60
 road; car@140,0,1; car@200,0,1; car@260,0,1
 stage; man.up.happy@140; woman.up.happy@200; boy.up.happy@260
 room; man.happy@200; check@260,80; txt@200,104=혼자서

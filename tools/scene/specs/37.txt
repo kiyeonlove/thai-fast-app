@@ -1,0 +1,100 @@
+ตะไคร่น้ำ	park; pond@200,0,1.6; p@200,4:M-20 -4q10 -4 20 0; mold@200,4,.6
+กระบองเพชร	room; cactus@200,0,1.4; sun@340,72
+ต้นสน	mount; pine@170,0,1.2; pine@230,0,1.4; mountain@60,0,.6
+ต้นกล้วย	farm; bananatree@200,0,1.2; house@320,0,.8
+ต้นมะม่วง	farm; mangotree@200,0,1.4
+ต้นโพธิ์	temple; bodhi@200,0,1.2; temple@330,0,.6
+ต้นสัก	farm; tree@200,0,1.6; house@330,0,.6
+ผลไม้เมืองร้อน	market; durian@160,0; mango@200,0; pineapple@240,0; coconut@280,0
+ตัดกิ่ง	park; tree@200,0,1.4; shears@260,0,1.2; man.happy@330
+ดอกไม้บาน	park; flower@140,0,1.4; flower@200,0,1.6; flower@260,0,1.4; sun@340,72
+ผลไม้สุก	farm; mangotree@200,0,1.4; sparkle@200,80
+ใบไม้ร่วง	park; leaf@170,0,1.6; leaf@210,4,1.4; leaf@250,0,1.6; house@60,0,.6
+ตอไม้	park; stump@200,0,1.6; man.sit.happy@200,16
+เปลือกไม้	park; bark@200,0,1.2
+เกสร	park; flower@200,0,2; bee@240,40,1.2; dust@220,40
+กลิ่นหอมของดอกไม้	park; rose@200,0,2; smell@200,40; woman.happy.love@320
+ใส่ปุ๋ย	farm; plant@200,0,1.4; sack@120,0,1=비료
+หว่านเมล็ด	farm; seeds@200,10,2; farmer.happy@300
+ต้นกล้า	farm; seedling@170,0,1.6; seedling@230,0,1.6; man.happy@320
+ต้นข้าว	farm; riceplant@140,0,1.4; riceplant@200,0,1.4; riceplant@260,0,1.4
+ไร่ข้าวโพด	farm; corn@160,0,1.6; corn@200,0,1.6; corn@240,0,1.6
+มันสำปะหลัง	farm; cassava@200,0,1.8
+สวนยาง	farm; rubbertree@200,0,1.2; man.happy@320
+สวนผลไม้	farm; mangotree@140,0,1; mangotree@260,0,1; basket@200,0
+เปลี่ยนฤดู	park; flower@140,0; leaf@200,0; snowman@260,0,.6; arrowr@200,60
+ฤดูแล้ง	farm; dryland@200,0,1.6; sun@340,72,1.4
+ฤดูฝน	rain; man.hold@200+umbrella
+ฝนตกชุก	rain; raincloud@200,90,1.4; puddle@200,0,1.6
+ฟ้าแลบฟ้าร้อง	rain; lightning@200,70,1.4; txt@260,90=우르릉
+ลูกเห็บ	sky; hail@170,60,1.4; hail@230,40,1.4; car@200,0,1.2
+หิมะ	snow; man.pad.winter.happy.up@200
+น้ำค้างแข็ง	snow; grass@200,0,1.6; sparkle@200,20
+ลมหมุน	field; tornado@200,0,1.2; house@330,0,.6
+ดินถล่ม	mount; landslide@200,0,1.4
+คลื่นสึนามิ	beach; tsunami@200,0,1.2; man.run.wow@340
+แห้งแล้ง	farm; dryland@200,0,1.6; sun@340,72,1.4; farmer.sad@120
+องศาเซลเซียส	field; thermo@200,0,1.8; txt@260,70=30℃
+ความชื้น	room; water_drop@170,60; water_drop@230,70; man.sweat@320
+ฟ้าใส	sky; sun@200,60,1.6; man.happy.up@320
+วันฟ้าใส	park; sun@200,70,1.4; man.walk.happy@320
+วันฟ้าครึ้ม	sky; cloud~gray@140,70,1.4; cloud~gray@260,80,1.4; man.flat@340
+วันฝนตก	rain; man.hold@200+umbrella; puddle@200,0,1.4
+วันลมแรง	park; wind@200,60,1.6; kite@300,70; boy.happy@120
+ชายฝั่ง	beach; wave@200,0,1.6; car@200,30,.6; palm@320,0,.8
+ริมแม่น้ำ	river; table@200; dish@200,39; river@200,0,1
+ทะเลสาบ	river; lake@200,0,1.4; mountain@200,10,.8
+หนองน้ำ	field; swamp@200,0,1.4; cross@200,40
+คลอง	river; canal@200,0,1.4; lboat@200,8,.8
+ยอดเขา	mount; mountain@200,0,1.4; man.up.happy@205,58,.5
+ตีนเขา	mount; mountain@200,0,1.4; house@200,0,.5
+หน้าผา	mount; cliff@180,0,1; sign@300,0,1.2=!; man@340
+ก้อนหิน	river; rock@200,0,1.6; man.sit.happy@200,18
+กรวด	road; gravel@200,0,2; man.walk@320
+โคลน	rain; sneaker@200,0,1.8; mud@200,0,1.2
+พื้นดิน	park; boy.floor.happy@200; ant@240,0
+เส้นขอบฟ้า	sea; sun@200,8,1.6; p@200,8:M-200 0H200
+ขอบฟ้าทะเล	sea; ship@200,8,.6; p@200,8:M-200 0H200
+ค่อนข้าง	sky; cloud@200,70,1.4; sun@330,80; check@120,70
+นิดๆ	rest; soup@200,0,1.6; man.flat@320; txt@330,104=약간 짜요
+ไม่เลย	room; man.shrug@200; cross@260,80
+ไม่มีทาง	room; man.shrug@200; cross@260,80
+แน่ๆ	rain; raincloud@200,90,1.4; check@300,70
+บางที	room; man.think@200; qmark@200,104
+แน่นอนเลย	room; man.happy.point@200; check@260,80
+อย่างแน่นอน	room; man.happy.up@200; check@260,80
+แค่	room; coin@200,10,1.6=100; man.sad@320
+เพียง	room; clock@200,60,1.4=5분; man@320
+โดยเฉพาะ	market; mango@180,0; durian@220,0; heart@200,60; woman.happy@320
+โดยทั่วไป	shop; shop@200,0,1.2; clock@200,64,.8=9:00
+ส่วนใหญ่	city; man@140; woman@200; man@260; flag@330,0,.8
+บางส่วน	room; cake@200,0,1.4; p@200,0:M-12 -10L0 0; man.happy@320
+ทั้งหมดด้วยกัน	room; man.happy@140; woman.happy@220; p@180,40:M-10 0h20
+กันและกัน	room; man.happy.give@160+box; woman.happy.give@240!+box; heart@200,104
+เอง	room; boy.happy@200; shirt@200,24,.8
+ตัวเอง	room; man.happy@200; heart@260,90
+ด้วยตัวเอง	kitchen; pot@200,0,1.4; man.happy@320
+ตั้งใจทำ	room; vase@200,0,1.4; p@200,0:M-10 -4l20 -4; man.happy@320
+โดยบังเอิญ	street; man.wow@160; woman.wow@240!
+พอดีเลย	room; phone@200,0,1.4; ring2@200,30; man.wow@320
+ในที่สุดก็	class; testp@200,10,1.6; check@200,40; man.happy.up@320
+ยังคง	room; man.sad@200; think@270,96=heart
+เหมือนเดิม	shop; shop@200,0,1.2; check@200,80; grandpa.happy@330
+ยังเหมือนเดิม	shop; shop@200,0,1.2; check@200,80; grandpa.happy@330
+ต่อไป	road; man.walk@200; arrowr@270,60
+เรื่อยๆ	road; man.walk@200; arrowr@270,60; tree@100,0
+สักครู่	room; clock@200,60,1.4; man.wave@320; say@360,96=잠깐만요
+อีกสักครู่	room; clock@200,60,1.4; man.happy@320
+เดี๋ยวนี้	room; man.run@200; say@260,96=지금!
+ทันที	hosp; man.run.sweat@200; hospital@330,0,.6
+เดี๋ยวค่อย	room; man.wave@200; say@260,96=이따가
+ล่วงหน้า	room; ticket@200,10,1.6; calendar@120,40,1; man.happy@320
+ช้าไป	street; bus@100,0,1; man.run.sweat@300
+เร็วไป	station; clock@200,60,1.4; man.flat@320
+พร้อมกันนั้น	cafe; man.happy@200+mug; music@260,80
+ต่อวัน	room; water@180,0,1.4; water@210,0,1.4; txt@200,60=2L
+ครั้งเดียว	room; pills@200,10,1.6; txt@200,60=1
+สลับกัน	road; car@200,0,1.4; man.happy@120; woman.happy@300; arrowr@200,60
+ตามคิว	road; car@140,0,1; car@200,0,1; car@260,0,1
+พร้อมๆกัน	stage; man.up.happy@140; woman.up.happy@200; boy.up.happy@260
+คนเดียวเอง	room; man.happy@200; check@260,80; txt@200,104=혼자서
