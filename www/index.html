@@ -484,7 +484,12 @@ function exBlock(th){
 /* ---------- 화면 ---------- */
 const app = document.getElementById("app");
 let view = "home", PL = null;
-function render(){ if (view === "home") renderHome(); else if (view === "play") renderPlay(); else if (view === "sort") renderSort(); else if (view === "quiz") renderQuiz(); else if (view === "tone") renderTone(); }
+/* 다른 화면으로 넘어가면 항상 맨 위부터 보여요 */
+let LASTV = null;
+try { history.scrollRestoration = "manual"; } catch(e) {}
+function render(){ if (view === "home") renderHome(); else if (view === "play") renderPlay(); else if (view === "sort") renderSort(); else if (view === "quiz") renderQuiz(); else if (view === "tone") renderTone();
+ }
+function vtop(){ if (view !== LASTV) { LASTV = view; window.scrollTo(0, 0); } }
 
 function setStat(d, k){
   const ws = setWords(d, k), key = skey(d, k);
@@ -542,6 +547,7 @@ function bindRange(){
     NEXT_PAIR = r.n; startPlay(LIST.slice(r.a - 1, r.b), `🔁 ${r.a}~${r.b}번 · ${r.n}번씩`, null); };
 }
 function renderHome(){
+  vtop();
   const today = dkey(), ti = dayIdx(today), cur = Math.min(Math.max(ti, 1), DAYS), before = ti < 1;
   const st = dayStatus(cur);
   const backlog = []; for (let d = 1; d < Math.min(ti, DAYS + 1); d++) { const s = dayStatus(d); if (!s.done && s.ws.length) backlog.push(d); }
@@ -669,6 +675,7 @@ function card(w){
   </div>`;
 }
 function renderPlay(){
+  vtop();
   if (S.hidePr === undefined) S.hidePr = false;
   const w = PL.list[PL.i];
   const chip = (k, v, label) => `<button class="chip" data-k="${k}" data-v="${v}" aria-pressed="${S[k] === v}">${label}</button>`;
@@ -1012,6 +1019,7 @@ function qFinish(){
   d.querySelector("#qout").onclick = () => { d.remove(); leave(); };
 }
 function renderQuiz(){
+  vtop();
   const it = QZ.q[QZ.i]; if (!it) { qFinish(); return; }
   const w = it.w, A = QZ.ans, type = it.type;
   if (!it.ch) it.ch = type === "speak" || type === "self" ? [] : pick4(w, type === "rev");
@@ -1076,6 +1084,7 @@ function startTone(){
   view = "tone"; pushView(); renderTone();
 }
 function renderTone(){
+  vtop();
   const w = TT.q[TT.i]; if (!w) return;
   const A = TT.ans, t = w.t[0], st = S.tone || {};
   const pair = A && !A.ok ? minPairs().get(w.kr[0])?.[A.t] : null;
@@ -1169,6 +1178,7 @@ function answer(i){
   SO.tm = setTimeout(() => sortPick(ok), ok ? 500 : 1800);
 }
 function renderSort(){
+  vtop();
   const w = SO.list[SO.i]; if (!w) { view = "home"; render(); return; }
   const knownN = Object.keys(S.known).length, left = SO.list.length - SO.i, list = choices(w), A = SO.ans;
   let c = card(w).replace(/class="fko[^"]*"/, A ? 'class="fko"' : 'class="fko hide"');
