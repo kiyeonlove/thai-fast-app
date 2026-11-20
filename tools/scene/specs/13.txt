@@ -1,0 +1,100 @@
+เข้าแถว	station; ticket@330,10,1.4; man@120; woman@170; man@220; woman@270
+ยก	room; desk@200,0,1.2; man.carry.sweat@170+box; woman.carry@240
+ยกมือ	class; teacher.point@120; boy.up.happy@230; girl.up.happy@300
+สุขภาพ	gym; man.sport.happy.up@200; heart@260,96; apple@300,0,1.2
+หวัด	bedroom; bed@200,0,1.1; girl.lie.sick@200,32; tissue@300,0,1.2
+ไข้	bedroom; thermo@140,0,1.4; girl.sick.sweat@240; moon@340,80
+ไอ	room; man.sick.cover@200; say@260,96=콜록콜록
+ปวดท้อง	rest; chili@140,0,1.4; man.sick.sweat@220; hl@220,40,1
+ปวดหัว	room; man.sick.cover@200; hl@200,72,1.2
+ยา	rest; table@200; dish@180,39; medpack@230,39,1.2=약; man.happy@320
+แผล	park; boy.sad@200; bandaid@200,14,.6; hl@194,12,.8
+ไปหา	street; house@300,0,1.2; grandma.wave@320!; man.walk.happy@180+gift
+ไปหาหมอ	hosp; hospital@200,0,1.2; man.sick@330
+เหงื่อ	gym; man.sweat.sweat.sad@200; sun@340,72; water_drop@240,90
+น้ำตา	room; woman.cry.happy@200; heart@260,96
+หาย	room; medpack@140,0,1.2=약; man.happy.up@240; sparkle@300,90
+หายใจ	park; man.happy.up@200; wind@260,80; sparkle@140,80
+เสียง	stage; man.happy@200+mic; music@250,80; woman.love@320
+หลังคา	rain; house@200,0,1.6; water_drop@200,30,1.2; puddle@200,0; bucket@200,0
+สนามหญ้า	field; grass@200,0,2; mower@200,0,1.2; man.happy@260
+บ่อ	park; pond@200,0,1.6; fish@180,4,.8; fish@230,6,.8
+บ่อน้ำ	field; well@200,0,1.2; woman.happy@300+bucket
+ขยะ	park; bin@200,0,1.6; can@190,48; man.give@120+can
+มุ้ง	bedroom; bed@200,0,1.2; mnet@200,0,1; man.lie.sleep@200,34
+แมลง	room; bug@200,60,1.6; mosquito@140,70,1.4; fly@260,80,1.4; woman.wow@330
+ปีก	park; butterfly@200,50,2.4; flower@200,0,1.2
+หาง	park; dog@200,0,1.8; p@226,22:M0 0q8 -8 4 -16M6 2q10 -6 8 -14
+เขา	field; cow@200,0,1.6; hl@181,46,.9
+ขน	room; cat@200,0,1.6; dust@220,8,1.4; man.sad@320
+ขนนก	park; feather@200,20,2; bird@280,50
+ไข่นก	park; tree@200,0,1.4; nest@200,60,1.2
+รัง	park; tree@200,0,1.4; nest@205,62,1.1; bird@220,86,.8
+ราก	field; tree@200,40,1.2; roots@200,40,1.2
+กิ่ง	park; branch@200,30,1.6; wind@120,60,1.4; tree@320,0,1
+ออกผล	farm; mangotree@200,0,1.4; woman.happy@320
+ตก	room; stairs@200,0,1.2; boy.wow.sweat@190,30,.8; cross@300,80
+น้ำตก	mount; waterfall@200,0,1; man.happy@330,0,.8
+ถ้ำ	mount; cave@200,0,1; man.wow@330,0,.8
+หมอก	field; house@200,0,1; fog@200,30,1.6; fog@200,70,1.6
+น้ำท่วม	street; house@200,0,1.4; flood@200,0,1; man.sad@200,14
+ฤดู	park; sun@120,70; flower@200,0; leaf@260,0; snowman@330,0,.8
+หน้าร้อน	beach; sun@330,72; man.sun.shades.happy@200
+หน้าฝน	rain; man.hold@200+umbrella; puddle@200,0,1.4
+หน้าหนาว	snow; snowman@180,0; man.pad.winter.happy@280
+คิด	room; man.think.sad@200; think@270,96=house
+จำ	room; man.think.sweat@200; think@270,96=?
+ลืม	street; car@200,0,1.4; key@200,30,1.2; man.wow.sweat@330
+เชื่อ	room; man.happy@160; woman.happy@240; heart@200,104
+ส่ง	room; phone@200,0,1.6; letter@200,40,1; woman.happy.phone@320+phone
+เอามา	room; box@200,0,1.6; man.give.happy@120+box; woman.happy@320
+เอาไป	room; book@200,0,1.6; woman.give.happy@300!+book; man.happy@120
+ยืม	office; pen@200,0,1.8; man.give@120+pen; woman.happy@320
+แบ่ง	room; snack@200,0,1.6; boy.give.happy@140+cookie; girl.happy@280
+เปลี่ยน	shop; dress~red@170,0,1.6; dress~blue@230,0,1.6; arrowr@200,60; woman.think@330
+เลือก	shop; dress~red@140,0,1.4; dress~blue@200,0,1.4; dress~green@260,0,1.4; woman.point.happy@330!
+เริ่ม	class; clock@200,60,1.4=9:00; teacher.happy@320
+จบ	living; tvstand@200; tv@200,20,1.2; txt@200,60=END; man.sit.happy@320,24; chair@320
+หยุด	road; sign@200,0,1.4=STOP; police.point@320!
+เลี้ยง	room; cat@170,0,1.2; cat@230,0,1.2; woman.happy.love@320
+ปลูก	field; sprout@170,0,1.4; sprout@210,0,1.4; man.floor.happy@290+trowel
+รดน้ำ	park; tree@170,0,1.2; wcan@240,0,1.4; man.happy@320
+เก็บ	farm; mangotree@200,0,1.4; basket@300,0,1.2; man.up.happy@260
+หยิบ	room; pen@200,0,1.6; man.happy@300; arrowu@200,40
+ล้ม	park; tree^82@140,24,1.1; wind@120,70; man.wow@330
+หกล้ม	park; boy.cry^-70@200,4; ball@280,0
+บาดเจ็บ	park; man.sad@200; bandage@200,10,.6; hl@193,14,.9
+แตก	kitchen; glass@200,0,1.8; p@200,0:M-8 -10l6 4 -2 6M4 -16l4 6; woman.wow@320
+ฉีก	room; book@200,0,1.6; paper@240,0,1; cross@200,50; man.angry@320
+พับ	bedroom; dresser@200,0,1.4; tshirt@200,58,1; woman.happy@320
+ผูก	room; sneaker@200,0,2; man.happy@320
+แก้	room; rope@200,20,1.6; man.sweat@320
+ติด	room; picture@200,40,1.6; tape@200,80,.6; woman.happy.up@320
+ล้างให้	bath; sink@200,0,1.2; woman.happy@140; girl.happy@280
+กลม	room; ball@200,0,2; circle@120,0,.8
+สี่เหลี่ยม	room; box@200,0,2; square@120,0,.8
+สามเหลี่ยม	class; triangle@200,0,1.8; girl.happy@320
+กว้าง	room; man.happy.up@200; p@200,0:M-150 -100V0M150 -100V0
+แคบ	city; alley@200,0,1; man@200,0,.9
+หนา	room; tbook@200,0,1.6; man.wow@320
+บาง	room; tshirt@200,0,2; sparkle@200,60; woman.sad@320
+นุ่ม	bedroom; pillow@200,0,2; sparkle@160,40; man.happy.love@320
+สว่าง	room; window@200,30,1.6; sun@200,50,.8; woman.happy@320
+มืด	night; house@200,0,1.4; moon@340,80; man.wow@100
+เงียบ	school; shelf@200,0,1.2; man.cover@300; txt@200,96=쉿!
+ดัง	bedroom; aclock@200,0,1.8; ring2@200,30,1.6; man.cover@320
+เสียงดัง	room; music@160,60; music@220,80; ring2@140,40,1.6; man.cover.angry@320
+หอม	park; flower@200,0,1.6; smell@200,40; woman.happy.love@320
+เหม็น	street; bin@200,0,1.6; stink@200,50; man.cover@320
+เปียก	rain; man.rainc.sad@200; puddle@200,0,1.4
+แห้ง	field; cline@200,0,1.2; sun@340,72; woman.happy@320
+เต็มไปหมด	room; teddy@140,0; ball@180,0; blocks@220,0; toycar@260,0; boy.happy@330
+แพง	shop; phone@200,0,2; say@260,96=₩₩₩; man.wow@330
+รวย	city; man.suit.happy@200; moneybag@280,0,1.6
+จน	field; house@200,0,1; boy.sad@320
+ฉลาด	room; dog@200,0,1.6; check@200,50; boy.happy@320
+กล้า	park; man.hips.happy@200; dog@300,0,1.2
+ขยัน	class; desk@200; book@200,40,1.4; student.sit@200,24; chair@200
+ขี้เกียจ	office; desk@200; man.sit.sleep@200,24; chair@200
+ซื่อสัตย์	street; wallet@200,0,1.6; man.give.happy@140+wallet; police.happy@300
+แป้ง	kitchen; flour@200,0,1.8; bread@260,0,1.2; woman.happy@340

@@ -82,8 +82,8 @@
 เมฆ	sky; cloud~gray@150,70,1.8; cloud~gray@260,80,1.6; man.sad@340
 ลม	park; tree@170,0,1.2; wind@260,50,1.6; man.sweat@330
 ฝนตก	rain; man.hold@200+umbrella; woman.give@300!+umbrella
-ฟ้าร้อง	rain; bolt@200,70,1.4; man.cover.wow@320
-ฟ้าผ่า	street; tree@200,0,1.4; bolt@200,74,1.6; house@60,0,.8
+ฟ้าร้อง	rain; lightning@200,70,1.4; man.cover.wow@320
+ฟ้าผ่า	street; tree@200,0,1.4; lightning@200,74,1.6; house@60,0,.8
 รุ้ง	sky; rainbow@200,0,1.6; man.happy.point@340!
 ภูเขา	mount; mountain@200,0,1.4; man.happy@320
 แม่น้ำ	river; temple@200,40,.8; moon@340,80

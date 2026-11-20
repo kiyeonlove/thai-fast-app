@@ -748,7 +748,7 @@ const O = {
   medpack: `<rect x="-12" y="-10" width="24" height="10" rx="2" fill="#fff"/><path d="M-12 -5h24" stroke-width="1"/><circle cx="-6" cy="-7" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="0" cy="-7" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="6" cy="-7" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="-6" cy="-2.5" r="1.6" fill="${GR}" stroke-width="1"/><circle cx="0" cy="-2.5" r="1.6" fill="${GR}" stroke-width="1"/>`,
   hl: `<circle cx="0" cy="0" r="12" fill="none" stroke-width="2" stroke-dasharray="4 3"/>`,
   mailbox: `<path d="M0 0V-30" stroke-width="3"/><path d="M-14 -30V-44Q-14 -52 0 -52Q14 -52 14 -44V-30Z" fill="#fff"/><path d="M14 -46h6v-8h-6" fill="${GR}" stroke-width="1.6"/><rect x="-8" y="-46" width="12" height="3" fill="${K}"/>`,
-  plate: `<rect x="-14" y="-10" width="28" height="10" rx="2" fill="#fff"/>`,
+  nplate: `<rect x="-14" y="-10" width="28" height="10" rx="2" fill="#fff"/>`,
   cctv: `<path d="M-14 -10L10 -16L12 -8L-12 -2Z" fill="#fff"/><circle cx="-10" cy="-6" r="2" fill="${K}"/><path d="M10 -12h8v-14" fill="none" stroke-width="2.4"/>`,
   sdoor: `<rect x="-30" y="-80" width="60" height="80" fill="#fff"/><path d="M0 -80V0M-6 -40v6M6 -40v6" stroke-width="2"/><path d="M-24 -70l10 -6M8 -60l12 -8" stroke="${L}" stroke-width="1.4"/>`,
   grille: `<rect x="-26" y="-60" width="52" height="46" rx="2" fill="#fff"/><path d="M-18 -60v46M-9 -60v46M0 -60v46M9 -60v46M18 -60v46M-26 -37h52" stroke-width="2"/>`,
@@ -833,7 +833,7 @@ const O = {
   mangorice: `<ellipse cx="0" cy="-2" rx="18" ry="4"/><path d="M-14 -4Q-12 -14 -2 -12Q0 -4 -14 -4Z" fill="#fff" stroke-width="1.6"/><path d="M0 -4Q2 -14 14 -12Q16 -4 0 -4Z" fill="#e8d9b8" stroke-width="1.6"/>`,
   horse: `<path d="M-18 -26Q-20 -40 -2 -38H14L22 -50L30 -46L24 -32Q22 -22 16 -22H-14Z" fill="#fff"/><path d="M-14 -22V0M-6 -22V0M8 -22V0M14 -22V0" stroke-width="3"/><path d="M-18 -32q-10 4 -8 16" fill="none" stroke-width="3"/><path d="M14 -40l6 -10 4 2" fill="${K}" stroke-width="1"/><circle cx="24" cy="-44" r="1.2" fill="${K}"/>`,
   duck: `<path d="M-14 -8Q-14 -18 0 -16Q4 -26 10 -24Q16 -22 12 -16Q16 -6 6 -2H-8Q-14 -2 -14 -8Z" fill="#fff"/><path d="M14 -21l7 1 -6 3" fill="${GR}" stroke-width="1.2"/><circle cx="9" cy="-21" r="1.2" fill="${K}"/><path d="M-6 -10q6 4 10 -2" fill="none" stroke-width="1.4"/>`,
-  mouse: `<ellipse cx="0" cy="-5" rx="9" ry="5" fill="${GR}"/><circle cx="-8" cy="-10" r="3" fill="${GR}"/><circle cx="-10" cy="-5" r="1" fill="${K}"/><path d="M9 -4q10 0 12 -8" fill="none" stroke-width="1.4"/>`,
+  rat: `<ellipse cx="0" cy="-5" rx="9" ry="5" fill="${GR}"/><circle cx="-8" cy="-10" r="3" fill="${GR}"/><circle cx="-10" cy="-5" r="1" fill="${K}"/><path d="M9 -4q10 0 12 -8" fill="none" stroke-width="1.4"/>`,
   rabbit: `<ellipse cx="2" cy="-9" rx="11" ry="9" fill="#fff"/><circle cx="-8" cy="-18" r="6" fill="#fff"/><path d="M-10 -23Q-14 -38 -8 -38Q-6 -32 -7 -24M-5 -23Q-2 -36 2 -34Q2 -28 -3 -22" fill="#fff" stroke-width="1.8"/><circle cx="-9" cy="-18" r="1.1" fill="${K}"/><circle cx="13" cy="-8" r="3" fill="#fff" stroke-width="1.4"/>`,
   carrot: `<path d="M-3 -24L3 -24L0 0Z" fill="#e8b070"/><path d="M0 -24l-4 -8M0 -24l0 -9M0 -24l4 -8" stroke-width="1.6"/>`,
   tiger: `<ellipse cx="6" cy="-22" rx="24" ry="12" fill="#e8b070"/><path d="M-6 -12V0M18 -12V0M-12 -12V0M24 -12V0" stroke-width="3.4"/><circle cx="-18" cy="-28" r="11" fill="#e8b070"/><path d="M-26 -36l-2 -5 5 2M-10 -36l2 -5 -5 2" fill="#e8b070" stroke-width="1.6"/><path d="M0 -32v8M8 -33v9M16 -32v8M-18 -38v4" stroke-width="2.2"/><circle cx="-22" cy="-29" r="1.2" fill="${K}"/><circle cx="-14" cy="-29" r="1.2" fill="${K}"/><path d="M30 -24q8 -4 6 -14" fill="none" stroke-width="2.6"/>`,
@@ -853,7 +853,7 @@ const O = {
   mangosteen: `<circle cx="0" cy="-9" r="9" fill="#857"/><path d="M-6 -18l3 3 3 -4 3 4 3 -3" fill="#9c9" stroke-width="1.4"/>`,
   tlight: `<path d="M0 0V-40" stroke-width="3"/><rect x="-8" y="-72" width="16" height="34" rx="3" fill="${K}"/><circle cx="0" cy="-66" r="4" fill="#555" stroke="none"/><circle cx="0" cy="-56" r="4" fill="#555" stroke="none"/><circle cx="0" cy="-46" r="4" fill="#4c4" stroke="none"/>`,
   rainbow: `<path d="M-50 0A50 50 0 0 1 50 0" fill="none" stroke="#e66" stroke-width="5"/><path d="M-44 0A44 44 0 0 1 44 0" fill="none" stroke="#fb4" stroke-width="5"/><path d="M-38 0A38 38 0 0 1 38 0" fill="none" stroke="#ee4" stroke-width="5"/><path d="M-32 0A32 32 0 0 1 32 0" fill="none" stroke="#6c6" stroke-width="5"/><path d="M-26 0A26 26 0 0 1 26 0" fill="none" stroke="#69e" stroke-width="5"/><path d="M-20 0A20 20 0 0 1 20 0" fill="none" stroke="#a6d" stroke-width="5"/>`,
-  bolt: `<path d="M4 -40L-8 -16H2L-6 4L12 -24H2L10 -40Z" fill="#f2c94c" stroke-width="1.8"/>`,
+  lightning: `<path d="M4 -40L-8 -16H2L-6 4L12 -24H2L10 -40Z" fill="#f2c94c" stroke-width="1.8"/>`,
   wind: `<path d="M-30 -20H10q8 0 8 -6t-6 -6M-30 -10H20q8 0 8 6t-6 6M-26 -30H-6" fill="none" stroke-width="2"/>`,
   island: `<path d="M-40 0Q-20 -14 0 -14Q20 -14 40 0Z" fill="#e8d9b8"/><path d="M0 -14Q2 -34 -2 -50" fill="none" stroke-width="3"/><path d="M-2 -50q-14 -4 -22 6q12 -8 22 -6M-2 -50q14 -4 22 6q-12 -8 -22 -6" fill="${GR}" stroke-width="1.4"/>`,
   forest: `<path d="M-50 0L-38 -40L-26 0ZM-30 0L-16 -50L-2 0ZM-6 0L8 -44L22 0ZM16 0L30 -38L44 0Z" fill="#9c9"/>`,
@@ -867,6 +867,83 @@ const O = {
   medal: `<path d="M-6 -36L0 -22L6 -36" fill="none" stroke-width="2"/><circle cx="0" cy="-14" r="9" fill="#f2c94c"/><path d="M0 -19l1.5 3 3 .5-2 2 .5 3-3-1.5-3 1.5.5-3-2-2 3-.5z" fill="#fff" stroke-width=".8"/>`,
   testp: `<path d="M-12 0V-30H12V0Z" fill="#fff"/><path d="M-8 -24h10M-8 -18h14M-8 -12h12M-8 -6h8" stroke-width="1.2"/><text x="6" y="-4" font-size="10" fill="#d33" stroke="none" font-weight="800">X</text>`,
   colorchips: `<rect x="-36" y="-12" width="10" height="12" fill="#e44"/><rect x="-24" y="-12" width="10" height="12" fill="#fb4"/><rect x="-12" y="-12" width="10" height="12" fill="#ee4"/><rect x="0" y="-12" width="10" height="12" fill="#4b4"/><rect x="12" y="-12" width="10" height="12" fill="#49e"/><rect x="24" y="-12" width="10" height="12" fill="#a6d"/>`,
+  slide: `<path d="M-30 0V-50M-20 0V-50M-30 -50H-20M-30 -40h10M-30 -30h10M-30 -20h10M-30 -10h10" fill="none" stroke-width="2.4"/><path d="M-20 -50Q0 -50 10 -20Q16 -4 34 0" fill="none" stroke-width="4"/>`,
+  swing: `<path d="M-30 0L-20 -70H20L30 0M-40 -70H40" fill="none" stroke-width="3"/><path d="M-8 -70V-20M8 -70V-20" stroke-width="1.4"/><rect x="-12" y="-20" width="24" height="4" fill="${GR}"/>`,
+  goal: `<path d="M-30 0V-40H30V0" fill="none" stroke-width="3"/><path d="M-30 -30H30M-30 -20H30M-30 -10H30M-20 -40V0M-10 -40V0M0 -40V0M10 -40V0M20 -40V0" stroke-width=".7"/>`,
+  lion: `<ellipse cx="8" cy="-20" rx="22" ry="11" fill="#e8b070"/><path d="M-6 -10V0M20 -10V0" stroke-width="3.4"/><circle cx="-16" cy="-28" r="15" fill="#a0714a"/><circle cx="-16" cy="-28" r="9" fill="#e8b070"/><circle cx="-19" cy="-30" r="1.2" fill="${K}"/><circle cx="-13" cy="-30" r="1.2" fill="${K}"/><path d="M30 -22q8 -2 8 -12" fill="none" stroke-width="2.4"/>`,
+  giraffe: `<ellipse cx="6" cy="-34" rx="16" ry="9" fill="#f2d04c"/><path d="M-4 -26V0M16 -26V0" stroke-width="3.4"/><path d="M-6 -38L-16 -84" stroke-width="8"/><path d="M-6 -38L-16 -84" stroke="#f2d04c" stroke-width="4"/><ellipse cx="-20" cy="-86" rx="8" ry="5" fill="#f2d04c"/><path d="M-18 -90v-6M-14 -90v-6" stroke-width="1.6"/><circle cx="2" cy="-34" r="2.5" fill="#a0714a" stroke="none"/><circle cx="12" cy="-36" r="2.5" fill="#a0714a" stroke="none"/>`,
+  zebra: `<ellipse cx="4" cy="-24" rx="20" ry="10" fill="#fff"/><path d="M-8 -16V0M16 -16V0M-2 -16V0M10 -16V0" stroke-width="3"/><path d="M-16 -28L-24 -40L-18 -44L-10 -32" fill="#fff"/><path d="M-4 -33v16M4 -34v18M12 -32v14M-20 -40l6 -2" stroke-width="2.4"/>`,
+  croc: `<path d="M-40 -4Q-30 -14 0 -12L36 -8L40 -4L36 -2H0Q-30 2 -40 -4Z" fill="#9c9"/><path d="M14 -8l3 3 3 -3 3 3 3 -3 3 3" fill="none" stroke-width="1.2"/><circle cx="6" cy="-13" r="1.6" fill="${K}"/><path d="M-20 -2v4M-4 -2v4" stroke-width="3"/>`,
+  shark: `<path d="M-40 -14Q-10 -28 24 -16Q36 -12 40 -8Q30 -2 0 -4Q-24 -4 -40 -14Z" fill="${GR}"/><path d="M-4 -24L2 -36L10 -20" fill="${GR}"/><path d="M-40 -14l-8 -8v18Z" fill="${GR}"/><path d="M26 -10l2 2 2 -2 2 2 2 -2" fill="none" stroke-width="1"/><circle cx="24" cy="-16" r="1.4" fill="${K}"/>`,
+  whale: `<path d="M-40 -10Q-36 -36 0 -34Q34 -32 40 -10Q34 0 0 0Q-30 0 -40 -10Z" fill="#8cc8f0"/><path d="M-40 -10l-10 -10v14Z" fill="#8cc8f0"/><circle cx="24" cy="-16" r="2" fill="${K}"/><path d="M10 -36q-4 -10 -10 -12M10 -36q4 -10 10 -12" fill="none" stroke-width="1.6" stroke="#8ab"/>`,
+  squid: `<path d="M-8 -20Q0 -44 8 -20Z" fill="#fff"/><path d="M-8 -20H8M-6 -20Q-8 -6 -10 0M-2 -20V0M2 -20V0M6 -20Q8 -6 10 0" fill="none" stroke-width="1.8"/><circle cx="-3" cy="-24" r="1" fill="${K}"/><circle cx="3" cy="-24" r="1" fill="${K}"/>`,
+  snail: `<path d="M-16 0H14Q18 0 18 -4L14 -6" fill="#e8d9b8"/><circle cx="0" cy="-12" r="10" fill="#e8b070"/><path d="M0 -12m-5 0a5 5 0 1 1 5 5" fill="none" stroke-width="1.4"/><path d="M14 -6l2 -10M17 -6l4 -9" stroke-width="1.2"/>`,
+  shell: `<path d="M0 0L-14 -8Q-12 -22 0 -22Q12 -22 14 -8Z" fill="#fff"/><path d="M0 0L-8 -20M0 0L0 -22M0 0L8 -20" stroke-width="1"/>`,
+  worm: `<path d="M-14 -4q4 -6 8 0t8 0t8 0" fill="none" stroke="#c88" stroke-width="5"/>`,
+  bug: `<ellipse cx="0" cy="-6" rx="6" ry="5" fill="${K}"/><path d="M-6 -6l-4 -3M-6 -4l-4 2M6 -6l4 -3M6 -4l4 2M-2 -11l-2 -4M2 -11l2 -4" stroke-width="1.2"/>`,
+  spider: `<circle cx="0" cy="-8" r="5" fill="${K}"/><path d="M-5 -9l-8 -6M-5 -7l-9 -1M-5 -5l-8 4M5 -9l8 -6M5 -7l9 -1M5 -5l8 4M0 -13V-40" stroke-width="1.2"/>`,
+  web: `<path d="M0 0L-30 -30M0 0L0 -40M0 0L30 -30M0 0L-40 0M0 0L40 0M-10 -10q10 -4 20 0M-20 -20q20 -6 40 0M-10 0q-2 -8 -6 -10" fill="none" stroke-width="1" stroke="${L}"/>`,
+  dragonfly: `<path d="M-14 -10H10" stroke-width="2.6"/><circle cx="12" cy="-10" r="3" fill="${GR}"/><ellipse cx="2" cy="-16" rx="8" ry="3" fill="#fff" stroke-width="1"/><ellipse cx="2" cy="-4" rx="8" ry="3" fill="#fff" stroke-width="1"/>`,
+  sheep: `<path d="M-16 -16Q-20 -28 -8 -28Q-4 -34 4 -30Q14 -32 16 -22Q22 -14 12 -10H-10Q-20 -10 -16 -16Z" fill="#fff"/><path d="M-8 -10V0M8 -10V0" stroke-width="3"/><ellipse cx="-18" cy="-22" rx="5" ry="6" fill="${K}"/>`,
+  goat: `<ellipse cx="4" cy="-20" rx="15" ry="8" fill="#fff"/><path d="M-6 -12V0M14 -12V0" stroke-width="3"/><path d="M-10 -24L-18 -36L-12 -40L-6 -28" fill="#fff"/><path d="M-14 -38q-4 -6 2 -10M-18 -30q-2 6 2 8" fill="none" stroke-width="1.6"/>`,
+  camel: `<path d="M-20 -30Q-14 -48 -4 -34Q4 -50 14 -32Q18 -24 14 -20H-20Z" fill="#e8b070"/><path d="M-16 -20V0M10 -20V0" stroke-width="3"/><path d="M-20 -26L-30 -40L-36 -38" fill="none" stroke-width="5"/>`,
+  desert: `<path d="M-80 0Q-40 -20 0 -8Q40 -24 80 0Z" fill="#f3e2b8"/>`,
+  pigeon: `<path d="M-10 -8Q-12 -20 2 -18Q8 -24 12 -18Q14 -12 8 -8Q0 0 -10 -8Z" fill="${GR}"/><path d="M14 -18l4 1 -4 2" fill="${K}" stroke-width="1"/><circle cx="10" cy="-19" r="1" fill="${K}"/><path d="M0 -6v6M4 -6v6" stroke-width="1.2"/>`,
+  crow: `<path d="M-10 -8Q-12 -20 2 -18Q8 -24 12 -18Q14 -12 8 -8Q0 0 -10 -8Z" fill="${K}"/><path d="M14 -18l5 1 -5 2" fill="${K}" stroke-width="1"/><path d="M0 -6v6M4 -6v6" stroke-width="1.2"/>`,
+  chick: `<circle cx="0" cy="-6" r="6" fill="#f2d04c"/><circle cx="4" cy="-13" r="4" fill="#f2d04c"/><path d="M8 -13l3 1 -3 1" fill="#e8b070" stroke-width="1"/><circle cx="5" cy="-14" r=".8" fill="${K}"/>`,
+  egg2: `<ellipse cx="0" cy="-6" rx="5" ry="6" fill="#fff"/>`,
+  organ: `<path d="M0 0C-16 -10 -12 -24 0 -16C12 -24 16 -10 0 0Z" fill="#e45b5b" stroke-width="1.8"/>`,
+  butter: `<rect x="-14" y="-8" width="28" height="8" rx="1" fill="#f2d04c"/><path d="M-14 -8l4 -4h28l-4 4M18 -12v8l-4 4" fill="#f2d04c" stroke-width="1.6"/>`,
+  toycar: `<path d="M-14 -4V-10L-8 -16H8L14 -10V-4Z" fill="#e45b5b"/><circle cx="-8" cy="-3" r="3" fill="${K}"/><circle cx="8" cy="-3" r="3" fill="${K}"/>`,
+  bubbles: `<circle cx="-4" cy="-10" r="3" fill="none" stroke-width="1.2"/><circle cx="4" cy="-20" r="2" fill="none" stroke-width="1.2"/><circle cx="-2" cy="-28" r="2.5" fill="none" stroke-width="1.2"/>`,
+  bank: `<path d="M-36 0V-6H36V0ZM-30 -6V-36M-14 -6V-36M2 -6V-36M18 -6V-36M30 -6V-36" fill="none" stroke-width="3"/><path d="M-40 -36H40L0 -56Z" fill="${GR}"/><text x="0" y="-41" font-size="8" text-anchor="middle" fill="${K}" stroke="none" font-weight="700">BANK</text>`,
+  cafe2: `<rect x="-30" y="-46" width="60" height="46" fill="#fff"/><path d="M-34 -46H34L30 -56H-30Z" fill="${GR}"/><path d="M-22 -34h20v20h-20z" stroke-width="1.6"/><rect x="8" y="-30" width="14" height="30"/><path d="M-16 -26h8v6h-8zM-8 -24q4 0 3 3" fill="none" stroke-width="1.2"/>`,
+  arrowl: `<path d="M14 -6H-10M-4 -12l-6 6 6 6" fill="none" stroke-width="3"/>`,
+  arrowr: `<path d="M-14 -6H10M4 -12l6 6-6 6" fill="none" stroke-width="3"/>`,
+  arrowu: `<path d="M0 0V-24M-6 -18l6 -6 6 6" fill="none" stroke-width="3"/>`,
+  arrowd: `<path d="M0 -24V0M-6 -6l6 6 6 -6" fill="none" stroke-width="3"/>`,
+  qmark: `<text x="0" y="0" font-size="28" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">?</text>`,
+  pool: `<path d="M-60 0V-10H60V0Z" fill="#8cc8f0"/><path d="M-60 -10H60" stroke-width="3"/>`,
+  diver: `<ellipse cx="0" cy="-8" rx="22" ry="5" fill="#fff"/><circle cx="-24" cy="-10" r="7" fill="#fff"/><rect x="-30" y="-14" width="10" height="5" rx="2" fill="${GR}"/>`,
+  corn: `<path d="M-6 0Q-8 -16 0 -26Q8 -16 6 0Z" fill="#f2d04c"/><path d="M-4 -6h8M-5 -12h10M-4 -18h8M0 -24V0" stroke-width=".8"/><path d="M-6 0Q-14 -10 -10 -22M6 0Q14 -10 10 -22" fill="#9c9" stroke-width="1.6"/>`,
+  beans: `<ellipse cx="-6" cy="-4" rx="5" ry="3.5" fill="#e8d9b8"/><ellipse cx="4" cy="-4" rx="5" ry="3.5" fill="#e8d9b8"/><ellipse cx="-1" cy="-10" rx="5" ry="3.5" fill="#e8d9b8"/>`,
+  peanut: `<path d="M-10 -6Q-12 -12 -6 -12Q-2 -10 2 -12Q10 -14 10 -6Q10 0 2 -2Q-2 -1 -6 0Q-10 0 -10 -6Z" fill="#e8d9b8"/>`,
+  guava: `<ellipse cx="0" cy="-9" rx="9" ry="9" fill="#9c9"/><path d="M0 -18l2 -4" stroke-width="1.6"/><path d="M-4 -12q-2 4 0 6" fill="none" stroke-width="1"/>`,
+  spotato: `<path d="M-16 -6Q-14 -16 0 -14Q14 -14 16 -6Q12 2 0 0Q-14 2 -16 -6Z" fill="#a77bd0"/><path d="M-6 -8q4 -2 8 0" fill="none" stroke-width="1"/>`,
+  cucumber: `<rect x="-16" y="-8" width="32" height="8" rx="4" fill="#5cb85c"/><path d="M-10 -5h1M-2 -4h1M6 -5h1" stroke-width="1.4"/>`,
+  eggplant: `<path d="M-4 -24Q-10 -12 -6 -2Q0 2 6 -2Q10 -12 4 -24Z" fill="#a77bd0"/><path d="M-5 -24h10l-2 -4h-6Z" fill="#5cb85c" stroke-width="1.2"/>`,
+  tomato: `<circle cx="0" cy="-9" r="9" fill="#e45b5b"/><path d="M-4 -18l4 2 4 -2M0 -16v-4" fill="none" stroke="#5cb85c" stroke-width="1.8"/>`,
+  mushroom: `<path d="M-14 -12Q-14 -26 0 -26Q14 -26 14 -12Z" fill="#e8b070"/><path d="M-5 -12H5L4 0H-4Z" fill="#fff"/><circle cx="-5" cy="-19" r="2" fill="#fff" stroke-width="1"/><circle cx="5" cy="-17" r="2" fill="#fff" stroke-width="1"/>`,
+  vball: `<circle cx="0" cy="-10" r="10" fill="#fff"/><path d="M0 -20Q-4 -10 0 0M-10 -10Q0 -8 10 -12M-8 -16Q2 -14 6 -4" fill="none" stroke-width="1.2"/>`,
+  bball: `<circle cx="0" cy="-10" r="10" fill="#f39a3c"/><path d="M-10 -10H10M0 -20V0M-7 -17q6 7 0 14M7 -17q-6 7 0 14" fill="none" stroke-width="1.2"/>`,
+  net: `<path d="M-60 0V-60M60 0V-60" stroke-width="3"/><rect x="-60" y="-60" width="120" height="18" fill="none" stroke-width="1.6"/><path d="M-50 -60v18M-40 -60v18M-30 -60v18M-20 -60v18M-10 -60v18M0 -60v18M10 -60v18M20 -60v18M30 -60v18M40 -60v18M50 -60v18M-60 -51h120" stroke-width=".6"/>`,
+  hoop2: `<path d="M20 0V-80" stroke-width="3.4"/><rect x="-6" y="-92" width="30" height="20" fill="#fff"/><ellipse cx="-4" cy="-72" rx="10" ry="3" fill="none" stroke="#f39a3c" stroke-width="2.4"/><path d="M-12 -72l3 10h10l3 -10" fill="none" stroke-width=".8"/>`,
+  kite: `<path d="M0 -40L14 -24L0 0L-14 -24Z" fill="#e45b5b"/><path d="M0 -40V0M-14 -24H14" stroke-width="1"/><path d="M0 0q-6 10 0 18q6 8 0 16" fill="none" stroke-width="1.2"/>`,
+  trophy: `<path d="M-12 -34H12V-26Q12 -14 0 -12Q-12 -14 -12 -26Z" fill="#f2d04c"/><path d="M-12 -30q-8 0 -6 8q2 4 6 2M12 -30q8 0 6 8q-2 4 -6 2" fill="none" stroke-width="2"/><path d="M0 -12V-4M-8 0H8V-4H-8Z" fill="#f2d04c"/>`,
+  mower: `<rect x="-16" y="-14" width="32" height="10" rx="3" fill="#5cb85c"/><circle cx="-10" cy="-3" r="4" fill="${K}"/><circle cx="10" cy="-3" r="4" fill="${K}"/><path d="M14 -12L30 -40H38" fill="none" stroke-width="2.6"/>`,
+  well: `<path d="M-20 0V-24H20V0Z" fill="#ddd"/><path d="M-20 -16h40M-20 -8h40M-10 -24v8M8 -16v8" stroke-width="1"/><path d="M-22 -24V-56M22 -24V-56M-28 -56H28" fill="none" stroke-width="3"/><path d="M0 -56V-40" stroke-width="1.4"/><rect x="-5" y="-40" width="10" height="8" fill="${GR}"/>`,
+  mnet: `<path d="M-50 0V-60H50V0" fill="#fff" fill-opacity=".5" stroke-width="1.4"/><path d="M-50 -60L-40 -70H40L50 -60" fill="none" stroke-width="1.4"/><path d="M-40 -60v60M-30 -60v60M-20 -60v60M-10 -60v60M0 -60v60M10 -60v60M20 -60v60M30 -60v60M40 -60v60M-50 -48h100M-50 -36h100M-50 -24h100M-50 -12h100" stroke-width=".4" stroke="${L}"/>`,
+  feather: `<path d="M-14 6Q-10 -20 14 -30Q10 -6 -14 6Z" fill="${GR}"/><path d="M-16 8L12 -26" stroke-width="1.2"/>`,
+  nest: `<path d="M-18 -10Q0 6 18 -10Z" fill="#e8d9b8"/><path d="M-18 -10q6 4 12 0t12 0t12 0M-16 -6l32 -2M-14 -3l28 0" fill="none" stroke-width="1.2"/><ellipse cx="-5" cy="-12" rx="4" ry="5" fill="#cfe" stroke-width="1.4"/><ellipse cx="4" cy="-12" rx="4" ry="5" fill="#cfe" stroke-width="1.4"/>`,
+  roots: `<path d="M-4 -40V0M4 -40V0" stroke-width="2.4"/><path d="M0 0q-10 6 -24 4M0 0q-6 10 -10 18M0 0q8 8 6 18M0 0q12 4 22 2M-14 3q-6 4 -8 10M12 2q8 6 10 12" fill="none" stroke-width="2" stroke="#a0714a"/><path d="M-60 0H60" stroke-width="2"/>`,
+  branch: `<path d="M-30 0L30 -10M0 -5L10 -20M-14 -2L-20 -14" fill="none" stroke-width="4" stroke="#a0714a"/><path d="M10 -20q6 -4 10 0q-4 4 -10 0M-20 -14q-6 -4 -10 0q4 4 10 0" fill="#9c9" stroke-width="1"/>`,
+  waterfall: `<path d="M-60 -100H-16V-60Q-16 -40 -40 0H-60Z M16 -100H60V0H40Q16 -40 16 -60Z" fill="#ccc"/><path d="M-16 -100H16V-10H-16Z" fill="#8cc8f0"/><path d="M-10 -90v70M-2 -90v76M6 -90v72M12 -90v70" stroke="#fff" stroke-width="1.4"/><path d="M-30 -4q10 -8 20 0t20 0t20 0" fill="none" stroke-width="1.6"/>`,
+  cave: `<path d="M-70 0Q-70 -70 0 -80Q70 -70 70 0Z" fill="#ccc"/><path d="M-30 0Q-30 -44 0 -48Q30 -44 30 0Z" fill="${K}"/>`,
+  fog: `<path d="M-60 -10H60M-50 -22H40M-40 -34H50M-60 -46H30" fill="none" stroke="${L}" stroke-width="5"/>`,
+  flood: `<path d="M-80 -24H80V0H-80Z" fill="#8cc8f0" stroke="none"/><path d="M-80 -24q10 -4 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0" fill="none" stroke-width="1.6"/>`,
+  circle: `<circle cx="0" cy="-16" r="16" fill="${GR}"/>`,
+  square: `<rect x="-16" y="-32" width="32" height="32" fill="${GR}"/>`,
+  triangle: `<path d="M0 -32L18 0H-18Z" fill="${GR}"/>`,
+  tbook: `<path d="M-14 0V-12H14V0Z" fill="${GR}"/><path d="M-12 -3H12M-12 -6H12M-12 -9H12" stroke-width=".6"/>`,
+  thinbook: `<path d="M-14 0V-3H14V0Z" fill="${GR}"/>`,
+  roof: `<path d="M-50 0L0 -30L50 0Z" fill="${GR}"/>`,
+  smell: `<path d="M-6 0q-4 -6 0 -12t0 -12M2 0q-4 -6 0 -12t0 -12M10 0q-4 -6 0 -12t0 -12" fill="none" stroke-width="1.6" stroke="#9c9"/>`,
+  stink: `<path d="M-6 0q-4 -6 0 -12t0 -12M2 0q-4 -6 0 -12t0 -12M10 0q-4 -6 0 -12t0 -12" fill="none" stroke-width="1.8" stroke="#a0714a"/>`,
+  alley: `<path d="M-60 0V-90H-16V0M16 0V-90H60V0" fill="#fff" stroke-width="2"/><path d="M-50 -76h10M-50 -60h10M-30 -76h10M24 -76h10M44 -60h10" stroke-width="2"/>`,
+  gem: `<path d="M-10 -14L-6 -20H6L10 -14L0 0Z" fill="#8cc8f0"/><path d="M-10 -14H10M-4 -14L0 0M4 -14L0 0" stroke-width="1"/>`,
+  moneybag: `<path d="M-14 0Q-18 -16 -6 -22H6Q18 -16 14 0Z" fill="#f2d04c"/><path d="M-6 -22l-4 -6h20l-4 6" fill="#f2d04c"/><text x="0" y="-6" font-size="12" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">$</text>`,
+  patch2: `<rect x="-4" y="-4" width="8" height="8" fill="${GR}" stroke-width="1"/>`,
+  flask: `<path d="M-4 -30V-18L-14 0H14L4 -18V-30Z" fill="#fff"/><path d="M-6 -30H6" stroke-width="2.4"/><path d="M-10 -6L-7 -12H7L10 -6Z" fill="#9c9" stroke="none"/><circle cx="2" cy="-22" r="1.6" fill="none" stroke-width="1"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -885,8 +962,8 @@ const OS = {table: 1, desk: 1}; // 기본 크기 외
 function obj(name, mods, sc, txt, inHand) {
   let s = O[name];
   if (s === undefined) return "";
-  if (txt !== undefined && ["jar", "pump", "pack", "plate", "paint", "sack", "carton", "spray", "tin", "tube", "box", "bottle", "medpack", "pillbox", "detergent", "container", "memo", "jbox", "toolbox", "spray"].includes(name)) {
-    const LY = {jar: -8, pump: -10, plate: -3, paint: -9, pack: -9, sack: -10, carton: -8, spray: -8, tin: -5, tube: -4, box: -6, bottle: -10, detergent: -6, container: -5, memo: -14, medpack: -12, pillbox: -11, jbox: -4, toolbox: -5};
+  if (txt !== undefined && ["jar", "pump", "pack", "nplate", "paint", "sack", "carton", "spray", "tin", "tube", "box", "bottle", "medpack", "pillbox", "detergent", "container", "memo", "jbox", "toolbox", "spray"].includes(name)) {
+    const LY = {jar: -8, pump: -10, nplate: -3, paint: -9, pack: -9, sack: -10, carton: -8, spray: -8, tin: -5, tube: -4, box: -6, bottle: -10, detergent: -6, container: -5, memo: -14, medpack: -12, pillbox: -11, jbox: -4, toolbox: -5};
     s += tx(0, LY[name], txt, name === "memo" ? 8 : 6.5);
   }
   if (txt !== undefined && (name === "sign" || name === "board_" || name === "money" || name === "paper" || name === "calendar" || name === "card")) {
@@ -914,6 +991,9 @@ const BG = {
   city: `<path d="M0 112V80h22V62h18v50M40 92h20v20M66 112V70l14-10 14 10v42M100 112V86h24v26M280 112V84h22v28M308 112V60h20v52M334 112V76l16-12 16 12v36M372 112V90h28"/><path d="M28 70h4M28 80h4M72 76h4M84 76h4M314 70h8M314 82h8M342 84h4M354 84h4"/>`,
   park: `<path d="M30 112V84M30 84a18 18 0 1 1 0.1 0ZM370 112V80M370 80a20 20 0 1 1 0.1 0Z"/><path d="M60 100h40M64 100v12M96 100v12M60 94h40"/><path d="M0 112H400"/>`,
   beach: `<path d="M0 84q20 -6 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/><path d="M0 96q20 -6 40 0t40 0" /><circle cx="360" cy="24" r="12"/><path d="M30 112q2 -40 0 -70M30 42q-14 -4 -24 4M30 42q14 -4 24 4M30 42q-6 -10 -16 -12M30 42q6 -10 16 -12"/>`,
+  zoo: `<path d="M0 112V60M0 60h60v20H0M30 66v8M140 112V70h50v42M150 70v42M160 70v42M170 70v42M180 70v42M260 112V70h60v42M270 70v42M290 70v42M310 70v42"/>`,
+  underwater: `<path d="M0 10q20 -6 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/><path d="M30 112q-4 -20 4 -40M40 112q4 -20 -2 -30M360 112q-4 -24 4 -44M370 112q6 -20 0 -30"/>`,
+  desert: `<path d="M0 100Q100 80 200 96T400 92"/><circle cx="340" cy="26" r="12"/>`,
   sea: `<path d="M0 70q20 -6 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0M0 90q20 -6 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/><circle cx="360" cy="24" r="12"/>`,
   mount: `<path d="M0 90L50 40L80 64L120 30L170 90M230 90L290 36L320 60L360 30L400 80"/>`,
   temple: `<path d="M10 112V80H90V112M4 80L50 50L96 80M20 64L50 30L80 64M50 30V18M310 112V80H390V112M304 80L350 50L396 80M320 64L350 30L380 64M350 30V18"/>`,
@@ -961,9 +1041,10 @@ function parse(tok) {
   let txt; const ei = tok.indexOf("="); if (ei >= 0) { txt = tok.slice(ei + 1); tok = tok.slice(0, ei); }
   let held; const hi = tok.indexOf("+"); if (hi >= 0) { held = tok.slice(hi + 1); tok = tok.slice(0, hi); }
   let flip = false; if (tok.endsWith("!")) { flip = true; tok = tok.slice(0, -1); }
+  let rot = 0; const ri = tok.indexOf("^"); if (ri >= 0) { rot = +tok.slice(ri + 1).split("@")[0]; tok = tok.slice(0, ri) + (tok.indexOf("@", ri) >= 0 ? tok.slice(tok.indexOf("@", ri)) : ""); }
   let pos = []; const ai = tok.indexOf("@"); if (ai >= 0) { pos = tok.slice(ai + 1).split(","); tok = tok.slice(0, ai); }
   let tint; const [name, ...mods] = tok.split(".").map(x => { const i = x.indexOf("~"); if (i >= 0) { tint = x.slice(i + 1); return x.slice(0, i); } return x; });
-  return {tint, name, mods, held, txt, flip, x: pos[0] === undefined || pos[0] === "" ? 200 : +pos[0], lift: pos[1] === undefined || pos[1] === "" ? 0 : (isNaN(+pos[1]) ? (SURF[pos[1]] || 0) : +pos[1]), s: pos[2] ? +pos[2] : 1};
+  return {tint, rot, name, mods, held, txt, flip, x: pos[0] === undefined || pos[0] === "" ? 200 : +pos[0], lift: pos[1] === undefined || pos[1] === "" ? 0 : (isNaN(+pos[1]) ? (SURF[pos[1]] || 0) : +pos[1]), s: pos[2] ? +pos[2] : 1};
 }
 function render(spec) {
   const parts = String(spec || "").split(";"); const bg = (parts.shift() || "").trim();
@@ -981,7 +1062,7 @@ function render(spec) {
     else if (PEOPLE.has(p.name)) g = person(p.name, p.mods, p.held, p.txt, p.lift);
     else g = obj(p.name, p.mods, 1, p.txt);
     if (p.tint) { const c = TINT[p.tint] || p.tint; g = g.replace(/fill="(#ddd|#fff|#e8d9b8)"/g, `fill="${c}"`); }
-    const tr = `translate(${p.x} ${GY - p.lift})${p.s !== 1 ? ` scale(${p.s})` : ""}${p.flip ? " scale(-1 1)" : ""}`;
+    const tr = `translate(${p.x} ${GY - p.lift})${p.rot ? ` rotate(${p.rot})` : ""}${p.s !== 1 ? ` scale(${p.s})` : ""}${p.flip ? " scale(-1 1)" : ""}`;
     body += `<g transform="${tr}">${g}</g>`;
   }
   const back = BG[bg] !== undefined ? BG[bg] : "";
@@ -1001,7 +1082,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");
-      const nm = main.split("@")[0].replace(/!$/, "").replace(/~[a-z#0-9]*/g, ""); const [name, ...mods] = nm.split(".");
+      const nm = main.split("@")[0].replace(/\^-?[0-9]+/, "").replace(/!$/, "").replace(/~[a-z#0-9]*/g, ""); const [name, ...mods] = nm.split(".");
       if (["say", "think", "txt", "zzz"].includes(name)) continue;
       if (SC.people.includes(name)) { for (const m of mods) if (!MODS.has(m)) bad.push("mod:" + m); }
       else if (!SC.objects.includes(name)) bad.push(name);
