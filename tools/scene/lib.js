@@ -1282,6 +1282,10 @@ const O = {
   cobra: `<path d="M-30 0q10 -8 20 0t16 -2Q8 -10 4 -30" fill="none" stroke="#a0714a" stroke-width="6"/><path d="M4 -30Q-6 -34 -2 -44Q4 -50 10 -44Q14 -34 4 -30Z" fill="#a0714a"/><circle cx="2" cy="-42" r="1.2" fill="${K}"/><path d="M4 -48l2 -4" stroke="#e45b5b" stroke-width="1.2"/>`,
   python: `<path d="M-40 0q10 -10 20 0t20 0t20 0t20 0" fill="none" stroke="#cdb" stroke-width="10"/><path d="M-30 -2l4 -4M-10 -2l4 -4M10 -2l4 -4M30 -2l4 -4" stroke-width="1.4"/>`,
   flea: `<circle cx="0" cy="-3" r="2" fill="${K}"/>`,
+  logomat: `<rect x="-40" y="-8" width="80" height="8" rx="2" fill="#6aa8e8"/><rect x="-36" y="-7" width="72" height="6" fill="none" stroke="#fff" stroke-width="1"/><circle cx="-24" cy="-4" r="2.4" fill="#fff" stroke="none"/><path d="M-16 -4h40" stroke="#fff" stroke-width="2"/>`,
+  matfront: `<rect x="-34" y="-50" width="68" height="44" rx="4" fill="#6aa8e8"/><rect x="-30" y="-46" width="60" height="36" rx="2" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="0" cy="-34" r="8" fill="#fff" stroke="none"/><path d="M-4 -34l4 -5 4 5-4 5Z" fill="#e45b5b" stroke="none"/>`,
+  design: `<rect x="-26" y="-44" width="52" height="34" rx="2"/><rect x="-22" y="-40" width="44" height="26" fill="#fff" stroke-width="1"/><rect x="-16" y="-36" width="32" height="18" rx="2" fill="#6aa8e8" stroke-width="1"/><circle cx="0" cy="-27" r="4" fill="#fff" stroke="none"/><path d="M-4 -10L-6 0H6L4 -10" fill="#fff"/>`,
+  rubberfloor: `<rect x="-60" y="-6" width="120" height="6" fill="#555"/><path d="M-50 -3h10M-30 -3h10M-10 -3h10M10 -3h10M30 -3h10" stroke="#888" stroke-width="1.4"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
