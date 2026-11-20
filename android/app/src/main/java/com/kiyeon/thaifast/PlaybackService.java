@@ -67,6 +67,9 @@ public class PlaybackService extends Service {
     MediaPlayer mp;
     TextToSpeech tts;
     boolean ttsReady;
+    boolean koOk = true; // 이 기기에 한국어 음성이 있는지
+    String ttsPending;
+    int ttsSeq;   // 지금 읽는 중인 기기 음성 (응답이 없어도 멈추지 않게)
     int ttsWait;
     PowerManager.WakeLock wl;
     AudioManager am;
@@ -93,7 +96,10 @@ public class PlaybackService extends Service {
         wl.setReferenceCounted(false);
         tts = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
-                tts.setLanguage(Locale.KOREAN);
+                int lr = tts.setLanguage(Locale.KOREAN);
+                koOk = lr >= TextToSpeech.LANG_AVAILABLE;
+                JSObject td = new JSObject(); td.put("ko", koOk);
+                PlayerPlugin.emit("tts", td);
                 tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
                     @Override public void onStart(String id) { }
                     @Override public void onDone(String id) { h.post(() -> ttsDone(id)); }
@@ -188,9 +194,8 @@ public class PlaybackService extends Service {
         if (g != gen || cfg == null) return;
         Item it = cfg.items.get(idx);
         if (!ttsReady && tries < 10) { h.postDelayed(() -> speakKo(g, tries + 1), 300); return; }
-        if (ttsReady && it.ko != null && !it.ko.isEmpty()) {
-            tts.setSpeechRate(Math.min(cfg.speed, 1.5f));
-            tts.speak(it.ko, TextToSpeech.QUEUE_FLUSH, new Bundle(), "k" + g);
+        if (ttsReady && koOk && it.ko != null && !it.ko.isEmpty()) {
+            sayKo(it.ko, Math.min(cfg.speed, 1.5f), "k" + g);
         } else afterAsk(g);
     }
 
@@ -272,16 +277,31 @@ public class PlaybackService extends Service {
             h.postDelayed(() -> afterTh(g), 300);
             return;
         }
-        if (wantKo && ttsReady) {
-            tts.setSpeechRate(cfg.speed);
-            tts.speak(it.ko, TextToSpeech.QUEUE_FLUSH, new Bundle(), "g" + g);
+        if (wantKo && ttsReady && koOk) {
+            sayKo(it.ko, cfg.speed, "g" + g);
         } else {
             afterKo("g" + g);
         }
     }
 
+    /** 기기 음성으로 한국어 읽기 — 한국어 음성이 없거나 응답이 없어도 다음으로 넘어가요 */
+    void sayKo(String text, float rate, final String base) {
+        final String id = base + "#" + (++ttsSeq);
+        ttsPending = id;
+        int r = TextToSpeech.ERROR;
+        if (koOk) {
+            try { tts.setSpeechRate(rate); r = tts.speak(text, TextToSpeech.QUEUE_FLUSH, new Bundle(), id); } catch (Exception e) { r = TextToSpeech.ERROR; }
+        }
+        if (r != TextToSpeech.SUCCESS) { h.post(() -> ttsDone(id)); return; }
+        long limit = (long) ((1500 + 260L * text.length()) / Math.max(0.5f, rate)) + 1500;
+        h.postDelayed(() -> ttsDone(id), limit);
+    }
+
     /** 기기 음성 끝: g숫자 = 단어 뜻, x숫자_반복 = 예문 한국어 */
-    void ttsDone(String id) {
+    void ttsDone(String uid) {
+        if (uid == null || !uid.equals(ttsPending)) return; // 이미 처리했거나 지난 것
+        ttsPending = null;
+        String id = uid.indexOf('#') >= 0 ? uid.substring(0, uid.indexOf('#')) : uid;
         if (id != null && id.startsWith("k")) {
             try { afterAsk(Integer.parseInt(id.substring(1))); } catch (Exception e) { }
             return;
@@ -327,14 +347,13 @@ public class PlaybackService extends Service {
                     PlayerPlugin.emit("ex", d2);
                     float ks = Math.min(cfg.speed, 1.5f);
                     playFile(g, "public/" + it.exk, ks, 300, () -> playEx(g, rep + 1));
-                } else if (cfg.exPlay == 2 && ttsReady && it.exkt != null && !it.exkt.isEmpty()) {
+                } else if (cfg.exPlay == 2 && ttsReady && koOk && it.exkt != null && !it.exkt.isEmpty()) {
                     // 한국어 예문 녹음이 없으면 기기 음성으로 읽어요
                     JSObject d2 = new JSObject(); d2.put("i", idx); d2.put("part", "ko");
                     PlayerPlugin.emit("ex", d2);
                     h.postDelayed(() -> {
                         if (g != gen || cfg == null) return;
-                        tts.setSpeechRate(Math.min(cfg.speed, 1.5f));
-                        tts.speak(it.exkt, TextToSpeech.QUEUE_FLUSH, new Bundle(), "x" + g + "_" + rep);
+                        sayKo(it.exkt, Math.min(cfg.speed, 1.5f), "x" + g + "_" + rep);
                     }, (long) (250 / cfg.speed));
                 } else h.postDelayed(() -> playEx(g, rep + 1), (long) (100 / cfg.speed));
             });
