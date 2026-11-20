@@ -1,0 +1,100 @@
+รายงานข่าว	living; tvstand@200; tv@200,20,1.2; man.suit@200,26,.4; txt@200,60=NEWS
+ข้ออ้าง	room; man.angry@200; say@260,96=제 말이 맞아요
+เรียกร้อง	city; worker.angry@140+placard; worker.angry@200; worker.angry@260; money@320,10
+ข้อเรียกร้อง	office; paper@200,0,1.6=요구; worker@320
+คัดค้านอย่างหนัก	city; man.angry@140+placard; woman.angry@200+placard; cross@280,70
+ยินยอม	room; man.happy@140; woman.happy@200; check@260,80; boy.happy@320
+อนุมัติให้	office; paper@200,0,1.6; seal@250,0; boss.happy@320
+ปฏิเสธไม่รับ	office; paper@200,0,1.6; cross@200,40; boss.angry@320
+การพิจารณา	office; paper@200,0,1.6; man.think@320; magnifier@260,20
+การประเมิน	class; testp@200,10,1.4; check@200,40; teacher@320
+การวิเคราะห์	office; graph@200,20,1.4; magnifier@270,30,.8
+การวิจัย	farm; rice@200,0,1.2; microscope@280,0,1; scientist@340
+การสำรวจ	office; paper@200,0,1.4=설문; man@120; woman@300
+ผลการสำรวจ	office; pie@200,10,1.4; txt@200,104=결과
+ตัวเลขสถิติ	office; graph@200,20,1.4; txt@200,104=통계
+อัตราสูง	office; graph@200,20,1.4; arrowu@270,70
+ส่วนมาก	city; man@120; man@160; man@200; man@240; check@300,70
+ส่วนน้อย	city; man@180; man@220; txt@200,104=일부
+ทั่วประเทศ	field; thaimap@200,0,1.6; sparkle@140,60; sparkle@260,60
+ระดับท้องถิ่น	field; house@140,0,.8; house@260,0,.8; govt@200,0,.6
+ระดับโลก	space; earth@200,10,1.6; star@300,90; man.happy@100
+ไม่เป็นทางการ	office; man.happy@170; woman.happy@230; cafe2@330,0,.5
+ส่วนบุคคล	room; diary@200,0,1.6; padlock@240,20; man@320
+เอกชน	office; tower@200,0,1; man.suit@330
+ภาครัฐ	city; govt@200,0,1; farmer.happy@330
+หน่วยงาน	office; govt@200,0,1; man@330
+องค์กรกลุ่ม	office; table@200; man.sit@140,24; woman.sit@200,24; man.sit@260,24; chair@140; chair@200; chair@260
+คณะกรรมการ	office; table@200; man.sit.suit@150,24; man.sit.suit@250,24; chair@150; chair@250
+ประเทศสมาชิก	city; flag@120,0,.8; flagkr@200,0,.8; flagjp@280,0,.8
+คณะผู้แทน	office; flagkr@200,0,1; man.suit@140; man.suit@260
+การประชุมสุดยอด	city; table@200; president@140; president@260; flag@200,50,.6
+ข้อตกลงร่วม	office; paper@200,0,1.4; man.suit.happy@140; man.suit.happy@280!
+คำประกาศ	city; paper@200,0,1.6=선언; flag@300,0,1
+แถลงการณ์	city; govt@200,0,1; man.suit@330+paper
+ร่างกฎหมาย	city; govt@200,0,1; paper@300,0,1=법안
+ร่างงบประมาณ	office; paper@200,0,1.6=예산; calc@260,0,1
+รับฟังความคิดเห็น	city; man.happy@200; man@120; woman@300
+การรับฟังความเห็น	city; man@140; woman@200; man@260; govt@330,0,.5
+รณรงค์	school; sortbin@200,0,1.4; student.happy@120+placard; student.happy@300
+ขบวนการ	city; man.up@120; woman.up@170; man.up@220; flag@300,0,1
+ประชาสัมพันธ์	office; megaphone@200,10,1.4; man.happy@320
+เผยแพร่	room; news@200,10,1.4; arrowr@250,30; arrowr@280,40
+แพร่หลาย	city; phone@170,0,1.2; phone@230,0,1.2; man@120; woman@300
+แพร่กระจาย	city; chat@170,60; chat@230,70; man@120; woman@300
+ได้รับผลกระทบ	farm; dryland@200,0,1.6; sun@330,80; farmer.sad@200,6
+ได้รับความเสียหาย	city; house@200,0,1.2; ecrack@200,40,.4; man.sad@330
+ฟื้นฟู	street; house@200,0,1.2; worker.happy@330+hammer
+สร้างขึ้นใหม่	street; house@200,0,1.2; worker.happy@330+hammer; sparkle@200,80
+ผู้ประสบภัย	street; flood@200,0,1; man.sad@200,10; woman.sad@260,10
+ช่วยเหลือผู้ประสบภัย	street; box@200,0,1.2; soldier.happy.give@140+water; man@300
+อพยพหนี	street; man.run@140+bag; woman.run@200; arrowr@300,60; flood@200,0,1
+สัญญาณเตือนภัย	city; siren@200,60,1.4; ring2@200,80,1.4; man.wow@330
+ภาวะฉุกเฉิน	hosp; siren@200,60,1.2; ambulance@300,0,.8
+ภัยพิบัติ	city; storm@200,60,1.2; house^12@300,0,.8
+ภัยธรรมชาติ	field; volcano@140,0,.8; storm@260,60,.8; flood@200,0,1
+การอนุรักษ์สิ่งแวดล้อม	park; tree@200,0,1.4; earth@300,10,.8; heart@200,96
+มลพิษสิ่งแวดล้อม	city; factory@200,0,1; dust@200,80,2; river@200,0,1
+มลพิษทางอากาศ	city; dust@200,60,2.4; car@200,0,1; man.smask@330
+น้ำเสีย	river; wastepipe@200,0,1.4; factory@60,0,.6
+ดินเสื่อมโทรม	farm; dryland@200,0,1.6; cross@200,40
+มลพิษทางเสียง	street; ring2@150,60,1.4; car@200,0,1; man.cover@330
+ควันพิษ	road; car@200,0,1.4; dust@120,30,2
+ฝุ่นพีเอ็มสองจุดห้า	city; dust@200,60,2.4; txt@200,104=PM2.5; man.smask@330
+บ่อขยะ	field; landfill@200,0,1.2
+การเผาขยะ	field; bin@200,0,1.4; fire@200,30,1; dust@200,70,1.6
+ขยะพลาสติก	beach; pbottle@170,0,1.2; pbag@230,0,1; wave@200,10,1.4
+ของใช้ครั้งเดียวทิ้ง	room; pcup@170,0,1.2; spoon@210,0; straw@240,0; cross@200,50
+นำกลับมาใช้ใหม่	room; bottle@170,0,1.2; recycle@230,30,1
+การคัดแยกขยะ	street; sortbin@200,0,1.6; man.happy@320
+การประหยัดพลังงาน	room; switch@200,46,1.4; bulb@140,40; arrowd@260,60
+เป็นมิตรต่อสิ่งแวดล้อม	shop; ecobag@200,0,1.6; earth@280,10,.8; heart@280,50
+การปล่อยคาร์บอน	city; factory@200,0,1; co2@200,90,1; car@320,0,.8
+ปรากฏการณ์เรือนกระจก	space; earth@200,20,1.6; sun@60,60; arrowd@200,96; fire@200,40,.4
+ระดับน้ำทะเลสูงขึ้น	beach; wave@200,20,2; arrowu@300,60; house@120,0,.6
+ธารน้ำแข็ง	snow; iceberg@200,0,1.4; water_drop@260,10
+การกลายเป็นทะเลทราย	desert; dryland@200,0,1.6; sun@330,72; tree@100,0,.6
+การรักษา	hosp; doctor.happy@160; man.sick@260; pills@200,90,.6
+การรักษาป่า	mount; forest@200,0,1.2; shield@300,30,1
+ปลูกต้นไม้	park; sprout@200,0,1.6; man.floor.happy@280+trowel
+ฟื้นฟูป่า	mount; sprout@140,0; sprout@200,0; sprout@260,0; man.happy@330
+การตัดไม้ผิดกฎหมาย	mount; stump@160,0,1; stump@240,0,1; saw@300,0,1; cross@200,80
+ไฟป่า	mount; forest@200,0,1.2; fire@200,40,1.4
+การอนุรักษ์สัตว์ป่า	zoo; elephant@200,0,1; shield@300,30,1; heart@200,96
+การทำลายระบบนิเวศ	sea; coral@200,0,1.2; pbottle@240,20; cross@280,60
+ทรัพยากรน้ำ	river; river@200,0,1; lake@200,0,1; water_drop@300,60
+น้ำบาดาล	field; well@200,0,1.2; water_drop@200,30
+น้ำฝน	rain; rainbarrel@200,0,1.4; plant@280,0,1
+น้ำดื่ม	room; water@200,0,1.6; glass@250,0,1; check@200,50
+กรองน้ำ	kitchen; waterp@200,0,1.4; water_drop@240,40
+ประหยัดน้ำ	bath; faucet@200,40,1.4; water_drop@200,20; check@260,60
+ภาวะขาดแคลนน้ำ	farm; dryland@200,0,1.4; faucet@200,40,1; cross@240,60
+แผงพลังงานแสงอาทิตย์	street; house@200,0,1.2; solar@200,52,1; sun@330,80
+กังหันลม	beach; windmill@170,0,1; windmill@250,0,.9
+พลังน้ำ	river; dam@200,0,1.2; bulb@300,40,1
+รถยนต์	road; car@200,0,1.6
+รถยนต์ไฟฟ้า	street; evcar@200,0,1.4; socket@280,30
+ระบบขนส่งสาธารณะ	city; bus@140,0,.8; skytrain@280,0,.6; man@340
+ทางจักรยาน	road; bikelane@200,0,1; bike@200,0,1
+ยั่งยืน	park; tree@200,0,1.2; earth@300,10,.8; arrowr@250,60; sprout@140,0
+การพัฒนาที่ยั่งยืน	city; tower@140,0,.8; tree@200,0; solar@260,0,.6; windmill@330,0,.6
