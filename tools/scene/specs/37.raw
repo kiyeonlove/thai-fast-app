@@ -1,0 +1,99 @@
+park; pond@200,0,1.6; p@200,4:M-20 -4q10 -4 20 0; mold@200,4,.6
+room; cactus@200,0,1.4; sun@340,72
+mount; pine@170,0,1.2; pine@230,0,1.4; mountain@60,0,.6
+farm; bananatree@200,0,1.2; house@320,0,.8
+farm; mangotree@200,0,1.4
+temple; bodhi@200,0,1.2; temple@330,0,.6
+farm; tree@200,0,1.6; house@330,0,.6
+market; durian@160,0; mango@200,0; pineapple@240,0; coconut@280,0
+park; tree@200,0,1.4; shears@260,0,1.2; man.happy@330
+park; flower@140,0,1.4; flower@200,0,1.6; flower@260,0,1.4; sun@340,72
+farm; mangotree@200,0,1.4; sparkle@200,80
+park; leaf@170,0,1.6; leaf@210,4,1.4; leaf@250,0,1.6; house@60,0,.6
+park; stump@200,0,1.6; man.sit.happy@200,16
+park; bark@200,0,1.2
+park; flower@200,0,2; bee@240,40,1.2; dust@220,40
+park; rose@200,0,2; smell@200,40; woman.happy.love@320
+farm; plant@200,0,1.4; sack@120,0,1=비료
+farm; seeds@200,10,2; farmer.happy@300
+farm; seedling@170,0,1.6; seedling@230,0,1.6; man.happy@320
+farm; riceplant@140,0,1.4; riceplant@200,0,1.4; riceplant@260,0,1.4
+farm; corn@160,0,1.6; corn@200,0,1.6; corn@240,0,1.6
+farm; cassava@200,0,1.8
+farm; rubbertree@200,0,1.2; man.happy@320
+farm; mangotree@140,0,1; mangotree@260,0,1; basket@200,0
+park; flower@140,0; leaf@200,0; snowman@260,0,.6; arrowr@200,60
+farm; dryland@200,0,1.6; sun@340,72,1.4
+rain; man.hold@200+umbrella
+rain; raincloud@200,90,1.4; puddle@200,0,1.6
+rain; lightning@200,70,1.4; txt@260,90=우르릉
+sky; hail@170,60,1.4; hail@230,40,1.4; car@200,0,1.2
+snow; man.pad.winter.happy.up@200
+snow; grass@200,0,1.6; sparkle@200,20
+field; tornado@200,0,1.2; house@330,0,.6
+mount; landslide@200,0,1.4
+beach; tsunami@200,0,1.2; man.run.wow@340
+farm; dryland@200,0,1.6; sun@340,72,1.4; farmer.sad@120
+field; thermo@200,0,1.8; txt@260,70=30℃
+room; water_drop@170,60; water_drop@230,70; man.sweat@320
+sky; sun@200,60,1.6; man.happy.up@320
+park; sun@200,70,1.4; man.walk.happy@320
+sky; cloud~gray@140,70,1.4; cloud~gray@260,80,1.4; man.flat@340
+rain; man.hold@200+umbrella; puddle@200,0,1.4
+park; wind@200,60,1.6; kite@300,70; boy.happy@120
+beach; wave@200,0,1.6; car@200,30,.6; palm@320,0,.8
+river; table@200; dish@200,39; river@200,0,1
+river; lake@200,0,1.4; mountain@200,10,.8
+field; swamp@200,0,1.4; cross@200,40
+river; canal@200,0,1.4; lboat@200,8,.8
+mount; mountain@200,0,1.4; man.up.happy@205,58,.5
+mount; mountain@200,0,1.4; house@200,0,.5
+mount; cliff@180,0,1; sign@300,0,1.2=!; man@340
+river; rock@200,0,1.6; man.sit.happy@200,18
+road; gravel@200,0,2; man.walk@320
+rain; sneaker@200,0,1.8; mud@200,0,1.2
+park; boy.floor.happy@200; ant@240,0
+sea; sun@200,8,1.6; p@200,8:M-200 0H200
+sea; ship@200,8,.6; p@200,8:M-200 0H200
+sky; cloud@200,70,1.4; sun@330,80; check@120,70
+rest; soup@200,0,1.6; man.flat@320; txt@330,104=약간 짜요
+room; man.shrug@200; cross@260,80
+room; man.shrug@200; cross@260,80
+rain; raincloud@200,90,1.4; check@300,70
+room; man.think@200; qmark@200,104
+room; man.happy.point@200; check@260,80
+room; man.happy.up@200; check@260,80
+room; coin@200,10,1.6=100; man.sad@320
+room; clock@200,60,1.4=5분; man@320
+market; mango@180,0; durian@220,0; heart@200,60; woman.happy@320
+shop; shop@200,0,1.2; clock@200,64,.8=9:00
+city; man@140; woman@200; man@260; flag@330,0,.8
+room; cake@200,0,1.4; p@200,0:M-12 -10L0 0; man.happy@320
+room; man.happy@140; woman.happy@220; p@180,40:M-10 0h20
+room; boy.happy@200; shirt@200,24,.8
+room; man.happy@200; heart@260,90
+kitchen; pot@200,0,1.4; man.happy@320
+room; vase@200,0,1.4; p@200,0:M-10 -4l20 -4; man.happy@320
+street; man.wow@160; woman.wow@240!
+room; phone@200,0,1.4; ring2@200,30; man.wow@320
+class; testp@200,10,1.6; check@200,40; man.happy.up@320
+room; man.sad@200; think@270,96=heart
+shop; shop@200,0,1.2; check@200,80; grandpa.happy@330
+shop; shop@200,0,1.2; check@200,80; grandpa.happy@330
+road; man.walk@200; arrowr@270,60
+road; man.walk@200; arrowr@270,60; tree@100,0
+room; clock@200,60,1.4; man.wave@320; say@360,96=잠깐만요
+room; clock@200,60,1.4; man.happy@320
+room; man.run@200; say@260,96=지금!
+hosp; man.run.sweat@200; hospital@330,0,.6
+room; man.wave@200; say@260,96=이따가
+room; ticket@200,10,1.6; calendar@120,40,1; man.happy@320
+street; bus@100,0,1; man.run.sweat@300
+station; clock@200,60,1.4; man.flat@320
+cafe; man.happy@200+mug; music@260,80
+room; water@180,0,1.4; water@210,0,1.4; txt@200,60=2L
+room; pills@200,10,1.6; txt@200,60=1
+car; car@200,0,1.4; man.happy@120; woman.happy@300; arrowr@200,60
+road; car@140,0,1; car@200,0,1; car@260,0,1
+stage; man.up.happy@140; woman.up.happy@200; boy.up.happy@260
+room; man.happy@200; check@260,80; txt@200,104=혼자서
