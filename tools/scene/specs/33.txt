@@ -1,0 +1,100 @@
+รองเท้าส้นสูง	shop; heels@200,0,2.2; woman.happy@320
+กำไล	shop; bracelet@200,10,2; sparkle@170,40; woman.wow@320
+มัด	market; veg@190,0,1.4; veg@210,0,1.4; rope@200,10,.8
+มัดผม	kitchen; woman.happy@200; hairtie@260,60,1.2; pot@120,0
+ขนาด	shop; tshirt@170,0,1.2; tshirt@230,0,1.8; arrowr@200,50
+หลวมไป	room; tshirt@200,0,2.4; boy.sad@320,0,.8
+คับไป	room; pants@200,0,1.8; man.sweat@320
+เข้ากัน	shop; shirt@170,0,1.4; pants@230,0,1.4; check@200,60
+ทันสมัย	city; woman.happy.hips@200; sparkle@260,80
+ยุค	city; phone@150,0,1.2; man@200+phone; woman@260+phone
+ตกยุค	room; dress@200,0,1.8; cross@200,50; woman.shrug@320
+เนื้อผ้า	shop; cloth@200,0,1.8; sparkle@200,40; woman.happy@320
+ผ้าฝ้าย	shop; tshirt~white@200,0,2; txt@200,60=면
+ผ้าไหม	shop; cloth~purple@200,0,1.8; sparkle@200,40; woman.happy@320
+ลวดลาย	shop; dress@200,0,2; patch2@196,16; patch2@206,24; woman.happy@320
+ลายดอก	shop; dress@200,0,2; flower@200,10,.6; woman.happy@320
+ลายสก๊อต	shop; shirt@200,0,2; p@200,0:M-6 -20v20M2 -20v20M-10 -12h20; man.happy@320
+เมนู	rest; menu@200,0,1.6; man.think@320
+รายการ	living; tvstand@200; tv@200,20,1.2; man.sit.happy@320,24; chair@320
+รายการอาหาร	rest; menu@200,0,1.6; woman.point@320!
+รับออร์เดอร์	rest; menu@200,0,1.2; man.vest.happy@300+notebook; woman.sit@160,24; chair@160
+บิล	rest; bill@200,0,1.6; man.wave@320
+เช็กบิลด้วย	rest; bill@200,0,1.6; man.wave@320; say@360,96=계산이요
+ห่อกลับบ้าน	rest; takeaway@200,0,1.6; man.happy@320
+กินที่นี่	rest; table@200; dish@200,39; man.sit.happy@200,24; chair@200
+ไม่เผ็ด	rest; chili@200,0,1.6; cross@200,30; man.wave@320
+เผ็ดนิดหน่อย	rest; chili@200,0,1.2; check@200,30; man.happy@320
+ไม่ใส่น้ำแข็ง	cafe; glass@200,0,1.6; ice@200,30; cross@200,50; man.wave@320
+หวานน้อย	cafe; coffee@200,0,1.6; sugar@250,0,1; arrowd@250,40
+ไม่ใส่ผักชี	rest; noodle@200,0,1.6; herb@250,0,1; cross@250,30
+เพิ่มอีก	rest; plate@200,0,1.6; txt@200,60=+1; man.happy@320
+อีกจาน	rest; plate@200,0,1.6; man.happy.wave@320; say@360,96=한 접시 더!
+อิ่มอร่อย	rest; plate@200,0,1.6; man.happy.hips@320
+อิ่มมาก	rest; plate@200,0,1.6; man.sick.hips@320
+หิวจะตาย	room; man.sad.sweat@200; think@270,96=rice
+ไม่อยากอาหาร	room; plate@200,0,1.6; boy.flat@320; cross@250,80
+ความอยากอาหาร	room; plate@200,0,1.6; man.happy@320; heart@320,104
+สั่งอาหารมาส่ง	room; phone@200,0,1.4; moto@300,0,1; man.happy@120
+บุฟเฟต์	rest; table@200,0,1.6; dish@160,52; dish@200,52; dish@240,52; man.happy@340
+อาหารริมทาง	street; stall@200,0,1.2; skewer@200,22; man.happy@330
+ริมถนน	street; stall@200,0,1.2; man.happy@330
+ข้าวราดแกง	rest; rice@200,0,1.4; curry@200,14,.8; man.happy@320
+ผัดกะเพราหมู	rest; rice@200,0,1.4; herb@210,14,.6; fegg@200,20,.5; man.happy@320
+ไข่ดาว	rest; fegg@200,0,2; man.happy@320
+ไข่เจียว	rest; plate@200,0,1.6; pg@200,4:M-10 0Q0 -10 10 0Z; man.happy@320
+ไข่ต้ม	rest; egg@180,0,1.4; egg@210,0,1.4; sun@340,72
+ไก่ทอด	rest; chicken@200,0,1.6; man.happy@320
+ไก่ย่าง	rest; chicken@180,0,1.4; somtam@240,0,1; man.happy@330
+ข้าวมันไก่	rest; rice@200,0,1.4; chicken@200,16,.8; man.happy@320
+ข้าวขาหมู	rest; rice@200,0,1.4; meat@200,16,.8; egg@230,0; man.happy@320
+แกงมัสมั่น	rest; curry~orange@200,0,1.6; woman.happy@320
+แกงเผ็ด	rest; curry~red@200,0,1.6; meat@240,0,.6; man.happy@320
+แกงกะหรี่	rest; curry~yellow@200,0,1.6; woman.happy@320
+ต้มข่าไก่	rest; soup~white@200,0,1.6; chicken@250,0,.6; man.happy@320
+ยำวุ้นเส้น	rest; dish@200,0,1.6; shrimp@240,0,.6; woman.happy@320
+ลาบ	rest; dish@200,0,1.6; sticky@250,0,1; man.happy@320
+น้ำตกหมู	rest; dish@200,0,1.6; sticky@250,0,1; man.happy.love@320
+สุกี้	rest; pot@200,0,1.4; veg@160,0; meat@240,0; man.happy@120; woman.happy@320
+หมูกระทะ	rest; grill@200,0,1.2; meat@200,8,.6; man.happy@120; woman.happy@320
+ขนมจีน	rest; noodle@200,0,1.6; curry@250,0,.8; woman.happy@320
+โรตี	street; roti@200,0,1.8; banana@250,0; man.happy@320
+ปาท่องโก๋	street; patongko@180,0,1.4; soymilk@230,0,1.4; sun@340,72
+น้ำเต้าหู้	street; soymilk@200,0,1.8; sun@340,72; grandpa.happy@320
+น้ำมะพร้าว	beach; coconut@200,0,1.8; straw@200,22; man.happy@320
+อ้อย	farm; sugarcane@200,0,1.2; farmer.happy@300
+น้ำอ้อย	street; sugarcane@170,0,.8; glass@230,0,1.6; man.happy@320
+แตงโมปั่น	cafe; smoothie~red@200,0,1.8; watermelon@140,0; woman.happy@320
+ไข่มุก	shop; pearls@200,20,1.6; woman.wow@320
+ชาไข่มุก	cafe; bubbletea@200,0,1.8; girl.happy.love@320
+ชาดำ	cafe; tea~brown@200,0,1.6; sugar@250,0,1; cross@250,40
+น้ำเปล่า	rest; water@180,0,1.4; water@210,0,1.4; man.wave@320
+ก้อน	rest; glass@200,0,1.6; ice@194,30; ice@204,36; ice@200,44; txt@250,60=3
+เบียร์	rest; beer@200,0,1.8; ice@196,30; man.happy@320
+ไวน์	rest; wglass@200,0,1.6; wine@140,0; woman.happy@320
+ของหวาน	rest; cake@170,0,1.2; icecream@230,0,1.2; woman.happy.love@320
+ไอติมกะทิ	street; icecream@200,0,1.8; peanut@250,0,.8; boy.happy@320
+พุดดิ้ง	room; pudding~brown@200,0,1.8; girl.happy@320
+น้ำแข็งใส	cafe; bingsu@200,0,1.8; sun@340,72; man.happy@320
+โดนัท	shop; donut@170,0,1.2; donut@200,0,1.2; donut@230,0,1.2; txt@200,60=6
+แซนด์วิช	school; sandwich@200,0,1.8; boy.happy@320+backpack
+พิซซ่า	room; pizza@200,0,1.8; phone@120,0,1; man.happy@320
+แฮมเบอร์เกอร์	rest; burger@200,0,1.8; boy.happy@320
+เฟรนช์ฟราย	rest; fries@200,0,1.8; ketchup@250,0,1; girl.happy@320
+สปาเก็ตตี้	kitchen; spaghetti@200,0,1.8; woman.happy@320
+สเต๊ก	rest; steak@200,0,1.8; man.happy@320
+สลัด	rest; salad@200,0,1.8; bscale@120,0,.8; woman.happy@320
+ซุป	rest; soup~yellow@200,0,1.6; corn@250,0,1; steam@200,30
+รสเค็ม	rest; jar@200,0,1.6=소금; kidney@280,20,1; cross@280,40
+รสหวาน	room; candy@200,0,1.8; boy.happy.love@320
+รสเปรี้ยว	rest; lime@200,10,1.8; man.wow.sweat@320
+รสเผ็ด	rest; chili@200,10,1.8; man.happy@320
+รสขม	hosp; tea~brown@200,0,1.6; man.sick.sweat@320
+ชูรส	kitchen; pot@200,0,1.4; sugar@250,0,1; woman.happy@320
+ผงชูรส	rest; jar@200,0,1.6=MSG; cross@200,50; man@320
+ซอส	rest; sauce@200,0,1.6; man.happy.love@320
+ซอสพริก	rest; chicken@180,0,1.2; ketchup~orange@230,0,1.2
+ซอสมะเขือเทศ	rest; fries@180,0,1.2; ketchup@230,0,1.4
+มายองเนส	kitchen; salad@180,0,1.2; mayo@230,0,1.4
+แยม	kitchen; bread@180,0,1.2; jam@230,0,1.4; woman.happy@320
+น้ำผึ้งแท้	mount; honey@200,0,1.8; bee@250,40; mountain@60,0,.6

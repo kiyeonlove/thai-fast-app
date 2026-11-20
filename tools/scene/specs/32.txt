@@ -1,0 +1,100 @@
+หลังเท้า	room; foot@200,0,2; mosquito@230,60; bite@196,22,1.2
+ร่างกาย	room; man.happy@200; water@280,0,1.4
+ไขมันในร่างกาย	gym; bscale@200,0,1.6; man@200,8; txt@270,90=체지방
+ท่าทาง	room; chair@200; man.sit.happy@200,24; check@270,80
+รูปร่าง	gym; man.sport.happy.hips@200; sparkle@270,80
+รูปหน้า	room; woman.happy@160,-60,1.8; girl.happy@270,-58,2.4
+น้ำลาย	street; man.angry@200; cross@270,70
+น้ำมูกไหล	room; man.sick@200; tissue@280,0,1.2; hl@200,68,.6
+ปัสสาวะ	hosp; doctor.happy@200; cup@300,0,1.4
+อุจจาระ	hosp; doctor.happy@200; cup@300,0,1.4
+ผายลม	street; man.cover.sweat@200; woman.cover@300; stink@250,50
+เรอ	rest; plate@200,0,1.6; man.happy.hips@320; txt@330,104=꺼억
+เป็นหวัด	room; boy.sick@200; tissue@280,0,1.2
+มีไข้	bedroom; bed@200,0,1.1; boy.lie.sick@200,32; thermo@300,0,1.2
+เจ็บคอ	room; man.sick@200; hl@200,56,.8
+คัดจมูก	room; man.sick@200; hl@200,70,.6; tissue@280,0
+เวียนหัว	room; man.sick.sweat@200; p@200,96:M-12 0q6 -6 12 0t12 0
+คลื่นไส้	sea; boat^-8@200,10,1.2; man.sick@200,26,.6
+พิษ	park; snake@200,0,1.4; txt@260,40=독!; man.wow@340
+อาหารเป็นพิษ	rest; dish@200,0,1.4; stink@200,30; man.sick.sweat@320
+ท้องไส้ไม่ดี	room; man.sick.hips@200; hl@200,40,1
+ท้องผูก	bath; toilet@200,0,1.4; man.sweat@320; veg@100,0
+อาหารไม่ย่อย	rest; plate@200,0,1.6; man.sick.hips@320
+ปวดฟันมาก	room; man.sick.cover@200,-60,1.8; tooth@300,10,1
+ฟันผุ	room; candy@140,0,1.2; tooth@200,10,1.6; mold@200,24,.6
+ปวดหลัง	office; chair@200; man.sit.sad@200,24; hl@200,30,1
+ปวดกล้ามเนื้อ	gym; man.sport.sad@200; hl@186,52,.7
+ข้อเท้าแพลง	gym; ball@120,0; man.sad@200; hl@193,4,.8; bandage@193,4,.4
+กระดูกหัก	park; tree@140,0,1.2; boy.cry@220; bandage@230,40,.6
+แผลไฟไหม้	kitchen; kettle@140,0,1.2; hand@220,0,1.6; hl@220,30,1; water_drop@220,30,.6
+โดน	room; boy.sad@200; woman.angry.point@300
+โดนมีดบาด	kitchen; board@200,0,1.4; knife@210,6; man.sad@300; hl@316,27,.7
+ยุงกัด	park; mosquito@200,40,1.4; man.sad@300; bite@296,12; bite@304,8
+ต่อย	gym; boxer.happy@170+bglove; boxer@240!
+ผึ้งต่อย	park; bee@200,40,1.6; hand@280,0,1.4; hl@280,24,.8
+ลมพิษ	rest; shrimp@140,0,1.2; man.sad@240; dot@232,48; dot@244,52; dot@236,38
+สิว	room; boy.sad@200,-58,2.4; dot@192,60; dot@208,56; dot@200,82
+ตุ่ม	room; man.sad@200; dot@183,46,1.4; hl@183,46,.6
+ตุ่มพอง	mount; foot@200,0,2; hl@204,4,.7; dot@204,4,2
+รังแค	room; man.sad@200,-60,1.8; dust@200,100; dust@180,92
+นอนไม่หลับเรื้อรัง	bedroom; bed@200,0,1.1; man.lie@200,34; moon@340,80; clock@100,70,1=3:00
+โลหิตจาง	room; woman.sick.sweat@200; hl@200,72,.8
+ไข้เลือดออก	hosp; mosquito@200,60,1.6; man.sick.sweat@320
+โควิด	hosp; man.smask.sick@200; germ@280,60
+ไข้หวัดใหญ่	hosp; man.sick@200; thermo@280,0,1.2; calendar@100,40,1
+หลอดลมอักเสบ	hosp; man.sick.cover@200; lungs@290,30,1
+ปอดบวม	hosp; grandma.sick@200; bed@200,0,.8; lungs@300,30,.8
+มะเร็ง	hosp; cigarette@200,20,1.4; cross@200,40; lungs@300,30,1
+โรคหัวใจ	hosp; man.sick@200; organ@280,60,1.2
+ติดต่อ	room; man.happy@200+phone; say@260,96=연락 주세요
+โรคติดต่อ	hosp; germ@170,40; germ@230,60; man.smask@320
+ผู้ป่วย	hosp; man.sick@200; doctor.happy@300
+นอนโรงพยาบาล	hosp; bed@200,0,1.2; boy.lie.sick@200,24
+ออกจากโรงพยาบาล	hosp; man.happy.wave@200; hospital@330,0,.6
+นัดหมอ	hosp; calendar@200,30,1.6=월; doctor.happy@320
+ตรวจร่างกาย	hosp; doctor.happy@160; man.happy@260; bpmon@120,0
+วัดความดัน	hosp; nurse.happy@160; bpmon@230,0,1.2; man@300
+วัดไข้	hosp; thermo@200,0,1.6; clock@300,70,1; girl.sick@120
+ฉีดยา	hosp; nurse.happy@160+syringe; boy.cry@260
+กินยา	room; pills@200,10,1.6; water@250,0,1.2; man.happy@320
+หลังอาหาร	kitchen; rice@160,0; pills@220,10,1.4; arrowr@190,30
+ก่อนอาหาร	kitchen; pills@160,10,1.4; arrowr@190,30; rice@230,0
+วันละสามครั้ง	room; pills@200,10,1.6; txt@200,60=×3
+ผลข้างเคียง	room; pills@200,10,1.6; man.sick.sweat@320; qmark@320,104
+เภสัช	street; shop@200,0,1.2; nurse.happy@320+medpack
+ตรวจสุขภาพ	hosp; calendar@200,30,1.6; doctor.happy@320
+เอ็กซเรย์	hosp; xray@200,40,1.4; doctor.point@320!
+กรุ๊ปเลือด	hosp; bloodbag@200,30,1.4; txt@200,104=A B O
+บริจาคเลือด	hosp; bloodbag@200,30,1.4; man.happy@320
+อย่างสม่ำเสมอ	gym; calendar@200,30,1.6; man.run.sport.happy@320
+นอนเร็ว	bedroom; bed@200,0,1.1; boy.lie.sleep@200,32; clock@100,70,1=9:00
+นอนให้พอ	bedroom; bed@200,0,1.1; girl.lie.sleep@200,32; sun@340,72
+มากๆ	room; man.wai.happy@200; heart@260,90; heart@300,96,.6
+ดื่มน้ำมากๆ	park; water@200,0,1.6; sun@340,72; man.eat.happy@320+water
+กินให้ครบหมู่	rest; rice@150,0; meat@190,0; veg@230,0; apple@270,0
+เลือกกิน	rest; veg@200,0,1.4; cross@200,30; boy.angry@320
+กินมากเกินไป	rest; dish@150,0; dish@200,0; dish@250,0; man.sick.hips@330
+ลดน้ำหนัก	gym; bscale@200,0,1.4; arrowd@250,50; woman.happy@320
+อ้วนขึ้น	room; bscale@200,0,1.4; txt@250,80=+5kg; man.wow@320
+ผอมลง	park; man.walk.happy@200; bscale@330,0,1; arrowd@330,30
+บุหรี่	room; cigarette@200,20,1.6; cross@200,40; woman.angry@320
+เหล้า	room; liquor@200,0,1.6; cross@200,40; man.happy@320
+งดสูบบุหรี่	street; cigarette@200,20,1.4; sign@300,0,1=금연
+ดีต่อสุขภาพ	rest; veg@200,0,1.6; heart@200,50; check@260,70
+ไม่ดีต่อสุขภาพ	rest; burger@180,0,1.2; soda@230,0,1.2; cross@200,50
+ยืด	room; tshirt^10@200,0,1.8; p@200,0:M-10 0q10 6 20 0
+ยืดเส้น	gym; man.up.sport@200
+เดินออกกำลังกาย	park; man.walk.sport.happy@200; sun@340,72
+วิ่งเหยาะ	park; man.run.sport.happy@200; tree@100,0
+โยคะ	room; ymat@200,0,1.6; woman.happy.up@200,4
+ฟิตเนส	gym; dumbbell@140,0,1; treadmill@260,0,1; man.sport.happy@200
+เฟอร์นิเจอร์	shop; sofa@140,0,.8; table@250,0,.8; chair@320,0,.8
+สปริง	bedroom; mattress@200,0,1.2; spring@200,20,1.2
+เครื่องมือ	room; toolbox@200,0,1.6=공구; hammer@260,0,1
+เครื่องครัว	kitchen; pot@150,0; pan@200,0; ladle@250,0
+ห่อ	room; woman.hold.happy@200; baby.happy@200,30,1.1; blanket@200,30,.8
+พลาสติกห่ออาหาร	kitchen; bowl@200,0,1.4; wrap@200,16,.9
+รีโมตแอร์	room; ac@200,84,1.4; remote@260,40,1.2
+เปิดพัดลม	room; fan@200,0,1.4; man.sweat.happy@300
+ยีน	room; dna@200,10,1.4; man.happy@120; boy.happy@300,0,.8
