@@ -1,0 +1,100 @@
+กี่องศา	field; thermo@200,0,1.8; man.think@320; qmark@320,104
+สามสิบห้าองศา	field; thermo@200,0,1.8; sun@330,72; txt@260,70=35°
+อุณหภูมิสูงสุด	field; thermo@200,0,1.8; arrowu@240,70; txt@260,90=최고
+อุณหภูมิต่ำสุด	snow; thermo@200,0,1.8; arrowd@240,40; txt@260,90=최저
+ไทยร้อนทั้งปี	beach; sun@330,72; calendar@200,30,1.4=1-12; man.sweat@100
+ฤดูร้อน	beach; sun@330,72,1.4; calendar@200,30,1.4=3-5
+ของไทย	market; mango@170,0; durian@210,0; rambutan@250,0; flag@320,0,.8
+ฤดูหนาวของไทย	park; flag@120,0,.8; man.knit.happy@220; thermo@300,0,1
+เดือนที่ร้อนที่สุด	field; calendar@200,30,1.6=4월; sun@330,72,1.4; man.sweat@100
+ฝนตกบ่อย	rain; raincloud@140,90; raincloud@260,90; puddle@200,0,1.4
+กลัวน้ำท่วม	night; flood@200,0,1; house@200,0,1; man.sweat@320
+ถนนน้ำท่วม	street; flood@200,0,1; car@200,10,.8
+กลัวฟ้าผ่า	rain; lightning@200,80,1.2; girl.cover.wow@300
+เสียงฟ้าร้อง	rain; lightning@200,80,1.2; ring2@200,60; man.cover@320
+รุ้งสวย	sky; rainbow@200,10,1.4; man.happy@340
+ฟ้าสีฟ้า	sky; sun@330,72; man.happy.up@200; bird@120,80
+เมฆเยอะ	sky; cloud@120,70,1.4; cloud@200,86,1.2; cloud@290,74,1.4
+ดาวเต็มฟ้า	night; star@120,80; star@160,94; star@220,84; star@280,96; star@320,76; mountain@200,0,1
+พระจันทร์สว่าง	night; moon@200,70,1.8; sparkle@150,60; sparkle@260,70
+พระอาทิตย์ร้อนแรง	field; sun@200,60,1.8; man.sweat@320
+พระอาทิตย์ตกสวย	sea; sun@200,10,1.6; cloud~orange@120,60; man.happy@320
+มืดเร็ว	snow; clock@200,60,1.2=5:00; moon@330,80; dark@200,0
+ฟ้าสาง	field; sun@200,10,1.4; man.up.happy@320
+กลางวันยาว	field; sun@200,70,1.4; calendar@120,40,1=여름; clock@300,60,1=8:00
+กลางคืนยาว	snow; moon@200,70,1.4; calendar@120,40,1=겨울; clock@300,60,1=5:00
+อากาศยามเช้า	park; sun@330,72; man.walk.happy@200; bird@120,80
+เช้าที่สดชื่น	park; sun@330,72; man.happy.up@200; wind@120,70
+เป็นลมแดด	field; sun@200,70,1.8; man^-80@240,4; woman.wow@330
+โรคลมแดด	field; sun@200,70,1.8; sign@300,0,1=!; man.sweat@120
+ดื่มน้ำบ่อยๆ	field; water@200,0,1.6; sun@330,72; man.eat@120+water
+ทาครีมกันแดด	beach; tube@200,6,1.6=선크림; woman.happy@320
+ใส่หมวก	field; man.sun.happy@200; sun@330,72
+กาง	room; map@200,0,1.6; man.happy@320
+กางร่มกันแดด	field; woman.happy@200+umbrella; sun@330,72
+ระวังเป็นหวัด	room; ac@200,84,1.4; man.sick@320; tissue@100,0
+อากาศแปรปรวน	sky; sun@120,70; raincloud@200,90; snowman@290,0,.6
+ดูพยากรณ์อากาศ	living; tvstand@200; tv@200,20,1.2; sun@200,36,.5; man.sit@320,24; chair@320
+พายุจะเข้า	sea; storm@200,50,1.4; boat@100,0,.6; calendar@330,40,.8
+โรงเรียนปิด	school; school@200,0,1.2; flood@200,0,1; cross@200,90
+งดออกจากบ้าน	rain; storm@120,60,1.2; house@240,0,1; man.sad@240,10,.6
+อารมณ์ดีมาก	room; man.happy.up@200; sun@330,72; heart@260,96
+อารมณ์ไม่ดี	room; man.angry@200; cloud~gray@200,104,.6
+มีความสุขมาก	room; man.happy@140; woman.happy@200; boy.happy@260; heart@200,104
+ดีใจมาก	room; gift@200,0,1.6; girl.happy.up@320
+เศร้ามาก	room; boy.cry@200; dog@300,0; tear@190,90
+เจ็บปวดในใจ	room; man.cry@200; heart@200,50,.8; ecrack@200,50,.3
+เหงาจัง	room; man.sad.sit@200; chair@200; window@100,30,1
+เบื่อจัง	room; man.flat@200; zzz@230,104; clock@320,70,1
+โกรธแล้วนะ	room; man.angry@200; boy.sad@300; txt@200,104=또?
+หงุดหงิดจัง	road; car@120,0,1; car@200,0,1; man.angry@320
+กลัวจัง	night; man.wow.cover@200; dark@200,0
+เป็นห่วงจัง	room; woman.sad@200; boy@300,0,.7; heart@250,90
+ตื่นเต้นจัง	room; calendar@200,30,1.4; man.happy.up@320; plane@100,80,.6
+อายจัง	stage; man.cover@200; man@120; woman@300
+จริงๆนะ	room; man.wai@200; woman@300; say@250,96=정말이에요
+ขอโทษจริงๆนะ	office; man.wai.sad@200; clock@300,60,1; woman@100
+ขอบคุณจริงๆ	room; man.wai.happy@200; woman.happy@300; heart@250,104
+ซึ้งใจมาก	room; letter@200,10,1.4; woman.cry.happy@320
+ตกใจหมดเลย	room; man.wow@200; boom@120,60,.6
+ผิดหวังมาก	shop; shop@200,0,1.2; cross@200,80; man.sad@330
+เสียใจที่ทำไป	room; vase@200,0,1.2; p@200,0:M-10 -4l20 -4; man.sad.cry@320
+ดีจัง	airport; man.happy.up@200; suitcase@300,0,1
+โชคดีจัง	road; car^-12@170,0,1; man.happy@300; check@300,104
+ค่อยยังชั่ว	room; bag@200,0,1.6; man.happy.sweat@320; txt@330,104=휴
+สนุกจัง	beach; man.happy@200; wave@200,0,1.6; water_drop@180,30
+น่าสนใจมาก	room; book@200,0,1.6; man.happy.love@320; star@200,50
+น่าเบื่อมาก	living; tvstand@200; tv@200,20,1.2; man.sleep@320
+เหนื่อยแล้ว	office; man.sweat.sad@200; zzz@230,104
+ง่วงแล้ว	bedroom; bed@200,0,1.1; man.sleep@300; zzz@330,104
+หิวข้าวแล้ว	room; man.sad.hips@200; think@270,96=rice
+หิวน้ำแล้ว	park; man.sweat@200; think@270,96=water
+เจ็บจัง	room; door@170,0,1.3; man.cry@260; hl@244,27,.8
+ดีขึ้น	hosp; man.happy@200; pills@280,10,1.2; arrowu@300,60
+เดี๋ยวก็ดีขึ้น	room; man.sick@200; woman.happy@300; say@250,96=곧 나아질 거야
+สู้ๆนะ	class; boy.sweat@200; woman.up.happy@300; say@350,96=힘내!
+อย่าร้องไห้	room; boy.cry@200; woman.happy@300; say@250,96=울지 마
+อย่าโกรธ	room; man.angry@200; woman.happy@300; say@250,96=화내지 마
+ไม่ต้องห่วงนะ	room; man.sad@200; woman.happy@300; say@250,96=걱정 마
+คิดมาก	room; man.think.sweat@200; qmark@180,104; qmark@220,96
+ไม่ต้องคิดมาก	room; man.think.sweat@200; woman.happy@300; say@250,96=생각 많이 마
+ค่อยๆนะ	room; man.walk@200; woman.happy@300; say@250,96=천천히
+เยี่ยมมาก	class; check@200,50,2; teacher.happy.up@320
+สวยจัง	shop; dress@200,0,1.8; sparkle@150,60; woman.happy.love@320
+น่ารักจัง	room; cat@200,0,1.4; heart@200,40; girl.happy.love@320
+หล่อจัง	room; man.suit.happy@200; woman.love@300; sparkle@240,90
+อร่อยจัง	rest; tomyum@200,0,1.6; man.happy.love@320
+รักทุกคน	room; man.happy@200; boy@140; girl@260; woman@320; heart@200,104
+คิดถึงมากเลย	room; man.sad@200; think@270,96=heart
+ดีใจที่ได้พบ	street; man.wave.happy@160; woman.wave.happy@240!; heart@200,104
+สุขสันต์วันเกิดนะ	room; cake@200,0,1.4; candle@200,28,.8; balloon@120,40; girl.happy@300
+ขอให้สุขภาพแข็งแรง	room; grandpa.happy@200; heart@260,90; apple@300,0
+ขอให้มีความสุข	room; man.happy.up@200; heart@170,104; heart@230,104
+ขอให้รวยๆ	room; moneybag@200,0,1.6; man.happy.up@320
+ขอให้ประสบความสำเร็จ	class; trophy@200,0,1.4; man.happy.up@320; star@260,90
+ขอให้ฝันเป็นจริง	room; man.happy.up@200; star@260,90; think@140,96=star
+สบายดี	street; man.happy@160; woman.happy@240; say@200,96=잘 지내요
+สบายดีไหม	street; man.happy.wave@160; woman.happy@240; say@200,96=잘 지내?
+ช่วงนี้ยุ่ง	office; paper@170,0,1.2; paper@200,0,1.2; man.sweat@320
+ช่วงนี้เป็นไงบ้าง	street; man.happy@160; woman.think@240; say@300,96=요즘 어때?
+ไม่มีอะไร	kitchen; fridge@200,0,1.1; cross@200,60; man.shrug@320
