@@ -1,0 +1,100 @@
+แอปแผนที่	street; phone@200,40,1.2; map@260,40; shop@100,0,.5; man@330
+เช้ามืด	street; monk@140+bowl; monk@200+bowl; moon@330,90
+เช้าตรู่	market; sun@330,60; stall@200,0,1; woman.walk@120
+ช่วงเช้า	room; laptop@200,40; desk@200; man.sit@200,24; chair@200; sun@330,90
+ตอนเที่ยงๆ	street; sun@200,96; man.happy@140; woman.happy@260
+ตอนบ่าย	rain; man@200; aclock@300,50; txt@300,80=PM
+บ่ายแก่	park; sun@330,40; man.happy.walk@200
+ตอนพลบค่ำ	night; sun~orange@330,20; mosquito@200,60; mosquito@240,70; man.sad@120
+ตอนค่ำ	night; moon@330,90; man.happy@200; wind@120,60
+ดึกดื่น	night; moon@330,90; man.sit@200,24; bed@200; laptop@200,40; clock@120,70
+เจ็ดโมงเช้า	bedroom; aclock@200,50=7:00; man.happy@300; sun@330,90
+บ่ายโมง	office; aclock@200,60=13:00; table@200; man.sit@140,24; woman.sit@260,24; chair@140; chair@260
+บ่ายสามโมง	school; aclock@200,70=15:00; kid.happy.run@300
+สี่โมงเย็น	street; aclock@200,70=16:00; man.walk@300; house@100,0,.6
+หนึ่งทุ่ม	kitchen; aclock@200,70=19:00; table@200; rice@200,46; man.sit@280,24; chair@280
+สี่ทุ่ม	bedroom; aclock@200,70=22:00; man.sleep.lie@200,24; bed@200
+สองยาม	bedroom; aclock@200,70=24:00; moon@330,90; man.sleep@300
+ตีหนึ่ง	bedroom; aclock@200,70=1:00; man.sad.lie@200,24; bed@200
+ตีห้า	bedroom; aclock@200,70=5:00; man.happy@300; star@330,90
+สิบห้านาที	station; clock@200,70; txt@200,96=15분; man@320
+วินาที	room; timer@200,40,1.2; txt@200,90=30초
+หนึ่งชั่วโมง	road; plane@300,70,.5; car@200,0,.8; clock@120,70
+ครึ่งวัน	office; man@200; aclock@300,60=½일
+หนึ่งวัน	road; sun@120,60; moon@300,80; clock@200,70
+สองวัน	beach; suitcase@200,0; calendar@300,60=2일; man.happy@120
+หนึ่งสัปดาห์	beach; calendar@200,60=7일; palm@100,0; man.happy@330
+หนึ่งเดือน	class; calendar@200,60=1개월; book@280,10; man@330
+หนึ่งปี	city; calendar@200,60=1년; flag@300,0,.6
+ครึ่งปี	office; man.sweat@200; calendar@300,60=1~6월
+สิบปี	park; man.happy@140; man.happy@260; calendar@200,60=10년
+ร้อยปี	temple; temple@200,0,.8; txt@200,96=100년
+ต้นปี	room; calendar@200,60=1월; target@280,50
+ปลายปี	airport; calendar@200,60=12월; plane@320,70,.5; flagkr@120,0,.5
+ต้นเดือน	office; calendar@200,60=1일; money@280,40; man.happy@330
+สิ้นเดือน	room; calendar@200,60=말일; money@280,40; house@120,0,.5
+สุดสัปดาห์	beach; calendar@200,60=토일; man.happy@330; wave@200,0,1
+วันธรรมดา	street; calendar@200,60=월~금; man@330
+วันหยุดราชการ	city; calendar@200,60=휴일; flag@300,0,.6
+วันหยุดยาว	road; car@100,0,.6; car@160,0,.6; car@220,0,.6; car@280,0,.6; calendar@340,60
+มกราคม	park; calendar@200,60=1월; wind@300,60; man.happy@120
+กุมภาพันธ์	park; calendar@200,60=2월; heart@280,60; man.happy@120; woman.happy@330
+มีนาคม	street; calendar@200,60=3월; sun@330,80; man.sweat@120
+เมษายน	street; calendar@200,60=4월; water_drop@280,60; man.happy@120
+พฤษภาคม	rain; calendar@200,60=5월; umbrella@300,40
+มิถุนายน	school; calendar@200,60=6월; kid.happy@300+backpack
+กรกฎาคม	rain; calendar@200,60=7월; man@300+umbrella
+สิงหาคม	park; calendar@200,60=8월; woman.happy@300; flower@120,10
+กันยายน	street; calendar@200,60=9월; flood@200,0,1
+ตุลาคม	temple; calendar@200,60=10월; monk.happy@300
+พฤศจิกายน	river; calendar@200,60=11월; krathong@300,10; candle@300,20
+ธันวาคม	park; calendar@200,60=12월; sun@330,80; man.happy@120
+วันที่เท่าไหร่	room; calendar@200,60=?; man.think@320
+วันนี้วันที่หนึ่ง	room; calendar@200,60=11/1; man.happy@320
+พุทธศักราช	temple; txt@200,80=พ.ศ. 2569; temple@320,0,.5
+คริสต์ศักราช	city; txt@200,80=2026; flagkr@320,0,.6
+ปีนี้	room; cake@200,30; txt@200,80=40; man.happy@320
+ปีที่แล้ว	airport; calendar@200,60=작년; flagjp@320,0,.6
+ปีหน้า	street; truck@200,0,.8; calendar@320,60=내년
+สองปีก่อน	airport; calendar@200,60=2년 전; plane@320,70,.5; man.happy@120
+เดือนนี้	office; calendar@200,60=이번 달; man.sweat@320
+เดือนที่แล้ว	rain; calendar@200,60=지난달; raincloud@300,90
+เดือนหน้า	mount; calendar@200,60=다음 달; mountain@300,0,.6
+เช้านี้	bedroom; aclock@200,60; sun@330,90; man.sweat.run@300
+คืนนี้	night; moon@330,90; plate@200,30; man.think@300; qmark@300,96
+เมื่อคืน	bedroom; moon@330,90; man.sad.lie@200,24; bed@200
+พรุ่งนี้เช้า	bedroom; aclock@200,60=5:00; man@300; calendar@120,50=내일
+สองสามวันนี้	rain; calendar@200,60=며칠째; raincloud@300,90; man.sad@120
+เมื่อไม่กี่วันก่อน	street; man.happy@140; man@260; calendar@200,60=며칠 전
+เมื่อเร็วๆนี้	street; shop@200,0,1; sparkle@200,80; ribbon@200,60
+เมื่อกี้นี้	room; door@200; man.walk@280; arrowr@330,60; woman@100
+เมื่อสักครู่	room; phone@200,40,1.2; woman.happy@300; clock@120,60
+อีกไม่นาน	night; fireworks@200,80,1.2; calendar@300,60=12/31
+ในไม่ช้า	street; man.happy@200+suitcase; house@320,0,.6; arrowl@120,60
+ในอนาคต	beach; house@200,0,.8; man.happy@300; think@300,96=palm
+ต่อไปในอนาคต	room; graph@200,30,1.2; arrowu@260,60; man.happy@330
+ตั้งแต่นี้ไป	office; man.happy.wai@200; clock@300,60; check@300,96
+ตั้งแต่นั้นมา	street; door@200; cross@200,96; calendar@300,60
+หลังจากนั้น	rest; table@200; man.sit@140,24; woman.sit@260,24; chair@140; chair@260; rice@200,46
+ก่อนหน้านั้น	city; tower@200,0,.8; man@330; calendar@120,50=그 전
+ในเวลาเดียวกัน	street; man.run@140; woman.run@260; flag@200,0,.6
+ทันเวลา	station; clock@200,70; man.run.happy@300; train@100,0,.5
+ไม่ให้สาย	room; man.walk@200; door@300; clock@120,70
+ตามเวลา	station; train@200,0,.8; clock@120,70; check@120,96
+ไม่ได้เจอกันนาน	airport; man.happy@140; woman.happy@260; heart@200,90
+เป็นเวลานาน	station; man.sit@200,24; bench@200; clock@300,70
+ชั่วครู่	park; man.sit.happy@200,24; bench@200; teacup@240,40
+ตลอดชีวิต	room; picture@200,60,1.2; heart@260,70; man.happy@330
+ตลอดเวลา	room; man.grin@200; stars@200,96
+เป็นบางครั้ง	temple; temple@200,0,.8; man.wai@320; calendar@120,50
+แทบจะไม่	bedroom; man.sad@200; bed@200; moon@330,90; qmark@200,96
+ไม่เคยเลย	room; man.flat@200; cross@200,96
+เหน็บชา	room; man.sit@200,24; chair@200; leg@200,10,.5; dot@180,10; dot@220,10
+ปวดตุ้บๆ	room; man.sick@200; tooth@240,70,.5; soundwave@260,60
+ปวดร้าว	bedroom; man.sick.lie@200,24; bed@200; moon@330,90
+แสบ	bath; hand@200,40,1; water_drop@200,60; man.sick@320
+แสบร้อน	beach; man.sick@200; sun@330,90; fire@200,60,.3
+คันยุบยิบ	park; man.sad@200; mosquito@240,70; dot@220,50
+คันไปหมด	room; man.sad@200; dot@190,40; dot@210,50; dot@200,30; dot@220,60
+หนาวสั่น	rain; man.sad@200; wind@260,60; water_drop@200,90
+ขนลุก	night; ghost@300,40; kid.wow@200; man@120
