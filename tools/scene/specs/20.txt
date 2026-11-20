@@ -1,0 +1,100 @@
+แทน	office; desk@200; man.sit.happy@200,24; chair@200; man.sick@330,0,.8; arrowl@270,60
+ช่วยเหลือ	street; oldwoman@200; man.happy.give@280!; heart@240,104
+ซาบซึ้ง	room; man.cry.happy@200; woman.happy@300; heart@250,104
+เกลียด	kitchen; roach@200,0,1.8; man.angry.cover@320
+ชัง	room; boy.angry@160; boy.angry@240!; cross@200,104
+หวาดกลัว	rain; lightning@200,80,1.2; girl.cover.wow@300
+อ้อน	shop; snack@200,0,1.4; boy.happy.wai@140; woman.shrug@280
+งอแง	bedroom; boy.cry.sleep@200; woman.sweat@320
+โมโห	room; man.angry@200; txt@260,96=!!!
+งอน	room; boy.angry@200; txt@260,96=흥
+ปลอบ	room; woman.happy.hold@200; boy.cry@200,10,.7; heart@250,104
+ปลอบใจ	park; bench@200,0,1.2; man.sit.sad@170,24; woman.sit.happy@230,24
+แกล้ง	room; boy.happy.point@160; girl.cry@240; cross@200,104
+หลอก	room; man.happy@140; woman.angry@260; qmark@260,104
+แอบ	night; cookie@200,0,1.4; boy.happy.cover@280
+แอบดู	room; gift@200,0,1.6; girl.happy@280; p@240,60:M-6 0h12
+แอบฟัง	room; door@200,0,1.3; man.cover@250; say@140,96=…
+มีชีวิต	market; fish@200,0,1.6; water_drop@200,30,.8; sparkle@240,30
+ตาย	room; wilted@200,0,2; plant@120,0,1; woman.sad@320
+แก่ลง	room; grandpa@160; grandma@240; heart@200,104
+พอแล้ว	cafe; glass@200,0,1.6; ice@196,30; man.wave@320; say@360,96=그만!
+เกินไป	rest; chili@200,10,1.8; fire@200,40,.8; man.sweat.wow@320
+จริงๆ	rest; dish@200,0,1.6; man.happy.love@320; txt@320,104=진짜!
+ทีละนิด	room; book@200,0,1.6; calendar@120,50; txt@200,60=+1; man.happy@320
+ทีละอัน	room; candy@170,0,1.2; candy@200,0,1.2; candy@230,0,1.2; girl.happy@320
+ของใหม่	shop; phone@170,0,1.4; arrowr@200,30; phone@240,0,1.6; sparkle@240,60; man.happy@330
+ของเก่า	market; stall@200,0,1.2; teapot@190,22; book@215,22; man.happy@330
+เปล่า	room; box@200,0,1.8; qmark@200,60
+ขวดเปล่า	street; bottle@180,0,1.2; bottle@205,0,1.2; bottle@230,0,1.2; bag@280,0,1.2; boy.happy@340
+แน่น	street; bus@200,0,1.4; man@150,20,.6; woman@175,20,.6; man@200,20,.6; woman@225,20,.6
+หลวม	room; pants@200,0,2; man.sweat@320
+คับ	room; shoe@200,0,2; man.sad@320; hl@200,10,1.2
+เหมือนกัน	room; man.happy@160; woman.happy@240; heart@200,104; dish@200,96,.6
+คล้าย	room; boy.happy@170; boy.happy@230; txt@200,104=닮았어요
+ตรงกันข้าม	field; sun@140,70; snowman@260,0
+ถูกทาง	road; arrowr@200,40,1.8; check@280,60; car@100,0,1
+ผิดทาง	road; car@200,0,1.4; arrowl@120,40; cross@300,60; man.sweat@340
+แต่เช้า	street; house@200,0,1.2; sun@60,40; man.walk@320+bag
+ดึก	night; moon@330,80; clock@200,60,1.4=1:00; man.sleep@120
+กลางดึก	bedroom; bed@200,0,1.2; man.up.wow@200,34; moon@340,80
+ตอนโพล้เพล้	field; sun@200,20,1.6; cloud~orange@120,70; cloud~orange@300,70
+ทั้งวัน	rain; man.sad@200; clock@330,70,1
+ทั้งคืน	office; computer@200,0,1.4; moon@330,80; man.sleep@120
+ทั้งอาทิตย์	rain; calendar@200,30,1.8; txt@200,96=7일
+ทุกอาทิตย์	sea; pool@200,0,1.6; calendar@120,40,1=매주; man.happy@300,0,.8
+ทุกเดือน	room; paper@200,0,1.6=전기세; calendar@120,50; man.sad@320
+ทุกปี	airport; calendar@140,40,1.1; plane@280,70,.8; flagkr@340,0,1
+ช่วงนี้	park; wind@200,60,1.4; man.happy@320
+ตอนนั้น	room; picture@200,40,1.4; boy.happy@200,0,.7; man.think@320
+คราวหน้า	room; calendar@200,30,1.6; arrowr@270,40; man.happy@330
+คราวที่แล้ว	room; calendar@200,30,1.6; arrowl@130,40; woman.think@330
+เป็นครั้งแรก	airport; plane@200,60,1; txt@200,96=처음; man.happy.up@320
+เป็นครั้งสุดท้าย	stage; man.happy.wave@200; txt@200,104=마지막
+ทำอะไร	room; man.think@200; say@260,96=뭐 해요?
+ไปไหน	street; man.walk@200; say@260,96=어디 가요?
+หรือ	cafe; tea@170,0,1.4; coffee@230,0,1.4; man.think@320; qmark@320,104
+หรือยัง	room; notebook@200,0,1.6; woman.point@120; boy.sweat@320
+กินข้าวหรือยัง	rest; rice@200,0,1.6; man.happy@140; woman.think@260; say@300,96=먹었어요?
+กินแล้ว	rest; plate@200,0,1.6; man.happy.hips@320; say@360,96=먹었어요
+เท่าไหร่	shop; tshirt@200,0,1.8; woman.think@320; say@360,96=얼마?
+ชื่ออะไร	room; girl.happy@200,0,.8; man.happy@300; say@340,96=이름?
+อายุ	room; cake@200,0,1.4; grandpa.happy@120; boy.happy@280
+อายุเท่าไหร่	room; cake@200,0,1.4; candle@200,28,.8; boy.happy@300; qmark@300,104
+เป็นอะไร	room; boy.cry@200; woman.sweat@300; say@340,96=왜 그래?
+ไหม	street; man.happy@160; woman.happy@240!; say@300,96=같이 갈래?
+เป็นอะไรไหม	park; boy.cry@200; bandaid@200,10,.6; woman@300; say@340,96=괜찮아?
+เข้าใจแล้ว	room; man.wai.happy@200; say@260,96=알겠습니다
+ไม่เข้าใจ	room; man.sweat.think@200; qmark@200,104; say@260,96=?
+พูดอีกที	room; man.think@200; say@260,96=다시 한번요
+พูดช้าๆ	room; man.happy@200; say@260,96=천천히요
+ใช่	class; check@200,50,2; boy.happy@320
+ไม่ใช่	room; bag@200,0,1.6; cross@200,40; man.shrug@320
+ไม่ได้	street; sign@200,0,1.4=X; door@120,0,1.2; guard.wave@300
+ชน	road; car@200,0,1.4; pillar@240,0,.4; dust@240,30,1.4
+ประชาชน	city; man@120; woman@170; man@220; woman@270; boy@320; ballot@360,0
+พลเมือง	city; flag@200,0,1.4; man.happy@120; woman.happy@280
+พระมหากษัตริย์	city; palace@200,0,1.2; king.happy@330
+ในหลวง	city; palace@200,0,1.2; man.wai@340
+ราชินี	city; queen.happy@200
+รัฐบาล	city; govt@200,0,1.2; calendar@330,40,1=휴일
+รัฐมนตรี	school; school@200,0,1.2; minister.happy@330
+นายกรัฐมนตรี	city; govt@200,0,1.2; minister.happy@330
+กฎหมาย	class; board_@200,20,1.4=법; man.happy@330
+สิทธิ์	city; man.happy.up@160; woman.happy.up@240
+หน้าที่	class; book@200,0,1.6; boy.happy@320
+เลือกตั้ง	city; ballot@200,0,1.4; man.happy@300; txt@140,70=18
+การเลือกตั้ง	city; ballot@200,0,1.4; man@120; woman@300
+ท้องถิ่น	market; stall@200,0,1.2; dish@200,22; man.happy@330
+จังหวัด	field; thaimap@200,0,1.6; txt@280,70=77
+เมืองหลวง	city; tower@200,0,1; flagkr@300,0,1; txt@200,104=서울
+กรุงเทพฯ	city; car@120,0,1; car@200,0,1; car@280,0,1; tower@340,0,.6
+เพลงชาติ	school; flag@200,0,1.4; music@260,80; student.wai@140
+ประวัติศาสตร์	city; museum@200,0,1.2; pagoda@340,0,.6
+วัฒนธรรม	temple; man.wai.happy@200; woman.wai.happy@260
+ประเพณี	river; krathong@200,0,1.6; moon@340,80
+ศาสนา	temple; buddha@200,0,1.4; man.think@330; qmark@330,104
+พุทธศาสนา	temple; buddha@200,0,1.6; man.wai@320
+พระ	street; monk~orange.happy@200+almsbowl
+พระพุทธเจ้า	temple; buddha@200,0,1.8; woman.wai@320
+บุญ	temple; monk~orange.happy@140; woman.wai@260+rice
