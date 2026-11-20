@@ -1174,6 +1174,13 @@ const O = {
   bankbook: `<rect x="-12" y="-28" width="24" height="28" rx="2" fill="#6aa8e8"/><text x="0" y="-12" font-size="7" text-anchor="middle" fill="#fff" stroke="none" font-weight="700">BANK</text>`,
   shield: `<path d="M0 -36L16 -30V-16Q16 -4 0 2Q-16 -4 -16 -16V-30Z" fill="#9c9"/><path d="M-6 -16l4 4 8 -8" fill="none" stroke-width="2.4"/>`,
   wood: `<rect x="-24" y="-8" width="48" height="8" fill="#e8d9b8"/><path d="M-20 -4h10M0 -5h14" stroke-width="1"/>`,
+  hand: `<path d="M-10 0V-14L-16 -22Q-18 -26 -14 -26L-8 -20V-36Q-8 -40 -5 -40Q-2 -40 -2 -36V-24V-38Q-2 -42 1 -42Q4 -42 4 -38V-24V-36Q4 -40 7 -40Q10 -40 10 -36V-22V-30Q10 -34 13 -34Q16 -34 16 -30V-12Q16 0 6 0Z" fill="#fff"/>`,
+  thumbup: `<path d="M-12 0V-18H-4L2 -34Q6 -36 8 -32L6 -20H14Q18 -20 16 -14L12 0Z" fill="#fff"/><rect x="-18" y="-20" width="6" height="20" fill="${GR}"/>`,
+  fist2: `<path d="M-14 0V-16Q-14 -24 -6 -24H10Q16 -24 16 -16V-6Q16 0 8 0Z" fill="#fff"/><path d="M-6 -24V-14M2 -24V-14M8 -24V-14M-14 -12Q-4 -8 2 -14" fill="none" stroke-width="1.4"/>`,
+  foot: `<path d="M-6 -30H6V-10Q20 -10 22 -4Q22 0 16 0H-8Q-10 0 -8 -6Z" fill="#fff"/>`,
+  leg: `<path d="M-6 -60H6L6 -10Q18 -8 18 0H-6Z" fill="#fff"/>`,
+  skeleton: `<circle cx="0" cy="-70" r="8" fill="#fff"/><path d="M0 -62V-24M-10 -56H10M-9 -50H9M-8 -44H8M-7 -38H7M-10 -24H10M-6 -24L-8 0M6 -24L8 0M-10 -56L-16 -36M10 -56L16 -36" fill="none" stroke-width="2"/>`,
+  clay: `<path d="M-14 0Q-16 -12 -4 -14Q-2 -22 6 -18Q16 -16 14 0Z" fill="#a0714a"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,

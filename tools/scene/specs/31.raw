@@ -1,0 +1,99 @@
+cafe; table@200; mug@200,39; music@140,80; lantern@300,40; man.happy@330
+beach; man.happy.up@200; suitcase@300,0,1
+park; man.happy.up@200; heart@260,96; bench@100,0
+room; man.sad@200; raincloud@200,100,.7
+temple; man.cry@160; woman.cry@240
+room; man.happy@200+money; money@200,30,.6
+rest; rice@200,0,1.6; man.happy.eat@300+spoon
+room; man.sad@160; woman.happy@240; heart@200,104
+gym; man.sport@160; woman.up.happy@260; say@310,96=파이팅!
+temple; buddha@140,0,1; church@260,0,.8
+room; man.happy@160; woman.happy@240!; p@200,40:M-8 0h16; heart@200,104
+room; man.sad@200; man.angry.cover@300
+room; man.think.angry@200; qmark@200,104; woman@300
+room; man.wai.sweat@200; woman.wow@300
+room; man.happy@160; woman.happy@240; check@200,96
+room; man.wai.sad@160; woman.happy@240; heart@200,104
+room; woman.happy@200; boy.wai@300; heart@250,100
+room; woman.happy@200; man.happy@300+gift
+room; man.happy@200; vase@280,0; p@280,0:M-10 -4l20 -4; woman.angry@330
+room; grandma.happy@200; heart@260,96
+hosp; nurse.happy@200; man.sick@300
+room; man.happy@200; boy.happy@200,10,.6; heart@250,100
+room; woman.flat@200; man.sad@300
+room; boy.happy@200+toycar; boy.sad@300
+room; man.happy.hips@200; star@260,90
+room; man.happy@200+moneybag; txt@270,90=블라블라
+room; woman.happy@200; say@260,96=블라블라…
+room; man.cover.wow@200; spider@300,80
+room; boy.cry@200; tear@190,90
+bedroom; bed@200,0,1.1; boy.lie.sleep@200,32; aclock@100,0,1; ring2@100,30
+rest; rice@170,0; noodle@230,0; boy.happy.eat@320+spoon
+city; woman.shades.happy.hips@200; handbag@270,0
+room; box@170,0; box@230,0; check@200,70; boy.happy@320
+room; teddy@140,0; ball@200,0; sock@240,0; book@280,0; man.angry@340
+office; magnifier@200,30,1.4; paper@200,0,1.2; woman.happy@320
+room; vase@200,0,1.4; p@200,0:M-10 -4l20 -4; boy.wow@300
+office; paper@200,0,1.4; cross@200,40; man.sweat@320
+room; key@200,0,1.4; qmark@200,40; man.think@320
+room; boy.happy@160; man.happy@240; txt@200,104=하하
+room; man.happy.dance@200; boy.happy@300
+office; man.suit.flat@200+paper
+class; teacher.angry@200; boy.sweat@320
+park; dog@200,0,1.6; txt@250,60=으르렁; boy.wow@340
+room; boy.happy@200; woman.happy@300; check@250,96
+room; boy.wai.happy@200; man.happy@300
+room; boy.angry@200; man.angry@300
+room; boy.happy.suit@200; man.happy@300
+room; man.happy@200; idea@200,104,.7; cross@260,90
+city; soldier@200; flag@300,0,1
+temple; temple@200,0,1.2; sparkle@140,80; sparkle@260,80
+stage; man.happy@200; heart@260,96; woman.love@330
+room; man.happy@200; boy.happy@280; arrowu@240,90
+room; man@200; boy@280,0,.7; arrowd@240,60
+stage; woman.happy@200; star@260,90
+room; boy.happy@200,0,1; p@200,0:M-20 -60q-4 30 0 50M20 -60q4 30 0 50
+room; woman~white.happy@200
+beach; man~brown.happy.shades@200; sun@340,72
+room; girl.happy@200; p@200,104:M-16 -14q4 -4 8 0q4 -4 8 0q4 -4 8 0
+room; woman.happy@200
+room; woman.happy@200; p@200,0:M-14 -84Q-22 -40 -16 -10M14 -84Q22 -40 16 -10
+room; boy.happy@200
+room; oldman.happy@200
+room; grandma.happy@200,-60,1.8; p@200,60:M-16 0q4 -2 8 0M8 4q4 -2 8 0
+room; woman.happy@200,-60,1.8; hl@186,58,.4; hl@214,58,.4
+room; man.happy@200,-60,1.8; hl@212,60,.4
+room; boy.happy@200; bandaid@193,14,.5; hl@193,14,.7
+room; man.happy@200,-60,1.8; hl@200,96,.7
+room; man.sad@200,-60,1.8
+room; man.cover@200,-60,1.8; hl@200,74,.7
+room; boy.happy@200,-60,1.8; hl@190,72,.5; hl@210,72,.5
+room; man.happy@200,-60,1.8; hl@190,75,.5
+room; man.sick@200,-60,1.8; hl@200,62,.5
+room; man.glasses@200,-60,1.8; hl@200,70,.5
+room; man.sweat@200,-60,1.8; hl@200,59,.4
+room; man.sad@200,-60,1.8; hl@200,54,.5; tooth@300,10,1
+room; man.sad.cover@200,-60,1.8; tooth@300,10,1
+room; boy.happy@200,-60,1.8; tooth@300,10,1; hl@200,55,.5
+room; dog@200,0,1.8; hl@178,38,.6
+room; man@200,-60,1.8; hl@200,38,.6
+room; man.sweat@200,-60,1.8; hl@200,38,.7
+room; man@200; hl@186,52,.6
+room; hand@200,0,2; water_drop@200,30,.6
+room; hand@200,0,2; bandaid@200,30,1
+room; thumbup@200,0,2.2
+room; hand@200,0,2; hl@184,78,.6; man.point@320!
+room; hand@200,0,2; hl@200,82,.6
+room; hand@200,0,2; hl@216,78,.6; ring@216,70,.6
+room; hand@200,0,2; hl@232,64,.6
+room; clay@200,0,1.6; elephant@200,20,.4; boy.happy@320
+room; fist2@200,0,2
+hosp; man.sick@200; hl@200,46,1
+hosp; skeleton@200,0,1.2; hl@200,62,.7
+hosp; skeleton@200,0,1.2; hl@200,64,.9
+hosp; skeleton@200,0,1.2; hl@200,26,.8
+gym; man.run.sport.sad@200; hl@205,22,.8
+mount; man.sweat.sad@200; hl@193,8,.7; mountain@60,0,.6
+room; desk@120,0,.8; man.sad@200; hl@193,10,.7
+room; foot@200,0,2; hl@196,6,.6
+room; foot@200,0,2; hl@212,4,.8
