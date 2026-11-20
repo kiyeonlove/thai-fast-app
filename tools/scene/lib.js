@@ -44,6 +44,8 @@ const HAIR = {
   bald: ``,
 };
 const HATS = {
+  beanie: `<path d="M-13 -86Q-13 -100 0 -100Q13 -100 13 -86Z" fill="${K}"/><rect x="-11" y="-85" width="22" height="5" fill="${K}"/><rect x="-8" y="-84" width="5" height="3" fill="#fff" stroke="none"/><rect x="3" y="-84" width="5" height="3" fill="#fff" stroke="none"/>`,
+  veil: `<path d="M-14 -90Q0 -100 14 -90L24 -40H-24Z" fill="#fff" fill-opacity=".6" stroke-width="1.2"/><circle cx="0" cy="-96" r="3" fill="#fff" stroke-width="1"/>`,
   beret: `<path d="M-13 -88Q-12 -100 4 -98Q16 -96 13 -88Z" fill="${K}"/><path d="M4 -98v-3" stroke-width="2"/>`,
   scout: `<path d="M-20 -86H20M-11 -86L-7 -100H7L11 -86" fill="#a0714a" stroke-width="2"/>`,
   gradcap: `<path d="M-18 -94L0 -100L18 -94L0 -88Z" fill="${K}"/><path d="M-10 -92v6h20v-6" fill="${K}"/><path d="M14 -94v10" stroke-width="1.4"/>`,
@@ -75,7 +77,7 @@ const TYPE = { // 머리, 옷, 크기, 기본 모자/안경
   monk: {h: "bald", robe: 1}, police: {h: "m", hat: "police", dark: 1}, doctor: {h: "m", coat: 1, gl: 1}, nurse: {h: "wb", d: 1, coat: 1},
   chef: {h: "m", hat: "chef", coat: 1}, farmer: {h: "m", hat: "straw"}, worker: {h: "m", hat: "helmet"}, student: {h: "m", s: .86, tie: 1},
   teacher: {h: "wb", d: 1, gl: 1}, driver: {h: "m", hat: "cap"}, baby: {h: "bald", s: .5, baby: 1}, soldier: {h: "m", hat: "helmet", dark: 1},
-  boss: {h: "om", tie: 1, gl: 1}, judge: {h: "om", robe2: 1, gl: 1}, lawyer: {h: "m", tie: 1, dark: 1}, pilot: {h: "m", hat: "cap", dark: 1, tie: 1}, scientist: {h: "om", coat: 1, gl: 1}, artist: {h: "m", hat: "beret"}, dentist: {h: "wb", d: 1, coat: 1}, minister: {h: "om", tie: 1, dark: 1}, prince: {h: "m", hat: "crown"}, princess: {h: "w", d: 1, hat: "crown"}, king: {h: "om", hat: "crown"}, queen: {h: "w", d: 1, hat: "crown"}, witch: {h: "w", d: 1, hat: "witch", dark: 1}, fairy: {h: "g", d: 1, wing: 1}, hero: {h: "m", cape: 1}, giant: {h: "m", s: 1.25}, firefighter: {h: "m", hat: "helmet", dark: 1}, singer: {h: "m"}, guard: {h: "m", hat: "police"}, seller: {h: "wb", d: 1, apron: 1}, kid: {h: "g", d: 1, s: .74},
+  boss: {h: "om", tie: 1, gl: 1}, thief: {h: "m", dark: 1, hat: "beanie"}, bride: {h: "w", d: 1, hat: "veil"}, groom: {h: "m", suitT: 1}, boxer: {h: "m", sport: 1}, engineer: {h: "m", hat: "helmet", vest: 1}, prof: {h: "om", gl: 1, tie: 1}, clerk: {h: "wb", d: 1, tie: 1}, judge: {h: "om", robe2: 1, gl: 1}, lawyer: {h: "m", tie: 1, dark: 1}, pilot: {h: "m", hat: "cap", dark: 1, tie: 1}, scientist: {h: "om", coat: 1, gl: 1}, artist: {h: "m", hat: "beret"}, dentist: {h: "wb", d: 1, coat: 1}, minister: {h: "om", tie: 1, dark: 1}, prince: {h: "m", hat: "crown"}, princess: {h: "w", d: 1, hat: "crown"}, king: {h: "om", hat: "crown"}, queen: {h: "w", d: 1, hat: "crown"}, witch: {h: "w", d: 1, hat: "witch", dark: 1}, fairy: {h: "g", d: 1, wing: 1}, hero: {h: "m", cape: 1}, giant: {h: "m", s: 1.25}, firefighter: {h: "m", hat: "helmet", dark: 1}, singer: {h: "m"}, guard: {h: "m", hat: "police"}, seller: {h: "wb", d: 1, apron: 1}, kid: {h: "g", d: 1, s: .74},
 };
 const FACE = {
   smile: `<path d="M-4 -74q4 4 8 0" fill="none" stroke-width="1.8"/>`,
@@ -116,6 +118,9 @@ function person(type, mods, held, txt, lift) {
   if (T.robe) body = `<path d="M-12 -66Q-16 -66 -16 -60L-18 ${sit ? -34 : -8}H18L16 -60Q16 -66 12 -66Z" fill="${GR}"/><path d="M-10 -64L12 -36" stroke-width="1.6" fill="none"/>`;
   else if (T.d) body = `<path d="M-10 -66Q-14 -66 -14 -61L-19 -30H19L14 -61Q14 -66 10 -66Z" fill="${T.dark ? GR : "#fff"}"/>`;
   else body = `<path d="M-11 -66Q-15 -66 -15 -61L-14 -34H14L15 -61Q15 -66 11 -66Z" fill="${T.dark ? GR : "#fff"}"/>`;
+  if (T.suitT) body += COST.suit;
+  if (T.vest) body += COST.vest;
+  if (T.sport) body += COST.sport;
   if (T.robe2) body += `<path d="M-12 -66Q-16 -66 -16 -60L-18 -24H18L16 -60Q16 -66 12 -66Z" fill="${K}"/>`;
   if (T.coat) body += `<path d="M0 -66V-34M-4 -60l4 4 4 -4" fill="none" stroke-width="1.5"/>`;
   for (const m of mods) { const C2 = COST[m]; if (C2) body += C2; }
@@ -1145,6 +1150,23 @@ const O = {
   oil: `<path d="M-10 0V-28H10V0Z" fill="${K}"/><ellipse cx="0" cy="-28" rx="10" ry="3" fill="#555"/><path d="M0 -40q-4 6 0 8q4 -2 0 -8" fill="${K}"/>`,
   ore: `<path d="M-14 0L-10 -14L4 -18L14 -8L10 0Z" fill="${GR}"/><path d="M-6 -10l4 -2M4 -10l3 2" stroke="#f2d04c" stroke-width="2.4"/>`,
   co2: `<text x="0" y="-6" font-size="14" text-anchor="middle" fill="${K}" stroke="none" font-weight="800">CO₂</text>`,
+  whistle: `<path d="M-10 -10H6V-2H-4Q-10 -2 -10 -6Z" fill="${GR}"/><circle cx="-4" cy="-6" r="5" fill="${GR}"/><path d="M10 -10l6 -4M10 -6h8" stroke-width="1.2"/>`,
+  bglove: `<path d="M-10 0V-14Q-12 -26 0 -26Q12 -26 10 -12V0Z" fill="#e45b5b"/><path d="M-10 -14q-6 -4 -2 -10" fill="#e45b5b"/><rect x="-10" y="-4" width="20" height="5" fill="#fff"/>`,
+  shuttle: `<circle cx="0" cy="-4" r="3" fill="#fff"/><path d="M-2 -6L-8 -18H8L2 -6" fill="#fff" stroke-width="1.2"/>`,
+  ambulance: `<path d="M-40 -8V-38H14L30 -22V-8Z" fill="#fff"/><path d="M-20 -30v12M-26 -24h12" stroke="#e45b5b" stroke-width="4"/><rect x="-8" y="-44" width="10" height="6" fill="#e45b5b"/><circle cx="-26" cy="-6" r="6" fill="${K}"/><circle cx="18" cy="-6" r="6" fill="${K}"/>`,
+  rx: `<rect x="-12" y="-28" width="24" height="28" fill="#fff"/><text x="-4" y="-16" font-size="10" fill="${K}" stroke="none" font-weight="800">Rx</text><path d="M-8 -8h16M-8 -4h12" stroke-width="1"/>`,
+  syrup: `<path d="M-7 0V-18Q-7 -22 -3 -24V-30H3V-24Q7 -22 7 -18V0Z" fill="#e8806a"/><rect x="-7" y="-16" width="14" height="7" fill="#fff" stroke-width="1"/><path d="M10 -6Q10 0 18 0Q22 0 22 -4H10Z" fill="#fff" stroke-width="1.2"/>`,
+  handcuff: `<circle cx="-8" cy="-8" r="6" fill="none" stroke-width="2.4"/><circle cx="8" cy="-8" r="6" fill="none" stroke-width="2.4"/><path d="M-2 -8h4" stroke-width="2"/>`,
+  jail: `<rect x="-40" y="-80" width="80" height="80" fill="none" stroke-width="3"/><path d="M-28 -80V0M-16 -80V0M-4 -80V0M8 -80V0M20 -80V0M32 -80V0" stroke-width="3"/>`,
+  veil: `<path d="M-14 -94Q0 -104 14 -94L22 -40H-22Z" fill="#fff" fill-opacity=".7" stroke-width="1.4"/>`,
+  windmill: `<path d="M-6 0L-2 -60H2L6 0Z" fill="#fff"/><path d="M0 -60L-4 -96L4 -96ZM0 -60L30 -44L26 -38ZM0 -60L-30 -44L-26 -38Z" fill="#fff" stroke-width="1.6"/><circle cx="0" cy="-60" r="3" fill="${K}"/>`,
+  recycle: `<path d="M0 -24l8 12h-5l4 8-8 -4 4 -4M-12 -4l-6 -10 4 -2 -4 -8 8 4 -4 4M12 -4H-2v4l-6 -6 6 -6v4" fill="none" stroke="#5cb85c" stroke-width="2.4"/>`,
+  compost: `<path d="M-20 0V-24H20V0Z" fill="#a0714a"/><path d="M-16 -24l6 -6 4 4 6 -6 6 4 6 -4" fill="none" stroke="#5cb85c" stroke-width="2"/>`,
+  protractor: `<path d="M-24 0A24 24 0 0 1 24 0Z" fill="#fff"/><path d="M0 0L-12 -20M0 0L17 -17M-18 0v-3M-12 0v-3M12 0v-3M18 0v-3" stroke-width="1"/>`,
+  dice: `<rect x="-12" y="-24" width="24" height="24" rx="4" fill="#fff"/><circle cx="-6" cy="-18" r="2" fill="${K}"/><circle cx="0" cy="-12" r="2" fill="${K}"/><circle cx="6" cy="-6" r="2" fill="${K}"/>`,
+  pie: `<circle cx="0" cy="-20" r="20" fill="#fff"/><path d="M0 -20V-40A20 20 0 0 1 20 -20Z" fill="#6aa8e8"/><path d="M0 -20L20 -20A20 20 0 0 1 -12 -4Z" fill="#f2d04c"/>`,
+  angle: `<path d="M-20 0H24M-20 0L14 -30" fill="none" stroke-width="2.4"/><path d="M-4 0A16 16 0 0 0 -8 -10" fill="none" stroke-width="1.6"/>`,
+  cube: `<path d="M-14 0V-20L0 -28L14 -20V0L0 8Z" fill="#fff"/><path d="M-14 -20L0 -12L14 -20M0 -12V8" fill="none" stroke-width="1.6"/>`,
   // 기호
   heart: `<path d="M0 0C-14 -10 -10 -22 0 -14C10 -22 14 -10 0 0Z" fill="${GR}" stroke-width="1.8"/>`,
   check: `<path d="M-8 -10l6 6l10 -12" fill="none" stroke-width="3.4"/>`,
@@ -1281,7 +1303,7 @@ if (typeof module !== "undefined") module.exports = SC; else root.SC = SC;
   SC.lint = function (spec) {
     const bad = [], parts = String(spec).split(";"), bg = parts.shift().trim();
     if (!SC.bgs.includes(bg)) bad.push("bg:" + bg);
-    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
+    const MODS = new Set(["suit", "coat", "pad", "hood", "vest", "knit", "sport", "rainc", "tie", "scarf", "shades", "mask", "smask", "crown", "witch", "gradcap", "scout", "beret", "beanie", "veil", ...SC.poses, "smile", "grin", "sad", "angry", "wow", "flat", "sick", "sleep", "happy", "cry", "sweat", "sit", "floor", "lie", "awake", "glasses", "love", "cap", "police", "chef", "straw", "helmet", "sun", "winter"]);
     for (let t of parts) {
       t = t.trim(); if (!t || /^p[gkw]?(@[^:]*)?:/.test(t)) continue;
       const head = t.split("=")[0]; const [main, held] = head.split("+");

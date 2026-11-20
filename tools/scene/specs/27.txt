@@ -1,0 +1,100 @@
+การลงโทษ	city; justice@200,0,1.4; jail@320,0,.6
+สนธิสัญญา	office; flag@140,0,1; flagkr@260,0,1; man.suit.happy@170; man.suit.happy@230!; paper@200,40,.8
+สมาคม	room; woman.happy@140; woman.happy@200; woman.happy@260; woman.happy@320
+องค์กร	city; tower@200,0,1; man.suit@140; woman@260; man@320
+ประชุม	class; table@200; teacher.sit@150,24; teacher.sit@250,24; chair@150; chair@250; clock@340,70,1=3:00
+การประชุม	office; table@200; man.sit.suit@150,24; woman.sit@250,24; chair@150; chair@250; calendar@340,40,1
+ตัวแทน	class; student.up.happy@200; student@120; student@280
+ผู้นำ	gym; man.happy.point@200; man@280; woman@320; flag@120,0,.8
+สมาชิก	room; man@140; woman@200; boy@260; girl@310; heart@220,104
+กฎระเบียบ	office; board_@200,20,1.4=규정; man.suit.happy@340
+ภูมิอากาศเปลี่ยนแปลง	field; sun@340,72,1.4; earth@200,10,1.2; thermo@100,0,1
+โลกร้อน	space; earth@200,10,1.6; thermo@300,0,1.2; fire@200,60,.6
+ก๊าซเรือนกระจก	city; factory@200,0,1; co2@200,90,1
+ฝุ่นจิ๋ว	city; dust@200,60,2.4; dust@120,40,2; man.smask@330
+ขาดแคลน	hosp; doctor@200; man.sick@120; woman.sick@300; txt@200,104=부족
+ขาดแคลนน้ำ	field; dryland@200,0,1.6; faucet@200,40,1.2; cross@240,70
+การตัดไม้ทำลายป่า	field; trunk@200,0,.8; saw@240,20,1.2; tree@100,0; cross@330,70
+สูญพันธุ์	city; museum@200,0,1; dino@200,10,1.4; txt@200,104=멸종
+เขตอนุรักษ์	park; fence@200,0,1.2; deer@200,0,1; sign@320,0,1=보호
+อุทยานแห่งชาติ	mount; mountain@200,0,1.2; forest@200,0,.8; sign@330,0,1=국립공원
+พลังงานหมุนเวียน	field; solar@140,0,1.2; windmill@260,0,1; sun@340,80
+พลังลม	field; windmill@170,0,1; windmill@260,0,.8; wind@100,60
+แยกขยะ	street; sortbin@200,0,1.6; man.happy@320; woman.happy@80
+คัดแยกขยะ	school; sortbin@200,0,1.6; boy.happy@100; girl.happy@320
+ลดปริมาณ	shop; pbag@200,0,1.6; arrowd@250,50; cross@200,40
+ใช้ซ้ำ	shop; ecobag@200,0,1.8; woman.happy@320
+หมัก	kitchen; jar@200,0,1.8=김치; cabbage@140,0
+ปุ๋ยหมัก	field; compost@200,0,1.4; rice@200,30,.6; sprout@300,0,1.2
+วัยรุ่น	room; boy.flat@200; heart@260,90; phone@300,0,1
+เยาวชน	city; boy.happy@140; girl.happy@200; boy.happy@260; flag@330,0,.8
+เครียด	class; testp@200,10,1.6; man.sweat.sweat.sad@320
+ความเครียด	gym; man.run.sport.happy@200; heart@260,96
+ความกังวล	room; woman.happy@140; boy.sad@240; say@190,96=걱정돼요
+ความมั่นใจ	class; girl.happy.up@200; star@260,90
+ความภูมิใจ	class; trophy@200,0,1.2; man.happy@120; woman.happy@300; heart@200,104
+สมาธิ	class; desk@200; book@200,40; phone@260,40,.8; boy.sit.sweat@200,24; chair@200; cross@260,60
+นั่งสมาธิ	room; mat@200,0,1.6; man.floor.happy@200,4; sun@340,72
+ความจำ	room; grandma.happy@200; brain@280,60,.8
+ความรู้สึก	room; man.happy@200; heart@260,90; say@300,96=제 기분은…
+ความเห็นอกเห็นใจ	room; man.sad@160; woman.hold@240; heart@200,104
+ความตั้งใจ	room; man.up.happy@200; target@300,20,1
+ความอดทน	room; woman.hold.happy@200; baby.cry@200,30,1.1; heart@270,96
+ตรงไปตรงมา	room; man.happy@200; say@260,96=솔직히!
+ความถ่อมตน	room; man.wai.happy@200; trophy@280,0,1
+กตัญญู	room; boy.wai.happy@200; man.happy@300; woman.happy@340
+ความกตัญญู	room; man.wai.happy@200; heart@260,90
+การนอนหลับ	bedroom; bed@200,0,1.2; man.lie.sleep@200,34; moon@340,80
+อาหารการกิน	rest; table@200; veg@170,39; fish@210,39; rice@240,39; woman.happy@330
+ความสมดุล	gym; scale@200,0,1.4; man.happy@320
+แสดงออก	class; boy.up.happy@200; girl.happy@300
+สัญลักษณ์	park; dove@200,40,1.6; txt@200,104=평화
+การเปรียบเทียบ	class; board_@200,20,1.4=A = B; teacher.point@340!
+ตัวละคร	stage; man.happy@140; woman.happy@200; boy@260; curtain@200,0,1.3
+ตัวละครเอก	stage; hero.happy@200; curtain@200,0,1.3
+โครงเรื่อง	class; board_@200,20,1.2=→ → →; teacher.point@340!
+ข้อคิด	bedroom; pbook@200,0,1.6; heart@200,40; girl.happy@320
+ตอนจบ	city; cinema@200,0,1.1
+ผลงาน	class; sketch@200,0,1.6; trophy@270,0,1.2; girl.happy@330
+สุนทรพจน์	city; minister.happy@200+mic; man@100; woman@300
+การโต้วาที	class; student.happy@150; student.angry@250!; say@200,96=찬성/반대
+สัมภาษณ์	office; man.suit.happy@140; woman.happy@260; table@200
+รายงาน	office; paper@200,0,1.6=보고서; man.happy.give@320!
+แผนภูมิ	class; pie@200,10,1.4; graph@290,10,1
+สอบถาม	office; phone@200,0,1.6; man.phone.happy@320+phone; qmark@320,104
+แบบสอบถาม	class; paper@200,0,1.6; check@200,50; man.happy@320
+เศษส่วน	class; board_@200,20,1.4=1/2; pizza@300,0,1
+ทศนิยม	class; board_@200,20,1.4=2.5
+เปอร์เซ็นต์	class; board_@200,20,1.4=20%
+ค่าเฉลี่ย	class; board_@200,20,1.4=평균 75; graph@340,10,.8
+อัตราส่วน	kitchen; rice@170,0,1.4; water@240,0,1.4; txt@205,60=1:1
+องศา	field; thermo@200,0,2; sun@340,72; txt@260,70=35°
+มุมองศา	class; protractor@200,0,1.8; angle@300,0,1
+ฉาก	beach; wave@200,10,2; palm@120,0; txt@200,104=배경
+มุมฉาก	class; angle@200,0,1.6; txt@200,60=90°
+เส้นผ่านศูนย์กลาง	class; circle@200,0,1.8; p@200,16:M-16 0H16
+รัศมี	class; circle@200,0,1.8; p@200,16:M0 0H16
+เส้นรอบวง	class; circle@200,0,1.8; p@200,16:M0 0a16 16 0 1 0 .1 0
+ปริมาตร	class; box@200,0,2; ruler@270,0,1
+รูปสามเหลี่ยม	class; triangle@200,0,1.8
+รูปสี่เหลี่ยม	class; square@200,0,1.8
+ลูกบาศก์	class; dice@200,0,2
+จำนวนคี่	class; board_@200,20,1.4=7
+จำนวนคู่	class; board_@200,20,1.4=8
+รวม	shop; money@200,10,1.8; txt@200,60=+세금
+ผลรวม	class; board_@200,20,1.4=합계 100
+ล้าน	city; tower@120,0,.8; tower@200,0,1; tower@280,0,.8; txt@200,104=10,000,000
+แสน	road; car@200,0,1.6; txt@200,60=500,000฿
+อันดับ	class; testp@200,10,1.6; txt@200,70=3등; boy.happy@320
+อันดับแรก	class; txt@200,70=1 → 2 → 3; man.point@330!
+สองเท่า	shop; arrowu@200,60,1.6; money@200,10,1.2; txt@260,60=×2
+ครึ่งหนึ่ง	room; cake@200,0,1.6; p@200,0:M0 -14V0
+ประมาณ	road; clock@200,60,1.4; car@300,0,1; txt@200,104=약 1시간
+พอดี	station; clock@200,60,1.4; train@300,0,.8; check@120,70; man.happy@100
+พนักงาน	shop; counter@200; clerk.happy@200,0; man@300
+ข้าราชการ	office; govt@200,0,.8; man.suit.happy@300
+อาจารย์	class; university@200,0,.8; prof.happy@320
+วิศวกร	office; engineer.happy@200; gear@300,40,1.2
+สถาปนิก	office; house@200,0,1; man.glasses.happy@320+paper
+ครูวิทยาศาสตร์	class; flask@200,0,1.4; teacher.happy@320
+พนักงานต้อนรับ	office; clerk.happy.wai@200; man@320

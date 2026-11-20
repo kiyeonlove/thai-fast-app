@@ -1,0 +1,100 @@
+นักร้อง	stage; singer.happy@200+mic; music@250,80; man.up.happy@60; woman.up.happy@340
+นักแสดง	stage; man.happy@170; woman.cry@240; star@320,90
+นาฏศิลป์	stage; girl.dance.happy@200; music@260,80
+ละคร	stage; man.happy@140; woman.wow@220; man@300; curtain@200,0,1.3
+ภาพยนตร์	city; cinema@200,0,1.1
+นักกีฬา	gym; man.run.sport.happy@200; sun@340,72
+การแข่งขัน	gym; ball@200,0,1.2; man.run.sport@140; man.run.sport@260
+ทีม	gym; trophy@200,0,1.4; boy.up.happy@120; boy.up.happy@170; boy.up.happy@240; boy.up.happy@290
+กรรมการ	gym; man.sport.happy@200+whistle; boy.run@320
+เหรียญรางวัล	gym; medal@200,30,1.8; man.up.happy@320
+มวย	living; tvstand@200; tv@200,20,1.2; bglove@200,32,.8; man.sit.happy@320,24; chair@320
+มวยไทย	gym; boxer.happy@170; boxer.angry@240!; bglove@170,46,.6; bglove@240,46,.6
+แบดมินตัน	gym; racket@140,30,1.2; shuttle@200,70; racket@260,30,1.2; man.happy@120; woman.happy@290
+สมรรถภาพ	gym; man.run.sport@200; clock@320,70,1; check@100,70
+ภูมิคุ้มกัน	kitchen; veg@170,0,1.4; broccoli@230,0,1.4; boy.happy.up@320
+ภูมิแพ้	room; dust@200,50,2; boy.sick.cover@320
+โรคอ้วน	room; boy@200,0,1.2; bscale@200,0,1.4
+เบาหวาน	room; grandma@200; jar@280,0,1.2=혈당; medpack@120,0,1
+ความดันสูง	hosp; bpmon@200,0,1.6; man.sweat@320
+ติดเชื้อ	room; bandaid@200,10,1.2; germ@240,30; man.sad@320
+การติดเชื้อ	room; germ@200,30,1.6; germ@230,50,1.2; bandaid@170,10
+อาการ	hosp; thermo@140,0,1.2; man.sick.cover@240; say@300,96=콜록
+รักษาโรค	hosp; doctor.happy@160; man.sick@260
+ฟื้นตัว	hosp; man.happy.up@200; bed@120,0,.8; woman.happy@320
+ใบสั่งยา	hosp; rx@200,10,1.6; doctor.happy@120; man@300
+ยาเม็ด	room; pills@200,10,1.8; plate@140,0,1.2; man.happy@320
+ยาน้ำ	room; syrup@200,0,1.6; girl.happy@320
+ห้องฉุกเฉิน	hosp; sign@200,0,1.4=ER; woman.run.sweat@300; boy.sick@340,0,.7
+รถพยาบาล	street; ambulance@200,0,1.2; man.wave@340
+สติ	hosp; man.lie.sleep@200,10; doctor.wow@320
+เป็นลม	room; man^-80@200,4; woman.wow@320
+กระตือรือร้น	class; student.up.happy@140; student.up.happy@220; teacher.happy@320
+เฉื่อยชา	room; sofa@200; man.sit.flat.sleep@200,30
+มองโลกในแง่ดี	room; man.happy.up@200; sun@330,80; rainbow@120,40,.6
+มองโลกในแง่ร้าย	room; man.sad@200; raincloud@200,100,.8
+ดื้อ	room; boy.angry@200; woman.sweat@320; cross@140,80
+ว่า	room; woman.angry.point@200; boy.sad@300; clock@100,60,1
+ว่าง่าย	room; boy.happy@200; woman.happy@300; check@250,96
+ขี้อาย	room; girl.cover@200; woman@300
+ช่างพูด	room; woman.happy@200; say@260,96=블라블라…
+เงียบขรึม	room; man.flat@200; woman.happy@300
+มีไหวพริบ	room; man.happy@200; idea@200,104,.8
+สร้างสรรค์	class; sketch@200,0,1.6; trophy@270,0,1; girl.happy@330
+พึ่ง	room; man.happy@200; grandpa@300; grandma@340; arrowr@250,60
+พึ่งตนเอง	room; boy.happy@200+broom; check@280,80
+มีความรับผิดชอบ	office; man.happy@200; check@260,80
+ไว้ใจได้	room; man.happy@160; boy.happy@240; heart@200,104
+อภิปราย	class; student.think@140; student.happy@220; student@300; bin@200,96,.6
+รายงานการค้นคว้า	class; book@180,0,1.4; laptop@240,0,1.2; student.happy@330
+เอกสาร	office; folder@200,0,1.6; paper@140,0,1.2; man.happy@330
+แหล่งที่มา	class; book@200,0,1.6; arrowr@250,40; laptop@300,0,1
+อ้างอิง	class; book@200,0,1.6; txt@200,60=참고; man.happy@320
+บันทึก	class; notebook@200,0,1.6; man.happy@320+pen
+สรุปย่อ	class; notebook@200,0,1.6; testp@140,0,1.2; boy.happy@320
+ท่องจำ	room; notebook@200,0,1.6; txt@200,60=단어; brain@300,60,.8
+ตั้งใจฟัง	class; teacher.point@140; student.happy@260; hl@275,72,.6
+คำถาม	class; teacher@140; student.up@260; qmark@260,104
+คำอธิบาย	class; board_@200,20,1.4=설명; teacher.point@340!
+ตีความ	class; book@200,0,1.6; txt@200,60=กลอน; man.think@320
+การแปล	office; book@170,0,1.2; arrowr@210,30; paper@250,0,1.2; man.sweat@330
+บทเรียน	class; book@200,0,1.6; txt@200,60=1과; boy.happy@320
+เตรียมบทเรียน	room; desk@200; book@200,40; teacher.sit.happy@200,24; chair@200
+สารบัญ	class; book@200,0,1.6; txt@200,60=목차; man.happy@320
+มารยาท	room; boy.wai.happy@200; grandma.happy@300
+การไหว้	temple; man.wai.happy@160; woman.wai.happy@240!
+คำสุภาพ	room; boy.wai@200; grandpa.happy@300; say@250,96=…ครับ
+เวลานัด	cafe; clock@200,60,1.4=10:00; man.happy@320
+ตรงเวลา	office; clock@200,60,1.4=9:00; check@260,70; man.happy@330
+ต่อคิว	station; ticket@330,10,1.2; man@140; woman@190; man@240
+เสียสละ	street; bus@200,0,1; man.happy.give@140; oldwoman.happy@280
+เกรงใจ	room; man.wai@160; woman.wai@240!; heart@200,104
+จดหมายขอบคุณ	room; letter@200,10,1.6; heart@200,40; grandma.happy@320
+ให้ของขวัญ	school; teacher.happy@200; boy.happy.give@300!+flower
+งานเลี้ยง	room; table@200; cake@200,39; man.happy@120; woman.happy@280; balloon@340,40
+แต่งงาน	temple; man.happy@180; woman.happy@230; heart@205,104
+งานแต่งงาน	room; groom.happy@170; bride.happy@240; heart@205,104
+งานศพ	temple; man.suit.sad@170; woman.suit.sad@240
+ปีใหม่	night; fireworks@140,80,1.4; fireworks@280,90; calendar@200,30,1=1/1
+สวัสดีปีใหม่	night; fireworks@200,80,1.6; man.happy.wave@120; woman.happy.wave@290
+ผ่าน	street; bus@200,0,1.2; house@60,0,.8; arrowr@300,40
+รหัสผ่าน	room; phone@200,0,1.6; txt@200,60=****; man.think@330
+แอป	room; phone@200,0,1.6; arrowd@200,60; man.happy@330
+เชื้อชาติ	city; man@140; woman@200; man@260; heart@200,104
+สัญชาติ	room; passport@200,0,1.6; man.think@320; qmark@320,104
+หน้าที่พลเมือง	city; flag@200,0,1.2; ballot@120,0,.8; man.happy@300
+สมัคร	office; paper@200,0,1.6=지원서; man.suit.happy@320
+อาสาสมัคร	hosp; man.vest.happy@200+tray; man.sick@320
+บริจาค	room; box@200,0,1.6; tshirt@200,30,.8; woman.happy.give@320!
+ความร่วมมือ	park; man.happy@140+broom; woman.happy@200+broom; boy.happy@260+tbag
+ความสามัคคี	gym; man.up.happy@140; woman.up.happy@200; boy.up.happy@260; heart@200,104
+เคารพสิทธิ์	room; man.happy@160; woman.happy@240; check@200,96
+ปฏิบัติ	school; board_@200,20,1.2=규칙; student.happy@330
+เลือกปฏิบัติ	room; man@160; woman.sad@240; cross@200,96
+การเลือกปฏิบัติ	room; man@160; woman.sad@240; cross@200,96
+การทุจริต	office; moneybag@200,0,1.4; cross@200,40; man.angry@330
+อาชญากรรม	street; police@200; txt@200,104=범죄; graph@300,20,1
+ขโมย	night; house@200,0,1.2; thief@300+bag
+ขโมยของ	shop; thief@200+bag; seller.wow@320
+จับกุม	street; police.happy@160; thief.sad@240; handcuff@240,30
+คุก	room; jail@200,0,1.2; thief.sad@200
