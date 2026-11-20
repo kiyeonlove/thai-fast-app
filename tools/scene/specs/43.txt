@@ -1,0 +1,100 @@
+รักเกลียด	room; man.happy@160; woman.angry@240; heart@170,104; cross@230,104
+ก่อนและหลัง	room; arrowl@160,60; arrowr@240,60; man.think@200
+อดีตกับปัจจุบัน	city; temple@140,0,.8; tower@260,0,.9; arrowr@200,60
+ตอนนี้กับตอนนั้น	room; clock@160,60,1; clock@240,60,1; man.think@330
+ตรงนั้นตรงนี้	room; man.point@160; arrowl@120,60; arrowr@280,60
+นี่นั่น	room; man.point@200; box@140,0; vase@280,0
+อย่างนั้นอย่างนี้	room; man.point@160; woman.point@240!
+เดินไปเดินมา	room; man.walk.sweat@200; arrowl@140,60; arrowr@260,60
+ไม่สม่ำเสมอ	sky; sun@120,70; raincloud@200,90; sun@280,70
+สูสี	gym; ball@200,40; man.run.sport@140; man.run.sport@260!; txt@200,104=50:50
+วุ่นวาย	street; car@100,0; man.run@180; woman.run@240; dog@300,0; ring2@200,90
+วุ่นวายไปหมด	room; teddy@140,0; ball@200,0; box@260,0; man.sweat@330; boom@200,80,.5
+สับสนอลหม่าน	room; boy.run@140; girl.run@220; dog@300,0; woman.cover@360
+ทีละขั้น	room; stairs@200,0,1.2; man.happy@230,48,.8; book@120,0
+ทีละขั้นตอน	room; paper@200,0,1.6=1→2→3; man.happy@320
+หาคำตอบ	room; man.happy@200; idea@200,104,.7; say@260,96=알아볼게요
+ลองหาข้อมูล	room; laptop@200,0,1.6; magnifier@250,30,1; man@320
+ฟังรู้เรื่อง	class; man.happy@200; check@260,80; say@300,96=이해했어요
+ฟังไม่รู้เรื่อง	class; man.sweat@200; qmark@200,104; say@260,96=못 알아들었어요
+จำได้	street; man.wow@160; man.happy@240!; idea@160,104,.6
+จำไม่ได้	street; man.think@160; woman.happy@240; qmark@160,104
+เอาไปวาง	kitchen; table@200; dish@200,39; woman.happy@120
+เอาไปทิ้ง	room; bin@200,0,1.4; man.give@120+tbag
+หยิบมา	kitchen; fridge@200,0,1.1; man.happy@300+water
+ซื้อมา	market; stall@200,0,1.2; woman.happy@330+ecobag
+ซื้อไป	shop; gift@200,0,1.6; man.happy@320+shopbag
+ยืมมา	school; shelf@200,0,1.2; book@260,0,1; boy.happy@330+book
+คืนให้	office; money@200,10,1.6; man.give@320!+money; calendar@100,40,1
+ส่งให้	room; phone@200,0,1.6; chat@240,50,.8; arrowr@270,60
+บอกให้	room; man.happy@200; say@260,96=알려 줄게요
+ให้ดูหน่อย	room; man.happy@200; picture@280,40,1; say@140,96=보여 줘요
+ซื้อให้	room; man.happy.give@200+gift; boy.happy@300; cake@120,0,1
+รอให้	street; man.happy@200; woman.run@300; say@140,96=기다릴게요
+ให้ช่วยไหม	room; box@200,0,1.6; man.happy@120; woman.sweat@300; say@170,96=도와줄까?
+จะลองดู	room; puzzle@200,0,1.6; man.think@320; say@360,96=해 볼게요
+ลองแล้ว	room; puzzle@200,0,1.6; cross@200,40; man.sad@320
+เสร็จแล้ว	room; notebook@200,0,1.6; check@200,40; boy.happy.up@320
+ยังไม่ได้	kitchen; pot@200,0,1.4; clock@320,70,1; woman@120; cross@320,96
+ยังไม่ได้ทำ	office; paper@200,0,1.6; cross@200,40; man.sweat@320
+ใกล้เสร็จแล้ว	office; paper@200,0,1.6; check@200,40; man.happy@320; txt@200,96=90%
+ทำได้	room; man.happy.up@200; check@260,80
+ทำได้ครับ	office; man.happy.up@200; say@260,96=할 수 있어요!
+ทำไม่ได้	office; man.wai.sad@200; cross@260,80
+ต้องทำ	office; calendar@200,30,1.6; man.sweat@320
+ต้องทำนะ	room; notebook@200,0,1.6; woman.point@120; boy.sad@320
+ไม่ต้องทำ	room; man.happy@200; cross@260,80; sun@340,72
+อย่าทำ	room; vase@200,0,1.4; p@200,0:M-10 -4l20 -4; woman.angry.point@320
+อยากทำ	kitchen; pot@200,0,1.4; man.happy@320; flag@100,0,.6
+ไม่อยากทำ	room; man.flat@200; cross@260,80
+อยากกิน	rest; tomyum@200,0,1.6; man.happy@320; heart@320,104
+อยากไป	beach; island@200,0,1.2; man.happy.up@330
+อยากเจอ	room; woman.happy@200; man.sad@300; heart@250,104
+อยากพัก	room; sofa@200; man.sit.sweat@200,30; zzz@230,96
+อยากนอน	bedroom; bed@200,0,1.1; man.sleep@300; zzz@330,104
+กินได้ไหม	rest; dish@200,0,1.6; man.think@320; say@360,96=먹어도 돼요?
+เข้าได้ไหม	room; door@200,0,1.3; man.point@145; say@220,94=들어가도 돼요?
+นั่งได้ไหม	room; chair@200; man.point@120; say@180,96=앉아도 돼요?
+ถ่ายรูปได้ไหม	temple; camera@200,0,1.4; man.think@320; say@360,96=찍어도 돼요?
+ใช้ได้ไหม	shop; sign@200,0,1.4=WC; man.think@320; say@360,96=써도 돼요?
+ไปได้ไหม	office; man.wave@200; say@260,96=가도 돼요?
+เคยกิน	market; durian@200,0,1.8; man.happy@320; check@320,104
+ไม่เคย	airport; flagjp@200,0,1.4; cross@200,80; man.shrug@320
+ไม่เคยเห็น	snow; snowman@200,0; man.wow@320
+ได้ยิน	rain; ring2@200,60,1.4; man.happy@320; qmark@320,104
+เคยได้ยิน	room; man.think@200; idea@200,104,.6; say@260,96=들어 본 적 있어요
+กำลังกิน	rest; rice@200,0,1.6; man.happy.eat@320+spoon
+กำลังไป	road; car@200,0,1.4; plane@330,80,.6
+กำลังทำงาน	office; desk@200; computer@200,40,1; man.sit@200,24; chair@200
+กำลังมา	street; man.run@200; clock@320,70,1; say@140,96=가는 중
+ถึงแล้ว	street; house@200,0,1.2; man.happy.wave@320; check@200,90
+ใกล้ถึงแล้ว	road; car@200,0,1.4; house@330,0,.8; arrowr@270,40
+ไปก่อนเลย	street; man.wave@200; woman@300; say@250,96=먼저 가요
+เชิญทานก่อน	room; table@200; dish@200,39; grandma.happy@120; man.wai@300
+ไปด้วยกันไหม	street; man.happy.point@200; woman@300; say@250,96=같이 갈래요?
+ทำอะไรดี	room; calendar@200,30,1.4; man.think@320; qmark@320,104
+ไปไหนดี	night; man.think@200; qmark@200,104
+เจอกันกี่โมง	street; clock@200,60,1.4; man.think@320; qmark@320,104
+เลิกกี่โมง	office; clock@200,60,1.4; man.think@320; qmark@320,104
+เปิดกี่โมง	shop; shop@200,0,1.2; clock@200,70,.8; qmark@300,96
+ปิดกี่โมง	street; bank@200,0,1.2; clock@200,70,.8; qmark@300,96
+กี่นาที	station; clock@200,60,1.4; man.sweat@320; qmark@320,104
+ใช้เวลากี่นาที	road; clock@200,60,1.4; car@300,0,1; qmark@100,96
+ไปยังไง	temple; temple@200,0,1.2; man.think@340; map@60,0,1
+กินยังไง	rest; dish@200,0,1.6; man.think@320; qmark@320,104
+อ่านว่าอะไร	class; board_@200,20,1.4=คำ?; man.think@340
+พูดว่าอะไร	room; man.think@200; woman@300; say@250,96=뭐라고요?
+ของใคร	room; bag@200,0,1.6; qmark@200,40; man.think@320
+ของผม	room; umbrella@200,0,1.6; man.happy.point@320!; say@360,96=제 거예요
+ใครครับ	room; door@200,0,1.3; man.think@300; say@340,96=누구세요?
+ไปกับใคร	street; man.think@200; qmark@200,104; woman@300
+ทำไมไม่มา	room; man.angry@200; boy.sad@300; say@250,96=왜 안 왔어?
+ทำไมล่ะ	room; man.wow@200; say@260,96=왜요?
+แล้วไง	room; man.shrug@200; say@260,96=그래서요?
+แล้วต่อไป	room; man.happy@200; say@260,96=그다음엔?
+งั้นก็ได้	room; bed@200,0,1; man.shrug.happy@320; check@320,104
+พอแล้วครับ	rest; plate@200,0,1.6; man.wave@320; say@360,96=충분해요
+ขออีก	rest; plate@200,0,1.6; man.happy@320; say@360,96=더 주세요
+ขอนิดเดียว	cafe; sugar@200,0,1.4; man.happy@320; say@360,96=조금만
+ขออันนี้	shop; box@180,0,1.2; box@220,0,1.2; man.point@330!
+ขอน้ำหน่อย	street; sun@340,72; man.sweat@200; say@260,96=물 좀…
