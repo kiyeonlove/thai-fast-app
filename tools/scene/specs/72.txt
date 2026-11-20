@@ -1,0 +1,100 @@
+สอบใบขับขี่	office; license@200,40,1.2; testp@260,20; man.sweat@330
+มือใหม่หัดขับ	road; car@200,0,1; sign@120,30=초보
+ขับขี่ปลอดภัย	road; car@200,0,1; seatbelt@300,40,.6; check@200,70
+หลับใน	road; car@200,0,1; man.sleep@330; cross@200,70
+ทำผิดกฎจราจร	road; police@200; paper@260,40=벌금; car@120,0,.6
+ไฟแดง	road; tlightr@200,0,1; car@300,0,.8; hand@120,60,.6
+ฝ่าไฟแดง	road; tlightr@200,0,1; car@280,0,.8; police@120
+ไฟเขียว	road; tlight@200,0,1; car@300,0,.8; arrowr@330,40
+ไฟเหลือง	road; tlighty@200,0,1; car@300,0,.8; arrowd@300,50
+ป้ายหยุด	road; sign@200,0=STOP; car@300,0,.8
+ลูกระนาด	road; car@200,8,1; sign@120,30=천천히
+เปลี่ยนเลน	road; car@200,0,1; arrowr@280,30; dot@270,20
+ไหล่ทาง	road; car@200,0,1; man@330
+เกาะกลางถนน	road; tree@140,0,.6; tree@200,0,.6; tree@260,0,.6
+ที่สี่แยก	road; car@140,0,.6; car@260,0,.6; tlight@200,0; car@200,0,.6
+วงเวียนถนน	road; circle@200,40,1.4; car@200,0,.6; arrowr@260,40
+อุโมงค์	road; cave@200,0,1.2; car@200,0,.6
+ทางยกระดับ	road; bridge@200,0,1.2; car@200,40,.6
+ด่านเก็บเงิน	road; booth@200,0,1; car@300,0,.6; money@200,40
+ค่าทางด่วน	road; booth@200,0,1; txt@200,90=50฿
+จุดพักรถ	road; shop@200,0,.8; toilet@300,0,.4; car@100,0,.6
+จีพีเอส	road; phone@200,40,1.2; map@260,40; car@100,0,.6
+ทางลัด	street; arrowr@200,40; man.think@320; qmark@320,96
+ทางอ้อม	road; arrowr@140,40; arrowu@200,60; arrowr@260,80; car@100,0,.6
+ทางตัน	street; fence@200,0,1.2; man.sad@200; cross@200,96
+กำลังก่อสร้าง	road; sign@200,0=공사; worker.helmet@280
+เลี่ยงเส้นทาง	road; car@120,0,.6; car@200,0,.6; arrowu@280,60; arrowr@320,80
+เส้นทาง	mount; car@200,0,.6; mountain@300,0,.8; tree@100,0
+ระยะทางกี่กิโล	road; sign@200,30=? km; car@300,0,.6
+กิโลเมตร	road; sign@200,30=10 km; car@300,0,.6
+กิโลเมตรต่อชั่วโมง	road; car@200,0,1; txt@200,80=100 km/h
+ปริมาณรถ	road; car@100,0,.6; car@160,0,.6; car@220,0,.6; car@280,0,.6; sun@330,90
+ชั่วโมงเร่งด่วน	road; car@100,0,.6; car@160,0,.6; car@220,0,.6; car@280,0,.6; clock@340,80
+เวลาเข้าออกงาน	station; subway@200,0,1; man@140; woman@200; man@260
+ติดรถไปด้วย	road; car@200,0,1; man.happy@330; qmark@330,96
+ไปส่งด้วยรถ	road; car@200,0,1; man.happy.wave@330
+ให้ติดรถ	road; car@200,0,1; man.happy@140; woman.happy.wai@330
+เดินห้านาที	street; house@120,0,.6; stall@280,0,.8; man.walk@200; txt@200,96=5분
+นั่งรถสิบนาที	road; car@200,0,1; school@320,0,.5; txt@200,80=10분
+เครื่องใช้สำนักงาน	office; box@200,20; pen@170,40; stapler@230,40; phone@280,40
+ติดแสตมป์	room; letter@200,40,1.4; stamp2@230,50,.5
+พัสดุภัณฑ์	office; parcel@200,20,1.2; flagkr@280,0,.6
+จดหมายลงทะเบียน	office; letter@200,40,1.2; seal@250,40; clerk@330
+รับของ	street; door@200; parcel@200,0; cross@280,70
+เขียนที่อยู่	room; letter@200,40,1.2; pen@250,40
+ผู้รับ	room; letter@200,40,1.2; woman.happy@320; heart@320,96
+ผู้ส่ง	room; letter@200,40,1.2; pen@250,40; man@330
+ไวท์บอร์ด	class; board_@200,60=ABC; teacher.point@330
+ปากกาเมจิก	class; marker@200,40,1.2; cross@200,60
+แปรงลบกระดาน	class; board_@200,60=ABC; brush@200,50,.6; teacher@330
+ที่เจาะกระดาษ	office; paper@200,30,1.2; dot@180,40; dot@180,60
+เทปกาวสองหน้า	office; tape@200,40,1; paper@200,30
+สก๊อตเทป	office; box@200,10,1.2; tape@200,40
+ตรายาง	office; seal@200,40,1.2; paper@200,10
+น้ำหมึก	office; printer@200,20,1; cross@200,70
+เครื่องสแกน	office; copier@200,0,1; txt@200,90=2F
+แฟกซ์	office; printer@200,20,1; paper@260,40; man.wow@330
+การพิมพ์เอกสาร	office; laptop@200,40,1; clock@280,70; man.sweat@330
+พิมพ์ดีด	office; keyboard@200,40,1; woman.happy@320
+ขนาดตัวอักษร	office; txt@200,60=A A A; man@330
+ฟอนต์	office; txt@200,60=Aa; arrowr@240,60; laptop@200,20
+ตัวหนา	office; txt@200,60=B; laptop@200,20
+ตัวเอียง	office; txt@200,60=I; laptop@200,20
+เอ็กเซล	office; laptop@200,40; txt@200,90=▦; man@330
+ทำกราฟ	office; graph@200,30,1.2; laptop@120,20
+สไลด์นำเสนอ	office; board2@200,40,1; man.point@300
+แชร์หน้าจอ	office; laptop@200,40,1.2; arrowr@260,50; man@330
+ประชุมออนไลน์	office; laptop@200,40,1.2; man.happy@330
+ประชุมทางวิดีโอ	office; laptop@200,40,1.2; flagkr@120,0,.6; man.happy@330
+ส่งต่ออีเมล	office; laptop@200,40; envelope2@260,60; boss@330
+สำเนา	office; envelope2@200,50,1.2; man.point@330
+หัวเรื่อง	office; envelope2@200,50,1.2; txt@200,80=제목
+กล่องจดหมายเข้า	office; envelope2@180,40; envelope2@200,50; envelope2@220,60; man.sweat@330
+อีเมลขยะ	office; envelope2@180,40; envelope2@220,50; cross@200,80
+เปลี่ยนรหัสผ่าน	office; padlock@200,40,1.2; laptop@120,20
+ชื่อผู้ใช้	office; laptop@200,40; man.think@330; qmark@330,96
+รหัสยืนยัน	room; phone@200,40,1.2; txt@200,80=1234
+ยืนยันตัวตน	room; phone@200,40,1.2; check@260,60
+สำรองข้อมูล	office; hdd@200,30,1; laptop@120,30; arrowr@160,40
+กู้คืน	room; phone@200,40,1.2; picture@260,40; arrowl@240,60; man.happy@330
+ความจุ	room; phone@200,40,1.2; qmark@260,60
+พื้นที่จัดเก็บ	room; phone@200,40,1.2; txt@200,80=FULL; man.sad@330
+เครื่องช้า	office; computer@200,10,1; man.sleep@330; clock@120,60
+รีสตาร์ท	office; computer@200,10,1; arrowr@260,40; man@330
+เปิดเครื่อง	room; phone@200,40,1.2; hand@240,40,.5
+ปิดเครื่อง	bedroom; phone@200,40,1.2; moon@330,90; bed@120
+หลุดการเชื่อมต่อ	office; laptop@200,40,1.2; wifi@260,70; cross@260,70; man.sad@330
+สัญญาณอ่อน	mount; phone@200,40,1.2; wifi@260,70; man@330
+ใช้เน็ต	room; phone@200,40,1.2; wifi@260,70; cross@260,70
+เน็ตไม่ได้	room; router@200,30,1; cross@200,60; man.sad@330
+ซิมการ์ด	airport; card@200,40,1; phone@250,40; man@330
+แพ็กเกจ	room; phone@200,40,1.2; txt@200,80=∞
+เติมเงิน	street; shop@200,0,.8; phone@300,40; coin@260,40
+โหลดแอป	airport; phone@200,40,1.2; arrowd@200,80; plane@320,70,.5
+ปิดการแจ้งเตือน	bedroom; phone@200,40,1.2; bell2@260,50; cross@260,50
+โหมดสั่น	room; phone@200,40,1.2; soundwave@240,40; chair@330
+ปิดเสียง	office; phone@200,40,1.2; cross@200,60; table@200
+แคปหน้าจอ	room; phone@200,40,1.2; hl@200,40,.6; arrowr@260,40
+เซฟรูป	room; phone@200,40,1.2; picture@260,40; check@260,60
+แอปแปลภาษา	room; phone@200,40,1.2; say@120,96=안녕; say@300,96=สวัสดี
