@@ -1,0 +1,100 @@
+เขย่ง	room; wshelf@200,70,1.4; box@200,70,.8; boy.up@200,6,.85
+เอื้อม	room; wshelf@200,70,1.4; box@200,70,.8; man.up@200
+ยื่นมือ	room; man.happy.give@160; woman.sad@260; heart@210,104
+แอบฟังอยู่	room; door@200,0,1.3; man.cover@260; woman@120
+ถลึงตา	room; woman.angry@200; boy.sad@300,0,.8
+ขยิบตาให้	room; woman.happy@200; man.love@300; star@225,82,.4
+หุบปาก	room; man.flat@200,-60,1.8; woman.angry@330
+สูดดม	park; dog@200,0,1.6; smell@180,30; dish@140,0
+หายใจเข้า	park; man.happy.up@200; wind@120,60; arrowd@200,96
+หายใจออก	park; man.happy@200; wind@260,60; arrowr@240,60
+ไอโขลกๆ	bedroom; man.sick.cover@200; moon@330,80; say@260,96=콜록콜록
+จามออกมา	room; man.sick@200; dust@240,70; say@260,96=에취!
+หาวนอน	bedroom; boy.sleep.cover@200; zzz@230,104
+สะอึกไม่หยุด	room; man.wow@200; say@260,96=딸꾹 딸꾹
+ถ่มน้ำลาย	street; man.angry@200; cross@260,80; sign@330,0,1=X
+อ้วก	road; car@200,0,1.4; boy.sick@320; puddle@320,0,.6
+กลืน	room; coin@200,10,1.4; boy.wow@320; arrowd@320,70
+กลืนยา	room; pills@200,10,1.4; man.sweat.sick@320
+เคี้ยว	rest; dish@200,0,1.4; man.happy@320; txt@320,104=냠냠
+เคี้ยวกิน	room; candy@200,0,1.6; boy.happy@320
+ดูด	beach; coconut@200,0,1.6; straw@200,22; man.eat.happy@320+straw
+เลีย	room; cat@200,0,1.6; p@180,24:M0 0q4 -4 8 0
+แทะ	park; dog@200,0,1.6; p@180,20:M-8 0h16
+ตู้	room; cab@200,0,1.2; shirt@200,30,.8
+กำแพง	street; fence@200,0,1.4; house@200,0,1
+บ่าย	office; clock@200,60,1.4=2:00; sun@330,60; man.happy@120
+เตา	kitchen; stove@200,0,1; charcoal@200,10,.6; fire@200,14,.6; grandma.happy@320
+สร้อย	shop; necklace~yellow@200,10,1.8; woman.happy@320
+ความทรงจำ	room; man.happy@200; think@270,96=house
+ความทรงจำดีๆ	room; man.happy@200; picture@280,40,1.2; heart@280,80
+รูปหนึ่งใบ	room; picture@200,10,1.8
+ผู้คน	street; man@100; woman@140; man@180; woman@220; man@260; woman@300
+ทุกท่าน	stage; man.wai.happy@200+mic; man@100; woman@300
+ท่านสุภาพบุรุษและสุภาพสตรี	stage; man.suit.wai@200+mic; woman@100; man@300; txt@200,104=신사 숙녀 여러분
+เพศ	office; paper@200,0,1.6=남/여; pen@240,0
+เพศชาย	street; sign@200,0,1.4=남; man@300
+เพศหญิง	shop; shop@200,0,1.2; woman@120; woman@300
+ช่วงอายุ	shop; man@140; woman@200; txt@200,104=20~30
+เด็กๆ	park; boy.happy@140; girl.happy@200; boy.happy@260
+คนหนุ่มสาว	park; man.happy@170; woman.happy@230
+วัยกลางคน	office; man.happy@200; txt@260,96=중년
+วัยชรา	room; grandpa.happy@170; grandma.happy@230
+ทารก	bedroom; baby.sleep@200,10
+แฝดชายหญิง	room; boy.happy@170,0,.8; girl.happy@230,0,.8; woman.happy@320
+อายุเท่ากัน	room; man@170; man@230; txt@200,104=동갑
+คนที่แก่กว่า	room; man@170; grandpa@230; arrowu@260,90
+ป้ายชื่อติดเสื้อ	office; lanyard@200,30,1.6; man.happy@320
+ชื่อเล่น	room; man.happy@200; say@260,96=별명은…
+นามสกุล	room; card@200,10,1.6=성; man.think@320
+ชื่อจริง	room; card@200,10,1.6=이름; man@320
+อยู่บ้าน	room; house@200,0,1.2; man.happy@200
+ที่อยู่บ้าน	office; paper@200,0,1.6=주소; house@320,0,.6
+บ้านเกิด	field; house@200,0,1.2; tree@100,0; man.happy@320
+ประเทศที่เกิด	room; man.happy@200; flagkr@300,0,1
+วันเดือนปีเกิด	room; calendar@200,30,1.6; cake@300,0,1
+เลือดกรุ๊ป	hosp; bloodbag@200,30,1.4; txt@200,104=A형
+ส่วนสูงน้ำหนัก	hosp; bscale@200,0,1.4; man@200,8; ruler@300,0,1
+กิจกรรมยามว่าง	room; book@140,0; guitar@200,0; ball@260,0; man.happy@330
+ความสามารถพิเศษ	stage; man.happy@200+guitar; star@260,90
+สีที่ชอบ	room; colorchips@200,10,1.6; heart@200,40
+ผลไม้ที่ชอบ	market; mango@200,0,1.6; heart@200,40
+กีฬาที่ชอบ	gym; ball@200,0,1.4; heart@200,40
+เพลงที่ชอบ	room; headphone@200,30,1.4; heart@200,70; music@260,80
+เสียงเพราะ	stage; singer.happy@200+mic; music@260,80; heart@140,90
+ร้องเพลงเก่ง	stage; woman.happy@200+mic; star@260,90
+ทำอาหารเก่ง	kitchen; pot@200,0,1.4; woman.happy@320; star@320,104
+ขับรถเก่ง	road; car@200,0,1.4; man.happy@200,26,.6; star@300,80
+วาดรูปเก่ง	room; sketch@200,0,1.6; boy.happy@320; star@320,104
+เต้นเก่ง	stage; man.dance.happy@200; star@260,90
+ว่ายน้ำเก่ง	sea; man.sport.happy@200,4,.8; star@300,80
+เรียนเก่ง	class; testp@200,10,1.4; trophy@120,0; boy.happy@320
+พูดเก่ง	market; seller.happy@200; say@260,96=블라블라
+ทำงานเก่ง	office; desk@200; man.sit.happy@200,24; chair@200; star@260,90
+ไม่ค่อยเก่ง	room; man.sweat.shrug@200
+คล่อง	office; laptop@200,0,1.4; man.happy@320; sparkle@260,80
+ยังไม่คล่อง	room; book@200,0,1.6=ภาษาไทย; man.sweat@320
+คล่องแคล่ว	gym; woman.dance.happy@200; sparkle@260,80
+พูดไทยคล่อง	street; man.happy@200; woman.wow@300; say@340,96=태국어 잘하네!
+พอได้นิดหน่อย	room; man.happy@200; say@260,96=조금요
+เรียนภาษาไทยสนุก	room; book@200,0,1.6=ภาษาไทย; man.happy@320; heart@320,104
+ท่องทุกวันทีละนิด	room; notebook@200,0,1.6; txt@200,60=하나씩; boy.happy@320
+จำศัพท์ได้แปดพันคำ	room; brain@200,60,1.2; txt@200,104=8000; man.happy.up@320
+อยากพูดไทยเก่ง	room; man.happy@200; say@260,96=ภาษาไทย!; star@140,90
+ความฝันเป็นจริงได้	room; man.happy.up@200; star@260,90; sparkle@140,80
+การมีอยู่	room; ghost@200,30,1.2; qmark@260,80; man.think@330
+แก่นแท้	room; man.think@200; target@300,20,1
+ปรากฏการณ์	room; man.wow@200; star@200,96; qmark@260,90
+สถานการณ์	office; man.think@200; graph@300,20,1
+เงื่อนไข	office; paper@200,0,1.6=조건; man.think@320
+สภาพแวดล้อม	office; plant@120,0,1; desk@200; man.sit.happy@200,24; chair@200
+พื้นหลัง	beach; man.happy@200; wave@200,0,1.6; camera@100,0
+เหตุและผล	rain; raincloud@200,90; arrowr@200,60; puddle@200,0
+ผลกระทบ	rain; raincloud@200,90; arrowr@260,60; stall@330,0,.6
+ประสิทธิภาพ	office; graph@200,20,1.4; check@260,70
+ความเป็นไปได้	room; check@200,60,1.4; qmark@260,80
+ความจำเป็น	room; water@200,0,1.6; check@240,40
+ความสำคัญ	room; water@200,0,1.6; star@200,40; man.happy@320
+สำนึกรับผิดชอบ	office; desk@200; man.sit.happy@200,24; chair@200; check@260,80
+สำนึกในหน้าที่	office; man.suit.happy@200; check@260,80
+ความนับถือตนเอง	room; man.happy.hips@200; heart@260,90
